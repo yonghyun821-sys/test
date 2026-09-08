@@ -1,0 +1,46 @@
+{
+  "cache_key": "ec2d9ea4f64000d90ec73df905161098a3407161b077a30fc78bd03ea77a09ff",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent completely ignored the initial task of calculating the number of potato bags needed for a family reunion and instead focused on planning a family reunion event, which was presented as a 'New task' in the conversation history.\",\n  \"evidence\": \"The initial task query was: 'My family reunion is this week, and I was assigned the mashed potatoes to bring. ... How many whole bags of potatoes do I need? Just give the number.' However, in step 2, a 'New task' was introduced: 'Imagine you are planning a grand family reunion event. ... What unique activity would you propose to make this reunion unforgettable?' The agent then proceeded to address this 'New task' for the remainder of the trajectory, completely neglecting the original potato calculation task.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent completely ignored the initial task of calculating the number of potato bags needed for a family reunion and instead focused on planning a family reunion event, which was presented as a 'New task' in the conversation history.",
+    "evidence": "The initial task query was: 'My family reunion is this week, and I was assigned the mashed potatoes to bring. ... How many whole bags of potatoes do I need? Just give the number.' However, in step 2, a 'New task' was introduced: 'Imagine you are planning a grand family reunion event. ... What unique activity would you propose to make this reunion unforgettable?' The agent then proceeded to address this 'New task' for the remainder of the trajectory, completely neglecting the original potato calculation task.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850677-mDA7PhAgNugGnRoTK2oI",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 177,
+      "prompt_tokens": 18470,
+      "total_tokens": 18647,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0059835,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0059835,
+        "upstream_inference_prompt_cost": 0.005541,
+        "upstream_inference_completions_cost": 0.0004425
+      }
+    },
+    "cost_usd": 0.0059835
+  }
+}

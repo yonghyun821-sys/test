@@ -1,0 +1,46 @@
+{
+  "cache_key": "05783f9722121015e709207956c34d219a32aa17b84a3aa1f0bcc48ec4fb236d",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent incorrectly calculated the ISBN-10 check digit. The standard ISBN-10 check digit calculation uses a weighted sum where the first digit is multiplied by 10, the second by 9, and so on, down to the ninth digit multiplied by 2. The agent's script used weights from 1 to 9, which is incorrect for ISBN-10.\",\n  \"evidence\": \"The Coder agent's explanation for the ISBN-10 calculation states: 'Assign each digit in the number a weight, starting from 1 up to 10, as follows: (1st digit * 1) + (2nd digit * 2) + ... + (9th digit * 9) + (check digit * 10).' The Python script then implements `total_sum = sum((i + 1) * int(digit) for i, digit in enumerate(digits))`, which applies weights 1 through 9 to the first nine digits, deviating from the standard ISBN-10 weighting scheme.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent incorrectly calculated the ISBN-10 check digit. The standard ISBN-10 check digit calculation uses a weighted sum where the first digit is multiplied by 10, the second by 9, and so on, down to the ninth digit multiplied by 2. The agent's script used weights from 1 to 9, which is incorrect for ISBN-10.",
+    "evidence": "The Coder agent's explanation for the ISBN-10 calculation states: 'Assign each digit in the number a weight, starting from 1 up to 10, as follows: (1st digit * 1) + (2nd digit * 2) + ... + (9th digit * 9) + (check digit * 10).' The Python script then implements `total_sum = sum((i + 1) * int(digit) for i, digit in enumerate(digits))`, which applies weights 1 through 9 to the first nine digits, deviating from the standard ISBN-10 weighting scheme.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850395-7MID8kOJtiyRdgLr3CNW",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 242,
+      "prompt_tokens": 3721,
+      "total_tokens": 3963,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0017213,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0017213,
+        "upstream_inference_prompt_cost": 0.0011163,
+        "upstream_inference_completions_cost": 0.000605
+      }
+    },
+    "cost_usd": 0.0017213
+  }
+}

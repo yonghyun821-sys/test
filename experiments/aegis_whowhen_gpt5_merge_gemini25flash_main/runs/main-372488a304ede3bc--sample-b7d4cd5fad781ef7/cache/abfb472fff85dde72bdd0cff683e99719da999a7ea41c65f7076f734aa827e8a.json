@@ -1,0 +1,46 @@
+{
+  "cache_key": "abfb472fff85dde72bdd0cff683e99719da999a7ea41c65f7076f734aa827e8a",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The orchestrator hallucinates the film title 'Vampiro' and attributes it to a non-existent 'MoMA - Lygia Pape Artist Profile' source, despite the WebSurfer's output clearly identifying 'Eat Me' from multiple search results.\",\n  \"evidence\": \"WebSurfer output: \\\"Lygia Pape’s 1975 film Eat Me explores gender and sexuality...\\\" and \\\"Among the videos produced in this period, the seminal film made in 1975 by Pape, Eat Me...\\\". Orchestrator output: \\\"Based on the information from the MoMA - Lygia Pape Artist Profile, the seminal film that Lygia Pape made in 1975 focusing on gender and sexuality is 'Vampiro.'\\\"\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The orchestrator hallucinates the film title 'Vampiro' and attributes it to a non-existent 'MoMA - Lygia Pape Artist Profile' source, despite the WebSurfer's output clearly identifying 'Eat Me' from multiple search results.",
+    "evidence": "WebSurfer output: \"Lygia Pape’s 1975 film Eat Me explores gender and sexuality...\" and \"Among the videos produced in this period, the seminal film made in 1975 by Pape, Eat Me...\". Orchestrator output: \"Based on the information from the MoMA - Lygia Pape Artist Profile, the seminal film that Lygia Pape made in 1975 focusing on gender and sexuality is 'Vampiro.'\"",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853759-CsoI3APjSQaBieh02hqc",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 183,
+      "prompt_tokens": 4146,
+      "total_tokens": 4329,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0017013,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0017013,
+        "upstream_inference_prompt_cost": 0.0012438,
+        "upstream_inference_completions_cost": 0.0004575
+      }
+    },
+    "cost_usd": 0.0017013
+  }
+}

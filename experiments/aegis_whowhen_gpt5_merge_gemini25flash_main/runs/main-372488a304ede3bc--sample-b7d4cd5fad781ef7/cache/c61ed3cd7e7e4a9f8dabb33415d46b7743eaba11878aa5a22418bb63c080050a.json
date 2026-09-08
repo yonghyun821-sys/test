@@ -1,0 +1,46 @@
+{
+  "cache_key": "c61ed3cd7e7e4a9f8dabb33415d46b7743eaba11878aa5a22418bb63c080050a",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent failed to provide the complete title of the book as requested, specifically omitting the instruction to write numbers in plain text. It also did not identify the restaurant or the New Mexican staple, which were key parts of the task.\",\n  \"evidence\": \"The final output is: \\\"The complete title of the book in which two James Beard Award winners recommended the restaurant where Ali Khan enjoyed a New Mexican staple in his cost-conscious TV show is **\\\"Tacos: Recipes and Provocations.\\\"**\\\" This output does not include the restaurant name, the New Mexican staple, or convert any numbers in the title to plain text, despite the original query explicitly asking for these details.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent failed to provide the complete title of the book as requested, specifically omitting the instruction to write numbers in plain text. It also did not identify the restaurant or the New Mexican staple, which were key parts of the task.",
+    "evidence": "The final output is: \"The complete title of the book in which two James Beard Award winners recommended the restaurant where Ali Khan enjoyed a New Mexican staple in his cost-conscious TV show is **\"Tacos: Recipes and Provocations.\"**\" This output does not include the restaurant name, the New Mexican staple, or convert any numbers in the title to plain text, despite the original query explicitly asking for these details.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850359-rupWtI7YCqIiBMTOZshv",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 161,
+      "prompt_tokens": 36846,
+      "total_tokens": 37007,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0114563,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0114563,
+        "upstream_inference_prompt_cost": 0.0110538,
+        "upstream_inference_completions_cost": 0.0004025
+      }
+    },
+    "cost_usd": 0.0114563
+  }
+}

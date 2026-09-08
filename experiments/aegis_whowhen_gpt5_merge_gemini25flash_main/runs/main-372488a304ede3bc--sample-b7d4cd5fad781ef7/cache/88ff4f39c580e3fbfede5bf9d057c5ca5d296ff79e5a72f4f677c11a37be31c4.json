@@ -1,0 +1,46 @@
+{
+  "cache_key": "88ff4f39c580e3fbfede5bf9d057c5ca5d296ff79e5a72f4f677c11a37be31c4",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The orchestrator agent hallucinated the name of the individuals for whom the Center for the Sciences was renamed, stating 'Arthur and Mary Neese' instead of the correct 'Marjorie and James Sanger' which was clearly present in the search results.\",\n  \"evidence\": \"The WebSurfer's output clearly states: 'In 2017, Beloit College’s Center for the Sciences was renamed the Marjorie and James Sanger Center for the Sciences to honor the Sangers’ extraordinary leadership and support.' However, the orchestrator's final output states: 'Thanks to a landmark $15 million endowment gift, Beloit College's Center for the Sciences was officially renamed in October 2017 to honor Arthur and Mary Neese. FINAL ANSWER: Arthur and Mary Neese Center for the Sciences'\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The orchestrator agent hallucinated the name of the individuals for whom the Center for the Sciences was renamed, stating 'Arthur and Mary Neese' instead of the correct 'Marjorie and James Sanger' which was clearly present in the search results.",
+    "evidence": "The WebSurfer's output clearly states: 'In 2017, Beloit College’s Center for the Sciences was renamed the Marjorie and James Sanger Center for the Sciences to honor the Sangers’ extraordinary leadership and support.' However, the orchestrator's final output states: 'Thanks to a landmark $15 million endowment gift, Beloit College's Center for the Sciences was officially renamed in October 2017 to honor Arthur and Mary Neese. FINAL ANSWER: Arthur and Mary Neese Center for the Sciences'",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853767-baTTu53Kjq8w5rIV0DAN",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 188,
+      "prompt_tokens": 2708,
+      "total_tokens": 2896,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0012824,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0012824,
+        "upstream_inference_prompt_cost": 0.0008124,
+        "upstream_inference_completions_cost": 0.00047
+      }
+    },
+    "cost_usd": 0.0012824
+  }
+}

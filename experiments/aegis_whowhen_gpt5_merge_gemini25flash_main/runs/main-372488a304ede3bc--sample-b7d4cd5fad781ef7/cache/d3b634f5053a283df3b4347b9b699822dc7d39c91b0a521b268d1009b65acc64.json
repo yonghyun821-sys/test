@@ -1,0 +1,46 @@
+{
+  "cache_key": "d3b634f5053a283df3b4347b9b699822dc7d39c91b0a521b268d1009b65acc64",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The orchestrator agent hallucinated information about the American Alligator being found in California in 1978 from the USGS database. This information was not present in the WebSurfer's previous outputs, which only indicated navigation to the NAS homepage and then the reptiles section, without actually finding specific species records or dates.\",\n  \"evidence\": \"Orchestrator's output in round 4: \\\"The USGS Nonindigenous Aquatic Species database shows that the first American Alligator was recorded west of Texas in California in 1978.\\\" This statement is not supported by any prior WebSurfer output, which only reached the 'Reptiles' page (round 3, position 1).\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The orchestrator agent hallucinated information about the American Alligator being found in California in 1978 from the USGS database. This information was not present in the WebSurfer's previous outputs, which only indicated navigation to the NAS homepage and then the reptiles section, without actually finding specific species records or dates.",
+    "evidence": "Orchestrator's output in round 4: \"The USGS Nonindigenous Aquatic Species database shows that the first American Alligator was recorded west of Texas in California in 1978.\" This statement is not supported by any prior WebSurfer output, which only reached the 'Reptiles' page (round 3, position 1).",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788852449-msQaRNpDNNRpTbQgctOL",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 166,
+      "prompt_tokens": 6317,
+      "total_tokens": 6483,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0023101,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0023101,
+        "upstream_inference_prompt_cost": 0.0018951,
+        "upstream_inference_completions_cost": 0.000415
+      }
+    },
+    "cost_usd": 0.0023101
+  }
+}

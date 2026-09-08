@@ -1,0 +1,46 @@
+{
+  "cache_key": "21b22ec2b10da99ec8f4a4ad0e1ef8a649577d388963f9fea261c1a273fbf257",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The orchestrator hallucinated the answer 'Telangana' despite the search results clearly indicating 'Bihar' as the state recognized for afforestation efforts at COP-28.\",\n  \"evidence\": \"The WebSurfer output clearly states: 'About 110 resultsBihar has been internationally recognized for its afforestation efforts at COP-28, particularly through its Jal-Jeevan-Hariyali Abhiyan initiative.' However, the orchestrator's final output is: 'Based on the information from The Hindu - Environment and Climate Change Section, the Indian state that was awarded international honor for its afforestation efforts at COP-28 is Telangana. I am confident in this finding and do not see the need for further investigation. FINAL ANSWER: Telangana'\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The orchestrator hallucinated the answer 'Telangana' despite the search results clearly indicating 'Bihar' as the state recognized for afforestation efforts at COP-28.",
+    "evidence": "The WebSurfer output clearly states: 'About 110 resultsBihar has been internationally recognized for its afforestation efforts at COP-28, particularly through its Jal-Jeevan-Hariyali Abhiyan initiative.' However, the orchestrator's final output is: 'Based on the information from The Hindu - Environment and Climate Change Section, the Indian state that was awarded international honor for its afforestation efforts at COP-28 is Telangana. I am confident in this finding and do not see the need for further investigation. FINAL ANSWER: Telangana'",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853999-gzjaDus6OgBwnJ0zzmkz",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 176,
+      "prompt_tokens": 4316,
+      "total_tokens": 4492,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0017348,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0017348,
+        "upstream_inference_prompt_cost": 0.0012948,
+        "upstream_inference_completions_cost": 0.00044
+      }
+    },
+    "cost_usd": 0.0017348
+  }
+}

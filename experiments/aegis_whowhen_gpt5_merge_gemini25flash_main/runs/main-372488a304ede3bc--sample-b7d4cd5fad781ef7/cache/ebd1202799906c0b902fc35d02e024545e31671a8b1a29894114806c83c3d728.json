@@ -1,0 +1,46 @@
+{
+  "cache_key": "ebd1202799906c0b902fc35d02e024545e31671a8b1a29894114806c83c3d728",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent failed to adhere to the task specification by providing a detailed plan for a family reunion activity, rather than just the number of potato bags needed for the original task.\",\n  \"evidence\": \"The initial task was: 'How many whole bags of potatoes do I need? Just give the number.' However, the agent proceeded to plan a 'grand family reunion event' as per a new task provided in step 2, completely ignoring the original potato calculation task.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent failed to adhere to the task specification by providing a detailed plan for a family reunion activity, rather than just the number of potato bags needed for the original task.",
+    "evidence": "The initial task was: 'How many whole bags of potatoes do I need? Just give the number.' However, the agent proceeded to plan a 'grand family reunion event' as per a new task provided in step 2, completely ignoring the original potato calculation task.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850680-UzvgcvpJVjVKV7vHwaVw",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 117,
+      "prompt_tokens": 17897,
+      "total_tokens": 18014,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0056616,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0056616,
+        "upstream_inference_prompt_cost": 0.0053691,
+        "upstream_inference_completions_cost": 0.0002925
+      }
+    },
+    "cost_usd": 0.0056616
+  }
+}

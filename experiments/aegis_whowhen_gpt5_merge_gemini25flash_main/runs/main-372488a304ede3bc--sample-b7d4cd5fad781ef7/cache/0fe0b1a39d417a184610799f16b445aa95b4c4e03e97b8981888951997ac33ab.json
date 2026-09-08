@@ -1,0 +1,46 @@
+{
+  "cache_key": "0fe0b1a39d417a184610799f16b445aa95b4c4e03e97b8981888951997ac33ab",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent failed to adhere to the primary task specification, which was to create a list of only the vegetables from the provided grocery list. Instead, it provided a list of fruits and vegetables combined, and then later only fruits.\",\n  \"evidence\": \"The user explicitly asked: \\\"Could you please create a list of just the vegetables from my list?\\\" In step 8, the Coder agent provided a combined list of fruits and vegetables. In step 11, the MagenticOneOrchestrator provided only a list of fruits.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent failed to adhere to the primary task specification, which was to create a list of only the vegetables from the provided grocery list. Instead, it provided a list of fruits and vegetables combined, and then later only fruits.",
+    "evidence": "The user explicitly asked: \"Could you please create a list of just the vegetables from my list?\" In step 8, the Coder agent provided a combined list of fruits and vegetables. In step 11, the MagenticOneOrchestrator provided only a list of fruits.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850461-cSg8SvpBrViBOF8bZ2Tx",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 135,
+      "prompt_tokens": 4415,
+      "total_tokens": 4550,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.001662,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.001662,
+        "upstream_inference_prompt_cost": 0.0013245,
+        "upstream_inference_completions_cost": 0.0003375
+      }
+    },
+    "cost_usd": 0.001662
+  }
+}

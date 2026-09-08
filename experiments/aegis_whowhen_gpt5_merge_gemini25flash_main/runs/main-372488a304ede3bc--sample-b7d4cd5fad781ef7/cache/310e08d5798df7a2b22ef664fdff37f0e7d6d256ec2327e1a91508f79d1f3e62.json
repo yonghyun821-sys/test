@@ -1,0 +1,46 @@
+{
+  "cache_key": "310e08d5798df7a2b22ef664fdff37f0e7d6d256ec2327e1a91508f79d1f3e62",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent failed to adhere to the task specification of only listing ingredients for the filling. It included 'ripe strawberries' in the final list, despite the user explicitly stating they had everything for the crust and only needed filling ingredients.\",\n  \"evidence\": \"The user stated: 'I only want the ingredients for the filling, as I have everything I need to make my favorite pie crust.' and 'I only need the items for the filling since I already have what’s needed for my favorite pie crust.' The agent's final output included 'ripe strawberries'.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent failed to adhere to the task specification of only listing ingredients for the filling. It included 'ripe strawberries' in the final list, despite the user explicitly stating they had everything for the crust and only needed filling ingredients.",
+    "evidence": "The user stated: 'I only want the ingredients for the filling, as I have everything I need to make my favorite pie crust.' and 'I only need the items for the filling since I already have what’s needed for my favorite pie crust.' The agent's final output included 'ripe strawberries'.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850485-4hYVfdDGwdxFfzF0SAsp",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 136,
+      "prompt_tokens": 7516,
+      "total_tokens": 7652,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0025948,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0025948,
+        "upstream_inference_prompt_cost": 0.0022548,
+        "upstream_inference_completions_cost": 0.00034
+      }
+    },
+    "cost_usd": 0.0025948
+  }
+}

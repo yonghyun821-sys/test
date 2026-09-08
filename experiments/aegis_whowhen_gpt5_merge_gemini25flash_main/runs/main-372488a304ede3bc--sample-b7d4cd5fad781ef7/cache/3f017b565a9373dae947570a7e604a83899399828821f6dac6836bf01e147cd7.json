@@ -1,0 +1,46 @@
+{
+  "cache_key": "3f017b565a9373dae947570a7e604a83899399828821f6dac6836bf01e147cd7",
+  "raw_output_text": "{\n  \"failure_category\": \"R.2\",\n  \"explanation\": \"The agent initially used the correct mortgage payment formula but then, after receiving the numerical output from the code, it completely changed its reasoning and used a simplified, incorrect formula for calculating the interest rate, leading to a significantly different and wrong answer.\",\n  \"evidence\": \"The agent's initial output correctly uses the mortgage payment formula. After the code run returns '9.73253756599540', the agent's next output states: 'Applying the interest to the principal over the 20-year period, we solve the equation 95000 * R * 20 = 121000 for the annual rate. This calculation... yields a maximum affordable interest rate of 6.3684...%.' This new calculation method is incorrect for a mortgage.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.2",
+    "explanation": "The agent initially used the correct mortgage payment formula but then, after receiving the numerical output from the code, it completely changed its reasoning and used a simplified, incorrect formula for calculating the interest rate, leading to a significantly different and wrong answer.",
+    "evidence": "The agent's initial output correctly uses the mortgage payment formula. After the code run returns '9.73253756599540', the agent's next output states: 'Applying the interest to the principal over the 20-year period, we solve the equation 95000 * R * 20 = 121000 for the annual rate. This calculation... yields a maximum affordable interest rate of 6.3684...%.' This new calculation method is incorrect for a mortgage.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853651-yH0xurgQ0OiwzVOalzCb",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 194,
+      "prompt_tokens": 3698,
+      "total_tokens": 3892,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0015944,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0015944,
+        "upstream_inference_prompt_cost": 0.0011094,
+        "upstream_inference_completions_cost": 0.000485
+      }
+    },
+    "cost_usd": 0.0015944
+  }
+}

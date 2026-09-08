@@ -1,0 +1,46 @@
+{
+  "cache_key": "4a89efe532285654c76af02c34be8445c50307d78e5707136d7c1f6803417d1a",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent failed to adhere to the task specification to state which home sold for more, only providing the price.\",\n  \"evidence\": \"Task: 'Find which of those homes sold for more in 2022, and tell me how much it sold for.' Final Output: '875000'\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent failed to adhere to the task specification to state which home sold for more, only providing the price.",
+    "evidence": "Task: 'Find which of those homes sold for more in 2022, and tell me how much it sold for.' Final Output: '875000'",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850630-aBvcVdDM2ub0HwoHF8yt",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 89,
+      "prompt_tokens": 8351,
+      "total_tokens": 8440,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0027278,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0027278,
+        "upstream_inference_prompt_cost": 0.0025053,
+        "upstream_inference_completions_cost": 0.0002225
+      }
+    },
+    "cost_usd": 0.0027278
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "cache_key": "0172048baeee964814fb1946f1fde89ffa0df15cdbbdbfd7b45b62b9462d0741",
+  "raw_output_text": "{\n  \"failure_category\": \"R.4\",\n  \"explanation\": \"The agent misunderstood the core question, which asked about 'points scored per year' but instead calculated and predicted 'tries per year'.\",\n  \"evidence\": \"The question was: 'How will the Castleford Tigers' points scored per year trend in the next 5 years?'. The agent's final answer was: 'Based on the historical average, Castleford Tigers are expected to score about 23.2 tries per year over the next 5 years.'\"\n}",
+  "parsed_response": {
+    "failure_category": "R.4",
+    "explanation": "The agent misunderstood the core question, which asked about 'points scored per year' but instead calculated and predicted 'tries per year'.",
+    "evidence": "The question was: 'How will the Castleford Tigers' points scored per year trend in the next 5 years?'. The agent's final answer was: 'Based on the historical average, Castleford Tigers are expected to score about 23.2 tries per year over the next 5 years.'",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788854232-OwSZyq7LQ1s64YZDJcyw",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 117,
+      "prompt_tokens": 1315,
+      "total_tokens": 1432,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.000687,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.000687,
+        "upstream_inference_prompt_cost": 0.0003945,
+        "upstream_inference_completions_cost": 0.0002925
+      }
+    },
+    "cost_usd": 0.000687
+  }
+}

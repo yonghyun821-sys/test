@@ -1,0 +1,46 @@
+{
+  "cache_key": "238e7aa9d821d30fc3ad5fb86a8974c195192de2e1a182fc0f02666a1c5779bf",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The orchestrator hallucinates information, stating that the Archives of American Art, Smithsonian Institution, confirms a four-year scholarship, when the provided web search results clearly indicate a three-year scholarship from Wikipedia and Columbia University.\",\n  \"evidence\": \"Orchestrator output: \\\"The Archives of American Art, Smithsonian Institution, confirms that Mary Fairchild MacMonnies Low won a four-year scholarship from the St. Louis School of Fine Arts.\\\" This contradicts the WebSurfer's output which states: \\\"Mary Fairchild MacMonnies Low received a three-year scholarship at the St. Louis School of Fine Arts. Wikipedia\\\" and \\\"In summary, the duration of Mary Fairchild MacMonnies Low’s scholarship at the St. Louis School of Fine Arts was three years\\\"\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The orchestrator hallucinates information, stating that the Archives of American Art, Smithsonian Institution, confirms a four-year scholarship, when the provided web search results clearly indicate a three-year scholarship from Wikipedia and Columbia University.",
+    "evidence": "Orchestrator output: \"The Archives of American Art, Smithsonian Institution, confirms that Mary Fairchild MacMonnies Low won a four-year scholarship from the St. Louis School of Fine Arts.\" This contradicts the WebSurfer's output which states: \"Mary Fairchild MacMonnies Low received a three-year scholarship at the St. Louis School of Fine Arts. Wikipedia\" and \"In summary, the duration of Mary Fairchild MacMonnies Low’s scholarship at the St. Louis School of Fine Arts was three years\"",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853935-CRz3CSmOKWQR76ZIUMuw",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 179,
+      "prompt_tokens": 4161,
+      "total_tokens": 4340,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0016958,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0016958,
+        "upstream_inference_prompt_cost": 0.0012483,
+        "upstream_inference_completions_cost": 0.0004475
+      }
+    },
+    "cost_usd": 0.0016958
+  }
+}

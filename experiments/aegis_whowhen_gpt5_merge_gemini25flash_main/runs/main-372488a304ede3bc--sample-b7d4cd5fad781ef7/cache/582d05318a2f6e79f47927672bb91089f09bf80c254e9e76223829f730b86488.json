@@ -1,0 +1,46 @@
+{
+  "cache_key": "582d05318a2f6e79f47927672bb91089f09bf80c254e9e76223829f730b86488",
+  "raw_output_text": "{\n  \"failure_category\": \"R.4\",\n  \"explanation\": \"The agent failed to correctly interpret the docstring's example section, which specifies that the `ax.get_title()` method should return 'K-Means Clustering'. The agent incorrectly assumed this meant the title should be set, rather than being a test of the default behavior or a requirement for the function to set the title.\",\n  \"evidence\": \"The docstring example includes `ax.get_title()` returning 'K-Means Clustering', which the agent interpreted as a requirement to set the title, leading to the inclusion of `ax.set_title('K-Means Clustering')` in the generated code.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.4",
+    "explanation": "The agent failed to correctly interpret the docstring's example section, which specifies that the `ax.get_title()` method should return 'K-Means Clustering'. The agent incorrectly assumed this meant the title should be set, rather than being a test of the default behavior or a requirement for the function to set the title.",
+    "evidence": "The docstring example includes `ax.get_title()` returning 'K-Means Clustering', which the agent interpreted as a requirement to set the title, leading to the inclusion of `ax.set_title('K-Means Clustering')` in the generated code.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850952-c4KnxFCzUrvlDqnHA5Sq",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 147,
+      "prompt_tokens": 5539,
+      "total_tokens": 5686,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0020292,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0020292,
+        "upstream_inference_prompt_cost": 0.0016617,
+        "upstream_inference_completions_cost": 0.0003675
+      }
+    },
+    "cost_usd": 0.0020292
+  }
+}

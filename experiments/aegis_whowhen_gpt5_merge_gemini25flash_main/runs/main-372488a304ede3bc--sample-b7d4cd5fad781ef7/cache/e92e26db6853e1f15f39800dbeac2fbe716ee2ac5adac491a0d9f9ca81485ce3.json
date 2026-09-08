@@ -1,0 +1,46 @@
+{
+  "cache_key": "e92e26db6853e1f15f39800dbeac2fbe716ee2ac5adac491a0d9f9ca81485ce3",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The agent hallucinates the name 'Sailen Dey' as the younger brother of Mukul Chandra Dey, despite the search results clearly indicating 'Manishi Dey'. It also invents a source, 'National Gallery of Modern Art (NGMA) Biographical Archives', that was not present in the provided search results.\",\n  \"evidence\": \"The WebSurfer output clearly states: 'Manishi DeyThe younger brother of Mukul Chandra Dey is Manishi Dey.' and 'Manishi Dey - WikipediaManishi Dey was the younger brother of Mukul Dey'. However, the Orchestrator's final output states: 'Based on the information found in the National Gallery of Modern Art (NGMA) Biographical Archives, the younger brother of Mukul Chandra Dey... is Sailen Dey.'\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The agent hallucinates the name 'Sailen Dey' as the younger brother of Mukul Chandra Dey, despite the search results clearly indicating 'Manishi Dey'. It also invents a source, 'National Gallery of Modern Art (NGMA) Biographical Archives', that was not present in the provided search results.",
+    "evidence": "The WebSurfer output clearly states: 'Manishi DeyThe younger brother of Mukul Chandra Dey is Manishi Dey.' and 'Manishi Dey - WikipediaManishi Dey was the younger brother of Mukul Dey'. However, the Orchestrator's final output states: 'Based on the information found in the National Gallery of Modern Art (NGMA) Biographical Archives, the younger brother of Mukul Chandra Dey... is Sailen Dey.'",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788854034-Jd7rcqkKVOHCZdDxYOEl",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 179,
+      "prompt_tokens": 2318,
+      "total_tokens": 2497,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0011429,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0011429,
+        "upstream_inference_prompt_cost": 0.0006954,
+        "upstream_inference_completions_cost": 0.0004475
+      }
+    },
+    "cost_usd": 0.0011429
+  }
+}

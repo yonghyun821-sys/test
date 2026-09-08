@@ -1,0 +1,46 @@
+{
+  "cache_key": "9327b4222b7267321e7fd60581068a1ef30e72537cf8e37f477807607ee7d4d2",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-2.3\",\n  \"explanation\": \"The agent repeatedly deviates from the main goal of answering the user's question, instead focusing on whimsical and irrelevant topics like snack ideas, fictional scenarios, and office plants. This prevents it from providing a direct and concise answer.\",\n  \"evidence\": \"The conversation history shows the orchestrator repeatedly generating 'plans' that are entirely unrelated to the initial query, such as 'Whimsical Plan for Reality Television Exploration' (step 2), 'Cheerful Gathering Plan' (step 7), 'A Whimsical Tale: The Curious Misadventure of the Last Gathering' (step 8), 'Whimsical Exploration of the Last Gathering' (step 9), 'A Whimsical Ramble Through Enchanted Realms' (step 11), 'A Whimsical Journey Ahead!' (step 12), 'Whimsical Knitting Expedition' (step 17), 'The Exotic Fruit Extravaganza Plan' (step 16), 'Our Whimsical Chess Journey' (step 18), 'A Playful Expedition into Rubber Ducks' (step 19), 'A Whimsical Plan for Exploration' (step 20), 'A Whimsical Overview of Our Journey' (step 21), 'Updated Plan for Exploring Fun and Food' (step 22), 'Whimsical Strategy for Exploration' (step 23), 'Chaotic Whimsy Plan' (step 24), and 'Whimsical Adventure Plan: The Spectacular Silly Soiree' (step 25). These plans consistently introduce irrelevant tasks for the sub-agents.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-2.3",
+    "explanation": "The agent repeatedly deviates from the main goal of answering the user's question, instead focusing on whimsical and irrelevant topics like snack ideas, fictional scenarios, and office plants. This prevents it from providing a direct and concise answer.",
+    "evidence": "The conversation history shows the orchestrator repeatedly generating 'plans' that are entirely unrelated to the initial query, such as 'Whimsical Plan for Reality Television Exploration' (step 2), 'Cheerful Gathering Plan' (step 7), 'A Whimsical Tale: The Curious Misadventure of the Last Gathering' (step 8), 'Whimsical Exploration of the Last Gathering' (step 9), 'A Whimsical Ramble Through Enchanted Realms' (step 11), 'A Whimsical Journey Ahead!' (step 12), 'Whimsical Knitting Expedition' (step 17), 'The Exotic Fruit Extravaganza Plan' (step 16), 'Our Whimsical Chess Journey' (step 18), 'A Playful Expedition into Rubber Ducks' (step 19), 'A Whimsical Plan for Exploration' (step 20), 'A Whimsical Overview of Our Journey' (step 21), 'Updated Plan for Exploring Fun and Food' (step 22), 'Whimsical Strategy for Exploration' (step 23), 'Chaotic Whimsy Plan' (step 24), and 'Whimsical Adventure Plan: The Spectacular Silly Soiree' (step 25). These plans consistently introduce irrelevant tasks for the sub-agents.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850336-CPQW6gX95wbfMTpU0hdQ",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 355,
+      "prompt_tokens": 34481,
+      "total_tokens": 34836,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0112318,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0112318,
+        "upstream_inference_prompt_cost": 0.0103443,
+        "upstream_inference_completions_cost": 0.0008875
+      }
+    },
+    "cost_usd": 0.0112318
+  }
+}

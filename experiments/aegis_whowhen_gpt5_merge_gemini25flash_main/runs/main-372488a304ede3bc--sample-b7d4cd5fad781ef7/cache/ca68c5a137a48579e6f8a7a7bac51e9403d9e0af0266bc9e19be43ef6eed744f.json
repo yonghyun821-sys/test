@@ -1,0 +1,46 @@
+{
+  "cache_key": "ca68c5a137a48579e6f8a7a7bac51e9403d9e0af0266bc9e19be43ef6eed744f",
+  "raw_output_text": "{\n  \"failure_category\": \"R.2\",\n  \"explanation\": \"The agent made a reasoning error by applying the `fig.suptitle` to the heatmap figure, but the docstring specifies that the title 'Correlation Matrix' should be for the correlation matrix heatmap, not the entire figure. This is a misapplication of a correct piece of information (how to set a figure title) in the wrong context.\",\n  \"evidence\": \"The docstring states: 'The title of the plot is 'Correlation Matrix'.' The agent's code uses `fig.suptitle('Correlation Matrix')` which sets the title for the entire figure, not specifically the heatmap plot as implied by the docstring's context.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.2",
+    "explanation": "The agent made a reasoning error by applying the `fig.suptitle` to the heatmap figure, but the docstring specifies that the title 'Correlation Matrix' should be for the correlation matrix heatmap, not the entire figure. This is a misapplication of a correct piece of information (how to set a figure title) in the wrong context.",
+    "evidence": "The docstring states: 'The title of the plot is 'Correlation Matrix'.' The agent's code uses `fig.suptitle('Correlation Matrix')` which sets the title for the entire figure, not specifically the heatmap plot as implied by the docstring's context.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850958-nvPQ1IAsSGgpxse368ZI",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 150,
+      "prompt_tokens": 7453,
+      "total_tokens": 7603,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0026109,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0026109,
+        "upstream_inference_prompt_cost": 0.0022359,
+        "upstream_inference_completions_cost": 0.000375
+      }
+    },
+    "cost_usd": 0.0026109
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "cache_key": "a6b24eea1fbc6b9af5600a1f9717bbcaab3ab483b31a579f36f34692b254749b",
+  "raw_output_text": "{\n  \"failure_category\": \"R.2\",\n  \"explanation\": \"The agent incorrectly calculated the average 'total mintage' instead of the average 'issue price' as requested in the prompt.\",\n  \"evidence\": \"The question asks for 'average issue price' but the code calculates 'average_mintage = filtered_df['total mintage'].astype(float).mean()'.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.2",
+    "explanation": "The agent incorrectly calculated the average 'total mintage' instead of the average 'issue price' as requested in the prompt.",
+    "evidence": "The question asks for 'average issue price' but the code calculates 'average_mintage = filtered_df['total mintage'].astype(float).mean()'.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788854801-dRRefgq69MJZEABiPChJ",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 86,
+      "prompt_tokens": 1282,
+      "total_tokens": 1368,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0005996,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0005996,
+        "upstream_inference_prompt_cost": 0.0003846,
+        "upstream_inference_completions_cost": 0.000215
+      }
+    },
+    "cost_usd": 0.0005996
+  }
+}

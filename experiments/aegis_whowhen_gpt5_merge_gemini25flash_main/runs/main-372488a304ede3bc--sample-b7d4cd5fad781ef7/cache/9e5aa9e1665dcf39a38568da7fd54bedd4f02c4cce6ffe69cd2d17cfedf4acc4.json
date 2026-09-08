@@ -1,0 +1,46 @@
+{
+  "cache_key": "9e5aa9e1665dcf39a38568da7fd54bedd4f02c4cce6ffe69cd2d17cfedf4acc4",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent failed to return the final answer in the requested format. The task asked for a description of the perfect movie selection, including a mix of genres, snacks, drinks, and a detailed plan for the movie night. Instead, the agent returned a JSON object containing all the details, which was then flattened into a comma-separated string, losing the structured description.\",\n  \"evidence\": \"The task explicitly asks to 'Describe the perfect movie selection... Create a detailed plan for this movie night... Make sure to list potential titles from various genres, along with a brief rationale for each selection'. The final output is a flattened string of all the elements, not a descriptive plan.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent failed to return the final answer in the requested format. The task asked for a description of the perfect movie selection, including a mix of genres, snacks, drinks, and a detailed plan for the movie night. Instead, the agent returned a JSON object containing all the details, which was then flattened into a comma-separated string, losing the structured description.",
+    "evidence": "The task explicitly asks to 'Describe the perfect movie selection... Create a detailed plan for this movie night... Make sure to list potential titles from various genres, along with a brief rationale for each selection'. The final output is a flattened string of all the elements, not a descriptive plan.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850643-DoaakoDIrVXnNZkNNsfz",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 159,
+      "prompt_tokens": 19620,
+      "total_tokens": 19779,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0062835,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0062835,
+        "upstream_inference_prompt_cost": 0.005886,
+        "upstream_inference_completions_cost": 0.0003975
+      }
+    },
+    "cost_usd": 0.0062835
+  }
+}

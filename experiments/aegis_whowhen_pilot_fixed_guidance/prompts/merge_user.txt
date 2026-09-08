@@ -1,0 +1,14 @@
+Create one merged taxonomy from the two source taxonomies below.
+
+Rules:
+1. Merge only genuinely equivalent causal mechanisms.
+2. Preserve distinct mechanisms as separate categories.
+3. Do not create vague catch-all categories.
+4. Record complete source provenance for every merged category.
+5. Include every source category exactly once across provenance.
+6. Use stable merged IDs such as MT-01, MT-02, and so on.
+
+<SOURCE_TAXONOMIES>
+{source_taxonomies}
+</SOURCE_TAXONOMIES>
+{repair_context}

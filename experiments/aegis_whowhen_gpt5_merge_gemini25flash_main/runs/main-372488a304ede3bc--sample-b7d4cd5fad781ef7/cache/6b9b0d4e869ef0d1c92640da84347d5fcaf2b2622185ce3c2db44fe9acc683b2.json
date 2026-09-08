@@ -1,0 +1,46 @@
+{
+  "cache_key": "6b9b0d4e869ef0d1c92640da84347d5fcaf2b2622185ce3c2db44fe9acc683b2",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The orchestrator agent hallucinated the final answer, providing 'Sam Tshabalala' as the first Black runner to win the Ultra Two Oceans Marathon, despite the WebSurfer tool clearly identifying 'Gabashane Vincent Rakabaele' from the search results.\",\n  \"evidence\": \"WebSurfer output: \\\"Gabashane Vincent Rakabaele made history as the first black winner of the Two Oceans Marathon in 1976...\\\". Orchestrator final output: \\\"FINAL ANSWER: Sam Tshabalala\\\"\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The orchestrator agent hallucinated the final answer, providing 'Sam Tshabalala' as the first Black runner to win the Ultra Two Oceans Marathon, despite the WebSurfer tool clearly identifying 'Gabashane Vincent Rakabaele' from the search results.",
+    "evidence": "WebSurfer output: \"Gabashane Vincent Rakabaele made history as the first black winner of the Two Oceans Marathon in 1976...\". Orchestrator final output: \"FINAL ANSWER: Sam Tshabalala\"",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853783-1nSwNmnzKeZeLF2yzB13",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 128,
+      "prompt_tokens": 4065,
+      "total_tokens": 4193,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0015395,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0015395,
+        "upstream_inference_prompt_cost": 0.0012195,
+        "upstream_inference_completions_cost": 0.00032
+      }
+    },
+    "cost_usd": 0.0015395
+  }
+}

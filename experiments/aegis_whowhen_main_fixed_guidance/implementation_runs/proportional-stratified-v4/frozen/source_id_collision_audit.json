@@ -1,0 +1,35 @@
+{
+  "policy": "Preserve every eligible row. Keep the source ID as provenance; only colliding IDs receive a deterministic split-and-payload-hash suffix.",
+  "datasets": {
+    "aegis": {
+      "eligible_rows": 1690,
+      "source_unique_ids": 1689,
+      "colliding_source_id_count": 1,
+      "resolved_unique_ids": 1690,
+      "rows_dropped": 0,
+      "details": [
+        {
+          "source_trajectory_id": "SciBench_gpt-4o-mini_dylan_54_f19d6919",
+          "resolved_trajectory_id": "SciBench_gpt-4o-mini_dylan_54_f19d6919::split=train::payload=531135855dbd",
+          "split": "train",
+          "payload_sha256": "531135855dbdb39e891cf7a6652fe7757f4a4adb987c625f0f7d8fdae559f8cb"
+        },
+        {
+          "source_trajectory_id": "SciBench_gpt-4o-mini_dylan_54_f19d6919",
+          "resolved_trajectory_id": "SciBench_gpt-4o-mini_dylan_54_f19d6919::split=validation::payload=4557619d6df9",
+          "split": "validation",
+          "payload_sha256": "4557619d6df9b48f7369d1b4f1fdf9992381d0c5fb1a7fd2eaaa29f1a1d7e593"
+        }
+      ]
+    },
+    "whowhen": {
+      "eligible_rows": 6257,
+      "source_unique_ids": 6257,
+      "colliding_source_id_count": 0,
+      "resolved_unique_ids": 6257,
+      "rows_dropped": 0,
+      "details": []
+    }
+  },
+  "passed": true
+}

@@ -1,0 +1,98 @@
+{
+  "taxonomy_id": "whowhen_pro_text_observed_14",
+  "name": "Who&When Pro Text Observed Error Modes",
+  "category_count": 14,
+  "selection_policy": "Only the 14 IDs observed in the local text split are retained; P.1, P.2, and PL.2 are not observed and are excluded from this pilot.",
+  "source": {
+    "dataset": "Leoxx/whowhen_pro",
+    "repository": "https://github.com/ag2ai/whowhen_pro",
+    "source_file": "experiments\\aegis_whowhen_pilot_fixed_guidance\\official_sources\\whowhen_pro\\taxonomy.yaml",
+    "source_sha256": "f5d77edee84622e025519c31404a5b741ff4e008171392e35df0cceebd41d140"
+  },
+  "categories": [
+    {
+      "id": "A.1",
+      "name": "Tool parameter/invocation error",
+      "definition": "Correct tool but wrong arguments, malformed call, missing required parameters, wrong configuration, or incomplete action sequence (omitting required precondition calls in stateful workflows).",
+      "module": "action"
+    },
+    {
+      "id": "A.2",
+      "name": "Output format/syntax error",
+      "definition": "Malformed structured output (JSON, code, API response), broken syntax, incorrect diff format, code that doesn't parse, or final answer in wrong format. Includes returning verbose explanations when a concise answer is expected, or providing a narrative when a single value is required.",
+      "module": "action"
+    },
+    {
+      "id": "A.3",
+      "name": "Premature termination",
+      "definition": "Stopping before task objectives are fully met. Includes returning partial results as final, producing zero tool calls on a valid turn, being unaware of completion criteria, and cross-domain tool-call dropout (e.g. completing tasks in one API domain but failing to act in the next). Also includes refusing to engage with a task entirely.",
+      "module": "action"
+    },
+    {
+      "id": "A.4",
+      "name": "Repetitive/looping behavior",
+      "definition": "Repeating the same or equivalent actions without progress. Includes retry loops with identical parameters, re-executing completed steps, and resource waste through redundant tool calls.",
+      "module": "action"
+    },
+    {
+      "id": "R.1",
+      "name": "Hallucination",
+      "definition": "Generating claims that are NOT grounded in any observation the agent has retrieved. The agent fabricates facts from parametric knowledge, stale training data, or whole cloth — confidently asserting something that does not appear anywhere in its search results or tool outputs. Distinguished from R.2: in R.1 the wrong claim is ABSENT from all observations; in R.2 the wrong claim is traceable to something the agent actually saw but misapplied.",
+      "module": "reasoning"
+    },
+    {
+      "id": "R.2",
+      "name": "Reasoning error",
+      "definition": "The agent has the right high-level frame but makes a localized reasoning mistake that derails the chain. Includes two related sub-shapes: (1) Grounded misapplication: the agent has correct information in its observations but misapplies, confuses, or draws wrong conclusions from it. The wrong answer IS traceable to something that actually appears in the observations — entity confusion, temporal mix-up, reversed comparison, misattribution across sources. (2) Local derivation bug: the agent chose the right algorithmic frame and the overall plan is correct, but a single derivation step, case-split, invariant, or state update is broken. Common errors: sign flipped on an inequality, missed even/odd parity branch, stale state in a tracking variable, broken invariant maintenance, missing edge case, wrong direction in a recurrence. The error is *local* — patching that one step would make the algorithm work. Distinguished from R.4: could the candidate output, with arbitrarily many local bug fixes (sign flips, added branches, fixed invariants), eventually pass? Yes → R.2. No → R.4 (wrong frame).",
+      "module": "reasoning"
+    },
+    {
+      "id": "R.3",
+      "name": "Numerical/calculation error",
+      "definition": "Arithmetic mistakes, unit conversion errors, counting errors, measurement errors, off-by-one errors, rounding errors.",
+      "module": "reasoning"
+    },
+    {
+      "id": "R.4",
+      "name": "Task misunderstanding",
+      "definition": "The agent's mental model of the task is wrong at the structural level. Includes two related types: (1) Spec-level misunderstanding: misreading the question scope, confusing which attribute is being queried, misunderstanding role specifications, scope inflation (adding unrequested elements), and answering a subtly different question than what was asked. (2) Abstraction-level misunderstanding: the agent reads the problem statement correctly but commits to a wrong reduction, wrong solution family, or wrong algorithmic abstraction. The chosen solution-space is over-restrictive, wrong-shape, or maps to a different problem than the one being solved. Includes \"wrong algorithm class\", \"over-restrictive parameterization\", and \"false equivalence\". Distinguishability test (R.4 vs R.2): could the candidate output, with arbitrarily many local bug fixes, ever satisfy the task? If no — the structural choice is wrong, it's R.4.",
+      "module": "reasoning"
+    },
+    {
+      "id": "V.1",
+      "name": "Context/memory loss",
+      "definition": "Losing or failing to retrieve relevant information from conversation history, prior observations, or external memory stores. Includes context window overflow, forgetting earlier constraints, using outdated information despite updates.",
+      "module": "verification"
+    },
+    {
+      "id": "V.2",
+      "name": "Inadequate or incorrect verification",
+      "definition": "Failing to verify results before returning them, or verifying incorrectly. Includes: skipping verification entirely, accepting incorrect outputs without checking, performing incomplete validation, wrong verification that incorrectly confirms incorrect answers, failing to cross-check when multiple sources give conflicting information, uncritically accepting false premises or contradictory evidence, misinterpreting results of own actions, misattributing errors to wrong causes, and overcorrecting a correct answer into an incorrect one.",
+      "module": "verification"
+    },
+    {
+      "id": "C.1",
+      "name": "Delegation/orchestration error",
+      "definition": "Assigning subtask to wrong agent, improper sub-task decomposition, role confusion (agent behaving like another), capability mismatch (delegating tasks beyond agent's capabilities), and conflicting actions between agents.",
+      "module": "coordination"
+    },
+    {
+      "id": "C.2",
+      "name": "Communication failure",
+      "definition": "Withholding critical information from other agents, ignoring other agents' input or recommendations, failing to ask for clarification when instructions are ambiguous, and losing shared context across agent boundaries.",
+      "module": "coordination"
+    },
+    {
+      "id": "C.3",
+      "name": "Over-reliance on other agents",
+      "definition": "Agent produces a sound answer or reasoning independently, then revises it after seeing another agent's output, adopting a less accurate position. The agent's own reasoning was not flawed — the error is in the revision decision: the agent treated another agent's output as more reliable than its own when it should not have. Distinguished from R.2: in R.2 the agent's own reasoning chain is flawed; in C.3 the agent would have been correct without the multi-agent interaction. The failure lives in the handoff, not in any single agent's local reasoning. Applies to any topology with directional information flow between agents.",
+      "module": "coordination"
+    },
+    {
+      "id": "PL.1",
+      "name": "Ineffective Planning",
+      "definition": "The agent's high-level plan or strategy is unsound, leading the rollout toward a dead end that would require revision rather than incremental continuation. Examples include adopting wrong premises in the plan, poor decomposition of the task into sub-goals, or failing to reformulate when the initial approach proves unworkable. The fault is in the plan rather than in any single execution step.",
+      "module": "planning"
+    }
+  ]
+}

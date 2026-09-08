@@ -1,0 +1,46 @@
+{
+  "cache_key": "19b7b0f16131e72c6f36671f5c78827145bad19228b6b3a8e601a5c3cd6f779b",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The orchestrator hallucinates the birthplace of Ila Pant, stating 'Almora district' despite the WebSurfer clearly finding and stating 'Nainital district' multiple times in the search results.\",\n  \"evidence\": \"WebSurfer output: 'Ila Pant was born in Nainital district, Uttarakhand.' and 'Ila Pant - WikipediaIla Pant was born in Nainital district (Uttarakhand)'. Orchestrator output: 'Ila Pant was born in Almora district... FINAL ANSWER: Almora district'\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The orchestrator hallucinates the birthplace of Ila Pant, stating 'Almora district' despite the WebSurfer clearly finding and stating 'Nainital district' multiple times in the search results.",
+    "evidence": "WebSurfer output: 'Ila Pant was born in Nainital district, Uttarakhand.' and 'Ila Pant - WikipediaIla Pant was born in Nainital district (Uttarakhand)'. Orchestrator output: 'Ila Pant was born in Almora district... FINAL ANSWER: Almora district'",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853867-NGgG9lTpUR888B7ePjeY",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 129,
+      "prompt_tokens": 3397,
+      "total_tokens": 3526,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0013416,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0013416,
+        "upstream_inference_prompt_cost": 0.0010191,
+        "upstream_inference_completions_cost": 0.0003225
+      }
+    },
+    "cost_usd": 0.0013416
+  }
+}

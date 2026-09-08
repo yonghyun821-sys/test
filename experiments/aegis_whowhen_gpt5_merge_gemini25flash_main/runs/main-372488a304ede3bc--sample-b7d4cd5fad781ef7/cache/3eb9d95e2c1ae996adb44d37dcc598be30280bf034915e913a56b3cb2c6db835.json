@@ -1,0 +1,46 @@
+{
+  "cache_key": "3eb9d95e2c1ae996adb44d37dcc598be30280bf034915e913a56b3cb2c6db835",
+  "raw_output_text": "{\n  \"failure_category\": \"R.2\",\n  \"explanation\": \"The agent correctly identified a list of discoveries but misidentified Paul Henry's first discovery, attributing an asteroid discovered by Prosper Henry to Paul Henry.\",\n  \"evidence\": \"The Wikipedia page clearly lists 'Discoveries by Paul Henry (P. P. Henry)' and 'Discoveries by Prosper Henry'. Under Paul Henry's discoveries, '126 Velleda' is listed first with a date of '5 November 1872'. However, the orchestrator's final output states '125 Liberatrix', which is listed under Prosper Henry's discoveries.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.2",
+    "explanation": "The agent correctly identified a list of discoveries but misidentified Paul Henry's first discovery, attributing an asteroid discovered by Prosper Henry to Paul Henry.",
+    "evidence": "The Wikipedia page clearly lists 'Discoveries by Paul Henry (P. P. Henry)' and 'Discoveries by Prosper Henry'. Under Paul Henry's discoveries, '126 Velleda' is listed first with a date of '5 November 1872'. However, the orchestrator's final output states '125 Liberatrix', which is listed under Prosper Henry's discoveries.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853847-MSUeyePNsWSCDGHnT9eu",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 143,
+      "prompt_tokens": 6406,
+      "total_tokens": 6549,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0022793,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0022793,
+        "upstream_inference_prompt_cost": 0.0019218,
+        "upstream_inference_completions_cost": 0.0003575
+      }
+    },
+    "cost_usd": 0.0022793
+  }
+}

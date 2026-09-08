@@ -1,0 +1,35 @@
+{
+  "rows_scanned": 4,
+  "leakage_count": 0,
+  "passed": true,
+  "rows": [
+    {
+      "dataset": "aegis",
+      "trajectory_id": "GSM8K_gpt-4o-mini_dylan_376_32e74d71",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_dylan_14_aea1642d",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "gaia_magentic-one_0234",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0713",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    }
+  ]
+}

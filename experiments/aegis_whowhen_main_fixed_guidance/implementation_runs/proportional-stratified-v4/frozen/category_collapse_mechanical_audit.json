@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "checks_passed": 6,
+  "checks_total": 6,
+  "accuracy_or_predictions_used": false,
+  "checks": [
+    {
+      "name": "output_label_byte_equality",
+      "passed": true,
+      "detail": "Byte-identical within each dataset across all conditions."
+    },
+    {
+      "name": "official_id_name_mapping",
+      "passed": true,
+      "detail": "Rendered ID/name pairs exactly match frozen official taxonomies."
+    },
+    {
+      "name": "prompt_isolation",
+      "passed": true,
+      "detail": "Only DIAGNOSTIC_GUIDANCE differs substantively."
+    },
+    {
+      "name": "label_order_stability",
+      "passed": true,
+      "detail": "Native label ordering never changes by condition."
+    },
+    {
+      "name": "enum_schema_exact",
+      "passed": true,
+      "detail": "failure_category enum equals each target-native ID set exactly."
+    },
+    {
+      "name": "no_parser_fallback",
+      "passed": true,
+      "detail": "Invalid IDs are retained as invalid; no first-ID/default substitution exists."
+    }
+  ]
+}

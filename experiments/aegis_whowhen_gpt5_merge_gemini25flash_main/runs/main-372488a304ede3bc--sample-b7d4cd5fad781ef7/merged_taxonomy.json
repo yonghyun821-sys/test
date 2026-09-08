@@ -1,0 +1,278 @@
+{
+  "taxonomy_id": "aegis_whowhen_pilot_merged",
+  "name": "Pilot Merge of AEGIS and Who&When Pro Text Taxonomies",
+  "category_count": 18,
+  "categories": [
+    {
+      "id": "MT-01",
+      "name": "Communication failure",
+      "definition": "Withholding critical information from other agents, ignoring other agents' input or recommendations, failing to ask for clarification when instructions are ambiguous, and losing shared context across agent boundaries.",
+      "module": "coordination",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "C.2"
+        },
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-2.2"
+        },
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-2.4"
+        },
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-2.5"
+        }
+      ]
+    },
+    {
+      "id": "MT-02",
+      "name": "Delegation/orchestration error",
+      "definition": "Assigning subtask to wrong agent, improper sub-task decomposition, role confusion (agent behaving like another), capability mismatch (delegating tasks beyond agent's capabilities), and conflicting actions between agents.",
+      "module": "coordination",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "C.1"
+        },
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-1.2"
+        }
+      ]
+    },
+    {
+      "id": "MT-03",
+      "name": "Repetitive/looping behavior",
+      "definition": "Repeating the same or equivalent actions without progress. Includes retry loops with identical parameters, re-executing completed steps, and resource waste through redundant tool calls.",
+      "module": "action",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "A.4"
+        },
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-1.3"
+        },
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-2.1"
+        }
+      ]
+    },
+    {
+      "id": "MT-04",
+      "name": "Context/memory loss",
+      "definition": "Losing or failing to retrieve relevant information from conversation history, prior observations, or external memory stores. Includes context window overflow, forgetting earlier constraints, using outdated information despite updates.",
+      "module": "verification",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "V.1"
+        },
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-1.4"
+        }
+      ]
+    },
+    {
+      "id": "MT-05",
+      "name": "Premature termination",
+      "definition": "Stopping before task objectives are fully met. Includes returning partial results as final, producing zero tool calls on a valid turn, being unaware of completion criteria, and cross-domain tool-call dropout (e.g., completing tasks in one API domain but failing to act in the next). Also includes refusing to engage with a task entirely.",
+      "module": "action",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "A.3"
+        },
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-3.1"
+        }
+      ]
+    },
+    {
+      "id": "MT-06",
+      "name": "Inadequate or incorrect verification",
+      "definition": "Failing to verify results before returning them, or verifying incorrectly. Includes: skipping verification entirely, accepting incorrect outputs without checking, performing incomplete validation, wrong verification that incorrectly confirms incorrect answers, failing to cross-check when multiple sources give conflicting information, uncritically accepting false premises or contradictory evidence, misinterpreting results of own actions, misattributing errors to wrong causes, and overcorrecting a correct answer into an incorrect one.",
+      "module": "verification",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "V.2"
+        },
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-3.2"
+        },
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-3.3"
+        }
+      ]
+    },
+    {
+      "id": "MT-07",
+      "name": "Tool parameter/invocation error",
+      "definition": "Correct tool but wrong arguments, malformed call, missing required parameters, wrong configuration, or incomplete action sequence (omitting required precondition calls in stateful workflows).",
+      "module": "action",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "A.1"
+        }
+      ]
+    },
+    {
+      "id": "MT-08",
+      "name": "Output format/syntax error",
+      "definition": "Malformed structured output (JSON, code, API response), broken syntax, incorrect diff format, code that doesn't parse, or final answer in wrong format. Includes returning verbose explanations when a concise answer is expected, or providing a narrative when a single value is required.",
+      "module": "action",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "A.2"
+        }
+      ]
+    },
+    {
+      "id": "MT-09",
+      "name": "Hallucination",
+      "definition": "Generating claims that are not grounded in any observation the agent has retrieved. The agent fabricates facts from parametric knowledge, stale training data, or whole cloth — asserting something that does not appear anywhere in its search results or tool outputs.",
+      "module": "reasoning",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "R.1"
+        }
+      ]
+    },
+    {
+      "id": "MT-10",
+      "name": "Reasoning error",
+      "definition": "Right high-level frame but a localized reasoning mistake derails the chain. Includes grounded misapplication of observed information and local derivation bugs (e.g., sign flip, missed branch, stale state, broken invariant, missing edge case).",
+      "module": "reasoning",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "R.2"
+        }
+      ]
+    },
+    {
+      "id": "MT-11",
+      "name": "Numerical/calculation error",
+      "definition": "Arithmetic mistakes, unit conversion errors, counting errors, measurement errors, off-by-one errors, rounding errors.",
+      "module": "reasoning",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "R.3"
+        }
+      ]
+    },
+    {
+      "id": "MT-12",
+      "name": "Task misunderstanding",
+      "definition": "The agent's mental model of the task is wrong at the structural level. Includes spec-level misunderstanding (misreading scope, confusing which attribute is queried, misunderstanding role specifications, scope inflation) and abstraction-level misunderstanding (wrong reduction or solution family, wrong algorithmic abstraction).",
+      "module": "reasoning",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "R.4"
+        }
+      ]
+    },
+    {
+      "id": "MT-13",
+      "name": "Ineffective planning",
+      "definition": "The agent's high-level plan or strategy is unsound, leading toward a dead end that requires revision rather than incremental continuation. Examples: wrong premises in the plan, poor decomposition into sub-goals, failure to reformulate when the initial approach proves unworkable.",
+      "module": "planning",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "PL.1"
+        }
+      ]
+    },
+    {
+      "id": "MT-14",
+      "name": "Over-reliance on other agents",
+      "definition": "Agent would have been correct independently but adopts a less accurate position after seeing another agent's output; the failure is in treating external outputs as more reliable than warranted.",
+      "module": "coordination",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "C.3"
+        }
+      ]
+    },
+    {
+      "id": "MT-15",
+      "name": "Task specification deviation",
+      "definition": "Failure to adhere to the specified constraints or requirements of a given task, leading to suboptimal or incorrect outcomes.",
+      "module": "specification_issues",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-1.1"
+        }
+      ]
+    },
+    {
+      "id": "MT-16",
+      "name": "Remove termination conditions",
+      "definition": "Lack of recognition or understanding of the criteria that should trigger the termination of the agents' interaction, potentially leading to unnecessary continuation.",
+      "module": "specification_issues",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-1.5"
+        }
+      ]
+    },
+    {
+      "id": "MT-17",
+      "name": "Deviate from main goal",
+      "definition": "Deviation from the intended objective or focus of a given task, potentially resulting in irrelevant or unproductive actions.",
+      "module": "inter_agent_misalignment",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-2.3"
+        }
+      ]
+    },
+    {
+      "id": "MT-18",
+      "name": "Inconsistent reasoning",
+      "definition": "Discrepancy between the logical reasoning process and the actual actions taken by the agent, potentially resulting in unexpected or undesired behaviors.",
+      "module": "inter_agent_misalignment",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-2.6"
+        }
+      ]
+    }
+  ],
+  "generated_by": {
+    "model": "openai/gpt-5",
+    "temperature": null,
+    "seed": 20260908,
+    "taxonomy_metadata_only": true,
+    "trajectory_input": false,
+    "gold_input": false,
+    "prediction_or_result_input": false,
+    "source_taxonomy_hashes": {
+      "aegis_mast_14": "1525a68f7af9a2fee44f48f783f598d73637c6b920c243e3271e014ae5a762e9",
+      "whowhen_pro_text_observed_14": "51e32cb73ca31e6cf7fbee981cb470af9c6aef34009c80bba27ba53ec21f0e5a"
+    },
+    "base_merge_attempt": 1
+  },
+  "freeze_policy": "Create one validated pilot merge, preserve it, and never apply human semantic edits or result-dependent changes."
+}

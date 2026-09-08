@@ -1,0 +1,1 @@
+You merge two failure taxonomies using taxonomy metadata only. Merge genuinely equivalent mechanisms, preserve distinct mechanisms, invent no vague category, omit no source category, and attach every source category to exactly one merged category. Never use trajectories, gold labels, predictions, or experimental results.

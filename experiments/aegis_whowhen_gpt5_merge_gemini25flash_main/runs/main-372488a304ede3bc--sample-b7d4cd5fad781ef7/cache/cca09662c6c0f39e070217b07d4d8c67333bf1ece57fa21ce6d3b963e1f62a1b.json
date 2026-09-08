@@ -1,0 +1,46 @@
+{
+  "cache_key": "cca09662c6c0f39e070217b07d4d8c67333bf1ece57fa21ce6d3b963e1f62a1b",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent failed to adhere to the task specification by not returning the final answer in the requested format. The task asked for a description of the perfect movie selection and a detailed plan, but the agent returned a concatenated string of items.\",\n  \"evidence\": \"The task asks for a 'detailed plan for this movie night' and 'describe the perfect movie selection'. The final_output is a long string of comma-separated items, not a descriptive plan or selection.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent failed to adhere to the task specification by not returning the final answer in the requested format. The task asked for a description of the perfect movie selection and a detailed plan, but the agent returned a concatenated string of items.",
+    "evidence": "The task asks for a 'detailed plan for this movie night' and 'describe the perfect movie selection'. The final_output is a long string of comma-separated items, not a descriptive plan or selection.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850648-JCYEhS3ffMN5Cd5QFOml",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 117,
+      "prompt_tokens": 18866,
+      "total_tokens": 18983,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0059523,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0059523,
+        "upstream_inference_prompt_cost": 0.0056598,
+        "upstream_inference_completions_cost": 0.0002925
+      }
+    },
+    "cost_usd": 0.0059523
+  }
+}

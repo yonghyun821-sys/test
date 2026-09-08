@@ -1,0 +1,46 @@
+{
+  "cache_key": "8e483d7d35c6e541dfb182e84888f9e5854860852f8dec14bc994f01c1169106",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The agent hallucinates the answer, stating that Carol S. Wood served before Cora Sadosky, when the correct answer is Sylvia Wiegand. This information was not present in any of the retrieved web pages.\",\n  \"evidence\": \"WebSurfer's output in round 4, position 1 states: 'Yes, Cora Sadosky served as president of the Association for Women in Mathematics (AWM) from 1993 to 1995. The president who served immediately before her was Carol S. Wood, who held the position from 1991 to 1993.' This information is incorrect and not grounded in the provided search results or Wikipedia pages.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The agent hallucinates the answer, stating that Carol S. Wood served before Cora Sadosky, when the correct answer is Sylvia Wiegand. This information was not present in any of the retrieved web pages.",
+    "evidence": "WebSurfer's output in round 4, position 1 states: 'Yes, Cora Sadosky served as president of the Association for Women in Mathematics (AWM) from 1993 to 1995. The president who served immediately before her was Carol S. Wood, who held the position from 1991 to 1993.' This information is incorrect and not grounded in the provided search results or Wikipedia pages.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853889-jZC4VrncG1YS7A9soToJ",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 166,
+      "prompt_tokens": 10321,
+      "total_tokens": 10487,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0035113,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0035113,
+        "upstream_inference_prompt_cost": 0.0030963,
+        "upstream_inference_completions_cost": 0.000415
+      }
+    },
+    "cost_usd": 0.0035113
+  }
+}

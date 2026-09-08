@@ -1,0 +1,46 @@
+{
+  "cache_key": "3407be7844937305c8d1187ef349ca005c1b660d9b61728e582ca6ba8fbf2824",
+  "raw_output_text": "{\n  \"failure_category\": \"R.2\",\n  \"explanation\": \"The orchestrator made a reasoning error by stating the year was 2004 and citing 'The Moscow Times' when the search results clearly showed 2008 from Wikipedia, which was also the most prominent result.\",\n  \"evidence\": \"The orchestrator's output states: \\\"According to The Moscow Times, Anna Yuryevna Netrebko was named \\\"People's Artist of Russia\\\" in 2004.\\\" However, the WebSurfer's output clearly shows: \\\"About 232 results2008Anna Netrebko was named a People's Artist of Russia in 2008. ... Wikipedia https://en.wikipedia.org › wiki › Anna_Netrebko Anna Netrebko - Wikipedia ... She was named a People's Artist of Russia in 2008\\\"\"\n}",
+  "parsed_response": {
+    "failure_category": "R.2",
+    "explanation": "The orchestrator made a reasoning error by stating the year was 2004 and citing 'The Moscow Times' when the search results clearly showed 2008 from Wikipedia, which was also the most prominent result.",
+    "evidence": "The orchestrator's output states: \"According to The Moscow Times, Anna Yuryevna Netrebko was named \"People's Artist of Russia\" in 2004.\" However, the WebSurfer's output clearly shows: \"About 232 results2008Anna Netrebko was named a People's Artist of Russia in 2008. ... Wikipedia https://en.wikipedia.org › wiki › Anna_Netrebko Anna Netrebko - Wikipedia ... She was named a People's Artist of Russia in 2008\"",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853797-Z99OP2bY0ucOsUJkCiGI",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 198,
+      "prompt_tokens": 4096,
+      "total_tokens": 4294,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 3810,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0006951,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0006951,
+        "upstream_inference_prompt_cost": 0.0002001,
+        "upstream_inference_completions_cost": 0.000495
+      }
+    },
+    "cost_usd": 0.0006951
+  }
+}

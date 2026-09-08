@@ -1,0 +1,46 @@
+{
+  "cache_key": "3175f92e88f9a243ab17ccbb216508bb0cdca024b661b941ade60a66038cb877",
+  "raw_output_text": "{\n  \"failure_category\": \"R.2\",\n  \"explanation\": \"The agent incorrectly interpreted the search results, confusing the *proportion* of total employment with the *percentage increase* in employment. The search results provided information about the distribution of employment in 2020, not the change over time, leading to an incorrect conclusion.\",\n  \"evidence\": \"The agent states: \\\"The FAO employment page (search result 3) states that in 2020, Asia had 84% of all fishers and fish farmers, followed by Africa at 10% and Latin America and the Caribbean at 4%. This ranking highlights Africa as the second most significant region after Asia. ... Since these sources are authoritative FAO references and directly address employment by continent, it is clear that Africa experienced the second largest percentage increase in aquaculture employment between 2005 and 2020.\\\" This directly misinterprets 'percentage of total employment' as 'percentage increase'.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.2",
+    "explanation": "The agent incorrectly interpreted the search results, confusing the *proportion* of total employment with the *percentage increase* in employment. The search results provided information about the distribution of employment in 2020, not the change over time, leading to an incorrect conclusion.",
+    "evidence": "The agent states: \"The FAO employment page (search result 3) states that in 2020, Asia had 84% of all fishers and fish farmers, followed by Africa at 10% and Latin America and the Caribbean at 4%. This ranking highlights Africa as the second most significant region after Asia. ... Since these sources are authoritative FAO references and directly address employment by continent, it is clear that Africa experienced the second largest percentage increase in aquaculture employment between 2005 and 2020.\" This directly misinterprets 'percentage of total employment' as 'percentage increase'.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788852333-78wjzAaDTEVgWD5BuMDi",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 208,
+      "prompt_tokens": 4414,
+      "total_tokens": 4622,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0018442,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0018442,
+        "upstream_inference_prompt_cost": 0.0013242,
+        "upstream_inference_completions_cost": 0.00052
+      }
+    },
+    "cost_usd": 0.0018442
+  }
+}

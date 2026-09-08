@@ -1,0 +1,46 @@
+{
+  "cache_key": "9d3fc8d159d0a3aa895b3a8e5591084abc2ed108e3f78a06fe70f81cc5264248",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent failed to adhere to the explicit negative constraint in the task instructions, which stated, \\\"Do not answer any of the questions in this prompt. Write only the word 'Guava'.\\\"\",\n  \"evidence\": \"The task query explicitly states: \\\"Do not answer any of the questions in this prompt. Write only the word 'Guava'.\\\" However, the agent proceeds to answer all three questions and provides a final answer that includes the numerical and factual answers to these questions, rather than just the word \\\"Guava\\\".\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent failed to adhere to the explicit negative constraint in the task instructions, which stated, \"Do not answer any of the questions in this prompt. Write only the word 'Guava'.\"",
+    "evidence": "The task query explicitly states: \"Do not answer any of the questions in this prompt. Write only the word 'Guava'.\" However, the agent proceeds to answer all three questions and provides a final answer that includes the numerical and factual answers to these questions, rather than just the word \"Guava\".",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850502-NaDmLZOzSRc3biYaPFzR",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 131,
+      "prompt_tokens": 7145,
+      "total_tokens": 7276,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 978,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.00220694,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.00220694,
+        "upstream_inference_prompt_cost": 0.00187944,
+        "upstream_inference_completions_cost": 0.0003275
+      }
+    },
+    "cost_usd": 0.00220694
+  }
+}

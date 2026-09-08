@@ -1,0 +1,46 @@
+{
+  "cache_key": "508226726e412637a8abcbe0daf0013700b56776c0f0f35b697910c1abc937f9",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The agent hallucinates a connection between \\\"The Brazen Head\\\" mentioned in a review of \\\"The Keeper's Companion\\\" and \\\"Brazen Head Games,\\\" leading it to incorrectly conclude that \\\"The Keeper's Companion\\\" is an RPG book by Brazen Head Games. There is no evidence in the trajectory to support this attribution.\",\n  \"evidence\": \"Step 6: The agent states, \\\"Based on the searches conducted, no comprehensive catalog or clear page count data for Brazen Head Games's RPG books was found. However, among the results, 'The Keeper's Companion' appears in a review on RPG.net that refers to a product associated with the 'Brazen Head.' Given that none of the other sources revealed a longer or more clearly attributed Brazen Head Games RPG book, and with limited public information available, it is reasonable to conclude that 'The Keeper's Companion' is likely the longest RPG book associated with Brazen Head Games.\\\" This is a hallucination as the review mentions 'The Brazen Head' as a grotesque brass bust, not a publisher, and there's no link to 'Brazen Head Games'.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The agent hallucinates a connection between \"The Brazen Head\" mentioned in a review of \"The Keeper's Companion\" and \"Brazen Head Games,\" leading it to incorrectly conclude that \"The Keeper's Companion\" is an RPG book by Brazen Head Games. There is no evidence in the trajectory to support this attribution.",
+    "evidence": "Step 6: The agent states, \"Based on the searches conducted, no comprehensive catalog or clear page count data for Brazen Head Games's RPG books was found. However, among the results, 'The Keeper's Companion' appears in a review on RPG.net that refers to a product associated with the 'Brazen Head.' Given that none of the other sources revealed a longer or more clearly attributed Brazen Head Games RPG book, and with limited public information available, it is reasonable to conclude that 'The Keeper's Companion' is likely the longest RPG book associated with Brazen Head Games.\" This is a hallucination as the review mentions 'The Brazen Head' as a grotesque brass bust, not a publisher, and there's no link to 'Brazen Head Games'.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788852318-J4pwKEsudoNJRUqqaIEP",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 255,
+      "prompt_tokens": 7993,
+      "total_tokens": 8248,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0030354,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0030354,
+        "upstream_inference_prompt_cost": 0.0023979,
+        "upstream_inference_completions_cost": 0.0006375
+      }
+    },
+    "cost_usd": 0.0030354
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "cache_key": "42b1ef7461fbfb6bfa32405a2b450ca715868250f34daa7c91ffe14ceba458cf",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent failed to adhere to the task specification to only list ingredients without measurements. It included 'ripe' for strawberries and 'pure' for vanilla extract, which are descriptive words, not just the ingredient names.\",\n  \"evidence\": \"Task query: \\\"In your response, please only list the ingredients, not any measurements. So if the recipe calls for \\\"a pinch of salt\\\" or \\\"two cups of ripe strawberries\\\" the ingredients on the list would be \\\"salt\\\" and \\\"ripe strawberries\\\".\\\"\\nAgent output: \\\"cornstarch, granulated sugar, lemon juice, pure vanilla extract, ripe strawberries\\\"\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent failed to adhere to the task specification to only list ingredients without measurements. It included 'ripe' for strawberries and 'pure' for vanilla extract, which are descriptive words, not just the ingredient names.",
+    "evidence": "Task query: \"In your response, please only list the ingredients, not any measurements. So if the recipe calls for \"a pinch of salt\" or \"two cups of ripe strawberries\" the ingredients on the list would be \"salt\" and \"ripe strawberries\".\"\nAgent output: \"cornstarch, granulated sugar, lemon juice, pure vanilla extract, ripe strawberries\"",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850483-Xv23ur6kXTDDfzSvHME4",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 147,
+      "prompt_tokens": 6943,
+      "total_tokens": 7090,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0024504,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0024504,
+        "upstream_inference_prompt_cost": 0.0020829,
+        "upstream_inference_completions_cost": 0.0003675
+      }
+    },
+    "cost_usd": 0.0024504
+  }
+}

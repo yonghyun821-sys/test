@@ -1,0 +1,9 @@
+﻿dataset,condition,n,macro_f1
+aegis,label_only,97,0.10675210255042188
+aegis,own_taxonomy,97,0.12839569160997732
+aegis,foreign_taxonomy,97,0.084718391861249
+aegis,merged_taxonomy,97,0.12174822224656112
+whowhen,label_only,500,0.13833331875810564
+whowhen,own_taxonomy,500,0.1523070459693058
+whowhen,foreign_taxonomy,500,0.1204742272458977
+whowhen,merged_taxonomy,500,0.1408960464468421

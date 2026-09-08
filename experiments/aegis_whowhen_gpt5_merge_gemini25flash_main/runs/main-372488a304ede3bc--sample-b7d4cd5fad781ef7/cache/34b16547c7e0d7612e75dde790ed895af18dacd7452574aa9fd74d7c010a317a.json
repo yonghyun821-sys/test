@@ -1,0 +1,46 @@
+{
+  "cache_key": "34b16547c7e0d7612e75dde790ed895af18dacd7452574aa9fd74d7c010a317a",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The agent hallucinates that only Maine and New Hampshire prohibit left turns on red, despite search results indicating otherwise (e.g., New York City, Washington D.C., and Guam are mentioned as prohibiting left turns on red completely). The agent fails to properly extract and synthesize information about which states prohibit left turns on red, leading to an incomplete and incorrect list of states.\",\n  \"evidence\": \"In step 3, the agent states: 'Therefore, based on the available evidence, only Maine and New Hampshire from our list prohibit left turn on red.' This is a hallucination as the search results in step 2 mention other places that prohibit left turn on red, such as 'New York City, Washington DC, and Guam' and 'Eight states plus Washington, D.C. prohibit “left turn on red” altogether. Two of those, Maine and New Hampshire, are in your area. The other ...' indicating there are more than just Maine and New Hampshire.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The agent hallucinates that only Maine and New Hampshire prohibit left turns on red, despite search results indicating otherwise (e.g., New York City, Washington D.C., and Guam are mentioned as prohibiting left turns on red completely). The agent fails to properly extract and synthesize information about which states prohibit left turns on red, leading to an incomplete and incorrect list of states.",
+    "evidence": "In step 3, the agent states: 'Therefore, based on the available evidence, only Maine and New Hampshire from our list prohibit left turn on red.' This is a hallucination as the search results in step 2 mention other places that prohibit left turn on red, such as 'New York City, Washington DC, and Guam' and 'Eight states plus Washington, D.C. prohibit “left turn on red” altogether. Two of those, Maine and New Hampshire, are in your area. The other ...' indicating there are more than just Maine and New Hampshire.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788852312-jCIA04UbPstnFQQqWwSl",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 219,
+      "prompt_tokens": 5714,
+      "total_tokens": 5933,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0022617,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0022617,
+        "upstream_inference_prompt_cost": 0.0017142,
+        "upstream_inference_completions_cost": 0.0005475
+      }
+    },
+    "cost_usd": 0.0022617
+  }
+}

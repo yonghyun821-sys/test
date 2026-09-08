@@ -1,0 +1,605 @@
+{
+  "representative_selection": {
+    "aegis": {
+      "dataset": "aegis",
+      "input_eligible_trajectories_after_task_exclusions": 827,
+      "unique_task_representatives": 97,
+      "initial_category_counts": {
+        "FM-1.1": 13,
+        "FM-1.2": 7,
+        "FM-1.3": 4,
+        "FM-1.4": 2,
+        "FM-1.5": 9,
+        "FM-2.1": 8,
+        "FM-2.2": 6,
+        "FM-2.3": 8,
+        "FM-2.4": 3,
+        "FM-2.5": 5,
+        "FM-2.6": 10,
+        "FM-3.1": 8,
+        "FM-3.2": 6,
+        "FM-3.3": 8
+      },
+      "initial_missing_categories": [],
+      "coverage_repairs": [],
+      "coverage_repair_count": 0,
+      "final_category_counts": {
+        "FM-1.1": 13,
+        "FM-1.2": 7,
+        "FM-1.3": 4,
+        "FM-1.4": 2,
+        "FM-1.5": 9,
+        "FM-2.1": 8,
+        "FM-2.2": 6,
+        "FM-2.3": 8,
+        "FM-2.4": 3,
+        "FM-2.5": 5,
+        "FM-2.6": 10,
+        "FM-3.1": 8,
+        "FM-3.2": 6,
+        "FM-3.3": 8
+      },
+      "all_native_categories_represented": true
+    },
+    "whowhen": {
+      "dataset": "whowhen",
+      "input_eligible_trajectories_after_task_exclusions": 6024,
+      "unique_task_representatives": 2542,
+      "initial_category_counts": {
+        "A.1": 11,
+        "A.2": 118,
+        "A.3": 716,
+        "A.4": 17,
+        "C.1": 7,
+        "C.2": 7,
+        "C.3": 230,
+        "PL.1": 14,
+        "R.1": 219,
+        "R.2": 358,
+        "R.3": 246,
+        "R.4": 402,
+        "V.1": 28,
+        "V.2": 169
+      },
+      "initial_missing_categories": [],
+      "coverage_repairs": [],
+      "coverage_repair_count": 0,
+      "final_category_counts": {
+        "A.1": 11,
+        "A.2": 118,
+        "A.3": 716,
+        "A.4": 17,
+        "C.1": 7,
+        "C.2": 7,
+        "C.3": 230,
+        "PL.1": 14,
+        "R.1": 219,
+        "R.2": 358,
+        "R.3": 246,
+        "R.4": 402,
+        "V.1": 28,
+        "V.2": 169
+      },
+      "all_native_categories_represented": true
+    }
+  },
+  "final_sampling": {
+    "aegis": {
+      "dataset": "aegis",
+      "unique_task_pool_size": 97,
+      "target_n": 500,
+      "final_n_before_cross_dataset_overlap": 97,
+      "method": "all_unique_task_representatives",
+      "category_coverage_adjustments": [],
+      "sampling_without_replacement": true,
+      "final_category_counts_before_cross_dataset_overlap": {
+        "FM-1.1": 13,
+        "FM-1.2": 7,
+        "FM-1.3": 4,
+        "FM-1.4": 2,
+        "FM-1.5": 9,
+        "FM-2.1": 8,
+        "FM-2.2": 6,
+        "FM-2.3": 8,
+        "FM-2.4": 3,
+        "FM-2.5": 5,
+        "FM-2.6": 10,
+        "FM-3.1": 8,
+        "FM-3.2": 6,
+        "FM-3.3": 8
+      },
+      "all_native_categories_represented": true
+    },
+    "whowhen": {
+      "dataset": "whowhen",
+      "unique_task_pool_size": 2542,
+      "target_n": 500,
+      "final_n_before_cross_dataset_overlap": 500,
+      "method": "deterministic_hierarchical_proportional_stratified_without_replacement",
+      "primary_stratum": "gold_failure_mode",
+      "secondary_stratum": "framework",
+      "quota_allocation": "hamilton_largest_remainder",
+      "proportional_reference_population": "one_representative_per_task_pool",
+      "category_counts": {
+        "A.1": 11,
+        "A.2": 118,
+        "A.3": 716,
+        "A.4": 17,
+        "C.1": 7,
+        "C.2": 7,
+        "C.3": 230,
+        "PL.1": 14,
+        "R.1": 219,
+        "R.2": 358,
+        "R.3": 246,
+        "R.4": 402,
+        "V.1": 28,
+        "V.2": 169
+      },
+      "category_expected_sample_counts": {
+        "A.1": 2.163650668764752,
+        "A.2": 23.210070810385524,
+        "A.3": 140.83398898505115,
+        "A.4": 3.3438237608182533,
+        "C.1": 1.3768686073957515,
+        "C.2": 1.3768686073957515,
+        "C.3": 45.23996852871755,
+        "PL.1": 2.753737214791503,
+        "R.1": 43.076317859952795,
+        "R.2": 70.41699449252557,
+        "R.3": 48.38709677419355,
+        "R.4": 79.07159716758459,
+        "V.1": 5.507474429583006,
+        "V.2": 33.241542092840284
+      },
+      "category_quotas": {
+        "A.1": 2,
+        "A.2": 23,
+        "A.3": 141,
+        "A.4": 3,
+        "C.1": 1,
+        "C.2": 1,
+        "C.3": 45,
+        "PL.1": 3,
+        "R.1": 43,
+        "R.2": 71,
+        "R.3": 49,
+        "R.4": 79,
+        "V.1": 6,
+        "V.2": 33
+      },
+      "category_coverage_adjustments": [],
+      "framework_strata": [
+        {
+          "failure_mode": "A.1",
+          "framework": "macnet",
+          "eligible_unique_tasks": 9,
+          "expected_sample_count": 1.6363636363636365,
+          "allocated_quota": 2,
+          "selected_count": 2
+        },
+        {
+          "failure_mode": "A.1",
+          "framework": "metagpt",
+          "eligible_unique_tasks": 2,
+          "expected_sample_count": 0.36363636363636365,
+          "allocated_quota": 0,
+          "selected_count": 0
+        },
+        {
+          "failure_mode": "A.2",
+          "framework": "metagpt",
+          "eligible_unique_tasks": 4,
+          "expected_sample_count": 0.7796610169491526,
+          "allocated_quota": 1,
+          "selected_count": 1
+        },
+        {
+          "failure_mode": "A.2",
+          "framework": "smolagents",
+          "eligible_unique_tasks": 114,
+          "expected_sample_count": 22.220338983050848,
+          "allocated_quota": 22,
+          "selected_count": 22
+        },
+        {
+          "failure_mode": "A.3",
+          "framework": "magentic-one",
+          "eligible_unique_tasks": 8,
+          "expected_sample_count": 1.5754189944134078,
+          "allocated_quota": 2,
+          "selected_count": 2
+        },
+        {
+          "failure_mode": "A.3",
+          "framework": "smolagents",
+          "eligible_unique_tasks": 708,
+          "expected_sample_count": 139.4245810055866,
+          "allocated_quota": 139,
+          "selected_count": 139
+        },
+        {
+          "failure_mode": "A.4",
+          "framework": "alfagent",
+          "eligible_unique_tasks": 17,
+          "expected_sample_count": 3.0,
+          "allocated_quota": 3,
+          "selected_count": 3
+        },
+        {
+          "failure_mode": "C.1",
+          "framework": "magentic-one",
+          "eligible_unique_tasks": 7,
+          "expected_sample_count": 1.0,
+          "allocated_quota": 1,
+          "selected_count": 1
+        },
+        {
+          "failure_mode": "C.2",
+          "framework": "magentic-one",
+          "eligible_unique_tasks": 7,
+          "expected_sample_count": 1.0,
+          "allocated_quota": 1,
+          "selected_count": 1
+        },
+        {
+          "failure_mode": "C.3",
+          "framework": "debate",
+          "eligible_unique_tasks": 132,
+          "expected_sample_count": 25.82608695652174,
+          "allocated_quota": 26,
+          "selected_count": 26
+        },
+        {
+          "failure_mode": "C.3",
+          "framework": "dylan",
+          "eligible_unique_tasks": 2,
+          "expected_sample_count": 0.391304347826087,
+          "allocated_quota": 0,
+          "selected_count": 0
+        },
+        {
+          "failure_mode": "C.3",
+          "framework": "macnet",
+          "eligible_unique_tasks": 90,
+          "expected_sample_count": 17.608695652173914,
+          "allocated_quota": 18,
+          "selected_count": 18
+        },
+        {
+          "failure_mode": "C.3",
+          "framework": "magentic-one",
+          "eligible_unique_tasks": 6,
+          "expected_sample_count": 1.173913043478261,
+          "allocated_quota": 1,
+          "selected_count": 1
+        },
+        {
+          "failure_mode": "PL.1",
+          "framework": "metagpt",
+          "eligible_unique_tasks": 4,
+          "expected_sample_count": 0.8571428571428571,
+          "allocated_quota": 1,
+          "selected_count": 1
+        },
+        {
+          "failure_mode": "PL.1",
+          "framework": "smolagents",
+          "eligible_unique_tasks": 10,
+          "expected_sample_count": 2.142857142857143,
+          "allocated_quota": 2,
+          "selected_count": 2
+        },
+        {
+          "failure_mode": "R.1",
+          "framework": "alfagent",
+          "eligible_unique_tasks": 17,
+          "expected_sample_count": 3.3378995433789953,
+          "allocated_quota": 3,
+          "selected_count": 3
+        },
+        {
+          "failure_mode": "R.1",
+          "framework": "debate",
+          "eligible_unique_tasks": 42,
+          "expected_sample_count": 8.246575342465754,
+          "allocated_quota": 8,
+          "selected_count": 8
+        },
+        {
+          "failure_mode": "R.1",
+          "framework": "dylan",
+          "eligible_unique_tasks": 18,
+          "expected_sample_count": 3.5342465753424657,
+          "allocated_quota": 4,
+          "selected_count": 4
+        },
+        {
+          "failure_mode": "R.1",
+          "framework": "macnet",
+          "eligible_unique_tasks": 4,
+          "expected_sample_count": 0.7853881278538812,
+          "allocated_quota": 1,
+          "selected_count": 1
+        },
+        {
+          "failure_mode": "R.1",
+          "framework": "magentic-one",
+          "eligible_unique_tasks": 100,
+          "expected_sample_count": 19.634703196347033,
+          "allocated_quota": 20,
+          "selected_count": 20
+        },
+        {
+          "failure_mode": "R.1",
+          "framework": "mathchat",
+          "eligible_unique_tasks": 21,
+          "expected_sample_count": 4.123287671232877,
+          "allocated_quota": 4,
+          "selected_count": 4
+        },
+        {
+          "failure_mode": "R.1",
+          "framework": "smolagents",
+          "eligible_unique_tasks": 17,
+          "expected_sample_count": 3.3378995433789953,
+          "allocated_quota": 3,
+          "selected_count": 3
+        },
+        {
+          "failure_mode": "R.2",
+          "framework": "alfagent",
+          "eligible_unique_tasks": 22,
+          "expected_sample_count": 4.363128491620111,
+          "allocated_quota": 4,
+          "selected_count": 4
+        },
+        {
+          "failure_mode": "R.2",
+          "framework": "debate",
+          "eligible_unique_tasks": 18,
+          "expected_sample_count": 3.569832402234637,
+          "allocated_quota": 4,
+          "selected_count": 4
+        },
+        {
+          "failure_mode": "R.2",
+          "framework": "dylan",
+          "eligible_unique_tasks": 18,
+          "expected_sample_count": 3.569832402234637,
+          "allocated_quota": 4,
+          "selected_count": 4
+        },
+        {
+          "failure_mode": "R.2",
+          "framework": "macnet",
+          "eligible_unique_tasks": 14,
+          "expected_sample_count": 2.776536312849162,
+          "allocated_quota": 3,
+          "selected_count": 3
+        },
+        {
+          "failure_mode": "R.2",
+          "framework": "magentic-one",
+          "eligible_unique_tasks": 11,
+          "expected_sample_count": 2.1815642458100557,
+          "allocated_quota": 2,
+          "selected_count": 2
+        },
+        {
+          "failure_mode": "R.2",
+          "framework": "mathchat",
+          "eligible_unique_tasks": 106,
+          "expected_sample_count": 21.022346368715084,
+          "allocated_quota": 21,
+          "selected_count": 21
+        },
+        {
+          "failure_mode": "R.2",
+          "framework": "metagpt",
+          "eligible_unique_tasks": 6,
+          "expected_sample_count": 1.1899441340782122,
+          "allocated_quota": 1,
+          "selected_count": 1
+        },
+        {
+          "failure_mode": "R.2",
+          "framework": "smolagents",
+          "eligible_unique_tasks": 163,
+          "expected_sample_count": 32.3268156424581,
+          "allocated_quota": 32,
+          "selected_count": 32
+        },
+        {
+          "failure_mode": "R.3",
+          "framework": "debate",
+          "eligible_unique_tasks": 14,
+          "expected_sample_count": 2.7886178861788617,
+          "allocated_quota": 3,
+          "selected_count": 3
+        },
+        {
+          "failure_mode": "R.3",
+          "framework": "dylan",
+          "eligible_unique_tasks": 5,
+          "expected_sample_count": 0.9959349593495935,
+          "allocated_quota": 1,
+          "selected_count": 1
+        },
+        {
+          "failure_mode": "R.3",
+          "framework": "macnet",
+          "eligible_unique_tasks": 2,
+          "expected_sample_count": 0.3983739837398374,
+          "allocated_quota": 0,
+          "selected_count": 0
+        },
+        {
+          "failure_mode": "R.3",
+          "framework": "mathchat",
+          "eligible_unique_tasks": 86,
+          "expected_sample_count": 17.130081300813007,
+          "allocated_quota": 17,
+          "selected_count": 17
+        },
+        {
+          "failure_mode": "R.3",
+          "framework": "smolagents",
+          "eligible_unique_tasks": 139,
+          "expected_sample_count": 27.6869918699187,
+          "allocated_quota": 28,
+          "selected_count": 28
+        },
+        {
+          "failure_mode": "R.4",
+          "framework": "alfagent",
+          "eligible_unique_tasks": 20,
+          "expected_sample_count": 3.9303482587064678,
+          "allocated_quota": 4,
+          "selected_count": 4
+        },
+        {
+          "failure_mode": "R.4",
+          "framework": "debate",
+          "eligible_unique_tasks": 26,
+          "expected_sample_count": 5.109452736318408,
+          "allocated_quota": 5,
+          "selected_count": 5
+        },
+        {
+          "failure_mode": "R.4",
+          "framework": "dylan",
+          "eligible_unique_tasks": 8,
+          "expected_sample_count": 1.572139303482587,
+          "allocated_quota": 2,
+          "selected_count": 2
+        },
+        {
+          "failure_mode": "R.4",
+          "framework": "macnet",
+          "eligible_unique_tasks": 44,
+          "expected_sample_count": 8.64676616915423,
+          "allocated_quota": 9,
+          "selected_count": 9
+        },
+        {
+          "failure_mode": "R.4",
+          "framework": "magentic-one",
+          "eligible_unique_tasks": 22,
+          "expected_sample_count": 4.323383084577115,
+          "allocated_quota": 4,
+          "selected_count": 4
+        },
+        {
+          "failure_mode": "R.4",
+          "framework": "mathchat",
+          "eligible_unique_tasks": 89,
+          "expected_sample_count": 17.49004975124378,
+          "allocated_quota": 17,
+          "selected_count": 17
+        },
+        {
+          "failure_mode": "R.4",
+          "framework": "metagpt",
+          "eligible_unique_tasks": 15,
+          "expected_sample_count": 2.9477611940298507,
+          "allocated_quota": 3,
+          "selected_count": 3
+        },
+        {
+          "failure_mode": "R.4",
+          "framework": "smolagents",
+          "eligible_unique_tasks": 178,
+          "expected_sample_count": 34.98009950248756,
+          "allocated_quota": 35,
+          "selected_count": 35
+        },
+        {
+          "failure_mode": "V.1",
+          "framework": "alfagent",
+          "eligible_unique_tasks": 14,
+          "expected_sample_count": 3.0,
+          "allocated_quota": 3,
+          "selected_count": 3
+        },
+        {
+          "failure_mode": "V.1",
+          "framework": "smolagents",
+          "eligible_unique_tasks": 14,
+          "expected_sample_count": 3.0,
+          "allocated_quota": 3,
+          "selected_count": 3
+        },
+        {
+          "failure_mode": "V.2",
+          "framework": "alfagent",
+          "eligible_unique_tasks": 22,
+          "expected_sample_count": 4.295857988165681,
+          "allocated_quota": 4,
+          "selected_count": 4
+        },
+        {
+          "failure_mode": "V.2",
+          "framework": "macnet",
+          "eligible_unique_tasks": 3,
+          "expected_sample_count": 0.5857988165680473,
+          "allocated_quota": 1,
+          "selected_count": 1
+        },
+        {
+          "failure_mode": "V.2",
+          "framework": "magentic-one",
+          "eligible_unique_tasks": 94,
+          "expected_sample_count": 18.355029585798817,
+          "allocated_quota": 18,
+          "selected_count": 18
+        },
+        {
+          "failure_mode": "V.2",
+          "framework": "smolagents",
+          "eligible_unique_tasks": 50,
+          "expected_sample_count": 9.763313609467456,
+          "allocated_quota": 10,
+          "selected_count": 10
+        }
+      ],
+      "sampling_without_replacement": true,
+      "final_category_counts_before_cross_dataset_overlap": {
+        "A.1": 2,
+        "A.2": 23,
+        "A.3": 141,
+        "A.4": 3,
+        "C.1": 1,
+        "C.2": 1,
+        "C.3": 45,
+        "PL.1": 3,
+        "R.1": 43,
+        "R.2": 71,
+        "R.3": 49,
+        "R.4": 79,
+        "V.1": 6,
+        "V.2": 33
+      },
+      "all_native_categories_represented": true
+    }
+  },
+  "final_validation": {
+    "trajectory_ids_unique_by_dataset": true,
+    "task_hashes_unique_by_dataset": true,
+    "one_trajectory_per_task_hash": true,
+    "all_14_native_classes_represented": true,
+    "pilot_task_hash_overlap_zero": true,
+    "smoke_task_hash_overlap_zero": true,
+    "cross_dataset_task_hash_overlap_zero": true,
+    "gold_leakage_zero": true,
+    "prediction_or_result_data_used": false,
+    "sampling_without_replacement": true,
+    "rare_class_oversampling_only_for_minimum_coverage": true
+  },
+  "cross_dataset_overlap": {
+    "overlap_before_removal": 0,
+    "removed_from_each_dataset": 0,
+    "final_overlap": 0,
+    "overlapping_hashes": []
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status": "GPT5_MERGE_GEMINI25FLASH_MAIN_COMPLETE",
+  "merge_model": "openai/gpt-5",
+  "attribution_model": "google/gemini-2.5-flash",
+  "merge_actual_api_calls": 1,
+  "attribution_actual_api_calls": 2400,
+  "total_actual_api_calls": 2401,
+  "merge_prompt_tokens": 2935,
+  "merge_response_tokens": 6581,
+  "attribution_prompt_tokens": 14820553,
+  "attribution_response_tokens": 409827,
+  "merge_cost_usd": 0.06947875,
+  "attribution_cost_usd": 5.298190710000011,
+  "total_recorded_cost_usd": 5.367669460000011,
+  "hard_cost_cap_usd": 50.0,
+  "ledger_reconciled": true
+}

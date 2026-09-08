@@ -1,0 +1,9 @@
+﻿dataset,condition,n,correct,accuracy,accuracy_percent
+aegis,label_only,97,19,0.1958762886597938,19.587628865979383
+aegis,own_taxonomy,97,20,0.20618556701030927,20.618556701030926
+aegis,foreign_taxonomy,97,16,0.16494845360824742,16.49484536082474
+aegis,merged_taxonomy,97,22,0.2268041237113402,22.68041237113402
+whowhen,label_only,500,111,0.222,22.2
+whowhen,own_taxonomy,500,115,0.23,23.0
+whowhen,foreign_taxonomy,500,101,0.202,20.200000000000003
+whowhen,merged_taxonomy,500,106,0.212,21.2

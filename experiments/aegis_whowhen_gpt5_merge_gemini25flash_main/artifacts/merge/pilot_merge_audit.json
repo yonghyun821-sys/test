@@ -1,0 +1,64 @@
+{
+  "status": "generated_and_frozen_validated_merge",
+  "human_semantic_edits": false,
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "valid",
+      "cache_key": "953468707c4a33b5224d25dec21b780be3671054878682c3aef0b7b54ed509e2",
+      "cache_hit": false,
+      "response_metadata": {
+        "id": "gen-1788849722-SM9zp0fCNuAndWaQ8vBE",
+        "model": "openai/gpt-5",
+        "provider": "OpenAI",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 6581,
+          "prompt_tokens": 2935,
+          "total_tokens": 9516,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 4672,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "compute_units": null,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.06947875,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.06947875,
+            "upstream_inference_prompt_cost": 0.00366875,
+            "upstream_inference_completions_cost": 0.06581
+          }
+        },
+        "cost_usd": 0.06947875,
+        "created": 1788849722,
+        "system_fingerprint": null
+      },
+      "source_category_count": 28,
+      "provenance_reference_count": 28,
+      "merged_category_count": 18,
+      "all_source_categories_exactly_once": true,
+      "unknown_provenance": false,
+      "source_omissions": false,
+      "merged_sha256": "2dd04ae4dd1f54f99ce7339dc0785f914b77a474a0a05f2ebceec4615d1e16a5"
+    }
+  ],
+  "source_category_count": 28,
+  "provenance_reference_count": 28,
+  "merged_category_count": 18,
+  "all_source_categories_exactly_once": true,
+  "unknown_provenance": false,
+  "source_omissions": false,
+  "merged_sha256": "2dd04ae4dd1f54f99ce7339dc0785f914b77a474a0a05f2ebceec4615d1e16a5"
+}

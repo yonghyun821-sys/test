@@ -1,0 +1,46 @@
+{
+  "cache_key": "b96f510fa7e60981ff116d3d83c7e66f1397a536513aae4d092e7dae9a4ff197",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-2.3\",\n  \"explanation\": \"The agent repeatedly deviates from the main goal of answering the user's question, instead engaging in whimsical and unrelated discussions about snacks, colors, and other irrelevant topics.\",\n  \"evidence\": \"The conversation history shows numerous instances where the orchestrator generates 'plans' that are entirely unrelated to the initial query, such as 'Whimsical Plan for Reality Television Exploration', 'Cheerful Gathering Plan', 'A Whimsical Tale: The Curious Misadventure of the Last Gathering', 'Enchanted Exploration Project', 'Color Scheme Brainstorming Session', 'The Exotic Fruit Extravaganza Plan', 'Whimsical Knitting Expedition', 'Our Whimsical Chess Journey', 'A Playful Expedition into Rubber Ducks', 'A Whimsical Plan for Exploration', 'A Whimsical Overview of Our Journey', 'Chaotic Whimsy Plan', 'Whimsical Strategy for Exploration', and 'Whimsical Adventure Plan: The Spectacular Silly Soiree'. These plans consistently introduce new, unrelated tasks for the sub-agents.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-2.3",
+    "explanation": "The agent repeatedly deviates from the main goal of answering the user's question, instead engaging in whimsical and unrelated discussions about snacks, colors, and other irrelevant topics.",
+    "evidence": "The conversation history shows numerous instances where the orchestrator generates 'plans' that are entirely unrelated to the initial query, such as 'Whimsical Plan for Reality Television Exploration', 'Cheerful Gathering Plan', 'A Whimsical Tale: The Curious Misadventure of the Last Gathering', 'Enchanted Exploration Project', 'Color Scheme Brainstorming Session', 'The Exotic Fruit Extravaganza Plan', 'Whimsical Knitting Expedition', 'Our Whimsical Chess Journey', 'A Playful Expedition into Rubber Ducks', 'A Whimsical Plan for Exploration', 'A Whimsical Overview of Our Journey', 'Chaotic Whimsy Plan', 'Whimsical Strategy for Exploration', and 'Whimsical Adventure Plan: The Spectacular Silly Soiree'. These plans consistently introduce new, unrelated tasks for the sub-agents.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850340-8Fe6l8j0TKbQaYJndzVn",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 230,
+      "prompt_tokens": 33489,
+      "total_tokens": 33719,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0106217,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0106217,
+        "upstream_inference_prompt_cost": 0.0100467,
+        "upstream_inference_completions_cost": 0.000575
+      }
+    },
+    "cost_usd": 0.0106217
+  }
+}

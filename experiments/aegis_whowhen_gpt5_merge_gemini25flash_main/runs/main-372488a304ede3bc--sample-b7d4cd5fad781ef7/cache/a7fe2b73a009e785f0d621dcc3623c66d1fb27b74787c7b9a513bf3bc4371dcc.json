@@ -1,0 +1,46 @@
+{
+  "cache_key": "a7fe2b73a009e785f0d621dcc3623c66d1fb27b74787c7b9a513bf3bc4371dcc",
+  "raw_output_text": "{\n  \"failure_category\": \"R.4\",\n  \"explanation\": \"The agent misunderstood the task. The task was to 'clean some soapbar and put it in countertop', but the agent only put the soapbar on the countertop and did not attempt to clean it.\",\n  \"evidence\": \"The task query states: 'Your task is to: clean some soapbar and put it in countertop.' The agent performs actions to 'take soapbar 3 from drawer 2' and 'move soapbar 3 to countertop 1' but never attempts to 'clean' the soapbar.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.4",
+    "explanation": "The agent misunderstood the task. The task was to 'clean some soapbar and put it in countertop', but the agent only put the soapbar on the countertop and did not attempt to clean it.",
+    "evidence": "The task query states: 'Your task is to: clean some soapbar and put it in countertop.' The agent performs actions to 'take soapbar 3 from drawer 2' and 'move soapbar 3 to countertop 1' but never attempts to 'clean' the soapbar.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850797-1gtdEYReOI9PKq1og08q",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 127,
+      "prompt_tokens": 3182,
+      "total_tokens": 3309,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0012721,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0012721,
+        "upstream_inference_prompt_cost": 0.0009546,
+        "upstream_inference_completions_cost": 0.0003175
+      }
+    },
+    "cost_usd": 0.0012721
+  }
+}

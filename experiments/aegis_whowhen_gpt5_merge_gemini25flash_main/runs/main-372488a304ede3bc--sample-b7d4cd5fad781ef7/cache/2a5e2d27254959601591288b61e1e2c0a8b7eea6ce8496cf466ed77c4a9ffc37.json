@@ -1,0 +1,46 @@
+{
+  "cache_key": "2a5e2d27254959601591288b61e1e2c0a8b7eea6ce8496cf466ed77c4a9ffc37",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The orchestrator hallucinates the name of the house owner, stating 'Sir Richard Weston's house' when the search results clearly indicate 'Sir Abraham Dawes's house'.\",\n  \"evidence\": \"The WebSurfer's output states: 'The case began when Ballard charged Kestian with making false statements at Sir Abraham Dawes's house in Putney'. The orchestrator's final output states: 'Based on the information from the Surrey Record Society Publications: Quarter Sessions Records, it is clear that the incident took place at Sir Richard Weston's house in Putney. I am confident in this finding and no further investigation is necessary.\\\\n\\\\nFINAL ANSWER: Sir Richard Weston's house'.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The orchestrator hallucinates the name of the house owner, stating 'Sir Richard Weston's house' when the search results clearly indicate 'Sir Abraham Dawes's house'.",
+    "evidence": "The WebSurfer's output states: 'The case began when Ballard charged Kestian with making false statements at Sir Abraham Dawes's house in Putney'. The orchestrator's final output states: 'Based on the information from the Surrey Record Society Publications: Quarter Sessions Records, it is clear that the incident took place at Sir Richard Weston's house in Putney. I am confident in this finding and no further investigation is necessary.\\n\\nFINAL ANSWER: Sir Richard Weston's house'.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853739-ZorBrvkZAx0vGxGf0Xzt",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 169,
+      "prompt_tokens": 2821,
+      "total_tokens": 2990,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0012688,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0012688,
+        "upstream_inference_prompt_cost": 0.0008463,
+        "upstream_inference_completions_cost": 0.0004225
+      }
+    },
+    "cost_usd": 0.0012688
+  }
+}

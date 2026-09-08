@@ -1,0 +1,46 @@
+{
+  "cache_key": "ec09ca35ca6d6f5e2025eec72163a354267a689e36f1ee833682212b4e6d911d",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent completely ignored the original task and instead wrote a fictional story, which was a task given in a later turn of the conversation history. This indicates a deviation from the primary task specification.\",\n  \"evidence\": \"Original task: 'On the BBC Earth YouTube video of the Top 5 Silliest Animal Moments, what species of bird is featured?'. Agent's final output is a fictional story, which was the task given in step 2.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent completely ignored the original task and instead wrote a fictional story, which was a task given in a later turn of the conversation history. This indicates a deviation from the primary task specification.",
+    "evidence": "Original task: 'On the BBC Earth YouTube video of the Top 5 Silliest Animal Moments, what species of bird is featured?'. Agent's final output is a fictional story, which was the task given in step 2.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850669-ylAhfFVUJ0TfcbSvwlR5",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 116,
+      "prompt_tokens": 9241,
+      "total_tokens": 9357,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0030623,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0030623,
+        "upstream_inference_prompt_cost": 0.0027723,
+        "upstream_inference_completions_cost": 0.00029
+      }
+    },
+    "cost_usd": 0.0030623
+  }
+}

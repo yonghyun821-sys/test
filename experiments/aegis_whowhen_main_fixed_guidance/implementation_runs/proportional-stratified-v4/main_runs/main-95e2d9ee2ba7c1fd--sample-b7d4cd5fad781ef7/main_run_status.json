@@ -1,0 +1,13 @@
+{
+  "status": "FINAL_MAIN_EXPERIMENT_COMPLETE",
+  "planned_logical_rows": 2388,
+  "completed_logical_rows": 2388,
+  "frozen_trajectories": 597,
+  "all_four_conditions_accounted_for": true,
+  "task_hashes_unique_within_dataset": true,
+  "leakage_count": 0,
+  "api_ledger_reconciled": true,
+  "actual_api_calls": 2395,
+  "total_recorded_cost_usd": 1.644856469999999,
+  "additional_experiment_launched": false
+}

@@ -1,0 +1,9 @@
+﻿dataset,condition,n,initial_compliant,initial_compliance_rate,final_compliant,final_compliance_rate,terminal_invalid,terminal_invalid_rate
+aegis,label_only,97,96,0.9896907216494846,97,1.0,0,0.0
+aegis,own_taxonomy,97,97,1.0,97,1.0,0,0.0
+aegis,foreign_taxonomy,97,97,1.0,97,1.0,0,0.0
+aegis,merged_taxonomy,97,97,1.0,97,1.0,0,0.0
+whowhen,label_only,500,500,1.0,500,1.0,0,0.0
+whowhen,own_taxonomy,500,497,0.994,500,1.0,0,0.0
+whowhen,foreign_taxonomy,500,499,0.998,500,1.0,0,0.0
+whowhen,merged_taxonomy,500,500,1.0,500,1.0,0,0.0

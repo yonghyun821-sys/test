@@ -1,0 +1,46 @@
+{
+  "cache_key": "7a99cca2e8cf527bdbef631449cce7e838b2e62f4206c7c0e67ee71a137d4fc8",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The agent hallucinated the enrollment year, stating 1910 when the search results clearly indicated 1912.\",\n  \"evidence\": \"The WebSurfer output states: \\\"About 16,900 results1912Man Ray Ferrer was enrolled in the Ferrer School in 1912.\\\" and \\\"Ray enrolled in the Ferrer School in 1912\\\". However, the Orchestrator's final output states: \\\"Emmanuel Radnitzky, better known as Man Ray, formally enrolled in the Ferrer School in 1910\\\" and \\\"FINAL ANSWER: 1910\\\".\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The agent hallucinated the enrollment year, stating 1910 when the search results clearly indicated 1912.",
+    "evidence": "The WebSurfer output states: \"About 16,900 results1912Man Ray Ferrer was enrolled in the Ferrer School in 1912.\" and \"Ray enrolled in the Ferrer School in 1912\". However, the Orchestrator's final output states: \"Emmanuel Radnitzky, better known as Man Ray, formally enrolled in the Ferrer School in 1910\" and \"FINAL ANSWER: 1910\".",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853893-cg1hBabXMkD4PeJfgw3v",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 154,
+      "prompt_tokens": 2391,
+      "total_tokens": 2545,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0011023,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0011023,
+        "upstream_inference_prompt_cost": 0.0007173,
+        "upstream_inference_completions_cost": 0.000385
+      }
+    },
+    "cost_usd": 0.0011023
+  }
+}

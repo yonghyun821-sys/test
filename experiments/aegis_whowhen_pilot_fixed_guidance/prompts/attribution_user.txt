@@ -1,0 +1,16 @@
+<OUTPUT_LABELS>
+{output_labels}
+</OUTPUT_LABELS>
+
+<DIAGNOSTIC_GUIDANCE>
+{diagnostic_guidance}
+</DIAGNOSTIC_GUIDANCE>
+
+<TRAJECTORY_DATA>
+{trajectory}
+</TRAJECTORY_DATA>
+
+Return one JSON object with exactly these fields:
+- failure_category: exactly one permitted OUTPUT LABEL ID
+- explanation: a short explanation of the primary causal failure
+- evidence: short evidence grounded only in TRAJECTORY_DATA

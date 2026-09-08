@@ -1,0 +1,46 @@
+{
+  "cache_key": "f17ea7f3d8f01dbc1f39ed6be01d7e236caeec8d791ca8b18c9ee31de04bece5",
+  "raw_output_text": "{\n  \"failure_category\": \"R.2\",\n  \"explanation\": \"The agent failed to clean the egg as instructed. It correctly identified the need to clean the egg and went to the sinkbasin, but then proceeded to put the uncleaned egg into the microwave, completely skipping the cleaning step.\",\n  \"evidence\": \"Step 5: 'I have picked up the egg from the fridge, and the next step is to clean it. Since cleaning usually requires water, I should go to the sinkbasin where cleaning can be performed.' Step 6: 'go to microwave 1'. Step 8: 'move egg 2 to microwave 1'. The agent never performed a 'clean' action.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.2",
+    "explanation": "The agent failed to clean the egg as instructed. It correctly identified the need to clean the egg and went to the sinkbasin, but then proceeded to put the uncleaned egg into the microwave, completely skipping the cleaning step.",
+    "evidence": "Step 5: 'I have picked up the egg from the fridge, and the next step is to clean it. Since cleaning usually requires water, I should go to the sinkbasin where cleaning can be performed.' Step 6: 'go to microwave 1'. Step 8: 'move egg 2 to microwave 1'. The agent never performed a 'clean' action.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850824-IEKivqEgIRsuJQhRVjOg",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 150,
+      "prompt_tokens": 5241,
+      "total_tokens": 5391,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0019473,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0019473,
+        "upstream_inference_prompt_cost": 0.0015723,
+        "upstream_inference_completions_cost": 0.000375
+      }
+    },
+    "cost_usd": 0.0019473
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "cache_key": "60926ede7f5e1d62ad4fc9b84fafcdc23f98fb15c14b944a54dfbea2e88573c6",
+  "raw_output_text": "{\n  \"failure_category\": \"R.2\",\n  \"explanation\": \"The agent correctly identified the row for the hand but incorrectly selected the '2 credits' column instead of the '3 credits' column as requested in the prompt, indicating a grounded misapplication of information.\",\n  \"evidence\": \"The prompt asks for 'betting 3 credits', but the agent's code in step 2 uses `df.loc[df['hand'] == 'four of a kind , 2 - 4', '2 credits'].values[0]` to retrieve the payout from the '2 credits' column.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.2",
+    "explanation": "The agent correctly identified the row for the hand but incorrectly selected the '2 credits' column instead of the '3 credits' column as requested in the prompt, indicating a grounded misapplication of information.",
+    "evidence": "The prompt asks for 'betting 3 credits', but the agent's code in step 2 uses `df.loc[df['hand'] == 'four of a kind , 2 - 4', '2 credits'].values[0]` to retrieve the payout from the '2 credits' column.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788854346-KceqMXujRdpuwQB77Bfz",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 131,
+      "prompt_tokens": 3012,
+      "total_tokens": 3143,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0012311,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0012311,
+        "upstream_inference_prompt_cost": 0.0009036,
+        "upstream_inference_completions_cost": 0.0003275
+      }
+    },
+    "cost_usd": 0.0012311
+  }
+}

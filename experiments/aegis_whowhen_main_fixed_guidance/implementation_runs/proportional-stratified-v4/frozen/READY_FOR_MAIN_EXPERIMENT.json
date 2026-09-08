@@ -1,0 +1,1290 @@
+{
+  "status": "READY_FOR_MAIN_EXPERIMENT",
+  "accuracy_used_for_readiness": false,
+  "implementation_run_id": "main-95e2d9ee2ba7c1fd",
+  "gates": {
+    "leakage_audit_passed": true,
+    "taxonomy_id_name_mapping_passed": true,
+    "output_label_equality_passed": true,
+    "prompt_isolation_passed": true,
+    "enum_schema_validation_passed": true,
+    "retry_handling_passed": true,
+    "terminal_invalid_handling_defined": true,
+    "parser_frozen": true,
+    "schema_frozen": true,
+    "serializer_frozen": true,
+    "truncation_policy_frozen": true,
+    "api_ledger_reconciled": true,
+    "code_config_hashes_recorded": true,
+    "pilot_ids_excluded": true,
+    "smoke_ids_excluded": true,
+    "proportional_stratified_sampling_restored": true,
+    "main_dataset_counts_exact": true,
+    "source_id_collisions_resolved_without_drops": true,
+    "smoke_rows_complete": true,
+    "live_enum_parser_smoke_passed": true
+  },
+  "smoke_summary": {
+    "purpose": "non_evaluative_output_contract_smoke",
+    "accuracy_computed": false,
+    "implementation_run_id": "main-95e2d9ee2ba7c1fd",
+    "logical_prediction_rows": 16,
+    "attempted_rows": 16,
+    "prediction_rows": 16,
+    "responses_actually_received": 16,
+    "api_network_failures": 0,
+    "provider_transport_failures": 0,
+    "parsed_responses": 16,
+    "exact_id_compliant_responses": 16,
+    "initial_compliant": 16,
+    "formatting_retries": 0,
+    "truncation_retries": 0,
+    "final_compliant": 16,
+    "terminal_invalid": 0,
+    "billed_responses": 16,
+    "actual_network_calls": 16,
+    "total_cost_usd": 0.016626,
+    "all_rows_preserved": true,
+    "source_of_truth": [
+      "E:\\taxonomy-v2\\experiments\\aegis_whowhen_main_fixed_guidance\\implementation_runs\\proportional-stratified-v4\\smoke\\smoke_predictions.jsonl",
+      "E:\\taxonomy-v2\\experiments\\aegis_whowhen_main_fixed_guidance\\implementation_runs\\proportional-stratified-v4\\runtime\\api_call_ledger.jsonl"
+    ]
+  },
+  "ledger_reconciliation": {
+    "implementation_run_id": "main-95e2d9ee2ba7c1fd",
+    "logical_prediction_rows": 16,
+    "equation": "base attribution + formatting retries + truncation retries + schema/parser retries + provider/transport retries + merge/adjudication calls = total actual API calls",
+    "counts": {
+      "base_attribution": 16,
+      "formatting_retry": 0,
+      "truncation_retry": 0,
+      "schema_parser_retry": 0,
+      "provider_transport_retry": 0,
+      "merge_adjudication": 0
+    },
+    "total_actual_api_calls": 16,
+    "equation_sum": 16,
+    "reconciled": true,
+    "billed_response_count": 16,
+    "successful_provider_responses": 16,
+    "non_billed_network_attempts": 0,
+    "failed_network_attempts": 0,
+    "cache_events": 0,
+    "total_cost_usd": 0.016626,
+    "required_context_fields_present": true,
+    "actual_calls_added_by_this_gate": 16,
+    "resume_added_actual_calls": 0
+  },
+  "main_sample_manifest": {
+    "implementation_run_id": "main-95e2d9ee2ba7c1fd",
+    "seed": 20260907,
+    "sampling": "deterministic_hierarchical_proportional_stratified_without_replacement",
+    "primary_stratum": "gold_failure_mode",
+    "secondary_stratum": "framework",
+    "quota_allocation": "hamilton_largest_remainder",
+    "rare_class_minimum_quota": 0,
+    "rare_class_oversampling_applied": false,
+    "sampling_design_deviation": false,
+    "uses_pilot_results": false,
+    "samples_per_dataset": 1000,
+    "eligible_after_exclusions": {
+      "aegis": 1632,
+      "whowhen": 6199
+    },
+    "dataset_sample_counts": {
+      "aegis": 1000,
+      "whowhen": 1000
+    },
+    "total_trajectories": 2000,
+    "planned_prediction_rows": 8000,
+    "pilot_exclusion_count": 112,
+    "smoke_exclusion_count": 4,
+    "pilot_overlap": 0,
+    "smoke_overlap": 0,
+    "input_hash": "d6ad4493b8ee4f49600cda30795e2b7a27d7e94a3c8f851ffced5f5859661368",
+    "gold_hash": "2571665de1324bbe6e0d6e4f2c5de640a3010335b732c14f352f22a68b81fc09",
+    "stratification_audits": {
+      "aegis": {
+        "dataset": "aegis",
+        "method": "deterministic_hierarchical_proportional_stratified_without_replacement",
+        "primary_stratum": "gold_failure_mode",
+        "secondary_stratum": "framework",
+        "quota_allocation": "hamilton_largest_remainder",
+        "eligible_count": 1632,
+        "target_count": 1000,
+        "selected_count": 1000,
+        "rare_class_minimum_quota": 0,
+        "rare_class_oversampling_applied": false,
+        "all_quotas_within_eligible_counts": true,
+        "all_selected_counts_match_quotas": true,
+        "maximum_failure_mode_quota_error": 0.6127450980392126,
+        "maximum_within_mode_framework_quota_error": 0.6800000000000002,
+        "failure_modes": [
+          {
+            "failure_mode": "FM-1.1",
+            "eligible_count": 143,
+            "eligible_proportion": 0.08762254901960784,
+            "expected_sample_count": 87.62254901960785,
+            "allocated_quota": 88,
+            "selected_count": 88,
+            "frameworks": [
+              {
+                "framework": "dylan",
+                "eligible_count": 21,
+                "eligible_within_mode_proportion": 0.14685314685314685,
+                "expected_within_mode_sample_count": 12.923076923076923,
+                "allocated_quota": 13,
+                "selected_count": 13
+              },
+              {
+                "framework": "llm_debate",
+                "eligible_count": 17,
+                "eligible_within_mode_proportion": 0.11888111888111888,
+                "expected_within_mode_sample_count": 10.461538461538462,
+                "allocated_quota": 10,
+                "selected_count": 10
+              },
+              {
+                "framework": "magentic_one",
+                "eligible_count": 50,
+                "eligible_within_mode_proportion": 0.34965034965034963,
+                "expected_within_mode_sample_count": 30.76923076923077,
+                "allocated_quota": 31,
+                "selected_count": 31
+              },
+              {
+                "framework": "smoagents",
+                "eligible_count": 55,
+                "eligible_within_mode_proportion": 0.38461538461538464,
+                "expected_within_mode_sample_count": 33.84615384615385,
+                "allocated_quota": 34,
+                "selected_count": 34
+              }
+            ]
+          },
+          {
+            "failure_mode": "FM-1.2",
+            "eligible_count": 102,
+            "eligible_proportion": 0.0625,
+            "expected_sample_count": 62.5,
+            "allocated_quota": 62,
+            "selected_count": 62,
+            "frameworks": [
+              {
+                "framework": "dylan",
+                "eligible_count": 44,
+                "eligible_within_mode_proportion": 0.43137254901960786,
+                "expected_within_mode_sample_count": 26.745098039215687,
+                "allocated_quota": 27,
+                "selected_count": 27
+              },
+              {
+                "framework": "llm_debate",
+                "eligible_count": 16,
+                "eligible_within_mode_proportion": 0.1568627450980392,
+                "expected_within_mode_sample_count": 9.72549019607843,
+                "allocated_quota": 10,
+                "selected_count": 10
+              },
+              {
+                "framework": "magentic_one",
+                "eligible_count": 7,
+                "eligible_within_mode_proportion": 0.06862745098039216,
+                "expected_within_mode_sample_count": 4.254901960784314,
+                "allocated_quota": 4,
+                "selected_count": 4
+              },
+              {
+                "framework": "smoagents",
+                "eligible_count": 35,
+                "eligible_within_mode_proportion": 0.3431372549019608,
+                "expected_within_mode_sample_count": 21.274509803921568,
+                "allocated_quota": 21,
+                "selected_count": 21
+              }
+            ]
+          },
+          {
+            "failure_mode": "FM-1.3",
+            "eligible_count": 105,
+            "eligible_proportion": 0.06433823529411764,
+            "expected_sample_count": 64.33823529411765,
+            "allocated_quota": 64,
+            "selected_count": 64,
+            "frameworks": [
+              {
+                "framework": "dylan",
+                "eligible_count": 48,
+                "eligible_within_mode_proportion": 0.45714285714285713,
+                "expected_within_mode_sample_count": 29.257142857142856,
+                "allocated_quota": 29,
+                "selected_count": 29
+              },
+              {
+                "framework": "llm_debate",
+                "eligible_count": 17,
+                "eligible_within_mode_proportion": 0.1619047619047619,
+                "expected_within_mode_sample_count": 10.361904761904762,
+                "allocated_quota": 10,
+                "selected_count": 10
+              },
+              {
+                "framework": "magentic_one",
+                "eligible_count": 8,
+                "eligible_within_mode_proportion": 0.0761904761904762,
+                "expected_within_mode_sample_count": 4.876190476190477,
+                "allocated_quota": 5,
+                "selected_count": 5
+              },
+              {
+                "framework": "smoagents",
+                "eligible_count": 32,
+                "eligible_within_mode_proportion": 0.3047619047619048,
+                "expected_within_mode_sample_count": 19.504761904761907,
+                "allocated_quota": 20,
+                "selected_count": 20
+              }
+            ]
+          },
+          {
+            "failure_mode": "FM-1.4",
+            "eligible_count": 99,
+            "eligible_proportion": 0.06066176470588235,
+            "expected_sample_count": 60.661764705882355,
+            "allocated_quota": 61,
+            "selected_count": 61,
+            "frameworks": [
+              {
+                "framework": "dylan",
+                "eligible_count": 39,
+                "eligible_within_mode_proportion": 0.3939393939393939,
+                "expected_within_mode_sample_count": 24.03030303030303,
+                "allocated_quota": 24,
+                "selected_count": 24
+              },
+              {
+                "framework": "llm_debate",
+                "eligible_count": 16,
+                "eligible_within_mode_proportion": 0.16161616161616163,
+                "expected_within_mode_sample_count": 9.858585858585858,
+                "allocated_quota": 10,
+                "selected_count": 10
+              },
+              {
+                "framework": "magentic_one",
+                "eligible_count": 17,
+                "eligible_within_mode_proportion": 0.1717171717171717,
+                "expected_within_mode_sample_count": 10.474747474747474,
+                "allocated_quota": 10,
+                "selected_count": 10
+              },
+              {
+                "framework": "smoagents",
+                "eligible_count": 27,
+                "eligible_within_mode_proportion": 0.2727272727272727,
+                "expected_within_mode_sample_count": 16.636363636363637,
+                "allocated_quota": 17,
+                "selected_count": 17
+              }
+            ]
+          },
+          {
+            "failure_mode": "FM-1.5",
+            "eligible_count": 112,
+            "eligible_proportion": 0.06862745098039216,
+            "expected_sample_count": 68.62745098039215,
+            "allocated_quota": 69,
+            "selected_count": 69,
+            "frameworks": [
+              {
+                "framework": "dylan",
+                "eligible_count": 52,
+                "eligible_within_mode_proportion": 0.4642857142857143,
+                "expected_within_mode_sample_count": 32.035714285714285,
+                "allocated_quota": 32,
+                "selected_count": 32
+              },
+              {
+                "framework": "llm_debate",
+                "eligible_count": 8,
+                "eligible_within_mode_proportion": 0.07142857142857142,
+                "expected_within_mode_sample_count": 4.928571428571429,
+                "allocated_quota": 5,
+                "selected_count": 5
+              },
+              {
+                "framework": "magentic_one",
+                "eligible_count": 18,
+                "eligible_within_mode_proportion": 0.16071428571428573,
+                "expected_within_mode_sample_count": 11.089285714285714,
+                "allocated_quota": 11,
+                "selected_count": 11
+              },
+              {
+                "framework": "smoagents",
+                "eligible_count": 34,
+                "eligible_within_mode_proportion": 0.30357142857142855,
+                "expected_within_mode_sample_count": 20.946428571428573,
+                "allocated_quota": 21,
+                "selected_count": 21
+              }
+            ]
+          },
+          {
+            "failure_mode": "FM-2.1",
+            "eligible_count": 83,
+            "eligible_proportion": 0.0508578431372549,
+            "expected_sample_count": 50.8578431372549,
+            "allocated_quota": 51,
+            "selected_count": 51,
+            "frameworks": [
+              {
+                "framework": "dylan",
+                "eligible_count": 20,
+                "eligible_within_mode_proportion": 0.24096385542168675,
+                "expected_within_mode_sample_count": 12.289156626506024,
+                "allocated_quota": 12,
+                "selected_count": 12
+              },
+              {
+                "framework": "llm_debate",
+                "eligible_count": 25,
+                "eligible_within_mode_proportion": 0.30120481927710846,
+                "expected_within_mode_sample_count": 15.36144578313253,
+                "allocated_quota": 16,
+                "selected_count": 16
+              },
+              {
+                "framework": "magentic_one",
+                "eligible_count": 5,
+                "eligible_within_mode_proportion": 0.060240963855421686,
+                "expected_within_mode_sample_count": 3.072289156626506,
+                "allocated_quota": 3,
+                "selected_count": 3
+              },
+              {
+                "framework": "smoagents",
+                "eligible_count": 33,
+                "eligible_within_mode_proportion": 0.39759036144578314,
+                "expected_within_mode_sample_count": 20.27710843373494,
+                "allocated_quota": 20,
+                "selected_count": 20
+              }
+            ]
+          },
+          {
+            "failure_mode": "FM-2.2",
+            "eligible_count": 109,
+            "eligible_proportion": 0.06678921568627451,
+            "expected_sample_count": 66.78921568627452,
+            "allocated_quota": 67,
+            "selected_count": 67,
+            "frameworks": [
+              {
+                "framework": "dylan",
+                "eligible_count": 31,
+                "eligible_within_mode_proportion": 0.28440366972477066,
+                "expected_within_mode_sample_count": 19.05504587155963,
+                "allocated_quota": 19,
+                "selected_count": 19
+              },
+              {
+                "framework": "llm_debate",
+                "eligible_count": 15,
+                "eligible_within_mode_proportion": 0.13761467889908258,
+                "expected_within_mode_sample_count": 9.220183486238533,
+                "allocated_quota": 9,
+                "selected_count": 9
+              },
+              {
+                "framework": "magentic_one",
+                "eligible_count": 31,
+                "eligible_within_mode_proportion": 0.28440366972477066,
+                "expected_within_mode_sample_count": 19.05504587155963,
+                "allocated_quota": 19,
+                "selected_count": 19
+              },
+              {
+                "framework": "smoagents",
+                "eligible_count": 32,
+                "eligible_within_mode_proportion": 0.29357798165137616,
+                "expected_within_mode_sample_count": 19.6697247706422,
+                "allocated_quota": 20,
+                "selected_count": 20
+              }
+            ]
+          },
+          {
+            "failure_mode": "FM-2.3",
+            "eligible_count": 114,
+            "eligible_proportion": 0.06985294117647059,
+            "expected_sample_count": 69.8529411764706,
+            "allocated_quota": 70,
+            "selected_count": 70,
+            "frameworks": [
+              {
+                "framework": "agentverse",
+                "eligible_count": 1,
+                "eligible_within_mode_proportion": 0.008771929824561403,
+                "expected_within_mode_sample_count": 0.6140350877192983,
+                "allocated_quota": 1,
+                "selected_count": 1
+              },
+              {
+                "framework": "dylan",
+                "eligible_count": 44,
+                "eligible_within_mode_proportion": 0.38596491228070173,
+                "expected_within_mode_sample_count": 27.017543859649123,
+                "allocated_quota": 27,
+                "selected_count": 27
+              },
+              {
+                "framework": "llm_debate",
+                "eligible_count": 9,
+                "eligible_within_mode_proportion": 0.07894736842105263,
+                "expected_within_mode_sample_count": 5.526315789473684,
+                "allocated_quota": 6,
+                "selected_count": 6
+              },
+              {
+                "framework": "magentic_one",
+                "eligible_count": 17,
+                "eligible_within_mode_proportion": 0.14912280701754385,
+                "expected_within_mode_sample_count": 10.43859649122807,
+                "allocated_quota": 10,
+                "selected_count": 10
+              },
+              {
+                "framework": "smoagents",
+                "eligible_count": 43,
+                "eligible_within_mode_proportion": 0.37719298245614036,
+                "expected_within_mode_sample_count": 26.403508771929825,
+                "allocated_quota": 26,
+                "selected_count": 26
+              }
+            ]
+          },
+          {
+            "failure_mode": "FM-2.4",
+            "eligible_count": 75,
+            "eligible_proportion": 0.04595588235294118,
+            "expected_sample_count": 45.955882352941174,
+            "allocated_quota": 46,
+            "selected_count": 46,
+            "frameworks": [
+              {
+                "framework": "dylan",
+                "eligible_count": 24,
+                "eligible_within_mode_proportion": 0.32,
+                "expected_within_mode_sample_count": 14.72,
+                "allocated_quota": 15,
+                "selected_count": 15
+              },
+              {
+                "framework": "llm_debate",
+                "eligible_count": 6,
+                "eligible_within_mode_proportion": 0.08,
+                "expected_within_mode_sample_count": 3.68,
+                "allocated_quota": 3,
+                "selected_count": 3
+              },
+              {
+                "framework": "magentic_one",
+                "eligible_count": 16,
+                "eligible_within_mode_proportion": 0.21333333333333335,
+                "expected_within_mode_sample_count": 9.813333333333333,
+                "allocated_quota": 10,
+                "selected_count": 10
+              },
+              {
+                "framework": "smoagents",
+                "eligible_count": 29,
+                "eligible_within_mode_proportion": 0.38666666666666666,
+                "expected_within_mode_sample_count": 17.786666666666665,
+                "allocated_quota": 18,
+                "selected_count": 18
+              }
+            ]
+          },
+          {
+            "failure_mode": "FM-2.5",
+            "eligible_count": 131,
+            "eligible_proportion": 0.08026960784313726,
+            "expected_sample_count": 80.26960784313725,
+            "allocated_quota": 80,
+            "selected_count": 80,
+            "frameworks": [
+              {
+                "framework": "dylan",
+                "eligible_count": 74,
+                "eligible_within_mode_proportion": 0.5648854961832062,
+                "expected_within_mode_sample_count": 45.19083969465649,
+                "allocated_quota": 45,
+                "selected_count": 45
+              },
+              {
+                "framework": "llm_debate",
+                "eligible_count": 7,
+                "eligible_within_mode_proportion": 0.05343511450381679,
+                "expected_within_mode_sample_count": 4.2748091603053435,
+                "allocated_quota": 4,
+                "selected_count": 4
+              },
+              {
+                "framework": "macnet",
+                "eligible_count": 1,
+                "eligible_within_mode_proportion": 0.007633587786259542,
+                "expected_within_mode_sample_count": 0.6106870229007634,
+                "allocated_quota": 1,
+                "selected_count": 1
+              },
+              {
+                "framework": "magentic_one",
+                "eligible_count": 15,
+                "eligible_within_mode_proportion": 0.11450381679389313,
+                "expected_within_mode_sample_count": 9.16030534351145,
+                "allocated_quota": 9,
+                "selected_count": 9
+              },
+              {
+                "framework": "smoagents",
+                "eligible_count": 34,
+                "eligible_within_mode_proportion": 0.2595419847328244,
+                "expected_within_mode_sample_count": 20.763358778625953,
+                "allocated_quota": 21,
+                "selected_count": 21
+              }
+            ]
+          },
+          {
+            "failure_mode": "FM-2.6",
+            "eligible_count": 205,
+            "eligible_proportion": 0.1256127450980392,
+            "expected_sample_count": 125.61274509803921,
+            "allocated_quota": 125,
+            "selected_count": 125,
+            "frameworks": [
+              {
+                "framework": "dylan",
+                "eligible_count": 124,
+                "eligible_within_mode_proportion": 0.6048780487804878,
+                "expected_within_mode_sample_count": 75.60975609756098,
+                "allocated_quota": 76,
+                "selected_count": 76
+              },
+              {
+                "framework": "llm_debate",
+                "eligible_count": 11,
+                "eligible_within_mode_proportion": 0.05365853658536585,
+                "expected_within_mode_sample_count": 6.7073170731707314,
+                "allocated_quota": 7,
+                "selected_count": 7
+              },
+              {
+                "framework": "magentic_one",
+                "eligible_count": 37,
+                "eligible_within_mode_proportion": 0.18048780487804877,
+                "expected_within_mode_sample_count": 22.5609756097561,
+                "allocated_quota": 22,
+                "selected_count": 22
+              },
+              {
+                "framework": "smoagents",
+                "eligible_count": 33,
+                "eligible_within_mode_proportion": 0.16097560975609757,
+                "expected_within_mode_sample_count": 20.121951219512194,
+                "allocated_quota": 20,
+                "selected_count": 20
+              }
+            ]
+          },
+          {
+            "failure_mode": "FM-3.1",
+            "eligible_count": 81,
+            "eligible_proportion": 0.04963235294117647,
+            "expected_sample_count": 49.63235294117647,
+            "allocated_quota": 50,
+            "selected_count": 50,
+            "frameworks": [
+              {
+                "framework": "dylan",
+                "eligible_count": 28,
+                "eligible_within_mode_proportion": 0.345679012345679,
+                "expected_within_mode_sample_count": 17.28395061728395,
+                "allocated_quota": 17,
+                "selected_count": 17
+              },
+              {
+                "framework": "llm_debate",
+                "eligible_count": 8,
+                "eligible_within_mode_proportion": 0.09876543209876543,
+                "expected_within_mode_sample_count": 4.938271604938271,
+                "allocated_quota": 5,
+                "selected_count": 5
+              },
+              {
+                "framework": "magentic_one",
+                "eligible_count": 19,
+                "eligible_within_mode_proportion": 0.2345679012345679,
+                "expected_within_mode_sample_count": 11.728395061728396,
+                "allocated_quota": 12,
+                "selected_count": 12
+              },
+              {
+                "framework": "smoagents",
+                "eligible_count": 26,
+                "eligible_within_mode_proportion": 0.32098765432098764,
+                "expected_within_mode_sample_count": 16.049382716049383,
+                "allocated_quota": 16,
+                "selected_count": 16
+              }
+            ]
+          },
+          {
+            "failure_mode": "FM-3.2",
+            "eligible_count": 122,
+            "eligible_proportion": 0.07475490196078431,
+            "expected_sample_count": 74.75490196078431,
+            "allocated_quota": 75,
+            "selected_count": 75,
+            "frameworks": [
+              {
+                "framework": "dylan",
+                "eligible_count": 66,
+                "eligible_within_mode_proportion": 0.5409836065573771,
+                "expected_within_mode_sample_count": 40.57377049180328,
+                "allocated_quota": 41,
+                "selected_count": 41
+              },
+              {
+                "framework": "llm_debate",
+                "eligible_count": 17,
+                "eligible_within_mode_proportion": 0.13934426229508196,
+                "expected_within_mode_sample_count": 10.450819672131148,
+                "allocated_quota": 10,
+                "selected_count": 10
+              },
+              {
+                "framework": "magentic_one",
+                "eligible_count": 12,
+                "eligible_within_mode_proportion": 0.09836065573770492,
+                "expected_within_mode_sample_count": 7.377049180327869,
+                "allocated_quota": 7,
+                "selected_count": 7
+              },
+              {
+                "framework": "smoagents",
+                "eligible_count": 27,
+                "eligible_within_mode_proportion": 0.22131147540983606,
+                "expected_within_mode_sample_count": 16.598360655737704,
+                "allocated_quota": 17,
+                "selected_count": 17
+              }
+            ]
+          },
+          {
+            "failure_mode": "FM-3.3",
+            "eligible_count": 151,
+            "eligible_proportion": 0.09252450980392157,
+            "expected_sample_count": 92.52450980392157,
+            "allocated_quota": 92,
+            "selected_count": 92,
+            "frameworks": [
+              {
+                "framework": "dylan",
+                "eligible_count": 96,
+                "eligible_within_mode_proportion": 0.6357615894039735,
+                "expected_within_mode_sample_count": 58.49006622516556,
+                "allocated_quota": 59,
+                "selected_count": 59
+              },
+              {
+                "framework": "llm_debate",
+                "eligible_count": 21,
+                "eligible_within_mode_proportion": 0.1390728476821192,
+                "expected_within_mode_sample_count": 12.794701986754967,
+                "allocated_quota": 13,
+                "selected_count": 13
+              },
+              {
+                "framework": "magentic_one",
+                "eligible_count": 7,
+                "eligible_within_mode_proportion": 0.046357615894039736,
+                "expected_within_mode_sample_count": 4.264900662251655,
+                "allocated_quota": 4,
+                "selected_count": 4
+              },
+              {
+                "framework": "smoagents",
+                "eligible_count": 27,
+                "eligible_within_mode_proportion": 0.17880794701986755,
+                "expected_within_mode_sample_count": 16.450331125827816,
+                "allocated_quota": 16,
+                "selected_count": 16
+              }
+            ]
+          }
+        ],
+        "passed": true
+      },
+      "whowhen": {
+        "dataset": "whowhen",
+        "method": "deterministic_hierarchical_proportional_stratified_without_replacement",
+        "primary_stratum": "gold_failure_mode",
+        "secondary_stratum": "framework",
+        "quota_allocation": "hamilton_largest_remainder",
+        "eligible_count": 6199,
+        "target_count": 1000,
+        "selected_count": 1000,
+        "rare_class_minimum_quota": 0,
+        "rare_class_oversampling_applied": false,
+        "all_quotas_within_eligible_counts": true,
+        "all_selected_counts_match_quotas": true,
+        "maximum_failure_mode_quota_error": 0.567510888853036,
+        "maximum_within_mode_framework_quota_error": 0.623616236162361,
+        "failure_modes": [
+          {
+            "failure_mode": "A.1",
+            "eligible_count": 27,
+            "eligible_proportion": 0.004355541216325214,
+            "expected_sample_count": 4.355541216325213,
+            "allocated_quota": 4,
+            "selected_count": 4,
+            "frameworks": [
+              {
+                "framework": "macnet",
+                "eligible_count": 20,
+                "eligible_within_mode_proportion": 0.7407407407407407,
+                "expected_within_mode_sample_count": 2.962962962962963,
+                "allocated_quota": 3,
+                "selected_count": 3
+              },
+              {
+                "framework": "metagpt",
+                "eligible_count": 7,
+                "eligible_within_mode_proportion": 0.25925925925925924,
+                "expected_within_mode_sample_count": 1.037037037037037,
+                "allocated_quota": 1,
+                "selected_count": 1
+              }
+            ]
+          },
+          {
+            "failure_mode": "A.2",
+            "eligible_count": 283,
+            "eligible_proportion": 0.04565252460074205,
+            "expected_sample_count": 45.652524600742055,
+            "allocated_quota": 46,
+            "selected_count": 46,
+            "frameworks": [
+              {
+                "framework": "metagpt",
+                "eligible_count": 5,
+                "eligible_within_mode_proportion": 0.0176678445229682,
+                "expected_within_mode_sample_count": 0.8127208480565371,
+                "allocated_quota": 1,
+                "selected_count": 1
+              },
+              {
+                "framework": "smolagents",
+                "eligible_count": 278,
+                "eligible_within_mode_proportion": 0.9823321554770318,
+                "expected_within_mode_sample_count": 45.187279151943464,
+                "allocated_quota": 45,
+                "selected_count": 45
+              }
+            ]
+          },
+          {
+            "failure_mode": "A.3",
+            "eligible_count": 1202,
+            "eligible_proportion": 0.1939022422971447,
+            "expected_sample_count": 193.9022422971447,
+            "allocated_quota": 194,
+            "selected_count": 194,
+            "frameworks": [
+              {
+                "framework": "magentic-one",
+                "eligible_count": 57,
+                "eligible_within_mode_proportion": 0.04742096505823627,
+                "expected_within_mode_sample_count": 9.199667221297837,
+                "allocated_quota": 9,
+                "selected_count": 9
+              },
+              {
+                "framework": "smolagents",
+                "eligible_count": 1145,
+                "eligible_within_mode_proportion": 0.9525790349417638,
+                "expected_within_mode_sample_count": 184.80033277870217,
+                "allocated_quota": 185,
+                "selected_count": 185
+              }
+            ]
+          },
+          {
+            "failure_mode": "A.4",
+            "eligible_count": 49,
+            "eligible_proportion": 0.007904500725923537,
+            "expected_sample_count": 7.904500725923536,
+            "allocated_quota": 8,
+            "selected_count": 8,
+            "frameworks": [
+              {
+                "framework": "alfagent",
+                "eligible_count": 49,
+                "eligible_within_mode_proportion": 1.0,
+                "expected_within_mode_sample_count": 8.0,
+                "allocated_quota": 8,
+                "selected_count": 8
+              }
+            ]
+          },
+          {
+            "failure_mode": "C.1",
+            "eligible_count": 23,
+            "eligible_proportion": 0.0037102758509437008,
+            "expected_sample_count": 3.7102758509437006,
+            "allocated_quota": 4,
+            "selected_count": 4,
+            "frameworks": [
+              {
+                "framework": "magentic-one",
+                "eligible_count": 23,
+                "eligible_within_mode_proportion": 1.0,
+                "expected_within_mode_sample_count": 4.0,
+                "allocated_quota": 4,
+                "selected_count": 4
+              }
+            ]
+          },
+          {
+            "failure_mode": "C.2",
+            "eligible_count": 29,
+            "eligible_proportion": 0.00467817389901597,
+            "expected_sample_count": 4.67817389901597,
+            "allocated_quota": 5,
+            "selected_count": 5,
+            "frameworks": [
+              {
+                "framework": "magentic-one",
+                "eligible_count": 29,
+                "eligible_within_mode_proportion": 1.0,
+                "expected_within_mode_sample_count": 5.0,
+                "allocated_quota": 5,
+                "selected_count": 5
+              }
+            ]
+          },
+          {
+            "failure_mode": "C.3",
+            "eligible_count": 342,
+            "eligible_proportion": 0.05517018874011938,
+            "expected_sample_count": 55.17018874011937,
+            "allocated_quota": 55,
+            "selected_count": 55,
+            "frameworks": [
+              {
+                "framework": "debate",
+                "eligible_count": 203,
+                "eligible_within_mode_proportion": 0.5935672514619883,
+                "expected_within_mode_sample_count": 32.646198830409354,
+                "allocated_quota": 33,
+                "selected_count": 33
+              },
+              {
+                "framework": "dylan",
+                "eligible_count": 6,
+                "eligible_within_mode_proportion": 0.017543859649122806,
+                "expected_within_mode_sample_count": 0.9649122807017544,
+                "allocated_quota": 1,
+                "selected_count": 1
+              },
+              {
+                "framework": "macnet",
+                "eligible_count": 108,
+                "eligible_within_mode_proportion": 0.3157894736842105,
+                "expected_within_mode_sample_count": 17.36842105263158,
+                "allocated_quota": 17,
+                "selected_count": 17
+              },
+              {
+                "framework": "magentic-one",
+                "eligible_count": 25,
+                "eligible_within_mode_proportion": 0.07309941520467836,
+                "expected_within_mode_sample_count": 4.02046783625731,
+                "allocated_quota": 4,
+                "selected_count": 4
+              }
+            ]
+          },
+          {
+            "failure_mode": "PL.1",
+            "eligible_count": 86,
+            "eligible_proportion": 0.013873205355702533,
+            "expected_sample_count": 13.873205355702533,
+            "allocated_quota": 14,
+            "selected_count": 14,
+            "frameworks": [
+              {
+                "framework": "metagpt",
+                "eligible_count": 16,
+                "eligible_within_mode_proportion": 0.18604651162790697,
+                "expected_within_mode_sample_count": 2.604651162790698,
+                "allocated_quota": 3,
+                "selected_count": 3
+              },
+              {
+                "framework": "smolagents",
+                "eligible_count": 70,
+                "eligible_within_mode_proportion": 0.813953488372093,
+                "expected_within_mode_sample_count": 11.395348837209303,
+                "allocated_quota": 11,
+                "selected_count": 11
+              }
+            ]
+          },
+          {
+            "failure_mode": "R.1",
+            "eligible_count": 617,
+            "eligible_proportion": 0.0995321826100984,
+            "expected_sample_count": 99.5321826100984,
+            "allocated_quota": 99,
+            "selected_count": 99,
+            "frameworks": [
+              {
+                "framework": "alfagent",
+                "eligible_count": 42,
+                "eligible_within_mode_proportion": 0.06807131280388978,
+                "expected_within_mode_sample_count": 6.7390599675850895,
+                "allocated_quota": 7,
+                "selected_count": 7
+              },
+              {
+                "framework": "debate",
+                "eligible_count": 74,
+                "eligible_within_mode_proportion": 0.11993517017828201,
+                "expected_within_mode_sample_count": 11.87358184764992,
+                "allocated_quota": 12,
+                "selected_count": 12
+              },
+              {
+                "framework": "dylan",
+                "eligible_count": 41,
+                "eligible_within_mode_proportion": 0.06645056726094004,
+                "expected_within_mode_sample_count": 6.578606158833063,
+                "allocated_quota": 6,
+                "selected_count": 6
+              },
+              {
+                "framework": "macnet",
+                "eligible_count": 17,
+                "eligible_within_mode_proportion": 0.027552674230145867,
+                "expected_within_mode_sample_count": 2.727714748784441,
+                "allocated_quota": 3,
+                "selected_count": 3
+              },
+              {
+                "framework": "magentic-one",
+                "eligible_count": 253,
+                "eligible_within_mode_proportion": 0.4100486223662885,
+                "expected_within_mode_sample_count": 40.59481361426256,
+                "allocated_quota": 41,
+                "selected_count": 41
+              },
+              {
+                "framework": "mathchat",
+                "eligible_count": 78,
+                "eligible_within_mode_proportion": 0.12641815235008103,
+                "expected_within_mode_sample_count": 12.515397082658023,
+                "allocated_quota": 12,
+                "selected_count": 12
+              },
+              {
+                "framework": "smolagents",
+                "eligible_count": 112,
+                "eligible_within_mode_proportion": 0.18152350081037277,
+                "expected_within_mode_sample_count": 17.970826580226905,
+                "allocated_quota": 18,
+                "selected_count": 18
+              }
+            ]
+          },
+          {
+            "failure_mode": "R.2",
+            "eligible_count": 1084,
+            "eligible_proportion": 0.17486691401839005,
+            "expected_sample_count": 174.86691401839008,
+            "allocated_quota": 175,
+            "selected_count": 175,
+            "frameworks": [
+              {
+                "framework": "alfagent",
+                "eligible_count": 58,
+                "eligible_within_mode_proportion": 0.05350553505535055,
+                "expected_within_mode_sample_count": 9.363468634686347,
+                "allocated_quota": 9,
+                "selected_count": 9
+              },
+              {
+                "framework": "debate",
+                "eligible_count": 61,
+                "eligible_within_mode_proportion": 0.05627306273062731,
+                "expected_within_mode_sample_count": 9.847785977859779,
+                "allocated_quota": 10,
+                "selected_count": 10
+              },
+              {
+                "framework": "dylan",
+                "eligible_count": 48,
+                "eligible_within_mode_proportion": 0.04428044280442804,
+                "expected_within_mode_sample_count": 7.749077490774908,
+                "allocated_quota": 8,
+                "selected_count": 8
+              },
+              {
+                "framework": "macnet",
+                "eligible_count": 23,
+                "eligible_within_mode_proportion": 0.021217712177121772,
+                "expected_within_mode_sample_count": 3.71309963099631,
+                "allocated_quota": 4,
+                "selected_count": 4
+              },
+              {
+                "framework": "magentic-one",
+                "eligible_count": 72,
+                "eligible_within_mode_proportion": 0.06642066420664207,
+                "expected_within_mode_sample_count": 11.623616236162361,
+                "allocated_quota": 11,
+                "selected_count": 11
+              },
+              {
+                "framework": "mathchat",
+                "eligible_count": 291,
+                "eligible_within_mode_proportion": 0.26845018450184505,
+                "expected_within_mode_sample_count": 46.97878228782288,
+                "allocated_quota": 47,
+                "selected_count": 47
+              },
+              {
+                "framework": "metagpt",
+                "eligible_count": 24,
+                "eligible_within_mode_proportion": 0.02214022140221402,
+                "expected_within_mode_sample_count": 3.874538745387454,
+                "allocated_quota": 4,
+                "selected_count": 4
+              },
+              {
+                "framework": "smolagents",
+                "eligible_count": 507,
+                "eligible_within_mode_proportion": 0.4677121771217712,
+                "expected_within_mode_sample_count": 81.84963099630997,
+                "allocated_quota": 82,
+                "selected_count": 82
+              }
+            ]
+          },
+          {
+            "failure_mode": "R.3",
+            "eligible_count": 735,
+            "eligible_proportion": 0.11856751088885305,
+            "expected_sample_count": 118.56751088885304,
+            "allocated_quota": 118,
+            "selected_count": 118,
+            "frameworks": [
+              {
+                "framework": "debate",
+                "eligible_count": 43,
+                "eligible_within_mode_proportion": 0.058503401360544216,
+                "expected_within_mode_sample_count": 6.903401360544217,
+                "allocated_quota": 7,
+                "selected_count": 7
+              },
+              {
+                "framework": "dylan",
+                "eligible_count": 25,
+                "eligible_within_mode_proportion": 0.034013605442176874,
+                "expected_within_mode_sample_count": 4.01360544217687,
+                "allocated_quota": 4,
+                "selected_count": 4
+              },
+              {
+                "framework": "macnet",
+                "eligible_count": 10,
+                "eligible_within_mode_proportion": 0.013605442176870748,
+                "expected_within_mode_sample_count": 1.6054421768707483,
+                "allocated_quota": 2,
+                "selected_count": 2
+              },
+              {
+                "framework": "mathchat",
+                "eligible_count": 282,
+                "eligible_within_mode_proportion": 0.3836734693877551,
+                "expected_within_mode_sample_count": 45.2734693877551,
+                "allocated_quota": 45,
+                "selected_count": 45
+              },
+              {
+                "framework": "smolagents",
+                "eligible_count": 375,
+                "eligible_within_mode_proportion": 0.5102040816326531,
+                "expected_within_mode_sample_count": 60.204081632653065,
+                "allocated_quota": 60,
+                "selected_count": 60
+              }
+            ]
+          },
+          {
+            "failure_mode": "R.4",
+            "eligible_count": 1116,
+            "eligible_proportion": 0.18002903694144218,
+            "expected_sample_count": 180.02903694144217,
+            "allocated_quota": 180,
+            "selected_count": 180,
+            "frameworks": [
+              {
+                "framework": "alfagent",
+                "eligible_count": 58,
+                "eligible_within_mode_proportion": 0.05197132616487455,
+                "expected_within_mode_sample_count": 9.35483870967742,
+                "allocated_quota": 9,
+                "selected_count": 9
+              },
+              {
+                "framework": "debate",
+                "eligible_count": 62,
+                "eligible_within_mode_proportion": 0.05555555555555555,
+                "expected_within_mode_sample_count": 10.0,
+                "allocated_quota": 10,
+                "selected_count": 10
+              },
+              {
+                "framework": "dylan",
+                "eligible_count": 29,
+                "eligible_within_mode_proportion": 0.025985663082437275,
+                "expected_within_mode_sample_count": 4.67741935483871,
+                "allocated_quota": 5,
+                "selected_count": 5
+              },
+              {
+                "framework": "macnet",
+                "eligible_count": 68,
+                "eligible_within_mode_proportion": 0.06093189964157706,
+                "expected_within_mode_sample_count": 10.96774193548387,
+                "allocated_quota": 11,
+                "selected_count": 11
+              },
+              {
+                "framework": "magentic-one",
+                "eligible_count": 94,
+                "eligible_within_mode_proportion": 0.08422939068100359,
+                "expected_within_mode_sample_count": 15.161290322580646,
+                "allocated_quota": 15,
+                "selected_count": 15
+              },
+              {
+                "framework": "mathchat",
+                "eligible_count": 266,
+                "eligible_within_mode_proportion": 0.23835125448028674,
+                "expected_within_mode_sample_count": 42.903225806451616,
+                "allocated_quota": 43,
+                "selected_count": 43
+              },
+              {
+                "framework": "metagpt",
+                "eligible_count": 26,
+                "eligible_within_mode_proportion": 0.023297491039426525,
+                "expected_within_mode_sample_count": 4.193548387096774,
+                "allocated_quota": 4,
+                "selected_count": 4
+              },
+              {
+                "framework": "smolagents",
+                "eligible_count": 513,
+                "eligible_within_mode_proportion": 0.4596774193548387,
+                "expected_within_mode_sample_count": 82.74193548387096,
+                "allocated_quota": 83,
+                "selected_count": 83
+              }
+            ]
+          },
+          {
+            "failure_mode": "V.1",
+            "eligible_count": 124,
+            "eligible_proportion": 0.020003226326826908,
+            "expected_sample_count": 20.00322632682691,
+            "allocated_quota": 20,
+            "selected_count": 20,
+            "frameworks": [
+              {
+                "framework": "alfagent",
+                "eligible_count": 39,
+                "eligible_within_mode_proportion": 0.31451612903225806,
+                "expected_within_mode_sample_count": 6.290322580645161,
+                "allocated_quota": 6,
+                "selected_count": 6
+              },
+              {
+                "framework": "smolagents",
+                "eligible_count": 85,
+                "eligible_within_mode_proportion": 0.6854838709677419,
+                "expected_within_mode_sample_count": 13.709677419354838,
+                "allocated_quota": 14,
+                "selected_count": 14
+              }
+            ]
+          },
+          {
+            "failure_mode": "V.2",
+            "eligible_count": 482,
+            "eligible_proportion": 0.07775447652847234,
+            "expected_sample_count": 77.75447652847234,
+            "allocated_quota": 78,
+            "selected_count": 78,
+            "frameworks": [
+              {
+                "framework": "alfagent",
+                "eligible_count": 58,
+                "eligible_within_mode_proportion": 0.12033195020746888,
+                "expected_within_mode_sample_count": 9.385892116182573,
+                "allocated_quota": 10,
+                "selected_count": 10
+              },
+              {
+                "framework": "macnet",
+                "eligible_count": 8,
+                "eligible_within_mode_proportion": 0.016597510373443983,
+                "expected_within_mode_sample_count": 1.2946058091286308,
+                "allocated_quota": 1,
+                "selected_count": 1
+              },
+              {
+                "framework": "magentic-one",
+                "eligible_count": 243,
+                "eligible_within_mode_proportion": 0.504149377593361,
+                "expected_within_mode_sample_count": 39.32365145228216,
+                "allocated_quota": 39,
+                "selected_count": 39
+              },
+              {
+                "framework": "smolagents",
+                "eligible_count": 173,
+                "eligible_within_mode_proportion": 0.35892116182572614,
+                "expected_within_mode_sample_count": 27.99585062240664,
+                "allocated_quota": 28,
+                "selected_count": 28
+              }
+            ]
+          }
+        ],
+        "passed": true
+      }
+    },
+    "stratification_passed": true,
+    "source_id_collision_audit_passed": true,
+    "source_id_collisions_resolved": 1,
+    "source_id_collision_rows_dropped": 0,
+    "leakage_rows_scanned": 2000,
+    "leakage_count": 0,
+    "leakage_passed": true
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "cache_key": "29d0f66a15ba3258b769fbe9fbb1df6e36623787b9a07dd54943233d5cdde78f",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The orchestrator hallucinated the name 'Sir Richard Weston' as the house owner, despite the search results clearly indicating 'Sir Abraham Dawes'. It then confidently stated no further investigation was necessary.\",\n  \"evidence\": \"The WebSurfer's output clearly states: 'The case began when Ballard charged Kestian with making false statements at Sir Abraham Dawes's house in Putney'. However, the orchestrator's final output states: 'it is clear that the incident took place at Sir Richard Weston's house in Putney. I am confident in this finding and no further investigation is necessary.'\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The orchestrator hallucinated the name 'Sir Richard Weston' as the house owner, despite the search results clearly indicating 'Sir Abraham Dawes'. It then confidently stated no further investigation was necessary.",
+    "evidence": "The WebSurfer's output clearly states: 'The case began when Ballard charged Kestian with making false statements at Sir Abraham Dawes's house in Putney'. However, the orchestrator's final output states: 'it is clear that the incident took place at Sir Richard Weston's house in Putney. I am confident in this finding and no further investigation is necessary.'",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853736-ruJ9U4vJNVzsLRE62k7i",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 146,
+      "prompt_tokens": 4386,
+      "total_tokens": 4532,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0016808,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0016808,
+        "upstream_inference_prompt_cost": 0.0013158,
+        "upstream_inference_completions_cost": 0.000365
+      }
+    },
+    "cost_usd": 0.0016808
+  }
+}

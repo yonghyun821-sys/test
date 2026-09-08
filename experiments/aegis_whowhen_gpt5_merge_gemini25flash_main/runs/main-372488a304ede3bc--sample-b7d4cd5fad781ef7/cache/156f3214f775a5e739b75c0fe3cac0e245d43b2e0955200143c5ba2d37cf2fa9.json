@@ -1,0 +1,46 @@
+{
+  "cache_key": "156f3214f775a5e739b75c0fe3cac0e245d43b2e0955200143c5ba2d37cf2fa9",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-2.3\",\n  \"explanation\": \"The agent deviates from the main goal of simply providing the opposite of 'left' by generating an extensive plan for team collaboration, exploring various phrasing approaches, and considering new ideas and perspectives, none of which were requested.\",\n  \"evidence\": \"The agent's response in step 2 and 3 includes a detailed plan for team members (WebSurfer, FileSurfer, Coder, ComputerTerminal) and then explores multiple ways to phrase the answer, cultural contexts, and historical contexts, instead of directly answering the simple request.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-2.3",
+    "explanation": "The agent deviates from the main goal of simply providing the opposite of 'left' by generating an extensive plan for team collaboration, exploring various phrasing approaches, and considering new ideas and perspectives, none of which were requested.",
+    "evidence": "The agent's response in step 2 and 3 includes a detailed plan for team members (WebSurfer, FileSurfer, Coder, ComputerTerminal) and then explores multiple ways to phrase the answer, cultural contexts, and historical contexts, instead of directly answering the simple request.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850450-oVQOOAaiTSZ0zwevAGZv",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 131,
+      "prompt_tokens": 4163,
+      "total_tokens": 4294,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0015764,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0015764,
+        "upstream_inference_prompt_cost": 0.0012489,
+        "upstream_inference_completions_cost": 0.0003275
+      }
+    },
+    "cost_usd": 0.0015764
+  }
+}

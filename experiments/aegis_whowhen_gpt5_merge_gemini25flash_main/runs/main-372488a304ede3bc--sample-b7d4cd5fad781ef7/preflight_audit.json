@@ -1,0 +1,12 @@
+{
+  "status": "READY_FOR_GEMINI_2_5_FLASH_ATTRIBUTION",
+  "merge_validated_and_frozen": true,
+  "attribution_cost_preflight": {
+    "logical_rows": 2388,
+    "total_prompt_tokens": 13671447,
+    "maximum_prompt_tokens": 47575,
+    "guarded_cost_reserve_usd": 10.331151149999998
+  },
+  "merge_recorded_cost_usd": 0.06947875,
+  "remaining_hard_cap_usd": 49.93052125
+}

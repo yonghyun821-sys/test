@@ -1,0 +1,46 @@
+{
+  "cache_key": "659767ea469df6ec41399af87ae5020f300a45cff95d845ecb2af60d2d6008ec",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The orchestrator hallucinates the name of the first husband, stating it was 'Richard Long' and attributing it to the 'Oxford Dictionary of National Biography', despite the WebSurfer's output clearly showing 'Sir Thomas Kitson' from multiple reputable sources.\",\n  \"evidence\": \"WebSurfer output: 'Margaret Bourchier, Countess of Bath, was first married to Sir Thomas Kitson... Wikipedia: Her first marriage was to Sir Thomas Kitson'. Orchestrator output: 'Based on the information provided by the Oxford Dictionary of National Biography, Margaret Bourchier, Countess of Bath's first husband was Richard Long. I am confident in this finding and no further investigation is necessary. FINAL ANSWER: Richard Long'\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The orchestrator hallucinates the name of the first husband, stating it was 'Richard Long' and attributing it to the 'Oxford Dictionary of National Biography', despite the WebSurfer's output clearly showing 'Sir Thomas Kitson' from multiple reputable sources.",
+    "evidence": "WebSurfer output: 'Margaret Bourchier, Countess of Bath, was first married to Sir Thomas Kitson... Wikipedia: Her first marriage was to Sir Thomas Kitson'. Orchestrator output: 'Based on the information provided by the Oxford Dictionary of National Biography, Margaret Bourchier, Countess of Bath's first husband was Richard Long. I am confident in this finding and no further investigation is necessary. FINAL ANSWER: Richard Long'",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788854010-p1QhsI5nslk5PIVgEh9f",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 169,
+      "prompt_tokens": 4248,
+      "total_tokens": 4417,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 1909,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.00118147,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.00118147,
+        "upstream_inference_prompt_cost": 0.00075897,
+        "upstream_inference_completions_cost": 0.0004225
+      }
+    },
+    "cost_usd": 0.00118147
+  }
+}

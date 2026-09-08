@@ -1,0 +1,15 @@
+One source category was assigned to more than one merged category.
+
+Select exactly one candidate merged category ID as its final provenance destination.
+
+<SOURCE_CATEGORY>
+{source_category}
+</SOURCE_CATEGORY>
+
+<CANDIDATE_MERGED_CATEGORIES>
+{candidate_categories}
+</CANDIDATE_MERGED_CATEGORIES>
+
+Return one JSON object with exactly these fields:
+- selected_merged_category_id: exactly one candidate merged category ID
+- reason: a short taxonomy-definition-based justification

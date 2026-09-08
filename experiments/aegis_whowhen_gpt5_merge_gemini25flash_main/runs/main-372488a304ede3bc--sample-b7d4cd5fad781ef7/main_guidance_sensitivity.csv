@@ -1,0 +1,11 @@
+﻿dataset,pattern,count,percent
+aegis,all_four_same,40,41.23711340206186
+aegis,only_own_changed,19,19.587628865979383
+aegis,only_foreign_changed,11,11.34020618556701
+aegis,only_merged_changed,4,4.123711340206185
+aegis,multiple_conditions_changed,23,23.711340206185568
+whowhen,all_four_same,278,55.6
+whowhen,only_own_changed,66,13.2
+whowhen,only_foreign_changed,28,5.6
+whowhen,only_merged_changed,25,5.0
+whowhen,multiple_conditions_changed,103,20.6

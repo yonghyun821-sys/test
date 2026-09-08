@@ -1,0 +1,46 @@
+{
+  "cache_key": "ac6b027090a041acba606a65072c17ae0961c6d8476b06d49c98022cc860ccbe",
+  "raw_output_text": "{\n  \"failure_category\": \"R.2\",\n  \"explanation\": \"The agent incorrectly identified the acreage of Oak Spring Farm. While one source mentioned 700 acres, other more prominent sources in the search results clearly stated 4,000 acres. The agent failed to correctly synthesize the information and prioritize the most accurate data.\",\n  \"evidence\": \"The WebSurfer output shows multiple sources. The 'Oak Spring Garden Foundation' and 'Wikipedia' both state '4,000 acre' or '4,000- acre (1,600 ha) estate'. However, the Coder's output states: 'According to the Architectural Digest feature on Bunny Mellon's glorious gardens, Oak Spring Farm is set on 700 acres... FINAL ANSWER: 700 acres'.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.2",
+    "explanation": "The agent incorrectly identified the acreage of Oak Spring Farm. While one source mentioned 700 acres, other more prominent sources in the search results clearly stated 4,000 acres. The agent failed to correctly synthesize the information and prioritize the most accurate data.",
+    "evidence": "The WebSurfer output shows multiple sources. The 'Oak Spring Garden Foundation' and 'Wikipedia' both state '4,000 acre' or '4,000- acre (1,600 ha) estate'. However, the Coder's output states: 'According to the Architectural Digest feature on Bunny Mellon's glorious gardens, Oak Spring Farm is set on 700 acres... FINAL ANSWER: 700 acres'.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853969-zQa7xntVv3Wi1GnQL08w",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 176,
+      "prompt_tokens": 2667,
+      "total_tokens": 2843,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0012401,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0012401,
+        "upstream_inference_prompt_cost": 0.0008001,
+        "upstream_inference_completions_cost": 0.00044
+      }
+    },
+    "cost_usd": 0.0012401
+  }
+}

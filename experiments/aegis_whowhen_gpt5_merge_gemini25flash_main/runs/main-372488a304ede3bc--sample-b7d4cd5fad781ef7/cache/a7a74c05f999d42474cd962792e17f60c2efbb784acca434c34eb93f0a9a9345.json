@@ -1,0 +1,46 @@
+{
+  "cache_key": "a7a74c05f999d42474cd962792e17f60c2efbb784acca434c34eb93f0a9a9345",
+  "raw_output_text": "{\n  \"failure_category\": \"V.2\",\n  \"explanation\": \"The agent incorrectly verified the information, choosing a less accurate source (Architectural Digest stating 700 acres) over more authoritative sources (Oak Spring Garden Foundation and Wikipedia stating 4,000 acres) that were also present in the search results.\",\n  \"evidence\": \"The WebSurfer output clearly shows multiple sources. 'Oak Spring Garden Foundation' and 'Wikipedia' both state 4,000 acres, while 'Architectural Digest' states 700 acres. The Coder agent then incorrectly selects the 700-acre figure from Architectural Digest.\"\n}",
+  "parsed_response": {
+    "failure_category": "V.2",
+    "explanation": "The agent incorrectly verified the information, choosing a less accurate source (Architectural Digest stating 700 acres) over more authoritative sources (Oak Spring Garden Foundation and Wikipedia stating 4,000 acres) that were also present in the search results.",
+    "evidence": "The WebSurfer output clearly shows multiple sources. 'Oak Spring Garden Foundation' and 'Wikipedia' both state 4,000 acres, while 'Architectural Digest' states 700 acres. The Coder agent then incorrectly selects the 700-acre figure from Architectural Digest.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853965-gRyFugfM0H8t30P6nB6f",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 141,
+      "prompt_tokens": 3659,
+      "total_tokens": 3800,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 944,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.00119532,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.00119532,
+        "upstream_inference_prompt_cost": 0.00084282,
+        "upstream_inference_completions_cost": 0.0003525
+      }
+    },
+    "cost_usd": 0.00119532
+  }
+}

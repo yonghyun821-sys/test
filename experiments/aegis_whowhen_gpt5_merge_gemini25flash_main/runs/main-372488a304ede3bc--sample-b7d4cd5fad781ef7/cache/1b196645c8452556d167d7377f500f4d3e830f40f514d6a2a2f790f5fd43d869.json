@@ -1,0 +1,46 @@
+{
+  "cache_key": "1b196645c8452556d167d7377f500f4d3e830f40f514d6a2a2f790f5fd43d869",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The agent hallucinated the answer to the question, claiming to have knowledge of a specific research article and its findings, despite being unable to access the web to verify this information.\",\n  \"evidence\": \"The Coder agent states: 'Based on my knowledge, the 2021 Science Advances article reports that beads made from Pila Ovata shells were found and are at least 12,000 years old.' This claim is made after the WebSurfer was repeatedly blocked from accessing web pages, indicating the information was not retrieved from the web.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The agent hallucinated the answer to the question, claiming to have knowledge of a specific research article and its findings, despite being unable to access the web to verify this information.",
+    "evidence": "The Coder agent states: 'Based on my knowledge, the 2021 Science Advances article reports that beads made from Pila Ovata shells were found and are at least 12,000 years old.' This claim is made after the WebSurfer was repeatedly blocked from accessing web pages, indicating the information was not retrieved from the web.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788852425-MnYEkgyyF0nOH3RxbcEQ",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 136,
+      "prompt_tokens": 6802,
+      "total_tokens": 6938,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 979,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.00211627,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.00211627,
+        "upstream_inference_prompt_cost": 0.00177627,
+        "upstream_inference_completions_cost": 0.00034
+      }
+    },
+    "cost_usd": 0.00211627
+  }
+}

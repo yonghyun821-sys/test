@@ -1,0 +1,4186 @@
+{
+  "rows_scanned": 597,
+  "leakage_count": 0,
+  "passed": true,
+  "rows": [
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_146_7add951f",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_dylan_288_b994e8c0",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_80_5af105dc",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "GSM8K_gpt-4o-mini_dylan_175_0da23428",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_dylan_234_80510ab0",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_200_afb74c40",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "GSM8K_gpt-4o-mini_dylan_296_ffd97033",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "GSM8K_gpt-4o-mini_dylan_126_1ae7fb2a",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_332_b95823b5",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_dylan_204_013af920",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "MMLU_gpt-4o-mini_llm_debate_235_30987cb3",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "MMLU_gpt-4o-mini_llm_debate_112_adfbf671",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_148_0b78cbf0",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_llm_debate_166_1ba6b342",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_121_d3a4eeac",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_dylan_273_b07fef07",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "HumanEval_gpt-4o-mini_llm_debate_189_79ad3300",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_92_e1864031",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_24_78740a29",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_16_2eba9a2e",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_82_63f9dd01",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "HumanEval_gpt-4o-mini_llm_debate_188_577de0d5",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_dylan_190_cbb3f7eb",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "HumanEval_gpt-4o-mini_llm_debate_89_3ec4bdeb",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_dylan_194_c893f8fc",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_dylan_127_ff4f21aa",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_117_d6626822",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_27_044441fa",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_228_8af65b79",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_59_cef35900",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_69_0836171f",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_46_11fe20be",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_265_e9b65423",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_314_223c280a",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_llm_debate_394_82d4dd78",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_227_1c362779",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "HumanEval_gpt-4o-mini_llm_debate_264_22f333fe",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "HumanEval_gpt-4o-mini_llm_debate_12_bfa0841c",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_151_074aba77",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_dylan_1_01806936",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_41_f65739f8",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_86_08736994",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_llm_debate_46_75abdb9a",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_llm_debate_168_86672e92",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_251_f04fd9ae",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_dylan_97_32e4dd70",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_dylan_325_cd289ddc",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_96_684123bd",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_57_f902d38d",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_dylan_25_0fa16ecf",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_95_62402d14",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_109_b0637203",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_llm_debate_211_640b4ba2",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_94_4ebaa1ba",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_2_5877ccc7",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "GSM8K_gpt-4o-mini_dylan_59_7bf4e6bf",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_160_ef1c68f3",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_17_48872a08",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_210_7fa66cf4",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "MATH_gpt-4o-mini_agentverse_212_2ccb3324",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_21_74cde0d8",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_llm_debate_89_f675061f",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "GSM8K_gpt-4o-mini_dylan_166_f92b244d",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "GSM8K_gpt-4o-mini_dylan_35_7878c4e4",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_dylan_152_b6897967",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_76_c13531de",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_dylan_237_c0abd9fb",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_90_cabe4491",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "MMLU_gpt-4o-mini_llm_debate_2_28ed20f5",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_47_312f2102",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_164_e0b4f707",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_dylan_297_a0298e03",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "HumanEval_gpt-4o-mini_llm_debate_6_3eeaf7fe",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_307_8f7d8892",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_344_dc73f35d",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_158_5e02ce82",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "GSM8K_gpt-4o-mini_dylan_206_acc78cdb",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_llm_debate_8_1469e7fd",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_12_d1fad0b9",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_dylan_268_71d20d8f",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_29_a9c9f1fa",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_119_c786f699",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "HumanEval_gpt-4o-mini_llm_debate_204_6751fc8b",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_166_69059699",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_dylan_61_16503bd0",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "GSM8K_gpt-4o-mini_dylan_29_8acf6f06",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "GSM8K_gpt-4o-mini_dylan_202_7bc64915",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_281_a3d158d7",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "MMLU_gpt-4o-mini_llm_debate_18_3a8ce8e5",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_llm_debate_28_6048b4e9",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "HumanEval_gpt-4o-mini_llm_debate_162_e914a71c",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "smol+gaia_gpt-4o-mini_smoagents_10_f9203ca0",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_149_16bf017b",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "GSM8K_gpt-4o-mini_dylan_10_8b2432f3",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "SciBench_gpt-4o-mini_llm_debate_109_d79378f1",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "magentic+gaia_unknown-model_magentic_one_184_6cb486e0",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "aegis",
+      "trajectory_id": "HumanEval_gpt-4o-mini_llm_debate_156_519def9c",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0027",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0011",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "livecodebench_pro_metagpt_0044",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0030",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0908",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0634",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0509",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0401",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0446",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0282",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0808",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0665",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0014",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0475",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0520",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0248",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0360",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0655",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dacode_smolagents_0004",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0439",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dacode_smolagents_0082",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0198",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0753",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0171",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0076",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "gaia_magentic-one_0017",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "gaia_magentic-one_0139",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0385",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0091",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0749",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0736",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0003",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0044",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0514",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0588",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0214",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0833",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0767",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0414",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0369",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0738",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0446",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0383",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0080",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0313",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0242",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0358",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0149",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0491",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0647",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0585",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0718",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0486",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0036",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0543",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0455",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0089",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0775",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0513",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0307",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0278",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0426",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0561",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0596",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0433",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0748",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0040",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0408",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0302",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0121",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0170",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0625",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0789",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0136",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0080",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0245",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0816",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0322",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0374",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0090",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0498",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0180",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0624",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0310",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0209",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0789",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0639",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0096",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0625",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0500",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0883",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0094",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0790",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0539",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0006",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0196",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0684",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0453",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0128",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0102",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0646",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0031",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0350",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0615",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0546",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0662",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0742",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0235",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0700",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0645",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0389",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0732",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0713",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0612",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0065",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0723",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0041",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0706",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0312",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0067",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0619",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0863",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0441",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0721",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0776",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0740",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0003",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0125",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0139",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0420",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0661",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0278",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0138",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0043",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0832",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0173",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0323",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0580",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0311",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0579",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0880",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0698",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0440",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0401",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0761",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0251",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0743",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0076",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0106",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0567",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0374",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0675",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0138",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0703",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0734",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0728",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0393",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0005",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0340",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0145",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0030",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0070",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0649",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0227",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0442",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0269",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "alfworld_alfagent_0063",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "alfworld_alfagent_0120",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "alfworld_alfagent_0065",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "gaia_magentic-one_0253",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "gaia_magentic-one_0056",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_debate_0120",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_debate_0110",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_debate_0048",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_debate_0138",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_debate_0129",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_debate_0159",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "gpqa_debate_0055",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "gpqa_debate_0018",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_debate_0007",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_debate_0108",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_debate_0052",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_debate_0146",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "mmlu_pro_debate_0019",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_debate_0110",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_debate_0058",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_debate_0072",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_debate_0021",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_debate_0022",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_debate_0041",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_debate_0089",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_debate_0098",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_debate_0141",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_debate_0079",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_debate_0054",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_debate_0104",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_debate_0150",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0099",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0166",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0055",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0101",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0017",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0114",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0069",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0145",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0119",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0091",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "humaneval_macnet_0016",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0061",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "livecodebench_pro_macnet_0041",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0140",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "humaneval_macnet_0011",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0137",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0133",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0125",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0306",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "livecodebench_pro_metagpt_0035",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0558",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0654",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "alfworld_alfagent_0183",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "alfworld_alfagent_0253",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "alfworld_alfagent_0229",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "mmlu_pro_debate_0056",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_debate_0078",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_debate_0153",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "mmlu_pro_debate_0044",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_debate_0139",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "gpqa_debate_0024",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "mmlu_pro_debate_0039",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_debate_0098",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "gpqa_dylan_0038",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "gpqa_dylan_0044",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "gpqa_dylan_0041",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_dylan_0069",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0029",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0193",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0360",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0158",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0148",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0238",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0217",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0317",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "gaia_magentic-one_0209",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0389",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0034",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0327",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0010",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0042",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0268",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0471",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0076",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0242",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "gaia_magentic-one_0280",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0156",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0168",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "mmlu_pro_mathchat_0020",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "mmlu_pro_mathchat_0257",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "mmlu_pro_mathchat_0267",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "mmlu_pro_mathchat_0273",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0386",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0227",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0810",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "alfworld_alfagent_0022",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "alfworld_alfagent_0096",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "alfworld_alfagent_0097",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "alfworld_alfagent_0093",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_debate_0043",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_debate_0035",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_debate_0158",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "gpqa_debate_0067",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_dylan_0021",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "gpqa_dylan_0009",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_dylan_0067",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_dylan_0070",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "livecodebench_pro_macnet_0053",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "livecodebench_pro_macnet_0020",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "livecodebench_pro_macnet_0072",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "gaia_magentic-one_0244",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0468",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "mmlu_pro_mathchat_0311",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0031",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0111",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "mmlu_pro_mathchat_0208",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0235",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0013",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_mathchat_0158",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "mmlu_pro_mathchat_0078",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_mathchat_0116",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "mmlu_pro_mathchat_0014",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0180",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "mmlu_pro_mathchat_0248",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0162",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0007",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0207",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "mmlu_pro_mathchat_0156",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0019",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0027",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "mmlu_pro_mathchat_0265",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_mathchat_0141",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_mathchat_0038",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "livecodebench_pro_metagpt_0047",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "kramabench_smolagents_0068",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "kramabench_smolagents_0015",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0830",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0040",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0680",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0705",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0006",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0017",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0177",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0066",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dacode_smolagents_0227",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0019",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0093",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dacode_smolagents_0071",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0209",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dacode_smolagents_0141",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0618",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0349",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0407",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0594",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0049",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0576",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0367",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0153",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "kramabench_smolagents_0010",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dacode_smolagents_0260",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0559",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0259",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0113",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0606",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0302",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0091",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_debate_0130",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_debate_0127",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_debate_0075",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_dylan_0057",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_mathchat_0058",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_mathchat_0164",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "mmlu_pro_mathchat_0068",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0156",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_mathchat_0218",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_mathchat_0083",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_mathchat_0125",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "mmlu_pro_mathchat_0074",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "mmlu_pro_mathchat_0034",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "mmlu_pro_mathchat_0094",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "mmlu_pro_mathchat_0111",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0246",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_mathchat_0109",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_mathchat_0059",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0134",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0281",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0140",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0109",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0186",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0688",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0579",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dacode_smolagents_0083",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dacode_smolagents_0281",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0633",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0792",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0777",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0165",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dacode_smolagents_0098",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0378",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0321",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dacode_smolagents_0023",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0046",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0179",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0660",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0211",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0155",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dacode_smolagents_0029",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0312",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dacode_smolagents_0102",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0439",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0257",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0327",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0075",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0529",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0516",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "alfworld_alfagent_0263",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "alfworld_alfagent_0127",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "alfworld_alfagent_0155",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "alfworld_alfagent_0038",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_debate_0048",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_debate_0034",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_debate_0093",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_debate_0125",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_debate_0014",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "gpqa_dylan_0007",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_dylan_0071",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "livecodebench_pro_macnet_0023",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0150",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0071",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "livecodebench_pro_macnet_0022",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0094",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "livecodebench_pro_macnet_0008",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0148",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "livecodebench_pro_macnet_0040",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0001",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0151",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0273",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0177",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0331",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_mathchat_0276",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0073",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_mathchat_0290",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0097",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0218",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_mathchat_0191",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0021",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_mathchat_0114",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_mathchat_0256",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0124",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0290",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0042",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0274",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0079",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "scibench_mathchat_0124",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "mmlu_pro_mathchat_0102",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "math_mathchat_0258",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "livecodebench_pro_metagpt_0042",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "livecodebench_pro_metagpt_0010",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_metagpt_0015",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dacode_smolagents_0033",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0482",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0665",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0174",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0029",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0090",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0009",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0515",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0375",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0140",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0328",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0764",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0203",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0591",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0259",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0825",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0670",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0286",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dacode_smolagents_0295",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "kramabench_smolagents_0043",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0292",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dacode_smolagents_0205",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0581",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0711",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0569",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0872",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "tablebench_smolagents_0568",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0115",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0458",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0020",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0295",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "databench_smolagents_0184",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0152",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0093",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dabench_smolagents_0122",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "alfworld_alfagent_0167",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "alfworld_alfagent_0052",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "alfworld_alfagent_0254",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0703",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0019",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0782",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "alfworld_alfagent_0030",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "alfworld_alfagent_0251",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "alfworld_alfagent_0117",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "alfworld_alfagent_0199",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "bigcodebench_macnet_0102",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0376",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0005",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0247",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0298",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0483",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "gaia_magentic-one_0260",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0011",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "gaia_magentic-one_0180",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0234",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0321",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0329",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0102",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0075",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0411",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0039",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0320",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0064",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "simpleqa_verified_magentic-one_0312",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0387",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0644",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0428",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0188",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0762",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0504",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0581",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0645",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0472",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    },
+    {
+      "dataset": "whowhen",
+      "trajectory_id": "dsqa_smolagents_0184",
+      "forbidden_key_hits": [],
+      "unexpected_top_level_keys": [],
+      "passed": true
+    }
+  ]
+}

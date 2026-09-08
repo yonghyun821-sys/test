@@ -1,0 +1,345 @@
+{
+  "taxonomy_id": "aegis_whowhen_pilot_merged",
+  "name": "Pilot Merge of AEGIS and Who&When Pro Text Taxonomies",
+  "category_count": 26,
+  "categories": [
+    {
+      "id": "MT-01",
+      "name": "Task specification deviation",
+      "definition": "Failure to adhere to the specified constraints or requirements of a given task, leading to suboptimal or incorrect outcomes.",
+      "module": "specification_issues",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-1.1"
+        }
+      ]
+    },
+    {
+      "id": "MT-02",
+      "name": "Role specification deviation",
+      "definition": "Failure to adhere to the defined responsibilities and constraints of an assigned role, potentially leading to an agent behaving like another.",
+      "module": "specification_issues",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-1.2"
+        }
+      ]
+    },
+    {
+      "id": "MT-03",
+      "name": "Add redundant steps",
+      "definition": "Unnecessary reiteration of previously completed steps in a process, potentially causing delays or errors in task completion.",
+      "module": "specification_issues",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-1.3"
+        }
+      ]
+    },
+    {
+      "id": "MT-04",
+      "name": "Remove conversation history",
+      "definition": "Unexpected context truncation, disregarding recent interaction history and reverting to an antecedent conversational state.",
+      "module": "specification_issues",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-1.4"
+        }
+      ]
+    },
+    {
+      "id": "MT-05",
+      "name": "Remove termination conditions",
+      "definition": "Lack of recognition or understanding of the criteria that should trigger the termination of the agents' interaction, potentially leading to unnecessary continuation.",
+      "module": "specification_issues",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-1.5"
+        }
+      ]
+    },
+    {
+      "id": "MT-06",
+      "name": "Repeat handled tasks",
+      "definition": "Unexpected or unwarranted restarting of a dialogue, potentially losing context and progress made in the interaction.",
+      "module": "inter_agent_misalignment",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-2.1"
+        }
+      ]
+    },
+    {
+      "id": "MT-07",
+      "name": "Make request ambiguous",
+      "definition": "Inability to request additional information when faced with unclear or incomplete data, potentially resulting in incorrect actions.",
+      "module": "inter_agent_misalignment",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-2.2"
+        }
+      ]
+    },
+    {
+      "id": "MT-08",
+      "name": "Deviate from main goal",
+      "definition": "Deviation from the intended objective or focus of a given task, potentially resulting in irrelevant or unproductive actions.",
+      "module": "inter_agent_misalignment",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-2.3"
+        }
+      ]
+    },
+    {
+      "id": "MT-09",
+      "name": "Hide important information",
+      "definition": "Failure to share or communicate important data or insights that an agent possesses and that could affect other agents' decisions.",
+      "module": "inter_agent_misalignment",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-2.4"
+        }
+      ]
+    },
+    {
+      "id": "MT-10",
+      "name": "Ignore other agents",
+      "definition": "Disregarding or failing to adequately consider input or recommendations from other agents, potentially leading to suboptimal decisions or missed collaboration opportunities.",
+      "module": "inter_agent_misalignment",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-2.5"
+        }
+      ]
+    },
+    {
+      "id": "MT-11",
+      "name": "Inconsistent reasoning",
+      "definition": "Discrepancy between the logical reasoning process and the actual actions taken by the agent, potentially resulting in unexpected or undesired behaviors.",
+      "module": "inter_agent_misalignment",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-2.6"
+        }
+      ]
+    },
+    {
+      "id": "MT-12",
+      "name": "Premature termination",
+      "definition": "Ending a dialogue, interaction, or task before all necessary information has been exchanged or objectives have been met, potentially resulting in incomplete or incorrect outcomes.",
+      "module": "task_verification",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-3.1"
+        },
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "A.3"
+        }
+      ]
+    },
+    {
+      "id": "MT-13",
+      "name": "Remove verification steps",
+      "definition": "Partial or complete omission of proper checking or confirmation of task outcomes or system outputs, potentially allowing errors or inconsistencies to propagate undetected.",
+      "module": "task_verification",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-3.2"
+        }
+      ]
+    },
+    {
+      "id": "MT-14",
+      "name": "Incorrect verification",
+      "definition": "Failure to adequately validate or cross-check crucial information or decisions during the iterations, potentially leading to errors or vulnerabilities in the system.",
+      "module": "task_verification",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "aegis_mast_14",
+          "source_category_id": "FM-3.3"
+        },
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "V.2"
+        }
+      ]
+    },
+    {
+      "id": "MT-15",
+      "name": "Tool parameter/invocation error",
+      "definition": "Correct tool but wrong arguments, malformed call, missing required parameters, wrong configuration, or incomplete action sequence (omitting required precondition calls in stateful workflows).",
+      "module": "action",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "A.1"
+        }
+      ]
+    },
+    {
+      "id": "MT-16",
+      "name": "Output format/syntax error",
+      "definition": "Malformed structured output (JSON, code, API response), broken syntax, incorrect diff format, code that doesn't parse, or final answer in wrong format. Includes returning verbose explanations when a concise answer is expected, or providing a narrative when a single value is required.",
+      "module": "action",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "A.2"
+        }
+      ]
+    },
+    {
+      "id": "MT-17",
+      "name": "Hallucination",
+      "definition": "Generating claims that are NOT grounded in any observation the agent has retrieved. The agent fabricates facts from parametric knowledge, stale training data, or whole cloth — confidently asserting something that does not appear anywhere in its search results or tool outputs.",
+      "module": "reasoning",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "R.1"
+        }
+      ]
+    },
+    {
+      "id": "MT-18",
+      "name": "Reasoning error",
+      "definition": "The agent has the right high-level frame but makes a localized reasoning mistake that derails the chain. Includes two related sub-shapes: (1) Grounded misapplication: the agent has correct information in its observations but misapplies, confuses, or draws wrong conclusions from it. The wrong answer IS traceable to something that actually appears in the observations — entity confusion, temporal mix-up, reversed comparison, misattribution across sources. (2) Local derivation bug: the agent chose the right algorithmic frame and the overall plan is correct, but a single derivation step, case-split, invariant, or state update is broken.",
+      "module": "reasoning",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "R.2"
+        }
+      ]
+    },
+    {
+      "id": "MT-19",
+      "name": "Numerical/calculation error",
+      "definition": "Arithmetic mistakes, unit conversion errors, counting errors, measurement errors, off-by-one errors, rounding errors.",
+      "module": "reasoning",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "R.3"
+        }
+      ]
+    },
+    {
+      "id": "MT-20",
+      "name": "Task misunderstanding",
+      "definition": "The agent's mental model of the task is wrong at the structural level. Includes two related types: (1) Spec-level misunderstanding: misreading the question scope, confusing which attribute is being queried, misunderstanding role specifications, scope inflation (adding unrequested elements), and answering a subtly different question than what was asked. (2) Abstraction-level misunderstanding: the agent reads the problem statement correctly but commits to a wrong reduction, wrong solution family, or wrong algorithmic abstraction.",
+      "module": "reasoning",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "R.4"
+        }
+      ]
+    },
+    {
+      "id": "MT-21",
+      "name": "Context/memory loss",
+      "definition": "Losing or failing to retrieve relevant information from conversation history, prior observations, or external memory stores. Includes context window overflow, forgetting earlier constraints, using outdated information despite updates.",
+      "module": "verification",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "V.1"
+        }
+      ]
+    },
+    {
+      "id": "MT-22",
+      "name": "Delegation/orchestration error",
+      "definition": "Assigning subtask to wrong agent, improper sub-task decomposition, role confusion (agent behaving like another), capability mismatch (delegating tasks beyond agent's capabilities), and conflicting actions between agents.",
+      "module": "coordination",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "C.1"
+        }
+      ]
+    },
+    {
+      "id": "MT-23",
+      "name": "Communication failure",
+      "definition": "Withholding critical information from other agents, ignoring other agents' input or recommendations, failing to ask for clarification when instructions are ambiguous, and losing shared context across agent boundaries.",
+      "module": "coordination",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "C.2"
+        }
+      ]
+    },
+    {
+      "id": "MT-24",
+      "name": "Over-reliance on other agents",
+      "definition": "Agent produces a sound answer or reasoning independently, then revises it after seeing another agent's output, adopting a less accurate position.",
+      "module": "coordination",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "C.3"
+        }
+      ]
+    },
+    {
+      "id": "MT-25",
+      "name": "Ineffective Planning",
+      "definition": "The agent's high-level plan or strategy is unsound, leading the rollout toward a dead end that would require revision rather than incremental continuation.",
+      "module": "planning",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "PL.1"
+        }
+      ]
+    },
+    {
+      "id": "MT-26",
+      "name": "Repetitive/looping behavior",
+      "definition": "Repeating the same or equivalent actions without progress. Includes retry loops with identical parameters, re-executing completed steps, and resource waste through redundant tool calls.",
+      "module": "action",
+      "source_categories": [
+        {
+          "source_taxonomy_id": "whowhen_pro_text_observed_14",
+          "source_category_id": "A.4"
+        }
+      ]
+    }
+  ],
+  "generated_by": {
+    "model": "openai/gpt-4o-mini",
+    "temperature": 0,
+    "seed": 20260906,
+    "taxonomy_metadata_only": true,
+    "trajectory_input": false,
+    "gold_input": false,
+    "prediction_or_result_input": false,
+    "source_taxonomy_hashes": {
+      "aegis_mast_14": "1525a68f7af9a2fee44f48f783f598d73637c6b920c243e3271e014ae5a762e9",
+      "whowhen_pro_text_observed_14": "51e32cb73ca31e6cf7fbee981cb470af9c6aef34009c80bba27ba53ec21f0e5a"
+    },
+    "base_merge_attempt": 6,
+    "provenance_adjudication_model": "openai/gpt-4o-mini",
+    "provenance_adjudication_count": 1,
+    "provenance_repair_method": "LLM chooses among only the duplicated merged-category candidates; code removes duplicate references and applies that choice exactly."
+  },
+  "freeze_policy": "Create one validated pilot merge, preserve it, and never apply human semantic edits or result-dependent changes."
+}

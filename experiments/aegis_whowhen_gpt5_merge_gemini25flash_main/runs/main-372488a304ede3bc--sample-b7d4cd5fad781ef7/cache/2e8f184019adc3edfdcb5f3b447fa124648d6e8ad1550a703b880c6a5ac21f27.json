@@ -1,0 +1,46 @@
+{
+  "cache_key": "2e8f184019adc3edfdcb5f3b447fa124648d6e8ad1550a703b880c6a5ac21f27",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-2.3\",\n  \"explanation\": \"The agent deviates from the main goal by not finding the explosive force from Encyclopedia Britannica as requested in the original prompt. Instead, it focuses on finding the article on Phys.org and then plans to look up the explosive force in Encyclopedia Britannica, which was supposed to be the first step after identifying the catastrophe.\",\n  \"evidence\": \"The user's initial query explicitly states: 'Find the explosive force of this catastrophe according to Encyclopedia Britannica'. In step 7, the orchestrator states: 'I will look up the explosive force of the Tunguska event in the Encyclopedia Britannica.' This indicates a deviation from the original plan where it should have already done so.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-2.3",
+    "explanation": "The agent deviates from the main goal by not finding the explosive force from Encyclopedia Britannica as requested in the original prompt. Instead, it focuses on finding the article on Phys.org and then plans to look up the explosive force in Encyclopedia Britannica, which was supposed to be the first step after identifying the catastrophe.",
+    "evidence": "The user's initial query explicitly states: 'Find the explosive force of this catastrophe according to Encyclopedia Britannica'. In step 7, the orchestrator states: 'I will look up the explosive force of the Tunguska event in the Encyclopedia Britannica.' This indicates a deviation from the original plan where it should have already done so.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850455-pRcGzTehHLOj7wKJX2gR",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 156,
+      "prompt_tokens": 5265,
+      "total_tokens": 5421,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0019695,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0019695,
+        "upstream_inference_prompt_cost": 0.0015795,
+        "upstream_inference_completions_cost": 0.00039
+      }
+    },
+    "cost_usd": 0.0019695
+  }
+}

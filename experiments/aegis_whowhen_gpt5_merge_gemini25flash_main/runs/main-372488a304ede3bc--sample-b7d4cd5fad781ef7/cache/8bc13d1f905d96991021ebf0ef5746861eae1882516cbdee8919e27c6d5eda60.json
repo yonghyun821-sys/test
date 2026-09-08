@@ -1,0 +1,46 @@
+{
+  "cache_key": "8bc13d1f905d96991021ebf0ef5746861eae1882516cbdee8919e27c6d5eda60",
+  "raw_output_text": "{\n  \"failure_category\": \"A.2\",\n  \"explanation\": \"The agent included an `if __name__ == \\\"__main__\\\":` block with example usage code, which is not part of the function implementation and violates the instruction to return only the function body.\",\n  \"evidence\": \"The final answer contains an `if __name__ == \\\"__main__\\\":` block with example usage, which was not requested by the prompt: \\\"Return the complete implementation above with the function body filled in. Include all imports. Write Python code only.\\\"\"\n}",
+  "parsed_response": {
+    "failure_category": "A.2",
+    "explanation": "The agent included an `if __name__ == \"__main__\":` block with example usage code, which is not part of the function implementation and violates the instruction to return only the function body.",
+    "evidence": "The final answer contains an `if __name__ == \"__main__\":` block with example usage, which was not requested by the prompt: \"Return the complete implementation above with the function body filled in. Include all imports. Write Python code only.\"",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850863-357liXr9YUncrZnlhIah",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 121,
+      "prompt_tokens": 6453,
+      "total_tokens": 6574,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0022384,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0022384,
+        "upstream_inference_prompt_cost": 0.0019359,
+        "upstream_inference_completions_cost": 0.0003025
+      }
+    },
+    "cost_usd": 0.0022384
+  }
+}

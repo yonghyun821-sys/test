@@ -1,0 +1,502 @@
+{
+  "cache_key": "953468707c4a33b5224d25dec21b780be3671054878682c3aef0b7b54ed509e2",
+  "created_at_utc": "2026-09-08T06:42:49.669299+00:00",
+  "request": {
+    "api": "openrouter_chat_completions",
+    "base_url": "https://openrouter.ai/api/v1",
+    "provider": {
+      "allow_fallbacks": false,
+      "require_parameters": true,
+      "data_collection": "deny",
+      "order": [
+        "openai"
+      ]
+    },
+    "model": "openai/gpt-5",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You merge two failure taxonomies using taxonomy metadata only. Merge genuinely equivalent mechanisms, preserve distinct mechanisms, invent no vague category, omit no source category, and attach every source category to exactly one merged category. Never use trajectories, gold labels, predictions, or experimental results."
+      },
+      {
+        "role": "user",
+        "content": "Create one merged taxonomy from the two source taxonomies below.\n\nRules:\n1. Merge only genuinely equivalent causal mechanisms.\n2. Preserve distinct mechanisms as separate categories.\n3. Do not create vague catch-all categories.\n4. Record complete source provenance for every merged category.\n5. Include every source category exactly once across provenance.\n6. Use stable merged IDs such as MT-01, MT-02, and so on.\n\n<SOURCE_TAXONOMIES>\n{\n  \"aegis\": {\n    \"taxonomy_id\": \"aegis_mast_14\",\n    \"name\": \"AEGIS MAST-derived Failure Modes\",\n    \"categories\": [\n      {\n        \"id\": \"FM-1.1\",\n        \"name\": \"Task specification deviation\",\n        \"definition\": \"Failure to adhere to the specified constraints or requirements of a given task, leading to suboptimal or incorrect outcomes.\",\n        \"module\": \"specification_issues\"\n      },\n      {\n        \"id\": \"FM-1.2\",\n        \"name\": \"Role specification deviation\",\n        \"definition\": \"Failure to adhere to the defined responsibilities and constraints of an assigned role, potentially leading to an agent behaving like another.\",\n        \"module\": \"specification_issues\"\n      },\n      {\n        \"id\": \"FM-1.3\",\n        \"name\": \"Add redundant steps\",\n        \"definition\": \"Unnecessary reiteration of previously completed steps in a process, potentially causing delays or errors in task completion.\",\n        \"module\": \"specification_issues\"\n      },\n      {\n        \"id\": \"FM-1.4\",\n        \"name\": \"Remove conversation history\",\n        \"definition\": \"Unexpected context truncation, disregarding recent interaction history and reverting to an antecedent conversational state.\",\n        \"module\": \"specification_issues\"\n      },\n      {\n        \"id\": \"FM-1.5\",\n        \"name\": \"Remove termination conditions\",\n        \"definition\": \"Lack of recognition or understanding of the criteria that should trigger the termination of the agents' interaction, potentially leading to unnecessary continuation.\",\n        \"module\": \"specification_issues\"\n      },\n      {\n        \"id\": \"FM-2.1\",\n        \"name\": \"Repeat handled tasks\",\n        \"definition\": \"Unexpected or unwarranted restarting of a dialogue, potentially losing context and progress made in the interaction.\",\n        \"module\": \"inter_agent_misalignment\"\n      },\n      {\n        \"id\": \"FM-2.2\",\n        \"name\": \"Make request ambiguous\",\n        \"definition\": \"Inability to request additional information when faced with unclear or incomplete data, potentially resulting in incorrect actions.\",\n        \"module\": \"inter_agent_misalignment\"\n      },\n      {\n        \"id\": \"FM-2.3\",\n        \"name\": \"Deviate from main goal\",\n        \"definition\": \"Deviation from the intended objective or focus of a given task, potentially resulting in irrelevant or unproductive actions.\",\n        \"module\": \"inter_agent_misalignment\"\n      },\n      {\n        \"id\": \"FM-2.4\",\n        \"name\": \"Hide important information\",\n        \"definition\": \"Failure to share or communicate important data or insights that an agent possesses and that could affect other agents' decisions.\",\n        \"module\": \"inter_agent_misalignment\"\n      },\n      {\n        \"id\": \"FM-2.5\",\n        \"name\": \"Ignore other agents\",\n        \"definition\": \"Disregarding or failing to adequately consider input or recommendations from other agents, potentially leading to suboptimal decisions or missed collaboration opportunities.\",\n        \"module\": \"inter_agent_misalignment\"\n      },\n      {\n        \"id\": \"FM-2.6\",\n        \"name\": \"Inconsistent reasoning\",\n        \"definition\": \"Discrepancy between the logical reasoning process and the actual actions taken by the agent, potentially resulting in unexpected or undesired behaviors.\",\n        \"module\": \"inter_agent_misalignment\"\n      },\n      {\n        \"id\": \"FM-3.1\",\n        \"name\": \"Premature termination\",\n        \"definition\": \"Ending a dialogue, interaction, or task before all necessary information has been exchanged or objectives have been met, potentially resulting in incomplete or incorrect outcomes.\",\n        \"module\": \"task_verification\"\n      },\n      {\n        \"id\": \"FM-3.2\",\n        \"name\": \"Remove verification steps\",\n        \"definition\": \"Partial or complete omission of proper checking or confirmation of task outcomes or system outputs, potentially allowing errors or inconsistencies to propagate undetected.\",\n        \"module\": \"task_verification\"\n      },\n      {\n        \"id\": \"FM-3.3\",\n        \"name\": \"Incorrect verification\",\n        \"definition\": \"Failure to adequately validate or cross-check crucial information or decisions during the iterations, potentially leading to errors or vulnerabilities in the system.\",\n        \"module\": \"task_verification\"\n      }\n    ]\n  },\n  \"whowhen\": {\n    \"taxonomy_id\": \"whowhen_pro_text_observed_14\",\n    \"name\": \"Who&When Pro Text Observed Error Modes\",\n    \"categories\": [\n      {\n        \"id\": \"A.1\",\n        \"name\": \"Tool parameter/invocation error\",\n        \"definition\": \"Correct tool but wrong arguments, malformed call, missing required parameters, wrong configuration, or incomplete action sequence (omitting required precondition calls in stateful workflows).\",\n        \"module\": \"action\"\n      },\n      {\n        \"id\": \"A.2\",\n        \"name\": \"Output format/syntax error\",\n        \"definition\": \"Malformed structured output (JSON, code, API response), broken syntax, incorrect diff format, code that doesn't parse, or final answer in wrong format. Includes returning verbose explanations when a concise answer is expected, or providing a narrative when a single value is required.\",\n        \"module\": \"action\"\n      },\n      {\n        \"id\": \"A.3\",\n        \"name\": \"Premature termination\",\n        \"definition\": \"Stopping before task objectives are fully met. Includes returning partial results as final, producing zero tool calls on a valid turn, being unaware of completion criteria, and cross-domain tool-call dropout (e.g. completing tasks in one API domain but failing to act in the next). Also includes refusing to engage with a task entirely.\",\n        \"module\": \"action\"\n      },\n      {\n        \"id\": \"A.4\",\n        \"name\": \"Repetitive/looping behavior\",\n        \"definition\": \"Repeating the same or equivalent actions without progress. Includes retry loops with identical parameters, re-executing completed steps, and resource waste through redundant tool calls.\",\n        \"module\": \"action\"\n      },\n      {\n        \"id\": \"R.1\",\n        \"name\": \"Hallucination\",\n        \"definition\": \"Generating claims that are NOT grounded in any observation the agent has retrieved. The agent fabricates facts from parametric knowledge, stale training data, or whole cloth — confidently asserting something that does not appear anywhere in its search results or tool outputs. Distinguished from R.2: in R.1 the wrong claim is ABSENT from all observations; in R.2 the wrong claim is traceable to something the agent actually saw but misapplied.\",\n        \"module\": \"reasoning\"\n      },\n      {\n        \"id\": \"R.2\",\n        \"name\": \"Reasoning error\",\n        \"definition\": \"The agent has the right high-level frame but makes a localized reasoning mistake that derails the chain. Includes two related sub-shapes: (1) Grounded misapplication: the agent has correct information in its observations but misapplies, confuses, or draws wrong conclusions from it. The wrong answer IS traceable to something that actually appears in the observations — entity confusion, temporal mix-up, reversed comparison, misattribution across sources. (2) Local derivation bug: the agent chose the right algorithmic frame and the overall plan is correct, but a single derivation step, case-split, invariant, or state update is broken. Common errors: sign flipped on an inequality, missed even/odd parity branch, stale state in a tracking variable, broken invariant maintenance, missing edge case, wrong direction in a recurrence. The error is *local* — patching that one step would make the algorithm work. Distinguished from R.4: could the candidate output, with arbitrarily many local bug fixes (sign flips, added branches, fixed invariants), eventually pass? Yes → R.2. No → R.4 (wrong frame).\",\n        \"module\": \"reasoning\"\n      },\n      {\n        \"id\": \"R.3\",\n        \"name\": \"Numerical/calculation error\",\n        \"definition\": \"Arithmetic mistakes, unit conversion errors, counting errors, measurement errors, off-by-one errors, rounding errors.\",\n        \"module\": \"reasoning\"\n      },\n      {\n        \"id\": \"R.4\",\n        \"name\": \"Task misunderstanding\",\n        \"definition\": \"The agent's mental model of the task is wrong at the structural level. Includes two related types: (1) Spec-level misunderstanding: misreading the question scope, confusing which attribute is being queried, misunderstanding role specifications, scope inflation (adding unrequested elements), and answering a subtly different question than what was asked. (2) Abstraction-level misunderstanding: the agent reads the problem statement correctly but commits to a wrong reduction, wrong solution family, or wrong algorithmic abstraction. The chosen solution-space is over-restrictive, wrong-shape, or maps to a different problem than the one being solved. Includes \\\"wrong algorithm class\\\", \\\"over-restrictive parameterization\\\", and \\\"false equivalence\\\". Distinguishability test (R.4 vs R.2): could the candidate output, with arbitrarily many local bug fixes, ever satisfy the task? If no — the structural choice is wrong, it's R.4.\",\n        \"module\": \"reasoning\"\n      },\n      {\n        \"id\": \"V.1\",\n        \"name\": \"Context/memory loss\",\n        \"definition\": \"Losing or failing to retrieve relevant information from conversation history, prior observations, or external memory stores. Includes context window overflow, forgetting earlier constraints, using outdated information despite updates.\",\n        \"module\": \"verification\"\n      },\n      {\n        \"id\": \"V.2\",\n        \"name\": \"Inadequate or incorrect verification\",\n        \"definition\": \"Failing to verify results before returning them, or verifying incorrectly. Includes: skipping verification entirely, accepting incorrect outputs without checking, performing incomplete validation, wrong verification that incorrectly confirms incorrect answers, failing to cross-check when multiple sources give conflicting information, uncritically accepting false premises or contradictory evidence, misinterpreting results of own actions, misattributing errors to wrong causes, and overcorrecting a correct answer into an incorrect one.\",\n        \"module\": \"verification\"\n      },\n      {\n        \"id\": \"C.1\",\n        \"name\": \"Delegation/orchestration error\",\n        \"definition\": \"Assigning subtask to wrong agent, improper sub-task decomposition, role confusion (agent behaving like another), capability mismatch (delegating tasks beyond agent's capabilities), and conflicting actions between agents.\",\n        \"module\": \"coordination\"\n      },\n      {\n        \"id\": \"C.2\",\n        \"name\": \"Communication failure\",\n        \"definition\": \"Withholding critical information from other agents, ignoring other agents' input or recommendations, failing to ask for clarification when instructions are ambiguous, and losing shared context across agent boundaries.\",\n        \"module\": \"coordination\"\n      },\n      {\n        \"id\": \"C.3\",\n        \"name\": \"Over-reliance on other agents\",\n        \"definition\": \"Agent produces a sound answer or reasoning independently, then revises it after seeing another agent's output, adopting a less accurate position. The agent's own reasoning was not flawed — the error is in the revision decision: the agent treated another agent's output as more reliable than its own when it should not have. Distinguished from R.2: in R.2 the agent's own reasoning chain is flawed; in C.3 the agent would have been correct without the multi-agent interaction. The failure lives in the handoff, not in any single agent's local reasoning. Applies to any topology with directional information flow between agents.\",\n        \"module\": \"coordination\"\n      },\n      {\n        \"id\": \"PL.1\",\n        \"name\": \"Ineffective Planning\",\n        \"definition\": \"The agent's high-level plan or strategy is unsound, leading the rollout toward a dead end that would require revision rather than incremental continuation. Examples include adopting wrong premises in the plan, poor decomposition of the task into sub-goals, or failing to reformulate when the initial approach proves unworkable. The fault is in the plan rather than in any single execution step.\",\n        \"module\": \"planning\"\n      }\n    ]\n  }\n}\n</SOURCE_TAXONOMIES>\n\n"
+      }
+    ],
+    "temperature": null,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "seed": 20260908,
+    "max_tokens": 16000,
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "MergedTaxonomyOutput",
+        "strict": true,
+        "schema": {
+          "$defs": {
+            "MergedCategory": {
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "maxLength": 40,
+                  "minLength": 1,
+                  "title": "Id",
+                  "type": "string"
+                },
+                "name": {
+                  "maxLength": 160,
+                  "minLength": 1,
+                  "title": "Name",
+                  "type": "string"
+                },
+                "definition": {
+                  "maxLength": 1200,
+                  "minLength": 1,
+                  "title": "Definition",
+                  "type": "string"
+                },
+                "module": {
+                  "maxLength": 120,
+                  "minLength": 1,
+                  "title": "Module",
+                  "type": "string"
+                },
+                "source_categories": {
+                  "items": {
+                    "$ref": "#/$defs/ProvenanceRef"
+                  },
+                  "minItems": 1,
+                  "title": "Source Categories",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "definition",
+                "module",
+                "source_categories"
+              ],
+              "title": "MergedCategory",
+              "type": "object"
+            },
+            "ProvenanceRef": {
+              "additionalProperties": false,
+              "properties": {
+                "source_taxonomy_id": {
+                  "maxLength": 80,
+                  "minLength": 1,
+                  "title": "Source Taxonomy Id",
+                  "type": "string"
+                },
+                "source_category_id": {
+                  "maxLength": 40,
+                  "minLength": 1,
+                  "title": "Source Category Id",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "source_taxonomy_id",
+                "source_category_id"
+              ],
+              "title": "ProvenanceRef",
+              "type": "object"
+            }
+          },
+          "additionalProperties": false,
+          "properties": {
+            "categories": {
+              "items": {
+                "$ref": "#/$defs/MergedCategory"
+              },
+              "maxItems": 28,
+              "minItems": 1,
+              "title": "Categories",
+              "type": "array"
+            }
+          },
+          "required": [
+            "categories"
+          ],
+          "title": "MergedTaxonomyOutput",
+          "type": "object"
+        }
+      }
+    }
+  },
+  "parsed_response": {
+    "categories": [
+      {
+        "id": "MT-01",
+        "name": "Communication failure",
+        "definition": "Withholding critical information from other agents, ignoring other agents' input or recommendations, failing to ask for clarification when instructions are ambiguous, and losing shared context across agent boundaries.",
+        "module": "coordination",
+        "source_categories": [
+          {
+            "source_taxonomy_id": "whowhen_pro_text_observed_14",
+            "source_category_id": "C.2"
+          },
+          {
+            "source_taxonomy_id": "aegis_mast_14",
+            "source_category_id": "FM-2.2"
+          },
+          {
+            "source_taxonomy_id": "aegis_mast_14",
+            "source_category_id": "FM-2.4"
+          },
+          {
+            "source_taxonomy_id": "aegis_mast_14",
+            "source_category_id": "FM-2.5"
+          }
+        ]
+      },
+      {
+        "id": "MT-02",
+        "name": "Delegation/orchestration error",
+        "definition": "Assigning subtask to wrong agent, improper sub-task decomposition, role confusion (agent behaving like another), capability mismatch (delegating tasks beyond agent's capabilities), and conflicting actions between agents.",
+        "module": "coordination",
+        "source_categories": [
+          {
+            "source_taxonomy_id": "whowhen_pro_text_observed_14",
+            "source_category_id": "C.1"
+          },
+          {
+            "source_taxonomy_id": "aegis_mast_14",
+            "source_category_id": "FM-1.2"
+          }
+        ]
+      },
+      {
+        "id": "MT-03",
+        "name": "Repetitive/looping behavior",
+        "definition": "Repeating the same or equivalent actions without progress. Includes retry loops with identical parameters, re-executing completed steps, and resource waste through redundant tool calls.",
+        "module": "action",
+        "source_categories": [
+          {
+            "source_taxonomy_id": "whowhen_pro_text_observed_14",
+            "source_category_id": "A.4"
+          },
+          {
+            "source_taxonomy_id": "aegis_mast_14",
+            "source_category_id": "FM-1.3"
+          },
+          {
+            "source_taxonomy_id": "aegis_mast_14",
+            "source_category_id": "FM-2.1"
+          }
+        ]
+      },
+      {
+        "id": "MT-04",
+        "name": "Context/memory loss",
+        "definition": "Losing or failing to retrieve relevant information from conversation history, prior observations, or external memory stores. Includes context window overflow, forgetting earlier constraints, using outdated information despite updates.",
+        "module": "verification",
+        "source_categories": [
+          {
+            "source_taxonomy_id": "whowhen_pro_text_observed_14",
+            "source_category_id": "V.1"
+          },
+          {
+            "source_taxonomy_id": "aegis_mast_14",
+            "source_category_id": "FM-1.4"
+          }
+        ]
+      },
+      {
+        "id": "MT-05",
+        "name": "Premature termination",
+        "definition": "Stopping before task objectives are fully met. Includes returning partial results as final, producing zero tool calls on a valid turn, being unaware of completion criteria, and cross-domain tool-call dropout (e.g., completing tasks in one API domain but failing to act in the next). Also includes refusing to engage with a task entirely.",
+        "module": "action",
+        "source_categories": [
+          {
+            "source_taxonomy_id": "whowhen_pro_text_observed_14",
+            "source_category_id": "A.3"
+          },
+          {
+            "source_taxonomy_id": "aegis_mast_14",
+            "source_category_id": "FM-3.1"
+          }
+        ]
+      },
+      {
+        "id": "MT-06",
+        "name": "Inadequate or incorrect verification",
+        "definition": "Failing to verify results before returning them, or verifying incorrectly. Includes: skipping verification entirely, accepting incorrect outputs without checking, performing incomplete validation, wrong verification that incorrectly confirms incorrect answers, failing to cross-check when multiple sources give conflicting information, uncritically accepting false premises or contradictory evidence, misinterpreting results of own actions, misattributing errors to wrong causes, and overcorrecting a correct answer into an incorrect one.",
+        "module": "verification",
+        "source_categories": [
+          {
+            "source_taxonomy_id": "whowhen_pro_text_observed_14",
+            "source_category_id": "V.2"
+          },
+          {
+            "source_taxonomy_id": "aegis_mast_14",
+            "source_category_id": "FM-3.2"
+          },
+          {
+            "source_taxonomy_id": "aegis_mast_14",
+            "source_category_id": "FM-3.3"
+          }
+        ]
+      },
+      {
+        "id": "MT-07",
+        "name": "Tool parameter/invocation error",
+        "definition": "Correct tool but wrong arguments, malformed call, missing required parameters, wrong configuration, or incomplete action sequence (omitting required precondition calls in stateful workflows).",
+        "module": "action",
+        "source_categories": [
+          {
+            "source_taxonomy_id": "whowhen_pro_text_observed_14",
+            "source_category_id": "A.1"
+          }
+        ]
+      },
+      {
+        "id": "MT-08",
+        "name": "Output format/syntax error",
+        "definition": "Malformed structured output (JSON, code, API response), broken syntax, incorrect diff format, code that doesn't parse, or final answer in wrong format. Includes returning verbose explanations when a concise answer is expected, or providing a narrative when a single value is required.",
+        "module": "action",
+        "source_categories": [
+          {
+            "source_taxonomy_id": "whowhen_pro_text_observed_14",
+            "source_category_id": "A.2"
+          }
+        ]
+      },
+      {
+        "id": "MT-09",
+        "name": "Hallucination",
+        "definition": "Generating claims that are not grounded in any observation the agent has retrieved. The agent fabricates facts from parametric knowledge, stale training data, or whole cloth — asserting something that does not appear anywhere in its search results or tool outputs.",
+        "module": "reasoning",
+        "source_categories": [
+          {
+            "source_taxonomy_id": "whowhen_pro_text_observed_14",
+            "source_category_id": "R.1"
+          }
+        ]
+      },
+      {
+        "id": "MT-10",
+        "name": "Reasoning error",
+        "definition": "Right high-level frame but a localized reasoning mistake derails the chain. Includes grounded misapplication of observed information and local derivation bugs (e.g., sign flip, missed branch, stale state, broken invariant, missing edge case).",
+        "module": "reasoning",
+        "source_categories": [
+          {
+            "source_taxonomy_id": "whowhen_pro_text_observed_14",
+            "source_category_id": "R.2"
+          }
+        ]
+      },
+      {
+        "id": "MT-11",
+        "name": "Numerical/calculation error",
+        "definition": "Arithmetic mistakes, unit conversion errors, counting errors, measurement errors, off-by-one errors, rounding errors.",
+        "module": "reasoning",
+        "source_categories": [
+          {
+            "source_taxonomy_id": "whowhen_pro_text_observed_14",
+            "source_category_id": "R.3"
+          }
+        ]
+      },
+      {
+        "id": "MT-12",
+        "name": "Task misunderstanding",
+        "definition": "The agent's mental model of the task is wrong at the structural level. Includes spec-level misunderstanding (misreading scope, confusing which attribute is queried, misunderstanding role specifications, scope inflation) and abstraction-level misunderstanding (wrong reduction or solution family, wrong algorithmic abstraction).",
+        "module": "reasoning",
+        "source_categories": [
+          {
+            "source_taxonomy_id": "whowhen_pro_text_observed_14",
+            "source_category_id": "R.4"
+          }
+        ]
+      },
+      {
+        "id": "MT-13",
+        "name": "Ineffective planning",
+        "definition": "The agent's high-level plan or strategy is unsound, leading toward a dead end that requires revision rather than incremental continuation. Examples: wrong premises in the plan, poor decomposition into sub-goals, failure to reformulate when the initial approach proves unworkable.",
+        "module": "planning",
+        "source_categories": [
+          {
+            "source_taxonomy_id": "whowhen_pro_text_observed_14",
+            "source_category_id": "PL.1"
+          }
+        ]
+      },
+      {
+        "id": "MT-14",
+        "name": "Over-reliance on other agents",
+        "definition": "Agent would have been correct independently but adopts a less accurate position after seeing another agent's output; the failure is in treating external outputs as more reliable than warranted.",
+        "module": "coordination",
+        "source_categories": [
+          {
+            "source_taxonomy_id": "whowhen_pro_text_observed_14",
+            "source_category_id": "C.3"
+          }
+        ]
+      },
+      {
+        "id": "MT-15",
+        "name": "Task specification deviation",
+        "definition": "Failure to adhere to the specified constraints or requirements of a given task, leading to suboptimal or incorrect outcomes.",
+        "module": "specification_issues",
+        "source_categories": [
+          {
+            "source_taxonomy_id": "aegis_mast_14",
+            "source_category_id": "FM-1.1"
+          }
+        ]
+      },
+      {
+        "id": "MT-16",
+        "name": "Remove termination conditions",
+        "definition": "Lack of recognition or understanding of the criteria that should trigger the termination of the agents' interaction, potentially leading to unnecessary continuation.",
+        "module": "specification_issues",
+        "source_categories": [
+          {
+            "source_taxonomy_id": "aegis_mast_14",
+            "source_category_id": "FM-1.5"
+          }
+        ]
+      },
+      {
+        "id": "MT-17",
+        "name": "Deviate from main goal",
+        "definition": "Deviation from the intended objective or focus of a given task, potentially resulting in irrelevant or unproductive actions.",
+        "module": "inter_agent_misalignment",
+        "source_categories": [
+          {
+            "source_taxonomy_id": "aegis_mast_14",
+            "source_category_id": "FM-2.3"
+          }
+        ]
+      },
+      {
+        "id": "MT-18",
+        "name": "Inconsistent reasoning",
+        "definition": "Discrepancy between the logical reasoning process and the actual actions taken by the agent, potentially resulting in unexpected or undesired behaviors.",
+        "module": "inter_agent_misalignment",
+        "source_categories": [
+          {
+            "source_taxonomy_id": "aegis_mast_14",
+            "source_category_id": "FM-2.6"
+          }
+        ]
+      }
+    ]
+  },
+  "raw_output_text": "{\"categories\":[{\"id\":\"MT-01\",\"name\":\"Communication failure\",\"definition\":\"Withholding critical information from other agents, ignoring other agents' input or recommendations, failing to ask for clarification when instructions are ambiguous, and losing shared context across agent boundaries.\",\"module\":\"coordination\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"C.2\"},{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-2.2\"},{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-2.4\"},{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-2.5\"}]},{\"id\":\"MT-02\",\"name\":\"Delegation/orchestration error\",\"definition\":\"Assigning subtask to wrong agent, improper sub-task decomposition, role confusion (agent behaving like another), capability mismatch (delegating tasks beyond agent's capabilities), and conflicting actions between agents.\",\"module\":\"coordination\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"C.1\"},{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-1.2\"}]},{\"id\":\"MT-03\",\"name\":\"Repetitive/looping behavior\",\"definition\":\"Repeating the same or equivalent actions without progress. Includes retry loops with identical parameters, re-executing completed steps, and resource waste through redundant tool calls.\",\"module\":\"action\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"A.4\"},{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-1.3\"},{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-2.1\"}]},{\"id\":\"MT-04\",\"name\":\"Context/memory loss\",\"definition\":\"Losing or failing to retrieve relevant information from conversation history, prior observations, or external memory stores. Includes context window overflow, forgetting earlier constraints, using outdated information despite updates.\",\"module\":\"verification\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"V.1\"},{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-1.4\"}]},{\"id\":\"MT-05\",\"name\":\"Premature termination\",\"definition\":\"Stopping before task objectives are fully met. Includes returning partial results as final, producing zero tool calls on a valid turn, being unaware of completion criteria, and cross-domain tool-call dropout (e.g., completing tasks in one API domain but failing to act in the next). Also includes refusing to engage with a task entirely.\",\"module\":\"action\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"A.3\"},{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-3.1\"}]},{\"id\":\"MT-06\",\"name\":\"Inadequate or incorrect verification\",\"definition\":\"Failing to verify results before returning them, or verifying incorrectly. Includes: skipping verification entirely, accepting incorrect outputs without checking, performing incomplete validation, wrong verification that incorrectly confirms incorrect answers, failing to cross-check when multiple sources give conflicting information, uncritically accepting false premises or contradictory evidence, misinterpreting results of own actions, misattributing errors to wrong causes, and overcorrecting a correct answer into an incorrect one.\",\"module\":\"verification\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"V.2\"},{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-3.2\"},{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-3.3\"}]},{\"id\":\"MT-07\",\"name\":\"Tool parameter/invocation error\",\"definition\":\"Correct tool but wrong arguments, malformed call, missing required parameters, wrong configuration, or incomplete action sequence (omitting required precondition calls in stateful workflows).\",\"module\":\"action\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"A.1\"}]},{\"id\":\"MT-08\",\"name\":\"Output format/syntax error\",\"definition\":\"Malformed structured output (JSON, code, API response), broken syntax, incorrect diff format, code that doesn't parse, or final answer in wrong format. Includes returning verbose explanations when a concise answer is expected, or providing a narrative when a single value is required.\",\"module\":\"action\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"A.2\"}]},{\"id\":\"MT-09\",\"name\":\"Hallucination\",\"definition\":\"Generating claims that are not grounded in any observation the agent has retrieved. The agent fabricates facts from parametric knowledge, stale training data, or whole cloth — asserting something that does not appear anywhere in its search results or tool outputs.\",\"module\":\"reasoning\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"R.1\"}]},{\"id\":\"MT-10\",\"name\":\"Reasoning error\",\"definition\":\"Right high-level frame but a localized reasoning mistake derails the chain. Includes grounded misapplication of observed information and local derivation bugs (e.g., sign flip, missed branch, stale state, broken invariant, missing edge case).\",\"module\":\"reasoning\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"R.2\"}]},{\"id\":\"MT-11\",\"name\":\"Numerical/calculation error\",\"definition\":\"Arithmetic mistakes, unit conversion errors, counting errors, measurement errors, off-by-one errors, rounding errors.\",\"module\":\"reasoning\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"R.3\"}]},{\"id\":\"MT-12\",\"name\":\"Task misunderstanding\",\"definition\":\"The agent's mental model of the task is wrong at the structural level. Includes spec-level misunderstanding (misreading scope, confusing which attribute is queried, misunderstanding role specifications, scope inflation) and abstraction-level misunderstanding (wrong reduction or solution family, wrong algorithmic abstraction).\",\"module\":\"reasoning\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"R.4\"}]},{\"id\":\"MT-13\",\"name\":\"Ineffective planning\",\"definition\":\"The agent's high-level plan or strategy is unsound, leading toward a dead end that requires revision rather than incremental continuation. Examples: wrong premises in the plan, poor decomposition into sub-goals, failure to reformulate when the initial approach proves unworkable.\",\"module\":\"planning\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"PL.1\"}]},{\"id\":\"MT-14\",\"name\":\"Over-reliance on other agents\",\"definition\":\"Agent would have been correct independently but adopts a less accurate position after seeing another agent's output; the failure is in treating external outputs as more reliable than warranted.\",\"module\":\"coordination\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"C.3\"}]},{\"id\":\"MT-15\",\"name\":\"Task specification deviation\",\"definition\":\"Failure to adhere to the specified constraints or requirements of a given task, leading to suboptimal or incorrect outcomes.\",\"module\":\"specification_issues\",\"source_categories\":[{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-1.1\"}]},{\"id\":\"MT-16\",\"name\":\"Remove termination conditions\",\"definition\":\"Lack of recognition or understanding of the criteria that should trigger the termination of the agents' interaction, potentially leading to unnecessary continuation.\",\"module\":\"specification_issues\",\"source_categories\":[{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-1.5\"}]},{\"id\":\"MT-17\",\"name\":\"Deviate from main goal\",\"definition\":\"Deviation from the intended objective or focus of a given task, potentially resulting in irrelevant or unproductive actions.\",\"module\":\"inter_agent_misalignment\",\"source_categories\":[{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-2.3\"}]},{\"id\":\"MT-18\",\"name\":\"Inconsistent reasoning\",\"definition\":\"Discrepancy between the logical reasoning process and the actual actions taken by the agent, potentially resulting in unexpected or undesired behaviors.\",\"module\":\"inter_agent_misalignment\",\"source_categories\":[{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-2.6\"}]}]}",
+  "response_metadata": {
+    "id": "gen-1788849722-SM9zp0fCNuAndWaQ8vBE",
+    "model": "openai/gpt-5",
+    "provider": "OpenAI",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 6581,
+      "prompt_tokens": 2935,
+      "total_tokens": 9516,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 4672,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.06947875,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.06947875,
+        "upstream_inference_prompt_cost": 0.00366875,
+        "upstream_inference_completions_cost": 0.06581
+      }
+    },
+    "cost_usd": 0.06947875,
+    "created": 1788849722,
+    "system_fingerprint": null
+  },
+  "raw_response": {
+    "id": "gen-1788849722-SM9zp0fCNuAndWaQ8vBE",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"categories\":[{\"id\":\"MT-01\",\"name\":\"Communication failure\",\"definition\":\"Withholding critical information from other agents, ignoring other agents' input or recommendations, failing to ask for clarification when instructions are ambiguous, and losing shared context across agent boundaries.\",\"module\":\"coordination\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"C.2\"},{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-2.2\"},{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-2.4\"},{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-2.5\"}]},{\"id\":\"MT-02\",\"name\":\"Delegation/orchestration error\",\"definition\":\"Assigning subtask to wrong agent, improper sub-task decomposition, role confusion (agent behaving like another), capability mismatch (delegating tasks beyond agent's capabilities), and conflicting actions between agents.\",\"module\":\"coordination\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"C.1\"},{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-1.2\"}]},{\"id\":\"MT-03\",\"name\":\"Repetitive/looping behavior\",\"definition\":\"Repeating the same or equivalent actions without progress. Includes retry loops with identical parameters, re-executing completed steps, and resource waste through redundant tool calls.\",\"module\":\"action\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"A.4\"},{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-1.3\"},{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-2.1\"}]},{\"id\":\"MT-04\",\"name\":\"Context/memory loss\",\"definition\":\"Losing or failing to retrieve relevant information from conversation history, prior observations, or external memory stores. Includes context window overflow, forgetting earlier constraints, using outdated information despite updates.\",\"module\":\"verification\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"V.1\"},{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-1.4\"}]},{\"id\":\"MT-05\",\"name\":\"Premature termination\",\"definition\":\"Stopping before task objectives are fully met. Includes returning partial results as final, producing zero tool calls on a valid turn, being unaware of completion criteria, and cross-domain tool-call dropout (e.g., completing tasks in one API domain but failing to act in the next). Also includes refusing to engage with a task entirely.\",\"module\":\"action\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"A.3\"},{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-3.1\"}]},{\"id\":\"MT-06\",\"name\":\"Inadequate or incorrect verification\",\"definition\":\"Failing to verify results before returning them, or verifying incorrectly. Includes: skipping verification entirely, accepting incorrect outputs without checking, performing incomplete validation, wrong verification that incorrectly confirms incorrect answers, failing to cross-check when multiple sources give conflicting information, uncritically accepting false premises or contradictory evidence, misinterpreting results of own actions, misattributing errors to wrong causes, and overcorrecting a correct answer into an incorrect one.\",\"module\":\"verification\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"V.2\"},{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-3.2\"},{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-3.3\"}]},{\"id\":\"MT-07\",\"name\":\"Tool parameter/invocation error\",\"definition\":\"Correct tool but wrong arguments, malformed call, missing required parameters, wrong configuration, or incomplete action sequence (omitting required precondition calls in stateful workflows).\",\"module\":\"action\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"A.1\"}]},{\"id\":\"MT-08\",\"name\":\"Output format/syntax error\",\"definition\":\"Malformed structured output (JSON, code, API response), broken syntax, incorrect diff format, code that doesn't parse, or final answer in wrong format. Includes returning verbose explanations when a concise answer is expected, or providing a narrative when a single value is required.\",\"module\":\"action\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"A.2\"}]},{\"id\":\"MT-09\",\"name\":\"Hallucination\",\"definition\":\"Generating claims that are not grounded in any observation the agent has retrieved. The agent fabricates facts from parametric knowledge, stale training data, or whole cloth — asserting something that does not appear anywhere in its search results or tool outputs.\",\"module\":\"reasoning\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"R.1\"}]},{\"id\":\"MT-10\",\"name\":\"Reasoning error\",\"definition\":\"Right high-level frame but a localized reasoning mistake derails the chain. Includes grounded misapplication of observed information and local derivation bugs (e.g., sign flip, missed branch, stale state, broken invariant, missing edge case).\",\"module\":\"reasoning\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"R.2\"}]},{\"id\":\"MT-11\",\"name\":\"Numerical/calculation error\",\"definition\":\"Arithmetic mistakes, unit conversion errors, counting errors, measurement errors, off-by-one errors, rounding errors.\",\"module\":\"reasoning\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"R.3\"}]},{\"id\":\"MT-12\",\"name\":\"Task misunderstanding\",\"definition\":\"The agent's mental model of the task is wrong at the structural level. Includes spec-level misunderstanding (misreading scope, confusing which attribute is queried, misunderstanding role specifications, scope inflation) and abstraction-level misunderstanding (wrong reduction or solution family, wrong algorithmic abstraction).\",\"module\":\"reasoning\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"R.4\"}]},{\"id\":\"MT-13\",\"name\":\"Ineffective planning\",\"definition\":\"The agent's high-level plan or strategy is unsound, leading toward a dead end that requires revision rather than incremental continuation. Examples: wrong premises in the plan, poor decomposition into sub-goals, failure to reformulate when the initial approach proves unworkable.\",\"module\":\"planning\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"PL.1\"}]},{\"id\":\"MT-14\",\"name\":\"Over-reliance on other agents\",\"definition\":\"Agent would have been correct independently but adopts a less accurate position after seeing another agent's output; the failure is in treating external outputs as more reliable than warranted.\",\"module\":\"coordination\",\"source_categories\":[{\"source_taxonomy_id\":\"whowhen_pro_text_observed_14\",\"source_category_id\":\"C.3\"}]},{\"id\":\"MT-15\",\"name\":\"Task specification deviation\",\"definition\":\"Failure to adhere to the specified constraints or requirements of a given task, leading to suboptimal or incorrect outcomes.\",\"module\":\"specification_issues\",\"source_categories\":[{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-1.1\"}]},{\"id\":\"MT-16\",\"name\":\"Remove termination conditions\",\"definition\":\"Lack of recognition or understanding of the criteria that should trigger the termination of the agents' interaction, potentially leading to unnecessary continuation.\",\"module\":\"specification_issues\",\"source_categories\":[{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-1.5\"}]},{\"id\":\"MT-17\",\"name\":\"Deviate from main goal\",\"definition\":\"Deviation from the intended objective or focus of a given task, potentially resulting in irrelevant or unproductive actions.\",\"module\":\"inter_agent_misalignment\",\"source_categories\":[{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-2.3\"}]},{\"id\":\"MT-18\",\"name\":\"Inconsistent reasoning\",\"definition\":\"Discrepancy between the logical reasoning process and the actual actions taken by the agent, potentially resulting in unexpected or undesired behaviors.\",\"module\":\"inter_agent_misalignment\",\"source_categories\":[{\"source_taxonomy_id\":\"aegis_mast_14\",\"source_category_id\":\"FM-2.6\"}]}]}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning": "**Merging taxonomies**\n\nI realize we need to merge two taxonomies using only metadata. My focus is on mapping categories that represent genuinely equivalent causal mechanisms while preserving distinct ones. I want to ensure complete provenance, meaning every source category should be linked to one merged category, using stable IDs like MT-01, MT-02, etc. The output has to match the MergedTaxonomyOutput schema in JSON format, and we must analyze equivalences between AEGIS and Who&When categories carefully.**Analyzing task categories**\n\nI see that R.4 involves misreading the question scope, confusing attributes, and misunderstanding role specifications, which leads to structural misunderstandings. This \"failure to adhere to specified constraints\" is related but not identical to what's in R.4. While task specification deviation can include misunderstanding, it might also be an intentional ignoring of requirements. I want to determine if they genuinely overlap. They seem equivalent in terms of specification misunderstanding, but I must be careful not to create vague categories.**Merging category analysis**\n\nMerging the categories into \"Task misunderstanding/spec deviation\" might work if they are equivalent enough. However, R.4 involves a wrong algorithm choice at an abstraction level, which feels like a planning error. In contrast, AEGIS's \"Deviate from main goal\" (FM-2.3) focuses on deviation of attention, which isn’t the same. For FM-1.2 about role specification deviation, it overlaps significantly with Who&When's C.1 concerning role confusion, so I can merge those. Similarly, FM-1.3's redundant steps correspond with A.4's repetitive behavior, allowing for another merge. Lastly, FM-1.4 deals with removing conversation history and unexpected context truncation.**Examining task overlaps**\n\nI see that merging FM-1.4 with V.1 about context and memory loss makes sense since both address losing relevant information, including context overflow and forgetting constraints. For FM-1.5, which focuses on removing termination conditions, it’s distinct from Who&When's A.3 on premature termination, as the latter is about stopping too soon rather than failing to recognize when to stop. A.4's looping does share some overlap but isn't the same, so I’ll keep FM-1.5 as a singleton. Finally, FM-2.1 regarding repeating handled tasks reflects unwarranted dialogue restarts that cause context loss.**Assessing task equivalences**\n\nI notice that FM-2.1, which repeats handled tasks, overlaps with A.4 on repetitive behavior, but since we matched AEGIS’s \"Add redundant steps\" with A.4, I need to decide whether to merge them. They describe similar phenomena, so I’ll unify FM-1.3 and FM-2.1 with A.4 into one category for repetitive behavior. For FM-2.2, the inability to ask for clarification aligns with Who&When's C.2, so I’ll merge those. Similar merges apply for FM-2.4 and FM-2.5 with communication failures. FM-2.6’s inconsistent reasoning doesn’t directly match any existing categories, so it remains separate. FM-3.1 merges with A.3, FM-3.2 and FM-3.3 can be unified under verification failure to maintain equivalence. Remaining categories like A.1, A.2, R.1, R.2, R.3, and R.4 will stay as singletons, pending further evaluation for R.4 and FM-1.1 for potential merging.**Analyzing categories for merging**\n\nI’m questioning whether some categories can be merged. R.4 is about wrong-frame misunderstandings, while FM-1.1 deals with deviations from constraints, so I think it’s safer to keep them separate. For various mappings, like Communication failures and Delegation errors, those can be grouped, which helps simplify the framework. I’ll define each merged category clearly to avoid ambiguity. Additionally, I’ll ensure every category is represented just once, noting how many total exist from both AEGIS and Who&When. All these mappings will maintain the integrity of the framework while clarifying their relationships.**Compiling taxonomy data**\n\nI’m mapping categories from various sources and ensuring each is defined appropriately. I want to avoid vague definitions and use clear, precise language for each merged category. I’ll adopt Who&When definitions where applicable and maintain a consistent order in the JSON structure. Additionally, I’ll include all source categories for transparency. I must double-check each mapping, especially those that seem distinct, like \"Over-reliance on other agents.\" Now it's time to finalize the JSON output and ensure I’ve captured everything correctly!",
+          "reasoning_details": [
+            {
+              "type": "reasoning.summary",
+              "summary": "**Merging taxonomies**\n\nI realize we need to merge two taxonomies using only metadata. My focus is on mapping categories that represent genuinely equivalent causal mechanisms while preserving distinct ones. I want to ensure complete provenance, meaning every source category should be linked to one merged category, using stable IDs like MT-01, MT-02, etc. The output has to match the MergedTaxonomyOutput schema in JSON format, and we must analyze equivalences between AEGIS and Who&When categories carefully.**Analyzing task categories**\n\nI see that R.4 involves misreading the question scope, confusing attributes, and misunderstanding role specifications, which leads to structural misunderstandings. This \"failure to adhere to specified constraints\" is related but not identical to what's in R.4. While task specification deviation can include misunderstanding, it might also be an intentional ignoring of requirements. I want to determine if they genuinely overlap. They seem equivalent in terms of specification misunderstanding, but I must be careful not to create vague categories.**Merging category analysis**\n\nMerging the categories into \"Task misunderstanding/spec deviation\" might work if they are equivalent enough. However, R.4 involves a wrong algorithm choice at an abstraction level, which feels like a planning error. In contrast, AEGIS's \"Deviate from main goal\" (FM-2.3) focuses on deviation of attention, which isn’t the same. For FM-1.2 about role specification deviation, it overlaps significantly with Who&When's C.1 concerning role confusion, so I can merge those. Similarly, FM-1.3's redundant steps correspond with A.4's repetitive behavior, allowing for another merge. Lastly, FM-1.4 deals with removing conversation history and unexpected context truncation.**Examining task overlaps**\n\nI see that merging FM-1.4 with V.1 about context and memory loss makes sense since both address losing relevant information, including context overflow and forgetting constraints. For FM-1.5, which focuses on removing termination conditions, it’s distinct from Who&When's A.3 on premature termination, as the latter is about stopping too soon rather than failing to recognize when to stop. A.4's looping does share some overlap but isn't the same, so I’ll keep FM-1.5 as a singleton. Finally, FM-2.1 regarding repeating handled tasks reflects unwarranted dialogue restarts that cause context loss.**Assessing task equivalences**\n\nI notice that FM-2.1, which repeats handled tasks, overlaps with A.4 on repetitive behavior, but since we matched AEGIS’s \"Add redundant steps\" with A.4, I need to decide whether to merge them. They describe similar phenomena, so I’ll unify FM-1.3 and FM-2.1 with A.4 into one category for repetitive behavior. For FM-2.2, the inability to ask for clarification aligns with Who&When's C.2, so I’ll merge those. Similar merges apply for FM-2.4 and FM-2.5 with communication failures. FM-2.6’s inconsistent reasoning doesn’t directly match any existing categories, so it remains separate. FM-3.1 merges with A.3, FM-3.2 and FM-3.3 can be unified under verification failure to maintain equivalence. Remaining categories like A.1, A.2, R.1, R.2, R.3, and R.4 will stay as singletons, pending further evaluation for R.4 and FM-1.1 for potential merging.**Analyzing categories for merging**\n\nI’m questioning whether some categories can be merged. R.4 is about wrong-frame misunderstandings, while FM-1.1 deals with deviations from constraints, so I think it’s safer to keep them separate. For various mappings, like Communication failures and Delegation errors, those can be grouped, which helps simplify the framework. I’ll define each merged category clearly to avoid ambiguity. Additionally, I’ll ensure every category is represented just once, noting how many total exist from both AEGIS and Who&When. All these mappings will maintain the integrity of the framework while clarifying their relationships.**Compiling taxonomy data**\n\nI’m mapping categories from various sources and ensuring each is defined appropriately. I want to avoid vague definitions and use clear, precise language for each merged category. I’ll adopt Who&When definitions where applicable and maintain a consistent order in the JSON structure. Additionally, I’ll include all source categories for transparency. I must double-check each mapping, especially those that seem distinct, like \"Over-reliance on other agents.\" Now it's time to finalize the JSON output and ensure I’ve captured everything correctly!",
+              "format": "openai-responses-v1",
+              "index": 0
+            },
+            {
+              "type": "reasoning.encrypted",
+              "data": "gAAAAABqn65gJA1pXuOoZji8aNxwM5T2b06gXN-iaW0Gbjr14fQEuw63OROpBMLJqDWd0JhuZh9Z5kDHoNMafx8ftWZCCl7VLToGIzJuk1SHeT1Ymqydbcy35dd_GRqaLw3M-oeJUcpsR92OWNWT19HWLajV7TZsdDqdtx48mR8eGXtsvW6dXst_FHRE--tsaz9eQJrNHLFveLZgiXqpIc4t3nhyYd1zfKfkZiAnMhXNLHgfLIXl09PAuV-iNnHu_3MbD8CaXebpXYN0y67B30svtIGFFWiFM77lhvSHrOGhID_dJKRn2EBdeZbCrqIrvbG2RHjZp4dyMkHNpoX87vBMXEWyKipw4BA9cBHsi7Ui2NZrMtEb_n7AXdY-h9KZbR_qmCaKb0iD2tYpuKITQasn22qk4Ag-IJ5DZy1O5QA9T5bb_qh7EbCt82C-8zyOM0iMoZtZzTLoQ-7IFJ4FGM85x_b-5WH28HdERuK23Rd_D9Rne_VZeyxpdRGO_2y7058NLJYKWPW-I9KehTKtpJqvPwmbvz15vw4H_9hJSMGNaq7q6NLdR1UcBLnZvL8TFVpQtjMyxJGD-oWwW3OYcxk_sIBUxxg1r-g8rhAE4qU9sAgRnaeFZW_NvR9wszCJmBNlBuhHRirX2sOizdqVTOmfit21z5uuLV4btMvr4q0Dl1gnP10eM5OqqjjEofzvg8ZMxB7e_2r9w8CeK5bk0efHR0MnNGjg9TflVqi7klxgQ0jWz7OqmJaUhoYIG8p68vGlQQiQcqK2rQ3anm0DGkleo7UiqlGkkfiKXiIGtJzoPZjNOdGZtHz1FPhUxSWbSM5gn2_eJ5q0a5cH9BKrDuhtFxH45AECpgxBlfSq_7X1DHx1AtdeUG1QLybJXwWKedu3cT5zrz9A5IvCYI27vWawXRoIeNH-xvPNBeZrxnp_h2Y8a3VKor9zMG5TNPytTz1oTKL0QjpuBPTxRXnHPWEoxKXxmxgcWnC2M7S7V74USLzeIubAE5IugpZzs9CkHLaNwXsa9sLWBd0dz1no7webGKZH6jV9AbwfegVRSQhAJ2MbQX6gs2nzCbuUNHQrZqgm85qSBWHTqsxXQeSgE88dcDKkfQXSmARF6QfcMyZZhr8KWfdRA_Q3avB-T11YFiFxM_sVA8mV7w8ntFc0SIPQ4ccMm6XpipliXFn1u-qQg9FNUNqiBTajlrYMP2Be-lWHQmt0vFIowp57qQHSeYkL_BaO9mAwmoC8H7rnK7Ht9dibdXrj1z91x1dJOrq-KyjY37xYPGkdZ2mOhiWl0x-BNl8Z-pCSqPxad7cVr3qe3W0vG1AvaJLGFuwGXpVkJEJWanBvB0_pJLGLVQUmM2pGekgYxAdP3AVDyOVLwPA_0WBbsW-A9hYl5jRw_DuO8yjpgInPkOCie31rz-bzQVlIDu_5WOnKulmY8MYTOut_S7lwCEl_g28fRdFabzSmXOaNQwq7BN4Bpj9cY6rNDgEHulvNHy3t2QFIteSasPgIuH2nWYVK0MG6dKyhmeWV6L4s9ZQUMbzdEa_97us6BeGFlY-5rjZjoze_dJ2AArPT3LdmL47kEoHGGnN0AGvzbDs6FILiolDjux6oDb2aIyXyj2e1xPoBHGK8CESUAAZ7h8H1QmGgRNF5zFbGNsrQnU7X-C3Uf_uq_XRdPjwRyFc-jhZBdgX9D-4NR2QAU3YrR_-iqbd4bvdH_qSFRGb3fdwcGpUo2uXbbMC2g7Mq9CFDGKShV0OKwsuhLc2fPJIH3Zxt7ETTZj9eS0oXvywXifmhJrRCPQR_PGGknV0odr-NNxgpG0okejmokGuKLKCo8ydFgArKTtrgvu3lBJM5iX5WNt6RQgJiLn4UxWxqxeCroZ8N79ZTWf3ULjaRiB-FG2UsHQB9c2Dd1QHux9WtB-BCwxMVQmxPkJZ2lKfEfDFQcR_UWSP9XNHJAhRw-_GAVxjFscCxDXHt-cqcOxY_6w8MfHFIOmZVNY66GKExxdHcWNKA2IFs5YY78x-JOTkLC_IsAWbr29JFXSb0RUWHIeylOPI3NFRivS3iYfILleF1oMsQiRSciOPsN2N714SGC78uNpZMH1Wszy1k7GJAPuXtbBYLxBgbBO6SJtOWwAX5Jp0vHArijAcBLD6WcN6bZ0ek8qMbjWGxpcXDEwDHWyuuQKhy4i860E2ToRQlSmJSMZ3EbkfKrLwy88ir2ut8E8F7zTJhHWKR5aQLC0ov9VB6ZxAibUsI9JeoJ6x-wmGosv-81nr2iKCuWSvDnKIx_-RTksK4BxVxhrQAJJC11HS2nsWPvTSNQgBnTsvseQenRIOuAC1pEPrObU7qDCu-9EhBFdTmztUg6DouvLMdf45DGdV6lTO5b7LJfxa_LTH-dCO5BouCvJ7_JaZIRc2MouUK07v5iCKQvnAOBiHQbxN7RIzPttcfi3gFxQAv7vfHPuxKTxd5zPZ_lreWiV5n6mBIVhJjb4BzF2LWegMYshewoUb_-Kg10yDVq-P3VGDIVfYc4puLK_K09aHyWVRfZAbjFpS069A4-dgjyPIQLNOIekAhB7GHAKNDebvZ3AHL_Csy29jrRrZIb-N5FJB-a1RAUykJVmJtSF2Br9f2mty_wxPpl9i37-5hk_ZJD-4LdYJYZ3d1Y6wmzOZNjOM7IOkCbUbtfTCsTUPHNssm81i1W3Rie9P8gmoCtJ5yrccsbE_OjOH4ZEgosFKHGmcfDMSsVtm5yERFHAtieKVnaVjj80Et0iI5wJnmcqsqFAqudGkfYaWPPMGbWj1mGuhl3xDVBpNZkILw3hFE1vGb78ZIKQhCCpmWJ3MeELtKcJaYA_Wbf79xyDPqbgTy2N0NgD5y0U_O7Tj5Ln3_hv6GaJClVepOw5lS0IK9CyhyDx-j-0de5f0oWipXSrlakScVyfQkU-5O3PgwhBMxqlhB5_n3u9Xlvfn6Z8_45jzkernqzjYsBRrNvLPtcPZhCFc4-6q6Rmb174PZZSXut1Hr4etOgtrccTKWryXL0j0sDZs70i3rP6uh4ZjrhipQ88BIUuCmsYjbOLSn_dK0duTajoDg6WbITrk3QPC_ghMATz0zZUmss13WQEeqn81vVdoeCgVI52GJ1-sdAYRw1uvt9NroPbrV-AZ3i0D7u1ofpZTp9vsiNuhztB0dO9BJ70Lo3mFeX94fvB_KsAtSwnxAgTPeCeR36LHZ0XADrbcR--Gwx6pcZB14DaM7gNoMsadWVC3UJqn3DKdRUKnE2HxHZ6op13hwKC-Kf4gEQdmtrBAy6g6tR1yQoWFpfknqHPsyjT-XfBf-6dGP_xwrrutymsiPIbQWC4W3edrEeuNn_0HfC9robnpasgFLvmXmQDyNvdRpIDwufHGPj9TfZAtjTrC6c8y7kHHVZxDJUR8awOBF7CBKpTLHWGIYyTPzblUIW0JvkgjvNoDD1dDe4LVvNQD1kBhBna1OTeQDSWuEojeEjCHsy9TnLCD05iKebMw7cHZcZvTFEikUTHA6kWSwnSfAIFm17zZYmTK26ouBtQ-ybYwyqZDRil48T4ULT0WMwegnT_6TzQ8TAk2Cf8Iv_jVzyiyLkTie-9bEh3DWWiswCxrZ--ACpb9muTgT-juITrtFFopnpLJv1K0dQJx_V7Rd4k2jINmbRHk_ug_r_vSCDYeZd1zHdb5GYgiuaZwxsLy2yc-jfl6ae6p7GwW7CxuCMgcBU7CAF41_MTz9NzyR8j6MY7TzoRRsiwhj-QO4BX0sKpMIRA0OWn_KXeEeFeGKuDmKbS9QFm36FW_P17j7pC2BkJmQXrOhLqUgJNfcJItjQCIJkbb5AnF7Uqmmj6HTLoPOK-B5imDDCdwwZ48yKeGdFmSLL5G1uefzDjH2TMZcmvRTPU2xfh7vRdArKTRqG28-NJV6aAfiprS_5t6cOgawDqBzxD1LUNKOcR4GB2Ql5f5FjBuDiKyNxVqwZFJNRm8u5LWD_6Gp04bNBxtFQ2e3F_KrqLZ6IGZzAoKOIwPwrydU5HRvsaH7ih1JuZ1ghCeYeDdrYWjNB58DSyIztFiaRxrr-6R0AWx0-qqq6iE-PkeNNgvx9MEWDvpb_JNbr4yzNKOxN__J4m68iipj7oygW_u-8WLxEmJzoX3qwsfW9DTC7YTimy3rFyTXe4__s3bT6eGCUKk8TmHDlWBV3VDnK66sXYDdyMW6njOPDP7e5ruVr7FBk8hjuJtULn5mhTs-6Tfok0ofC18RwJ1MKZpWIho0fAObW5UGQgIko8QNfZTNC-uM__Vc7srNeOF6PA_0BWMN-VsbpJUO5FFaISOCT3Es0VKe2l0wM6TIzsQSkFTp383N1r6B3tZsxQRKsIa8ADY3KZyH79u-fGD6FT6GlbZfOyNFmiU27SlfBJhQ5Q5Pqnx-Chon9KyhUnVr_JLBEbLKzvqF-G61q6DV0Ft1qVtzJP-a-SWFmrW464B506arVbfAP3pexitJthFGC9osQJAcEqz0KOcpeQ6N70i0v6f1Es2dDmnkg_WRm6sb7e-TfRnlAxeccfBIruMZDfjdVXtvopeiLn4_oX-vfnflJXdTRs0OS_fY3H5W3f9wmakFLNGvflgriAqI-MWP8ON5HJnToBdh3beOJJ9sEWRS7IUvSqAlmGB0BT67pgZoqgdXXxkZvXKkKIK2ftTRXTKUM7XD20D9tKF1p_9W0p4fYQlOR0WXmD6ublqQxns4LdQMykA8Z2T996GiGNo2mAPvTpm6aZYlcBFoEjPyso4QwSvrnnjTImiiQ36-8gW1Q-pdbk8n1RjviRYUOfvytRBKP_p_3TkzZCgNs9cNDOuE4aQpTMS7xbBG9PXA5H5fMtxxtHNtaYSMGelZsEDTlRmXHi5jXv3r7HKdk-HYkgSBgZur6fixxLcl6jeLbZLH5mBh-YQpwOm-DlpVQq6NwvvmRzLsE7XfVuF9lkWH9AMduCDtE1UyuD9xpEDIb32b89fZwpB5DESCrVUp0TTIm06eathtAm9WxHQAdTkslztlutZgsqAtufwS94JU3IXK31P60w0HbYa-fs3UTUJMfNxbHNgP2DzPfqc4fC09jic_0mLkDbpSsk8a0FyTdqEksNJPNuE4rbP4s81SIYp3Ypkx16B6yh4eazO9LYfa9IfCUiX4ZSy5Otk06Txu2pnV6HGt_tQTQWZRb_cyvq_HoMGG9IPzj_sjbhK5qr3cGkZA07sv_ZJWKBo3fMZX7wVdoNN7W1VmQCuVMG_h1WtW7V1MMXdmoPeVYLiIqugRDABQde6aiyUgj0PEyBZ3kD2ZSMtsu3R_vmJ2fCp3y6RqmglGsvABond0Gpcs8bzkxA2onC7JOO95kZi_cZiQVADwW1lfiZKXR_Yl09diO_ELQ12RPgGbwOinXr8RT0-NhRSYL4G2vryCztmJcKyV6MJOf-ijR-r88F1B9KmCTH3t2snTqrITJDjcNpRSk1_5czvYTepYWFSHlcPQl4OpwDg-E2Vm_RYxEL-RVYSFe46d6zfqzgD-LY1gGr_UswxOIW65q-gbCerl8RVluMPsLubdZXBlyqcGkko8Nunz9e__FO-jglpfK4GFDZYRxbqxoB2RcD6-P8WRmUiXAIcSjcsF_1n3tTrPsL276pXbZQF8g8WyM_m9SFCviCLHS5OjJRxloKeY2ovnnhYWZIlwmhDJ-feFOT4YF34Et8hc54esyxwHj66MiYr3uISYLjLPXgzb6YkEEDYuBu924ywmxDrTXSuOxKRx8fhtGVXfNYpS-ckYpN0hVxRm59GxXKu6JM6SzouISMo162cylijUBrONn1-uZ-TZg77OCsrCb2vQLYIHhPQHqo9IMcW_2D03B2wgXiuRcpBzfFU30KSc9gO8MRQH9NP_Mfd56bAU-GB1kQ5VJYinjvvaIZA0FtgwMj2aUiq8Dpupx1XGGibUO34P0SNPBG5bkTzo-p4ul2z21DfKS-KzOJZAiuP93YN40S7AUIHz3AIps3sBCuYXf3XzNyHSOF6ofhKPdwbsZXHYD18Flp2IRzAbFPe1E35fYux_9LSVl7y0eskoBOvduLxhBKTpmOIyLg5a0mn7FEbawsdd0EL-1-SWAbDZcWhDRRGF2-75Mah-zzkrsjXgu1vLcTX5uXEvo41_ZuhujwUXV-oUq-3x2PA3epQZwFwlR9DgX3ODZyPN2LGmyc5-_SiPfuknYrJaXxDFhxseBJsVee95FjdXqYHG_G7OcsRcX-687EzJ5f2J4E3kCoylMGpnaqLT6khk7L9Yyi9qtUJOF7z7jX6bx_FOKJkgDdwsIXxsM7p2nkeI4PazkZ-85Sjkr1u-U8t-RSpmB2Nk7ADFpc42JPumjsc0jdQ9kTi0x_wld5xiyO6D2KwTvq0eyp00g-Sn6v7ubxht_Q5DcN9-iX1LzLEuyU0FRwopruqh455vg8e-X4qMrK-73puwoeu_IjPf0peGTlI90v7hL2nVgKUq-V-2dzzXafcOe9qKNHsl_K9opAabiTepzqkBkPmfAGjMJnKr2dcGpj3ZjDUDlM7g1vexq3B2miZ0vnw2NowyflPHe36igS_pq4YMO6zyVmPcFziZ6cy1qIiT_XR6xcWAGNmlf_ULC56KcUjunCs0GRyreev9juYDNIT6UsijV0Cz79lf-DQ4xqDC6wblf7-AlfaFVxDiNt31uXik2MC6i_nfq7ZPTOwQU6hFt9BquUAGTSV8D3BX4PQewwEAg8Y0su7eCyiejYcGozIR0_2S71tzJXLJ41naB9WpihQXQr24mYZWdhJhN8pfbFvfdJHK4mELKoJEXFzffzZ3Wg3pHP8tX4HEOr9KBr8o6DRqQO8cME0PmDofPIw4bQoGK_0KLo1yybWzjoEtIECOMmKjnNm3bJnB0NHRnwtTi0W6-T4CICX1vPUb7np6vyHpnpkpyWSK4h2aDr64Kt9bC_IGOCeqyC76eJeNGj_ilZfdMyxiJpdjvk9O9ZpcfPrWJia0Jo2Ac9PR-ug4djJ-cKrvhvTpRN83GuZ37gaBnhBttBPK-Q8l5We8AkPBMJXiw7QcwZDRutFnrTntTw2krtgMRZrTYdN3ejSI62dNpABGQ0QEaIRC6_927qGWCJxWE0Z3FNscPxTl-sEL3O_JWNtOk7nZa44EzXXovqUcQXbm5hjL2hYJYiBqwhuIuprr54exIUg-5QKBGKOD5GD5UylVeqhuA3viSmx88Xz4VppFeZ6-thq2Rpv0oTaz2xWpaERLKgg_8GhKpjkaZzcuk4VFyCGwJO_vyqVY2q66qnTHdk2LikMOmVXoP9KaMxzefvzATdwiEQLkDTHdBnuMcoQ4ApyvWKY6fqfDCq0zJXljn4pqa8fDQ83BJSL-1w205fc_BUY3vU_bolj6I3WiXemy0Hs-iS6ghoUrGz65NueE5WCoYEOOhg7tWnLT5BxET6Kw0xNCaVo06JXXPRTlqsboiBmt6tmlHLN5BpMWVVRX6-xiWbXYBbv2m2qEsEoHzLYlSvem4Yoahg3aIUyY0ulJ0pTUMAEdXbZIlnQ9fCf4exk0XnItSzfkQCKoOinEk0t_MxbBhrEhJ3CB5K_It_Oy82dXTjeLd417Jv6NAMfvKMU509hLrtcLTVf-5FpPPnKjLcNRbsQx82EpA1lPrLhLS0-DLWo9_ZuW_9SKJzf8GvvMfm2INcn2arYN6ES0q2VxfCCWkpQEwjDzttvhWgWg58SLsw6MOhHAxEZ7Y-UxWiWRINSscEFt_vFXsa94VLXAy6eyEagQPU2WVuwr0BdQrBMIyxQrFW2Mh6uN1PjGLyFt2BteaDhWMKVBeSVhU1Abidc1-IP0Dd30aICZO899KlIWP1lQNnIwSmOkHBR51Lfngeq4uo2OLmxS-e-gGHwZaVbZgKubo5-guFEHH7vERzYwyzejGrhCB4QUoGCmqNeRWmpu_Svkggnm0g13ADgH2IdjxoxMWQE16Jm-01EVIMXRRlP9BrY9iGqlJAhRkFqVyW0upLwrL9H-04upWvFobNuJ9joA3eb4cqvoz2h1AQ2WE85VDZzlPIe6SYwjHb7yfYsmlsfM57SvxK-zDLd8bCBEOtc9asQLIISaSFe5vm2XU6W1u3vpNSSHc40QTnO8YB9fYlaiyHFhIlstZUCPMtka4w5GSymEDs68aqUggjE39WeJkiW7oCjsiTSA77PvrUX9_o9IS0tGfwmVc9qqVO1lhbT9Be7aYh9RK5BLKE_hdZA94ZAgUdwXE9EqmAFl1HpONcmI-raOKOJeKFZNHVGvhlOZgvuQICADTAeVu6nYJeO6sieNO15g4ZY-LpHrmiv5XlP8IGRokWLhchvc6IWqfaTVbjgD4zt7QISUcEIVZOllmb7p9n4Ywwaw4FjvBYK7CPtxcsiiG2jkugPzNvESmnDc21aFG57Yid7C9nvu4sNJGJzF9urQQqaSfUVRftqujQdHoL1XBjIl-oiVl-MvTLyGYugLHJDCguipc63bcLsMysGMx0D4qmgGYYZggp4uwLKSfpp-MW7T3xHd0Cu2PPPcgp_MkHV0HwV4UqZ27bEmuTa_JwQb9rnXY_NrTkX3oTiPs11f2s06-dGMHjPLH7id6QrIsDd8ksQOdzlvfzGgfeY3zA4xdNfZli7okJzbbrrJgeiOCl-5Mmkjh-g7C_V7u2O-tmu0mPAIVykwr0MCLreYtJnd5p9gPaLcXBI7UVTJ1cz0SuaZTmSC7ocny2gNIsJSmYOUkRUJu4X0leS4QFcR8XQQdlz1ULuHLVDDWQveH_i7-eV6w0MNwiKtiugb9Y3RcxIUn-9ADgtFMZH5sW7zxvgSg9VjNpwhCaSiBaWhk2M3R31o0cZJ9va7TantUX_q8p7OHNNIP0qgHQlj8Tn1TjSQ9SNaD4gZbKM-M8hwH0CPp7ELE17U7HI5Uq-u7hLad-351tqghl1DBQaNVV9MMxqsTDQE5RhxrVjLG8aSk5Gmqq5E8ElD6xmSAyHOOF276U1kiNfiNKO6UZDFHJ1paCvYUIzsO9bdn_Gsk63YstD6weKQ4SIm-TamYP0Hpz_ouUxWsU24rJfLzxaeNmDio9acnTjhPGVcAsT-5-mKwwWvrqOk7lHTit-n6vkk5Pnx4pAyO-uyQKkQdWH2kKVCg29grp0rX8zKoBRPbRIDUS6LlKGxm4WgB7vvb3LAHX6Lx1yDb8kMfZf2wrSYL4YPSU2WTXiOhDwltvTyu0U-gbSzaa4eHIXmVYj2awNCCBdk6Z2TbFSowTOmcrWIx8MldwDcNyCnua2_AXdEe4BIrIrUgapwSNJkyl0KtAwEyX0r1uRARCYQezALGIxYmEB8lptCpYbfF3bvaXxhLsfNj1p0_U_uok5YHSTw_Q3NfsOHAMACmqpmFFmR4oppvN_4sBItVEfLOEte_HrXqwQVA7CSmVouQ4e6atd8q6N3AevknbIqg59B9io6pR1L7AsGDPfHUz9Q_GcfZJAlbGYs_-GNi7rquGkcknOjUFXr6C3H5EbHAVvegjmaoyFlu0wFcE0uO54SLeysM_sYKhcyupD2lLpLotbY-2dzfzo78ly8gzfPMqdJoXDqWpPnjuBwNioi0mr7aW9l5nZFG7jQOU3FyUrjVX6CJx_OsASBtqdaUiN7TXaZ1v4CuLpEelyu0YdkAnzoJ2nV_2Dg0kVbLanlyXhBhfsDVXaY_jXhKbZvo6cCyGS19pATP07oIarQaJFXCyYwV_46_xIKHlEUTJbKDZ9lAG7FPisiKU5u_GxvHxkliPmLw-hf9cGN1sqjajp-RNaneLpeJdWyMPH_7YIyy90t9ayw0-dp7rcGJN_BlyE5OkIfIrMREF3ZqcrDR1ny0jXS1HtRP4JQ415d9YYPHuQe45GsDDocuDICbDQZsVdroCZ3-5dEIsLmbe2feW6TtNl4PGbKiCgnjO8mStgT5A10wlTHn2BxtPEscMC98e7RvNLkAWNH3L70IXkm-KW8IXeik3Xk2F04s1_1coWMal19_Kp2t6M9R3hpZ2FYAnoNNWOsYAeAXl0anip7fnYT8V4jXlDD_JMjHpVAp-HxGFwHhzOPQELgML73OrhgqR8SycbI5cU8OEPizvktxtEjLThkyarNlLBz1hOHt0ry5ThPYDElqkXPBE8HQwZHz1ri_AHg3AC9Qkq5qpzESmjqZ69hKjGHuGFxvcEj_kt3X6kKcVvSMtvs6Zcte0EVBWou6bMSTdbKA3kzmSDzvXnwU4e_Vp6nrLxsB_ChMwO_kMUYia2xTs1kQ8AUQaiLi8dQZGvKObSKajJJpgmhVDGX01ZqFQ6iVTJDa4deqwi5-GWJrCmGu2qraCRj1XQPB7sg7EzfPoRxCvI2uvA4Y86u979_Y9OsdaXiCZOLEXnVAE2swt2yaX4grgaAvWqsOEsInmS0c9COG-o0z2RgEibsn_jkQk1yEAU6N1VE8draM97jD9_-QsmCh3UjwKSjU3otxOthEc17mRKdWaaIkfUznoZuCKIwe2RWEPE2mLN8w-1N7CsJ5ds39xMe5vmR9769o9-XdQeTnaHIqx0pET4t_EBNNw9Yabovfke6QcM98QwQQzVJEh5mKlxH2L-Tg2ITjF_K4iIZlC0mY7381GzuWoUVe9CsWij7YRS7ajLDQIfenVqlY-8vrw9U4-BWowDplSTkBueh7t-Cfi6DEpnhvzEsRXjcy_lG__kuZ6s6sA4b2h_xp_-1FKTymMM0sleIPWlZ48A1MsXGvpNmLUKtrWaC2_5dCgrUizt98OuoBQIn-wPrvFWRVRLztRmQ9mkbq9EP4JEXNI8EORll1ZC66bWH8EIuelQXaumex0Z8kC3aDk5nc0L8Z6SxFlHjp4hSQ9fr6EqbNNJsoCO3431KRZsdGLtS1x_F8Hi8cBg1P8MVxRpE6IETGTHYL6qPc0f4qwEBDPqZVXY3F1rNWD2tqzm8TAQ89Ql8Dv-YXh9PuUAKAexsGIzvWDSGwyfrgBWNaju00H9p9nbFa4mc_EoPkKy58jlNFRWeaH2mcvdfwFbIOOc-mXIjA6RhQA2ypt6YunfAjUQf5WXrRKsJ-ChtB8q1g6LcwkiZ9gDHIEI6JMVzzuecLE6qPm-GYfpTxBa9blmIebKbHkYncxU5W4eq7PTzceOZbDu5TIyVIJYE7YCcQT8ERgc3yRZoztnhEklSDk8vWUizvVrt452WVh0zskooE7jMtMbucWzRVflQSliyMZJxsnHrjeHzaXXdQQJy9iIzmiE0F9Jah47JMrZaR7LgwP83XCI_j-1k9NW2BWq1wyTqdBphzaQC52H1qGOch1nuNl1cb9kF91cho-spvFXnKdVDU_bWDzvxQSIwsbxa9ollDdUKe7hnNxGMJaLcrKC6fICTkdmsudlJb6-rgpgyQXVP7E3LNPsrE4pZUUwqiKAhE3NoWTFv7JYUJJbaottz9-wwxvuJXYyi0JIg_kylKWLXxygBh6Dk4RwAyE6VAfGo6kdIHgsEf04NmljGqcAB05KHpyo1C_3fL9oz0UZNjRWUcLO3XZ_u0dqEu5bvaRj8mFNTqUamoQ7Y6JhdQuBlIn4EWTlKL0WgaPq3gOX9HdT8ssotyfFBHTZK-LmvX5YgkbBtkUia1wBjLi-6OmKbgc1WeeaNVv2Bi0wvX4ZugUuJXpKiwcwpQYJRnC80ACVvyVP0HJNV95PEh9Ti8iUBLO1KoiaZ9e9GW_ZebLyrKkqyzSNw9YAvjZLEeEvnNkhWtwOOXmXzDyk2gBODtFWGHUzcpwaZGplxh_-nyvcd2mIyIT8duVMDzKquWo2SYiEXGNMGjOJcvtFImuKyyOcRfagzykNGub2WmCU2lnU7KQn11wLlhaVaWK40LdzwLpFnzE1w55gd8r21eq3l6nF_LyarWmlUGPINz846N0jZLjkRCtQzuC34E9duTCSlubeNdIjgF0bG4G2BwkPOwXjFcJMjHUgBEgeMrsH1I4pJ6LmmnFvuP3TFAogW9hvFG2Gsg2mp_yY44LdPyKW4ZVSRqcZ-Z0tJTfGQP57U5wlHraftiRZmgj6pM7UiTygLRZf_qEUubv1pZ48wtF8KTvS4qVrK7Q_o9puRi6W4XD0fV8iO12Um0yA-UkKBRRY0tHSEZsNTOn15KDqyzYODsyVscO3MgdSE96Gqdp-FkAlG4IjJZQ1AIoBLkJHjXY4ebuZxt77xpvzD42SDlWzFi3oijMEd23fUXY76g7r4B4pY6h6OeB7M4_H0w1mjjL5t-ZABrGBS4N00R2u_GY3szxIggkxYiP_OcO89tgiFTpQmMDkU9nqQufO3Yf20DT0tj9JMhBTeanAE1TA_5G4XZtybjRZNPjjiOqt7cen2qEj1DDSqd2ag4v5CG6xHe4ELyjgtg0mmsGPCNfMJAzvB4ysar2-EBeYtrC7R1s8gKqkrtcE7qnBi563a8C7kgMKVb_wHbSeBF74pL9dgVOprS-P9E-kWWyCXOVGBzQIkGwp5rtaiT-pVmJTegv_b3LJfpE5yIbfzz1pLea4qrBIgIg4nfsWj4KqekmLRpahivleIEwcJSQRVjHGeshrqTv3F7DyAHU8lPXrOe-gd2it231UAK2J_7KX7B8hsFeHM_HgDgYYtT_RTPoPhDQ-INdB0cnMIgpXvD7B2Qmb0vz77O0iDbmvCY0aX-CE39IU1rhZo7k5KzMbfKnQg96rCqNqZxVrxCefQMrBJ8LpBuQ4_LW3nhcp2erGPcxl0xi08N2Va5XcZfXC1iN_7w7-GL29JyW3M5fldy1pgkiIyz500OTsPUO_X9kxpT9-RQznhsF2Lo-KjHygnHWjwJNtj7dqKZKRHt358Gf_wy_7WCebmm3Ud8hymwZKdbHDdhX-R7LXUJKI5gYnennEMwFG_mAVnmHXdDn4CjEiga1OrmfXx0TPWKbUyddEZTuT_gmJpXTV_x206_G-u6VzUFVta2YAAKLf5QZxIsE9RZghzla6MAcrCg2wzyldwGLiF_oSqGLxcGK8ucQ86QZVlWYjSC9LwqffU5AjxFYWzd60S78TZWuQG5utqTpHuPB_xWJQYZFyeYU5ZwDuPf5NsGKLHbY7-Kf0C9z10zxYqMpZWDYgwW_kS-B6zp_aDZhvE2CMTkXCV2EWM-h76ssB0xR12re3nqZxgCuO2VwVFRl4JJkwiYJ-iY-RWjUaCTCfz4MuZ0XXYZmIyCbDLSVCM_KIKun3a54_Hp2FVDDwAtZ4Y4x8_hPD2svewYsJJjWIL15jZP9f79JhLrkd_-v_pFDiRfJVSl_amYtoQPGvBsnDzVJQPUXt6ln8u5OPA0rMU6ZXF6Ojp7eD9OXQ4BJisBAV8KLqopY1Q_sMC9AjC0Y887z0SH0wUO8lvuUlK_S2yNfWIU3Ky9fio94ZVBf4LrEJiuk-I9P_87pqtVyXb2LcymTz1WRvncgPwypMgFh2hqJqMqiNv8fe_GFKtBnxMKuy6hEYgaekDfiNs6rb6B3NzQ9Lsau6biT-8oXN-3P91veZat0CMsHKqa7SMiE6fk9l1N-c-4eynQRit6nPFV3tTToFgHNHxGhyE90bqe80Q4CQBYIsnzeNXYpUKf6H4_PypAPUeSzoFPfkMzF2l4SNIqRUDoQ9UzCPRSs7X6JF9N06261-XUDvym9ydTEhpDAfx5A2kfPX_Nrtbj5eAOr-yokvRvvK8Xey9JP9dSagK0WmxPMQ2ofGc_Oa26BuyrfIMypkRf3sb20B4WrVuoBXTBszs242m1J9Wk0Q1u-_A0EQS2npbset12DMaWEcITPv_XkjjT4BZpKkXPA7eXQRVJU_wBC-SEgB8qdrNFv0Mgk42NpWgxOiH092Bisokrazy0Akm89PrvrmaCwegcDKUUcr35R2x5MD7mvoU_PL2Dr8Jt2rYxWw7-xjSajMrQuAC__P_Li1v7v2Y_j-mWRX0-DiObt-JZS9HJQORCOonlCfRX_2NBBtXJZP2y2NnUyCbEhAQfbnckB38nXkvEUi7TpiyjhnVaUUcBY_kK0VYhdSY_xF--sLwpJDdkHzdOByIKg3BJhC9iOqmAgsik0TVp87nKT5Ha9ITsG5_m1fYhwvtPohN39l9LfHAbNJfnWXJDbase3AT5-M7YxtK-0pAXE3g92eflMN3CuIrl7qo71L9TjkgJmavyOWdPeukHytTOp2CjBay5c_qTZsLVd4wDwwMwDULz-rQYSv1XywasSU7Q423-LSSzCaSr4aUL29T7CJztGnuEsahqH0zFHMeJuQXCus3y6QpmLQBjMb7CwUlKStN3r6xhU3y57AdYdCv0bPzmxIHjIfb8YwrFkMg70YAnOXMeU1ga3g9AgJ-diCQ-VLdeljkAyfmqbtdyFN6bXIqfZuekiZIu0TD2mq1ITBUMrwqvZXP0HubaBZn9Xo4wmpoMATRdJqjMviD_bzD1Ixba6iPiREtHwwnSsHct7xEMpx-_mkmPKHEUvC3biT3aby-gwXcU4oImnRMP9TY_UzBoLkLl9r6QYteEgc7aNLITXEvhKZShUce2wKZmjlxYo5I8T1W-V2Zj7mhu_WWlqWR3lxlpkTus8_Bcca4vd6MPeykSV3OfysJ5vnQvi4D_iCV6tljoBhqus_xmoz2sSRexaedrJZzw9zXjTWtEIuIVmK6iFg32n4mHaDuXb4Z4OT19Lci-A3YCRvkXWzM4Zo-rPYdIOf1UUxQCaOzuaI9CvBX_99Q3SuXAHpzTHnIlnao44TjF6L1A3Xz_8K0eltfvosNbTBdTGfwC3FDcOYlhu3Do3RZq3y5QrsXSlRZyhO8GNPgrYe4U_foEKgl94CHL5MXVDuQ2E5jaXZP4zUkB_UI97Ak5vVYSFT6Ige7AmJQ5VuAJS86N1VCxh6DvACbFSeTcS_eGgTAHqhwnsoh8B1DVG8utXGX-UybFAAIBU6jJERJRidHM0SrHCoovgZcM3eYovjpoavyJeWZ-vXJ-O1fL9ySIn5Vr6qOSFWxuEwIq9Rb1SwE5i_hla4syC-ue_ocADKQ4r83UUxtXq20g1_8syBZpaW5WtoJXXtbIcqBHT5VTCOOXAjhcAVBsC8cYiijHgon05JL1kkGiXcRuyHc_6I8w9n6TY0OAYDOkkPNC-IuwSGEpBQJl1qS9KVuwj8TDkDquihvTbHcloGNuoZEnHXyVXgfhN-RU9Px6HkqI4LOqC2Wc4naj0Bn3P8lTBTdpGyAcAi0rp5sgcfMI4DuQyOL-01EDKcunCHX5Gy_7JMXCnZLJqcdhcnHu75WPufyf35aDdSVJZKCFBManVr41YXeYZSkMr9Kb9-SFpvwYlxkAzPKdZtasAE4wJbw9cSwCz9Q9sB_ItEDpT0sToDsxkrb1jTyQoEPA7knUelLFL8CsBhnzNXpq1WStY98-QmUdbwopKBmnpiwbbmbiZv9bseixCnevPC3IMi9bzxYGNi5xK4nI5TKYVc4_KXTxfCsfJDGPUjHIuCAXnv_pcKTvFCPvJGSw_w1572_GKf5dhN0MI4x9aAclax13Z6gUXbpCI5HXQ9vj-jR9nWUWQbmMqhoSZrs0jdE9FUNaHMAOP4iiQm-eBblqu2oITe4Li3kHQ7rBLVlVKJ7JlO7MhezwnZJJDU6zYfKeFkZq0jmixYzAzx-2yWefOYTBi2DIsegoTaQ3ea88fiwKrkOQxaYKDsaqQBZfYqQEvb6fGeReDpjtDRP2Co6IK3dvBDtpXW-26tTIuaCTCCbm7zYLoFYizJ1DW03Kc8alnlGPnXhrtMjY7Tr5wFRMVjmlJ3v4pP-s8tkY7L73STonpyZjCHtsMqsoGq3x0bFu5J6PqlbmEnNpIWnDKC4HDrfeXzPKe9fdBGimDofUwRwsyq9uifm4dLPoc3G5Ld_y4rtYjYrOVIgk9QK7CtvXYvLJ_o-E2IEwxNGSfUIm-RkLeZhxUP-LNLJ0NnhNvFkC63s7EmF7WuUscCR2mkRpXkHyTK7egEWxjjbwfLTWEcQdreKh4I_MWEnmAKckzwRoNkkVhLRtZfVumQZWI21g4Qf073KDim7YU09JI42v_k9sLKSsAdxgAjk02aIYG1CRPcOMWj6YA7yCHrccbVIMRK3kSCpnLn_eYIg-QoNjPb65N4bRPjrtLKSvMyS-ULSrd15lyZqW2ZJuPl9IqOF5kOZyzmNchFeTohBtHWWLXcgCCaM7NPTJ6GwSFHN8R2y5cS8suzBbAU1igybFCF7A6Lp5oiWRW1TKv4drz4nRcdiczj1X7kqRogfowUIil1GDX2Lumei3pLK0wNZvyNOP1MhwXib5rT_MChIuS18wi8Yd7Mj6bgMB2FHmprkVe4CMYnIEH7zkdQiA3HbyVQFfmbqmrAuNj3duBLAp2Wq91s7z-s2Ndcfrjnv5ghCP2lUNacRxzfe_pvft7DkJtQVPwFKxS0q2tuwtXHxIBm-xozOdb3YHsIRMLZuT_y_PgdvYCFS7bQYg_5QPT3i0tOX6cjqMH3boSQec9_viprvOZms5pmGyfHzG-iS8Lqk-_lRmDC1zWo5jrSjUiOM8itil8zLQmn_F0kPcmkRN5nDh-2A1ymZNYshX2T2UUNQRYOdjLn2u90CRQWj4JEFaqgFk0ZbevfIUvb9VJf3ppICvVn97dKjZJTBih0I3k_ZAAvQX4BNvLVQ0mKUHqv1-HIpJzla4MMF_URmxvap6HPvwO5Hlf1qshTZR0AuaMRRZDj7N29H8oap9sAVZwHOFyCttPA-2aT0yDJtYzoboUSZ0h_hCzMlpCilRJuFBBcOmH7wbMBJmr1Wiu_63f7xiZOFvpk5u5e2MkLG7czNSdyYsXAmeih71BsRpG9JdLBOReJDShAzIpEOcz4OdCkV9MxryDvG6BtA8sL9hr6ruyAsK2fAYVvzlncCZRxTkCbfLFTLnfweSASJvxly40a2ivQFJyuMJMZ4sdCf-KthqRf5GDSdJOymZy__-_I6-FtycSzZBOln4wj8kmEK-HgTM83br5utCTY2OuniPljxVHs1D0vual9CjZxANGjkLNKKmaV-ueWnVLlN_5wrLvUJMhw1AX5y2Ph2Hb6mydHwkHG85Gg3N1X07NlrIT1IN-DGVoPQbcHo2vQEueLnoXqHhRjvA3LhR_gBjNAS3xmhMebEs0vnlomWrAeEH0oi2kOzTxYVH3EVOfCDxRlZHKER6cRgEs1p2bHGjbCNg7KCUJNuZWz97BKq8lcziA4Jn1wUBUpHOjmVfJElhH-jucRIx9qJiy4peaXja2vS6C37RCocvyU5iociTeu29AfkEsVcBOPxwh5sIE3zfx8okUEb3mTmY2K71sLd6YhD_FgpJPikeLQWi5-FUneAPD1IaYzL_obz5hplPW5dLcMr1NIoMJWM5Sch3CbpbVsznRPQknzTF6dC2QtaFhZTkfb1RZEEs8zrLNVfECWin5yAURytpHRRzfMY6mCiaXvVanVRD8xRhNeCult-_7B3FBJT799PQicbR4eUfZrLm0SikC6ED3q5fzVzbVOzwkR50R9Qp7qzsSri8JLNRmwfhrwNe5J8QO1wXJuM1jdjmq_LY4Zo5HMP2zYqn3WaQ2fMbA0vKwlKyKrwJfvilWIh1JAijIot6anNL3-oD3k2GoqFgY0ktL95NaR_DxElYlFwKhlpYTMbaAM7-AGaxox9KxHPOF7_d4jcywATpxBeoe-1yLlXjDayIWgwcqquERy7Q-vCpqfwl4uBVuJtuptTQpKmNLWKv-3uDxe49cCXli42OMtebnSear9sIp63N5TdSyQud5NjAYmmX7nRdxdUSW0zr-Vl0G4ovehtry7mChei7aJaDyPlpJ-hqW911bOiJmKPifpqHoGib0qn1jc0dqPMvt_Jp0XqWfZUT6mq1EfsGCQl0zdumYq8PsI1QGpIceWNexD_cfpayOyZxr2ZOAMYDQZZv2N9-cauYpd8LC17cTjbIsPRKJu2WU6g31t_VdFdEUg299hejfNHwbnZ1QNUx0LEva5szUB2kO3REW1rK4jfhedqM7cYOpuLLt72yc1Kli70XBpi5N5_dG6iewT_WjjwxOkUcFzPUGER_xwwrBoDSBeWFa8YuXeJlSLwBMLQgmAP9SeO66MIk1KLohXItbdBH2rXsKgicwkezakGvPnERuDEtiTkzll5zfzgc378V9VxbcFvq7Zy8B2ruc1PKacxa2U5-rfX8bqyijWUmhhSvVMcnNyqFwpaD7o6Q5D35EMMct-ih9eMffLdmJskgE05m9DNIigZlEeljo2LvFfLOVTCIC75ezz5HWFtAbqB9SYWwmxdLTPgkpLDR2Ocypq4io6q7OOv9F8_hfOM7pT7PP2DhxcveDMTMtw-jTddNSFnegG8Ouf1c5nmPCZ_tvutumQt4KQJXSO6vBuh69fKcAU_6zRppa6J7RHvsa10ucqdwGfW8yxtkbQd83CdCtq_l-IH4e_Zt0tNLM5zDSYTkXgo92CiB_CMzenNw7G9HqgdbjV9SlomXliEsVkwanY8p_6ihNq52amFJfx8savL-eEDg_7ryV6l8-7vHsNVsP0sE30qppitBIwaJDKfgFSOGdyAF2ShkgR_q8r-_wkXgwbZpOUDM59Z_BPywWppWaH1uvxKd3lWrXNxg132Fwc-xlQogjCX8rtyqEvrpgTznPMCrRXFgclInC_GSjssy8PXT32lGKZbD3YHmU86eRo1s5eKJ4JuM9nWnoKKvKUd2aoIgAmnlBfYO7vCDumYdkDQ2rQ6oPWK1x66NFc_Ov90QmT8FUlu_hdCYgwe6iV19Dj6TyME5f_cg9bS-3T6PqNyDc8USYp0B9-u6DUorY1_5XdLFboZ4QTQpKWQxEU3IR22ieEAlrAjoAF_PddHLt8rhwTToxj0u5UUzdN8CtSLivTf3Lxyt_J7mZjzQmP69fd5KKIDTJVntwcE5ifsYL6EPlSEZf7PpiWkW0kKCGJItjiHHws3Aq64_Jrrnbp2liPe1lVCqL6XpH-XVSsuOdyPZX_-A2p6dQQHabcjtuH66FqjFJXForm7LY33-3AIeanU7hkyIQuwPt03UbIEwv1m3Ayww--KBYBaYaT-Chw0QGkVQnpLUIE-5jBjRY-pSdPyt-2bku1Yd2NdeK0Z-e57KjaycZLiNLA6g3WjoeV8yKp-DaIJeswevpHMsVuzvgigtJ0rDQA0mPg1lWFiLoCQR4fDQiUTGcnvAoFd3QChfPkhwaC9aieBJhNr7EASsk66mmMooEhb097nnuZKFHW2cMe7PiMTZor8t_EK5Zv1wCOkc6dtfdK2bGnnf5NMr5d9BMQuZSiEbHsPPOckcZ8mMwmYD1Pq5CDnQPeIPQ2US2L8o-9yq9O3ZDZQY1Cu1TRFhHtc4WCWT_HgB0kIBI4E8MkqkOzEeU0bkkAcnjEsEf3j34LwZJ_WzXVoua7jm69xqEdODUr5BCKX8yl307dymo5xU2Ur_Wr_yWsujgiSQxhJC--SeR4Eg8UujH7WUvu_vb8u9GeiL7UQo-znxfacl2LtLNkDsc854HNPcDjEX7JcEyrd-UqT7FIvOOY76jRjGI3RJI3sth2b-nOtQiC-jLopnKsigBHoPTTiKxBsQAeLBW6V5D4-GLZeTb2fulqH7dH098hy_Hbk0M7cDwfoc4UPq3JZSJk_SZO105kf6sXkVa99ZbxXH678dx9DjQAzVP-X7ftmhnti6NTry-ESgU4aYMXFUt9i9FTHGPIbvcx42_3cKdHzQx5ScWk_Oa20GGVY87Bn7lfL9L3BXoPvpA0F4l0lXhOHS7YzLB92hKsMeH047DZRDXyroZOOnPkJLVs5kXoLa88XaTN0cLoRkUTNJ43ILxXHd73vhEPkzSLXmmVx8IyY9IgRJUmODc2IJ0U1f_uF23c6BbZhOpP9fD4ACaXGYvIwjajsyD4m_joBnpLcwvcYTfBdOxkwh77EJC7mpio8b3fOW-BnsvfFLdXe1c_--cIc06cyafYt5bx0dIpicj47Z-2GK55Gsj3DBhlzSIKccF3_9Jj-nEwPgXzABx2DLLYQx-BOGR87q4cDWpe4swQlwhvnXfMwMIJ4uRzlBTArTr5rQ7_hHxsOMIXoMTQ05Q_srMPSNgd4Mjhue8LSa3BW8wa-qM6jiJXKqwws_z98Xm3zbEFMw_QEb3Z_7zGBYf8MS_lpMQOXyssQIR24fd53FWnL47ppjSDZDZFvMOd4lw0cDvt3aR4fab7grUpgrIcz2tZ4aaaDLIaNUPn5vqgZ43YiVeA4eZ3KwVIrUYQaI7viQa_fu5IR_CrxfGeOBL1C0yBrKuFTOEdC45jTMJaN-8ommZeZVXSTfsMt8fESOkgJVOUvyFYMWW2dmKMSCc3JCMN3fFNQdFVSWL7-6u1YGHYoS1s1QAakvKZbiE5OSTUO80PWfTtG_76lMAmftY5Znrpj5LDryyq52x6hXPrZSLg3F1_twCER2NYohDPeyuIWqPEmfEbxZJF8GrfedUo6gWFvXu8Vo2oXFi-p26DkBDxa6LDj7qlmzgRCPYy6biw9xrMF8R_1Q3MMh2ErElmCtkMNELI3IEYD19MY3sPM-09JkRGs4qs8HBY3ojOMoXVmBOAEYYKhbPKMYt2CfisomjsX-aS3_cLqgUeqAlCMXdaadDw8MLXwekW6ZgPjiPlSAOQ0biGC2HPn7PS6zzz58TU3Rt3seo6-U1aETQFhP_CODdwnC7Rhx8gAjxxTNfVCXVHEReuuxp5KJHNZXifN2DA1KKlVf7aUq2n0Z_OVls0LNjyu4bUIxi7ffmfEg7YZXDglZkH0MC8o6JNsa4mC13pRTZS4eQQW5nQAZ0-NTiDB3qfkk_Y-0brXocstMclH4Rc_TZ33wxGfnUdGBfYZmJscpBWdOfmJhc8meEMDzlfBtzjogF54XaIOjzoDMouJA2cFxL4je-jbkXEGKTZS_egNPcax-qprFfMmO29E-e0frf7X-JV9Dh9SGMONLZ0f7n7LB_HU0H6hxKwSxsDOeQ-qM4Gb2QXC1us2LNBpkYBi7CWFFROP8zpHsILUPfmvQyJ5OuLxZRzbQKietx0oUh4LANv8UbzbifpKOD5h_9hOyOWCWhW1-JCt3AHzrc-vFloP_3dwgjJpTS-tAEsn7X3tIaoBMkSYSqAF8LBd-sJl_H1euPHEYAkMvHR5LbCISbBE2frFZw4Oi4Md2v__onS_WCAYClaCWeq5ZKT4xhZ9ecy48vGboNP70iiRUNgeh39Jyb-SaentRmnnKazv3Om-WGIrHjpWwgrpEHLg0AteW5YBa42muYHuS7j-YRdRmPoGJBuZXU5g40QO7_8tZc6KxRbtJ5LoheUUBITffnDNR3LRSHX_ACb4_A0e1Co_x47G5KqAsn7EKF4eGIEQglLGDps2qu0dim30Y-PDS4NF9GbPsfcqrCroFP-huNP_AlC3nqLfi_vD8ZfwLCFtmKH6sXqWjLULVnmv_MZUAOV0FgmS5TZFw17sflL8Vh5ABIyuagLGsvfHSTMvAXqyydt1lREJQySplqICdugCwtE5V5wrrg34f1S1uSkxLo8eWcDshfzFWIhZip3q82bZpPcqRmlf0pv9CTtm09X6bvebr3oZhfkym1D7JqiCb58msUQ_D-qs0u2bfhItbpoB-BRDsMSRMtq3kPARPZvdDTyx0_CoSX2EKWE82_n4M_-_VoFrrNE1PBHWRpzpdtNMfImOjjN6aItrDD5RDzfN1QrqyX4MOu7BalIJ1aUTcF_PQ1dqyk4JY9B73AYkpOhsAO0Nkw1Is6ej-bqkpOiWE9_ymiZV_alqb6pVqwSKgqcn-L48lDGwNHG8QI_1XfV-TS1_3ux2FpIh4oIEXrnKi1jeULmZao3GFZJ7-8A73SNJaJ6Q0TXlFpd-mydLZrlo1lv91EdMAEZmN-Is7GC9iAR4jruqKAbx0RGpg490pNn6oy-e9oUvtknkIUQ_EQffFtBj1uIa_zfmYfePEX8sK-xTZ9zDQtRCTKALVWJbbkXZu4oe5wru-JnKYWw0q6qCM8xRDgP2XVz8VIrwIr65kt-l2mNFYiYOlFFGoFlp3tr8Y6eKr2SJlMcT1LVyT9mOPJwCjTfzTcB-48WS7UPAkoXBq4o9VWKEuhMX4JLr2UsqJtGEHbK8_D3gsnSLzCfw0ulW7odjE5eZqOXOH3F6eF_WYgYv3-R8GJ49eWRO1GMWjfB0xEsGwwb0xLdtykn9h53g1svi2bgjMQZoYwB1QW4Nu-OyeYr6smdEdGwCRJu6ccXyWGHCz883CU7ZzPYkHtlZujR2WObB20I_3913JDyU04t-einXpLECl2Ky0kbyblqss1eydvgdItOOeeEFcR6JMNZ9jeQtuQ1B8kQvtJzYqTp23pkx56_KINJsxb43FXAAdrCSCDoPsSkAke9nFlvMexkzN0Agy4TULNmAe37KxYLBx97zk_TWsC952eXwrEKmmiAMLyLIHfTZodZoX-3YZdLQj404Leb9KJ946yacZy8oyJr5rl4d0ZOZhJ3iizV02XUuj4eTuQb86CZYApmQgBBISDtDDQwKYZ4pjkVSUzAMcB0kuXuEo-NClr46omGXupX4E_DDReAK4x4_NebUtlFrX9IToK3MHhs0KqWybl_vhxjgSsTFaca82WSgEYCjDQWq2jvpbWdztcq7f0yOO30cHwDggI3IHWW5dG8AbDJKaOeCN5GhClypL4yjcdZ848TWiLx3hBgDy_eyS3tK8VIlfH2SW3gwCp4_SqBymwFEBmJErhb1GCV_PW9apd8pHZCXGRf1jq0uk4YdARxp8iEvjf6EnnkeiTbuTkB9lI_sz5T2WSh8CuG-mpCcRB6OIXfWSdAMm_4SUM1IUIYG4dSepVunqIUhjKuVDTzVoLd0sFm0_8NLDO9DjOzjfhxAzTbTjUfw9dfMgimyYr0j4cbp2_Co5803IviRne35KP7YKmvO2F2Y0J3FKxSoYPd58u0_IewhLrTitPuYNkmMKSQeQDizwQH_RoX2IBg0mauKaT7sZ0iJoe18Zu9fa1L6g9s_nB1XiUfP5ubGxlqC4D7uFEO-nwAoZnYUjmOHKGs1M__whycygjTZRPKgOV4glbYaJByOYbYKIUOMW7N3YM3LZ361iJ0897ClTXjhfbX8RbrzTOAwFLAWLx7SKbNzzePOcEAkh3yF2Z8SEpPd0d92fwBuGCi4sP6dIiB0V7HaufP1H0QoAZ_4O2wHPXyKgRJY6gZyD1tbnEfo_8VvdFiENdAb34rTAOpiFWSJLsG4Eg6iwAoRQReVi0arpnEE0c6FAZ-MBHWtLkudLrYruDBJKe5o1Ka3d6X54SvRQrtqY3baDB-Tsd989ivSskV6gGLNSRfSujrhrELyISIV8LKKofMvEx1XDST5bYoV4_yoh5evapbHe5FhWamcNFGY-YgBUdaduF7_lAIo2YGHOX0vuFvg6WfjVCp9h3CGuVcnoNpepJFG1J8IChAirY1zDGM9Jvt4gEFXoJDXmmVvI7rOrTmr0bldWFVEZXUIcNrqCyz_9lG6YSzsnaxh8q0SZyGAXKoU0T3cbKAosD3Ykp_s4ZH1Rb4AhoX9xTSnV5r9Ixi60cK7Smmc4mCBd3u55ZcSie2rZKOoRQwuHLvNlAkr0blj_eq1gH6ifMLKDMIS7IcEyXW8jWvgvXvWkDxC8cPyi0CrEdn8witJNaZSJi1yw-4FlHwkwXGHOPl2Wc78H3G-jvVgW2iEM7OidIQGw6jhUyutuPMHvUxthl8vuktXdj9bZiLSz6M1ZItc664DCqnxfrducMjh903GFtE4FBnqHbJcXOVoN1II8LjUmm1NXTbBRZnO1U96hgX7W8ocw7nAYRrPsnfeEwTzFfwsiej68-3UOX_lt3Y11GshXJHjLU6T5p2kq4AhEmUpIr4o2nYKVhruzK9s7dwZ3ZpmAQBdQLMR7jKBZDzI19wMe2Mj6ZJ62gmjK2lTef6ev1hY9y62AwIbG3wG7nroYzxOw0MsL2p7heE39POkRlVbkMpojAvqDSjcfggmCemFWeNBeGG2eOtn1WZnsPbI4zdm6pFDxqbaKEQIYSffMAwlmluPzvbZxvYhK19FgI-OyefzQ7DQCPIFLsbEYepNnZdUY2dmpk7tX6a-ETFtQ2tnsNJ7EZCSFQal4vwMwoB-quRk8Yn25aH7CxNQn3o_KQOMhwv-nO2lSzTjCTTyEgbKoWDkKnshFlgVHuODHEEKSpLt-ri35k-YfsQP4Ri_NCAXX3r0x-AXa6Zneby7o6skb8gGbJwjdpb3UlpVca6ZqKzs7aVmGXWa9OQuO1Xx1vI3wdvzflvg8Zpk_tdfBzZHF7aL3Cn8qdyF13ELIHfsOoE6bBZNMf30Gl37AwCAH3D0cT3wowtGVM2BITjzL-Ac1qbfc-1sSWiCib-Lk2Z69pq4rnFysNohxstkp2xZyYtY4CKQTsi2H0SP5tY0iaMJba6Eb1xbWtMrlOZkbDOxVW5n0iOz9OXTB9GhxtLbbjMIReSXfmensnSzTNUZKqpeXT7BIGpVSLCMefX7T7bNgpnmpLPrJ4q9SY7-wrkoKwLsd9ScXgdGaSpyVCxIbn3eslDtCxq6I2iVG9z83XiRJogefbQvaSFM95LNJDc5OWCxg4hfqY9HFjE44lAIQy0AV-tv8-g0VMI0fmM6iAKq6lvIWrsAIDxKSlZnkFsxMT3KC2n3_DAtyJ_KHV9ohM_MZNyxv2R9TCkvzNi52XUTPx8R9VTrll1xBFGDpUIaPh3DI7LE3xBuMf1-emK7bZXex5hBnvPFUdwt3ZmdwdMxQXhmPcDVSGjfPtPOYhxVh5GiRR10kFNPMiw89SHGNgqgjevClcy-KTVXgwIZ0GKY-NcGD2NH1aHHtuNE5rYkWiUHIWSYSeyahMfX4ifWkoN6gAmkFw-lzucxQe5HmtwAMqbHVDBrzcajheFP3BLJkiTpN-74D5sj6o0U4sxSIbC02p0FHXwkf017t721UNnSvmOAH0EPui-4XO_h2GFk3eGRU40pCEMJWCBQ0rf1wYE7NMv2Fm2OFAnCFfZx-yZLeqIXmwZ911CZ2TDo3p1RzQzQUhoQsrKx7AkZnX8rfoF-bQRXKeSwkf-GvTLAs7UuUrcOddDaXT0v1qMrYeENP96z3YJ4ND1La9B_Wr3tYy9UvJFdFldYXOKQIQE-k-B67wthVnFTbmIsb1W0zd4zizORE_7dtscH-bhfUGqVU0XFAO8SQv5VXnsYxeE8cZ9Kufg1m3saXfUZsgGsV8gTK94BfYO7lMU2MHu-dv-FaS9Q38xbh8MwJpcdup9yF44u85aVc9DekCv_jbI54G0Mvi4lKdLYsK2PRQxXax6E7L2TKMiCQPwQg3BiSB57Dz7_QY9A4DlyI-RIpZLCZQEu9DHSbTv6K5U6ug8gWiSpfKkdbFAla6XZJiEQGD-aQWlA0vo310CtGgDyq5VXDt5EJf5ubbKHFHHbAHw_7l54yyxuFL7E-BrwaI0kE43dTP1tj307pXvnLlI5AJYBMI-4ssIhTfzOwJx7G9aHPhkgcb1fjt7zkLuSltKS03pVbuybKDn2ys6dtKA3B2Efomj3xoaaVJC0RrGKgWy-cnDOP6f07WzfU-SxcpBj5jHpju-14-IUwylfkpvsLPbROc5nEAeVTgUv78BKYoOR8KrHqZdAUqkmcwAN894Ls07UW7qn2KXGqshvlcaSmOJJcFeiOtAQcqah4BaRZwzD1Kd-82iySixRMAPo-049yyIFJgoBrykDJxsukIKDyYfD95GbUMD8nj2xKaZs9ar7U-6CQYekbh_eAb9W78JY9ctLyalle3lw-ZJytt-iGX47mu013n_Ztz8QJ92VC-3oHd6Gdhc_zp3LubsqxPb4xQmhSyjJBERtIYyeiaUktL5OGewIWx19dMih9ODAnldt8XZL_YIg71J1YmlibDnPApnU1BbeXXoA1VtfjWxFnaEUE2ov_e8WkqrXum38xl15_pGOPL08bUJnktDsH5IUzm7a0SiMAHwaAgmk1GWjHJTqZxoupD2zO1ddSD6I3VsxqjxWatwaH1ZZG2X-UMwOStk3-L4b7YUOxvpjjiIJgg4ifNiO9_INwQrRy9R1Oz6F3BBfJ8nys-EmZpFec9DnLbTLPZaEkMG2BzIkNfCcxahhf4gpdRNAHdRGbcc6rZyJ5lMnwGP5fN19u0hI3n8BHO1zuA9Oyn-KuJmrlrIaRCOn4Bvm3uLpGLa9w2lHt3nqmHPhngpwnU-709_7vbjgcHjj4yMvnR9bMPDVETEdD1MixTAnFOAM0MeEKinxokkhkD1Ad-E27BSp7Su3atVGj1_Hge62WZlSr8PJla_yjMF3WfC1sNk90YE6S6-heoz27m6YVh97xSdR6OT9cHLPXjVaocDyOWLx5lkPuUYlXftWF2891xvWxES5zxHm1UKASsQfOA_xDaz0qcDIjb_s5KORAtxrZAh1KhkGEBUO8sS_g2YZpSSyARXvBVtOFCisooeUPLsGgj-8J4lbZ1FBa3QTWpibwNF1Twn5ky6SeqUDcCWBJqAPSb0BPmVJWMlPKHeGXVPcLvRqTSQmRVDuZHoYcndXhptArI2gZ8JftBTWVl7ud1lkUHSoxjcdbDQpiLIXLdTwqzvlFUVtcdRBSbWB0PD2wTlHCelgoa6COEnF3bvlMZRZfOEVGHcw5RPtQY4y93q2RIAfUPsRjwytnmJ9AaXuf7KbGmjO8PfNSqsj0dUGCnHg3csWI2BVRDBxMvxAmzc98CQ7ldLmMIHPADyCQLmucq1h0hUx7qxxK2olEhUDdVL-1bKbvxhfgdkr8wdgP7zEYZTI7KBZHvwJ8QZGxir_JedX8KurQ8OlWxkWBOxREfsOmmCPEo8WAnBJv7K45ouacsGwAsLILSzqpg8NsGKCQBAuRc0LVJD-Xwd3s7_UIIGzOhpsMCe9R6nTFx9HiyQKp7EWfDT7s-5FQyhJGMKu93UC6xQErjWPEQ-MrRO5aH0vZLl3Mn4gQOaXQjIx16_awyu3iHHHXeqIDmHT5CVG0A7BiCZjxp8t8ysRbC0RZKDFV7yXNbY_zzg-xPux2gLonyZhQCCpNakyeEUef1nNPxl6hsa949dPuvnAKFpeU_BtjPQKl4GOvnANgavfI2hAGiXc35K2M8HoN3FGwoyU-DHpNyk6uSsBbLqY-Iq5QLjMOOSKn_Eqbxru3S5wxfMPPgSCQrpT5KRJWkEKiZP3Kne-QxIZFD2icUeaFyp5szzOOz8YfRlNL1QLq3kDaehe9x0IDkk--dY4tBbkWiP-oCNEYfMNPL4gW5GUDepJ16jcYI-Og_vLA-Fg-iUh8M0SfvD0mDoWUE9jmZM29ZeiTtOAzhhYWYI_b5mr_bS0986hZq9-W61TkrrOKJu25DwFMB8OlVCNxpJem7PiF9THP8PcwOmX74fwaYErV6cRvaiyfJ-5SGDqpvh89OMuwff8zPvB8lilUOKNqdU0hMVIG7K4vds-EsS2ritzw-mQdrlGUkzmDDM3ifX3MAaARPPVd9d5hIMSHGL7uQHWnMNXhcXQ_ewtGMGtB5ytji-aoir00jKh4TPbOTRopclDlvq8tSHDed2xqiS6RiAxGsH0bRP_1mx4OxQYeVVo3s15y83b56lrHCpJ4HSfU7mbHWMq-ktCAiJgVprS0IAACXgl9_bOWg1fzkBp2uK3FXdC5Z9veW_ElGwWzWz9YoAb4bmjLOhv9ySX3Gm4rV-CPwzwpCKvuIog-Js-6RQM6zSaqloCyyECxOQeNUIeJUjzVL_petbAeuG7HtY_ZDxAv0EWsN6xPx8L6XV6RUx-2x0VEL6iDUJapefelndYY5tlrZ-q3ELJ4yVnpLoC7QhyjVbtOq9EP-LqXj75q-FEWO9glJe1cJHc6Q_qM3zwfAFgBJZ-mRBZCFPi7u3yMtU9copHyIf1GyNi_Ta0QGJGN1Oc1x_pygH8RQJZNxZcXrj2_ImH9h0eUbuzXpx0sgV77kvH-J0J80wCgh0RKf-l__ihkTn7IZ1waGV2zF7Kk_wfQwvKdNdmGJYdU_JMy1dzT2ZUg7w9ux6q3vL19thdwQf386QljU2jNlykH4iFHKBXIC9l3zIlXbnbSz6aa1NILhJqIXwlgMiB4KGty7oDB9mJmmEwxGTz_NV_MBfbtSaZ7uqJQVlK9TPPJKbJh8D7DPjtwFaCimnPohrvGxZZt604GnddMUK9Ci1jvNbXmw3-207K0Mk-CRRZnDYSR7azaPjxtpLJXbKbMTtKdOao6pWeODfLe3D1f_rXgtuK9B9cYr-IZQ==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LTIwMjUtMDgtMDd8b3BlbmFpL2RlZmF1bHQifQ",
+              "format": "openai-responses-v1",
+              "id": "rs_04f21d78b6f105ae016a9fae3b31a487d182aa13ad8d69dd82",
+              "index": 1
+            }
+          ]
+        },
+        "native_finish_reason": "completed"
+      }
+    ],
+    "created": 1788849722,
+    "model": "openai/gpt-5",
+    "object": "chat.completion",
+    "metadata": null,
+    "moderation": null,
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 6581,
+      "prompt_tokens": 2935,
+      "total_tokens": 9516,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 4672,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.06947875,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.06947875,
+        "upstream_inference_prompt_cost": 0.00366875,
+        "upstream_inference_completions_cost": 0.06581
+      }
+    },
+    "provider": "OpenAI"
+  }
+}

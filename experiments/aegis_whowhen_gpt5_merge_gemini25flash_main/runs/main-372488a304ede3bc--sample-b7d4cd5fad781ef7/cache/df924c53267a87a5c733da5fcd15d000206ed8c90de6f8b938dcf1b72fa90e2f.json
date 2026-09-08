@@ -1,0 +1,46 @@
+{
+  "cache_key": "df924c53267a87a5c733da5fcd15d000206ed8c90de6f8b938dcf1b72fa90e2f",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The orchestrator agent hallucinated the name of the house owner, stating 'Sir Richard Weston's house' when the search results clearly indicated 'Sir Abraham Dawes's house'.\",\n  \"evidence\": \"The WebSurfer's output states: 'The case began when Ballard charged Kestian with making false statements at Sir Abraham Dawes's house in Putney'. However, the orchestrator's final answer is 'Sir Richard Weston's house'.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The orchestrator agent hallucinated the name of the house owner, stating 'Sir Richard Weston's house' when the search results clearly indicated 'Sir Abraham Dawes's house'.",
+    "evidence": "The WebSurfer's output states: 'The case began when Ballard charged Kestian with making false statements at Sir Abraham Dawes's house in Putney'. However, the orchestrator's final answer is 'Sir Richard Weston's house'.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853738-BjJsmflCz7o1YqFGWxTj",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 118,
+      "prompt_tokens": 3813,
+      "total_tokens": 3931,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0014389,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0014389,
+        "upstream_inference_prompt_cost": 0.0011439,
+        "upstream_inference_completions_cost": 0.000295
+      }
+    },
+    "cost_usd": 0.0014389
+  }
+}

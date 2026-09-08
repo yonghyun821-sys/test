@@ -1,0 +1,46 @@
+{
+  "cache_key": "0fca616beee35fb88bc4788ce2453c8b7ce758656e2ba29b581b1873b662a21e",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.2\",\n  \"explanation\": \"The Coder agent, instead of providing a plan for WebSurfer to execute, directly attempted to perform a web search and data extraction using Python code, which is outside its defined role and capabilities.\",\n  \"evidence\": \"Step 4 shows the Coder agent providing Python code to search Wikipedia and extract information, rather than instructing WebSurfer to do so as per the initial plan in Step 2.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.2",
+    "explanation": "The Coder agent, instead of providing a plan for WebSurfer to execute, directly attempted to perform a web search and data extraction using Python code, which is outside its defined role and capabilities.",
+    "evidence": "Step 4 shows the Coder agent providing Python code to search Wikipedia and extract information, rather than instructing WebSurfer to do so as per the initial plan in Step 2.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850265-rN77zHYe73awdSlwzX4q",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 106,
+      "prompt_tokens": 3288,
+      "total_tokens": 3394,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 929,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.00100057,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.00100057,
+        "upstream_inference_prompt_cost": 0.00073557,
+        "upstream_inference_completions_cost": 0.000265
+      }
+    },
+    "cost_usd": 0.00100057
+  }
+}

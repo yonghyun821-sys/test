@@ -1,0 +1,46 @@
+{
+  "cache_key": "c82277cbdd18120e908fc406e80c9c7e2f3b38d09eddf88b0ab293de61e93057",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent failed to provide the 'typical American name' for the locomotive type, instead listing both steam and diesel locomotives and then specifying the museum's particular locomotive. The task asked for the 'typical American name for the type of locomotive', which implies a classification like 'Berkshire' for a 2-8-4 steam engine, not a general category or the specific wheel configuration.\",\n  \"evidence\": \"The task query was: 'What is the typical American name for the type of locomotive this museum uses for the Murder Mystery Express?'. The final answer was: 'The 'Murder Mystery Express' train service employs both vintage steam and diesel locomotives, but specifically, the locomotive for this museum's service is a 2-8-4 steam locomotive.' This does not provide a 'typical American name' for the type of locomotive.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent failed to provide the 'typical American name' for the locomotive type, instead listing both steam and diesel locomotives and then specifying the museum's particular locomotive. The task asked for the 'typical American name for the type of locomotive', which implies a classification like 'Berkshire' for a 2-8-4 steam engine, not a general category or the specific wheel configuration.",
+    "evidence": "The task query was: 'What is the typical American name for the type of locomotive this museum uses for the Murder Mystery Express?'. The final answer was: 'The 'Murder Mystery Express' train service employs both vintage steam and diesel locomotives, but specifically, the locomotive for this museum's service is a 2-8-4 steam locomotive.' This does not provide a 'typical American name' for the type of locomotive.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850663-vvJrZ0ev7wdblM12vxzT",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 194,
+      "prompt_tokens": 24517,
+      "total_tokens": 24711,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 1010,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0075674,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0075674,
+        "upstream_inference_prompt_cost": 0.0070824,
+        "upstream_inference_completions_cost": 0.000485
+      }
+    },
+    "cost_usd": 0.0075674
+  }
+}

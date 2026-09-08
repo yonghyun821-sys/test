@@ -1,0 +1,46 @@
+{
+  "cache_key": "872fcdbac57e6b15ff6661867fba5a1fa97fcc29113d3413375da09dc57e9e19",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent failed to adhere to the initial task specification, which was to answer a question about a YouTube video. Instead, it completely changed the task to writing a fictional story.\",\n  \"evidence\": \"The initial task query was: 'On the BBC Earth YouTube video of the Top 5 Silliest Animal Moments, what species of bird is featured?'. However, in step 2, the user provided a 'New task' which was a creative writing prompt. The agent then proceeded to follow this new task, completely ignoring the original one.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent failed to adhere to the initial task specification, which was to answer a question about a YouTube video. Instead, it completely changed the task to writing a fictional story.",
+    "evidence": "The initial task query was: 'On the BBC Earth YouTube video of the Top 5 Silliest Animal Moments, what species of bird is featured?'. However, in step 2, the user provided a 'New task' which was a creative writing prompt. The agent then proceeded to follow this new task, completely ignoring the original one.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850671-vwLLl7aiPqagIUYycfdX",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 134,
+      "prompt_tokens": 8487,
+      "total_tokens": 8621,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 985,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.00261515,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.00261515,
+        "upstream_inference_prompt_cost": 0.00228015,
+        "upstream_inference_completions_cost": 0.000335
+      }
+    },
+    "cost_usd": 0.00261515
+  }
+}

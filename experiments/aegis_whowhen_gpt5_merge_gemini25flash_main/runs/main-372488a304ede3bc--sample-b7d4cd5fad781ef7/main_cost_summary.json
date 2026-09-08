@@ -1,0 +1,29 @@
+{
+  "prediction_implementation_id": "main-372488a304ede3bc",
+  "main_sample_id": "sample-b7d4cd5fad781ef7",
+  "planned_logical_rows": 2388,
+  "completed_logical_rows": 2388,
+  "actual_api_calls": 2401,
+  "billed_responses": 2400,
+  "failed_network_attempts": 0,
+  "cache_events": 0,
+  "calls_by_accounting_type": {
+    "base_attribution": 2388,
+    "formatting_retry": 0,
+    "truncation_retry": 5,
+    "schema_parser_retry": 7,
+    "provider_transport_retry": 0,
+    "merge_adjudication": 0
+  },
+  "ledger_equation_sum": 2400,
+  "ledger_reconciled": true,
+  "prompt_tokens": 14820553,
+  "response_tokens": 409827,
+  "total_recorded_cost_usd": 5.367669460000011,
+  "hard_cost_cap_usd": 50.0,
+  "attribution_actual_api_calls": 2400,
+  "merge_actual_api_calls": 1,
+  "attribution_recorded_cost_usd": 5.298190710000011,
+  "merge_recorded_cost_usd": 0.06947875,
+  "pipeline_ledger_reconciled": true
+}

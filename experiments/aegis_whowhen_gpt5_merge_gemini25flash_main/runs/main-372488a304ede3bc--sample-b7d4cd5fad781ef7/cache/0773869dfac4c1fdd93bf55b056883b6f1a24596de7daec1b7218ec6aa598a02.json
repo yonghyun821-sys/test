@@ -1,0 +1,46 @@
+{
+  "cache_key": "0773869dfac4c1fdd93bf55b056883b6f1a24596de7daec1b7218ec6aa598a02",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent failed to adhere to the task specification which required calculating total sales from food items, not just the total quantity of food items. It then introduced arbitrary pricing to convert quantity to sales, which was not part of the original data or task.\",\n  \"evidence\": \"The task asked for 'total sales that the chain made from food (not including drinks)? Express your answer in USD with two decimal places.' The agent calculated 'Total food items sold: 89706' and then introduced 'Estimated prices for each food item' to convert this quantity into a monetary value, which was not provided in the attached Excel file nor implied by the task.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent failed to adhere to the task specification which required calculating total sales from food items, not just the total quantity of food items. It then introduced arbitrary pricing to convert quantity to sales, which was not part of the original data or task.",
+    "evidence": "The task asked for 'total sales that the chain made from food (not including drinks)? Express your answer in USD with two decimal places.' The agent calculated 'Total food items sold: 89706' and then introduced 'Estimated prices for each food item' to convert this quantity into a monetary value, which was not provided in the attached Excel file nor implied by the task.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850693-LxVdUYaNPKYgQK1ljmRc",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 157,
+      "prompt_tokens": 9931,
+      "total_tokens": 10088,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 1981,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.00283693,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.00283693,
+        "upstream_inference_prompt_cost": 0.00244443,
+        "upstream_inference_completions_cost": 0.0003925
+      }
+    },
+    "cost_usd": 0.00283693
+  }
+}

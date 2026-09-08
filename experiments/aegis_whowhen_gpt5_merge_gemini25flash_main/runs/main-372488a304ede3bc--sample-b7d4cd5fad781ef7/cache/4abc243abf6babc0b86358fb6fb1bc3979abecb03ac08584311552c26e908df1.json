@@ -1,0 +1,46 @@
+{
+  "cache_key": "4abc243abf6babc0b86358fb6fb1bc3979abecb03ac08584311552c26e908df1",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The agent hallucinated the answer, stating that William Moore Davis worked in the printing industry, despite the search results clearly indicating he worked in shipbuilding and maritime trades.\",\n  \"evidence\": \"The WebSurfer output states: 'William Moore Davis began his career as a self-taught painter after working in shipbuilding and maritime trades...' and 'As a boy, Davis worked in the shipbuilding industry of Port Jefferson before turning to painting full-time.' The Orchestrator's final answer is: 'Before William Moore Davis became a full-time painter, he worked in the printing industry as an apprentice typesetter at a local newspaper.'\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The agent hallucinated the answer, stating that William Moore Davis worked in the printing industry, despite the search results clearly indicating he worked in shipbuilding and maritime trades.",
+    "evidence": "The WebSurfer output states: 'William Moore Davis began his career as a self-taught painter after working in shipbuilding and maritime trades...' and 'As a boy, Davis worked in the shipbuilding industry of Port Jefferson before turning to painting full-time.' The Orchestrator's final answer is: 'Before William Moore Davis became a full-time painter, he worked in the printing industry as an apprentice typesetter at a local newspaper.'",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788854032-52itje5fu5lMCugpQiqc",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 148,
+      "prompt_tokens": 2544,
+      "total_tokens": 2692,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0011332,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0011332,
+        "upstream_inference_prompt_cost": 0.0007632,
+        "upstream_inference_completions_cost": 0.00037
+      }
+    },
+    "cost_usd": 0.0011332
+  }
+}

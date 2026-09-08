@@ -1,0 +1,84 @@
+experiment:
+  name: aegis-whowhen-pilot-fixed-guidance
+  purpose: implementation_validation_only
+  pilot_seed: 20260906
+  final_seed_reserved: 20260907
+  samples_per_category: 4
+  conditions:
+    - label_only
+    - own_taxonomy
+    - foreign_taxonomy
+    - merged_taxonomy
+
+models:
+  attribution:
+    name: ${AEGIS_WHOWHEN_PILOT_ATTRIBUTION_MODEL:google/gemini-2.5-flash-lite}
+    temperature: 0
+    reasoning_effort: null
+    max_output_tokens: 700
+    context_window: 1048576
+    tokenizer_encoding: o200k_base
+    max_tokens_parameter: max_tokens
+    provider:
+      order:
+        - google-vertex
+    pricing_usd_per_million:
+      input: 0.10
+      output: 0.40
+  merge:
+    name: ${AEGIS_WHOWHEN_PILOT_MERGE_MODEL:openai/gpt-4o-mini}
+    temperature: 0
+    reasoning_effort: null
+    max_output_tokens: 8000
+    context_window: 128000
+    tokenizer_encoding: o200k_base
+    max_tokens_parameter: max_tokens
+    provider:
+      order:
+        - openai
+    pricing_usd_per_million:
+      input: 0.15
+      output: 0.60
+
+api:
+  api_key_env: AEGIS_WHOWHEN_PILOT_OPENROUTER_API_KEY
+  base_url: ${OPENROUTER_BASE_URL:https://openrouter.ai/api/v1}
+  app_title: aegis-whowhen-pilot-fixed-guidance
+  http_referer_env: OPENROUTER_HTTP_REFERER
+  max_retries: 3
+  timeout_seconds: 180
+  provider_defaults:
+    allow_fallbacks: false
+    require_parameters: true
+    data_collection: deny
+
+cost_budget:
+  max_total_charge_usd: 30.00
+  max_inference_usd: 28.00
+  ledger_baseline_usd: 0.0
+  budget_epoch_name: aegis-whowhen-pilot-v1
+  credit_purchase_fee_rate: 0.055
+  minimum_credit_purchase_fee_usd: 0.80
+  input_token_safety_multiplier: 1.50
+  ledger_path: experiments/aegis_whowhen_pilot_fixed_guidance/runtime/cost_ledger.jsonl
+
+execution:
+  progress_every: 10
+  invalid_label_retries: 1
+  truncation_retries: 1
+  truncation_retry_max_output_tokens: 1200
+  merge_validation_retries: 2
+  collapse_warning_threshold: 0.80
+  systematic_truncation_threshold: 0.05
+
+paths:
+  aegis_data: data/aegis
+  whowhen_data: data/whowhen_pro_text
+  mast_taxonomy: taxonomies/mast_taxonomy.json
+  aegis_official_source: experiments/aegis_whowhen_pilot_fixed_guidance/official_sources/aegis/fm_malicious_system.py
+  whowhen_official_taxonomy: experiments/aegis_whowhen_pilot_fixed_guidance/official_sources/whowhen_pro/taxonomy.yaml
+  experiment_root: experiments/aegis_whowhen_pilot_fixed_guidance
+  prepared: experiments/aegis_whowhen_pilot_fixed_guidance/prepared
+  artifacts: experiments/aegis_whowhen_pilot_fixed_guidance/artifacts
+  runs: experiments/aegis_whowhen_pilot_fixed_guidance/runs
+  cache: experiments/aegis_whowhen_pilot_fixed_guidance/runtime/cache

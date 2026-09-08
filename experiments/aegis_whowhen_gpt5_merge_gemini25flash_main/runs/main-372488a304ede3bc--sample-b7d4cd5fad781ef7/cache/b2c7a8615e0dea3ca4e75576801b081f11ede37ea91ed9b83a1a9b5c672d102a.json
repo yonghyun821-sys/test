@@ -1,0 +1,46 @@
+{
+  "cache_key": "b2c7a8615e0dea3ca4e75576801b081f11ede37ea91ed9b83a1a9b5c672d102a",
+  "raw_output_text": "{\n  \"failure_category\": \"R.2\",\n  \"explanation\": \"The agent correctly retrieved the attendance data but made a reasoning error in interpreting the 'largest growth' by miscalculating the differences and incorrectly identifying the park with the highest increase. It confused a decrease with an increase.\",\n  \"evidence\": \"The summary clearly shows: EPCOT had 2023 Attendance of 11,980 (Thousands) and 2022 Attendance of 10,000 (Thousands), which is a growth of 1,980 (Thousands). Disney's Hollywood Studios had 2023 Attendance of 10,300 (Thousands) and 2022 Attendance of 10,900 (Thousands), which is a decrease of 600 (Thousands). The agent incorrectly concluded that 'Disney’s Hollywood Studios posted the biggest year-over-year attendance jump... rising by roughly 1.6 million visitors'.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.2",
+    "explanation": "The agent correctly retrieved the attendance data but made a reasoning error in interpreting the 'largest growth' by miscalculating the differences and incorrectly identifying the park with the highest increase. It confused a decrease with an increase.",
+    "evidence": "The summary clearly shows: EPCOT had 2023 Attendance of 11,980 (Thousands) and 2022 Attendance of 10,000 (Thousands), which is a growth of 1,980 (Thousands). Disney's Hollywood Studios had 2023 Attendance of 10,300 (Thousands) and 2022 Attendance of 10,900 (Thousands), which is a decrease of 600 (Thousands). The agent incorrectly concluded that 'Disney’s Hollywood Studios posted the biggest year-over-year attendance jump... rising by roughly 1.6 million visitors'.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788852363-2kFUI3pY0lzqCpCLz6KJ",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 212,
+      "prompt_tokens": 5695,
+      "total_tokens": 5907,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0022385,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0022385,
+        "upstream_inference_prompt_cost": 0.0017085,
+        "upstream_inference_completions_cost": 0.00053
+      }
+    },
+    "cost_usd": 0.0022385
+  }
+}

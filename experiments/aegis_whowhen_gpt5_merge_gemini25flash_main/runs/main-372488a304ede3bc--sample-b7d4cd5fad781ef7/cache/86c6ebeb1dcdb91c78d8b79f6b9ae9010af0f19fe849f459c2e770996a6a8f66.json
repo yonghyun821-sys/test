@@ -1,0 +1,46 @@
+{
+  "cache_key": "86c6ebeb1dcdb91c78d8b79f6b9ae9010af0f19fe849f459c2e770996a6a8f66",
+  "raw_output_text": "{\n  \"failure_category\": \"R.4\",\n  \"explanation\": \"The orchestrator agent initially misunderstood the task by instructing WebSurfer to search for the founding date of the Communist Party of the Philippines instead of the wedding date of Jose Maria Canlas Sison and Julie de Lima.\",\n  \"evidence\": \"Orchestrator's first output: \\\"WebSurfer, please search for the month and year when Jose Maria Canlas Sison founded the Communist Party of the Philippines.\\\" This is a clear deviation from the user's query about the wedding date.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.4",
+    "explanation": "The orchestrator agent initially misunderstood the task by instructing WebSurfer to search for the founding date of the Communist Party of the Philippines instead of the wedding date of Jose Maria Canlas Sison and Julie de Lima.",
+    "evidence": "Orchestrator's first output: \"WebSurfer, please search for the month and year when Jose Maria Canlas Sison founded the Communist Party of the Philippines.\" This is a clear deviation from the user's query about the wedding date.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853950-oVLQZisI0awRKrD2EKik",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 122,
+      "prompt_tokens": 6613,
+      "total_tokens": 6735,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0022889,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0022889,
+        "upstream_inference_prompt_cost": 0.0019839,
+        "upstream_inference_completions_cost": 0.000305
+      }
+    },
+    "cost_usd": 0.0022889
+  }
+}

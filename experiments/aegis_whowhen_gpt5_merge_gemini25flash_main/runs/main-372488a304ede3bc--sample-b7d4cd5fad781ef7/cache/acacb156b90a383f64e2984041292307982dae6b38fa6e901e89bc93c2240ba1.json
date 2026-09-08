@@ -1,0 +1,46 @@
+{
+  "cache_key": "acacb156b90a383f64e2984041292307982dae6b38fa6e901e89bc93c2240ba1",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The agent hallucinated the birthplace of Ila Pant, stating 'Almora district' when the search results clearly indicated 'Nainital district'.\",\n  \"evidence\": \"The WebSurfer output explicitly states: 'Ila Pant was born in Nainital district, Uttarakhand.' However, the Orchestrator's final output is: 'Ila Pant was born in Almora district... FINAL ANSWER: Almora district'.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The agent hallucinated the birthplace of Ila Pant, stating 'Almora district' when the search results clearly indicated 'Nainital district'.",
+    "evidence": "The WebSurfer output explicitly states: 'Ila Pant was born in Nainital district, Uttarakhand.' However, the Orchestrator's final output is: 'Ila Pant was born in Almora district... FINAL ANSWER: Almora district'.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853869-G2155EBmcTCbupQr8IYP",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 108,
+      "prompt_tokens": 2405,
+      "total_tokens": 2513,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0009915,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0009915,
+        "upstream_inference_prompt_cost": 0.0007215,
+        "upstream_inference_completions_cost": 0.00027
+      }
+    },
+    "cost_usd": 0.0009915
+  }
+}

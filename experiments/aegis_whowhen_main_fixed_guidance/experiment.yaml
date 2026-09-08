@@ -1,0 +1,72 @@
+experiment:
+  name: aegis-whowhen-main-fixed-guidance
+  implementation_namespace: proportional-stratified-v4
+  research_question: How does taxonomy guidance affect the accuracy of agent failure attribution when the native output label space is held constant?
+  main_seed: 20260907
+  smoke_seed: 20260908
+  main_samples_per_dataset: 1000
+  smoke_samples_per_dataset: 2
+  conditions:
+    - label_only
+    - own_taxonomy
+    - foreign_taxonomy
+    - merged_taxonomy
+
+sampling:
+  method: deterministic_hierarchical_proportional_stratified_without_replacement
+  primary_stratum: gold_failure_mode
+  secondary_stratum: framework
+  quota_allocation: hamilton_largest_remainder
+  rare_class_minimum_quota: 0
+  preserve_eligible_distribution: true
+
+model:
+  name: ${AEGIS_WHOWHEN_MAIN_ATTRIBUTION_MODEL:google/gemini-2.5-flash-lite}
+  temperature: 0
+  max_output_tokens: 700
+  context_window: 1048576
+  tokenizer_encoding: o200k_base
+  pricing_usd_per_million:
+    input: 0.10
+    output: 0.40
+  provider:
+    order:
+      - google-vertex
+
+api:
+  api_key_envs:
+    - AEGIS_WHOWHEN_MAIN_OPENROUTER_API_KEY
+    - AEGIS_WHOWHEN_PILOT_OPENROUTER_API_KEY
+    - OPENROUTER_API_KEY
+  base_url: ${OPENROUTER_BASE_URL:https://openrouter.ai/api/v1}
+  app_title: aegis-whowhen-main-fixed-guidance
+  http_referer_env: OPENROUTER_HTTP_REFERER
+  sdk_attempts: 3
+  timeout_seconds: 180
+  provider:
+    allow_fallbacks: false
+    require_parameters: true
+    data_collection: deny
+
+retry_policy:
+  formatting_only_retries: 2
+  truncation_retries: 1
+  truncation_retry_max_output_tokens: 1200
+  schema_parser_retries: 2
+  provider_transport_retries: 2
+
+budget:
+  max_inference_usd: 28.0
+  max_total_charge_usd: 30.0
+  input_token_safety_multiplier: 1.5
+
+paths:
+  aegis_data: data/aegis
+  whowhen_data: data/whowhen_pro_text
+  pilot_prepared: experiments/aegis_whowhen_pilot_fixed_guidance/prepared
+  pilot_run: experiments/aegis_whowhen_pilot_fixed_guidance/runs/pilot-09b3a3caa53df6fe
+  root: experiments/aegis_whowhen_main_fixed_guidance/implementation_runs/proportional-stratified-v4
+  frozen: experiments/aegis_whowhen_main_fixed_guidance/implementation_runs/proportional-stratified-v4/frozen
+  smoke: experiments/aegis_whowhen_main_fixed_guidance/implementation_runs/proportional-stratified-v4/smoke
+  runtime: experiments/aegis_whowhen_main_fixed_guidance/implementation_runs/proportional-stratified-v4/runtime
+  main_runs: experiments/aegis_whowhen_main_fixed_guidance/implementation_runs/proportional-stratified-v4/main_runs

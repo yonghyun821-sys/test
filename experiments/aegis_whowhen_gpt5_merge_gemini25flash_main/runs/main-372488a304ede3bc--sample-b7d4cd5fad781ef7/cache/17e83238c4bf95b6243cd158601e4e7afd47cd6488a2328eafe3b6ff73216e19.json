@@ -1,0 +1,46 @@
+{
+  "cache_key": "17e83238c4bf95b6243cd158601e4e7afd47cd6488a2328eafe3b6ff73216e19",
+  "raw_output_text": "{\n  \"failure_category\": \"R.2\",\n  \"explanation\": \"The agent made a reasoning error by misinterpreting the attendance data. It incorrectly concluded that Disney's Hollywood Studios had the largest growth, despite the data clearly showing EPCOT with a much larger absolute increase.\",\n  \"evidence\": \"In step 3, the attendance summary shows:\\n- EPCOT: 2023 Attendance (Thousands) 11,980, 2022 Attendance (Thousands) 10,000. Growth: 1,980 (thousands).\\n- Disney's Hollywood Studios: 2023 Attendance (Thousands) 10,300, 2022 Attendance (Thousands) 10,900. Growth: -600 (thousands).\\n\\nIn step 4, the agent states: 'According to the TEA/AECOM Theme Index for 2023, Disney’s Hollywood Studios posted the biggest year-over-year attendance jump at Walt Disney World from 2022 to 2023, rising by roughly 1.6 million visitors—more than Magic Kingdom, EPCOT, or Animal Kingdom.'\"\n}",
+  "parsed_response": {
+    "failure_category": "R.2",
+    "explanation": "The agent made a reasoning error by misinterpreting the attendance data. It incorrectly concluded that Disney's Hollywood Studios had the largest growth, despite the data clearly showing EPCOT with a much larger absolute increase.",
+    "evidence": "In step 3, the attendance summary shows:\n- EPCOT: 2023 Attendance (Thousands) 11,980, 2022 Attendance (Thousands) 10,000. Growth: 1,980 (thousands).\n- Disney's Hollywood Studios: 2023 Attendance (Thousands) 10,300, 2022 Attendance (Thousands) 10,900. Growth: -600 (thousands).\n\nIn step 4, the agent states: 'According to the TEA/AECOM Theme Index for 2023, Disney’s Hollywood Studios posted the biggest year-over-year attendance jump at Walt Disney World from 2022 to 2023, rising by roughly 1.6 million visitors—more than Magic Kingdom, EPCOT, or Animal Kingdom.'",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788852361-hjD0A7bAvZGEvAsJ1yLz",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 263,
+      "prompt_tokens": 5514,
+      "total_tokens": 5777,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0023117,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0023117,
+        "upstream_inference_prompt_cost": 0.0016542,
+        "upstream_inference_completions_cost": 0.0006575
+      }
+    },
+    "cost_usd": 0.0023117
+  }
+}

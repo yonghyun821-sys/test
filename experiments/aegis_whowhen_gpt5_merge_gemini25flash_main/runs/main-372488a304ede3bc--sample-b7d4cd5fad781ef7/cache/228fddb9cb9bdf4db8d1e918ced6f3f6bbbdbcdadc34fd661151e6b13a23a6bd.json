@@ -1,0 +1,46 @@
+{
+  "cache_key": "228fddb9cb9bdf4db8d1e918ced6f3f6bbbdbcdadc34fd661151e6b13a23a6bd",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The orchestrator provided an initial fact sheet with an incorrect age for the beads, which was not part of the user's query or a result of any prior search. This deviation from the task specification led to an unnecessary step of correcting this pre-provided information.\",\n  \"evidence\": \"Step 2: MagenticOneOrchestrator states, 'Here is an initial fact sheet to consider: The beads made from the shells of the mollusk species referenced in the British Museum's collection (museum number 2012,5015.17) were found to be at least 100,000 years old, according to the research article published in Science Advances in 2021.' This information was not requested by the user and was later corrected to 142,000 years old after a web search.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The orchestrator provided an initial fact sheet with an incorrect age for the beads, which was not part of the user's query or a result of any prior search. This deviation from the task specification led to an unnecessary step of correcting this pre-provided information.",
+    "evidence": "Step 2: MagenticOneOrchestrator states, 'Here is an initial fact sheet to consider: The beads made from the shells of the mollusk species referenced in the British Museum's collection (museum number 2012,5015.17) were found to be at least 100,000 years old, according to the research article published in Science Advances in 2021.' This information was not requested by the user and was later corrected to 142,000 years old after a web search.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850363-rlVLbzeTuYlAQengSw3r",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 203,
+      "prompt_tokens": 5348,
+      "total_tokens": 5551,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 963,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.00185189,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.00185189,
+        "upstream_inference_prompt_cost": 0.00134439,
+        "upstream_inference_completions_cost": 0.0005075
+      }
+    },
+    "cost_usd": 0.00185189
+  }
+}

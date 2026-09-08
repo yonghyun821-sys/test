@@ -1,0 +1,46 @@
+{
+  "cache_key": "daeca16ce0be831ad0c48a9e8728edc4f3af442017e33f3c7fae69c2f89f8572",
+  "raw_output_text": "{\n  \"failure_category\": \"R.2\",\n  \"explanation\": \"The agent incorrectly counted unique values in the 'Keyword' column instead of the 'URLs' column, failing to answer the actual question about unique URLs.\",\n  \"evidence\": \"Step 3: `unique_count = df['Keyword'].nunique()` when the question was about unique URLs.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.2",
+    "explanation": "The agent incorrectly counted unique values in the 'Keyword' column instead of the 'URLs' column, failing to answer the actual question about unique URLs.",
+    "evidence": "Step 3: `unique_count = df['Keyword'].nunique()` when the question was about unique URLs.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788851941-sA2xH4uPRaZ6CbwVAG9k",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 80,
+      "prompt_tokens": 2212,
+      "total_tokens": 2292,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 899,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.00062087,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.00062087,
+        "upstream_inference_prompt_cost": 0.00042087,
+        "upstream_inference_completions_cost": 0.0002
+      }
+    },
+    "cost_usd": 0.00062087
+  }
+}

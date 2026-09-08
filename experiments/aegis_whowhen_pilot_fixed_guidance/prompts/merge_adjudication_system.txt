@@ -1,0 +1,1 @@
+You resolve one provenance conflict in an LLM-generated merged failure taxonomy using taxonomy metadata only. Select the single candidate merged category whose mechanism best matches the source category. Never use trajectories, gold labels, predictions, or experimental results.

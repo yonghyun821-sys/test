@@ -1,0 +1,46 @@
+{
+  "cache_key": "b0b79896cfc3d6a084ff668d9ad2e25d5cf885428aaa35d988e974053dd5422f",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent failed to correctly extract the ingredients as specified in the prompt. The prompt explicitly stated to only list ingredients, not measurements, and provided an example of 'ripe strawberries' becoming 'ripe strawberries'. However, the agent incorrectly extracted 'lemon juice' instead of 'lemon' and 'pure vanilla extract' instead of 'vanilla extract'.\",\n  \"evidence\": \"The prompt states: 'So if the recipe calls for \\\"a pinch of salt\\\" or \\\"two cups of ripe strawberries\\\" the ingredients on the list would be \\\"salt\\\" and \\\"ripe strawberries\\\"'. The agent's output includes 'lemon juice' and 'pure vanilla extract' instead of 'lemon' and 'vanilla extract'.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent failed to correctly extract the ingredients as specified in the prompt. The prompt explicitly stated to only list ingredients, not measurements, and provided an example of 'ripe strawberries' becoming 'ripe strawberries'. However, the agent incorrectly extracted 'lemon juice' instead of 'lemon' and 'pure vanilla extract' instead of 'vanilla extract'.",
+    "evidence": "The prompt states: 'So if the recipe calls for \"a pinch of salt\" or \"two cups of ripe strawberries\" the ingredients on the list would be \"salt\" and \"ripe strawberries\"'. The agent's output includes 'lemon juice' and 'pure vanilla extract' instead of 'lemon' and 'vanilla extract'.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850487-t1MaXDYbBWQleojJd0Gm",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 166,
+      "prompt_tokens": 7697,
+      "total_tokens": 7863,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0027241,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0027241,
+        "upstream_inference_prompt_cost": 0.0023091,
+        "upstream_inference_completions_cost": 0.000415
+      }
+    },
+    "cost_usd": 0.0027241
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "cache_key": "68a064b48b98423107d4ceb5a434e0762a296f4e41dba020ba66a0d4b034eb4d",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-2.3\",\n  \"explanation\": \"The agent deviated from the main goal of providing a list of vegetables. Instead, it provided a list of items that are neither fruits nor vegetables, and then a combined list of fruits and vegetables, and finally a list of only fruits.\",\n  \"evidence\": \"Step 5: MagenticOneOrchestrator asks for a bullet-point list of food items that are neither categorized as fruits nor vegetables, deviating from the original request for a vegetable list. Step 7: MagenticOneOrchestrator asks for an alphabetical, comma-separated list of fruits AND vegetables. Step 11: MagenticOneOrchestrator provides a list of only fruits.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-2.3",
+    "explanation": "The agent deviated from the main goal of providing a list of vegetables. Instead, it provided a list of items that are neither fruits nor vegetables, and then a combined list of fruits and vegetables, and finally a list of only fruits.",
+    "evidence": "Step 5: MagenticOneOrchestrator asks for a bullet-point list of food items that are neither categorized as fruits nor vegetables, deviating from the original request for a vegetable list. Step 7: MagenticOneOrchestrator asks for an alphabetical, comma-separated list of fruits AND vegetables. Step 11: MagenticOneOrchestrator provides a list of only fruits.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850466-6Pccc6f5ONpoVAXFUnD9",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 164,
+      "prompt_tokens": 5407,
+      "total_tokens": 5571,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0020321,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0020321,
+        "upstream_inference_prompt_cost": 0.0016221,
+        "upstream_inference_completions_cost": 0.00041
+      }
+    },
+    "cost_usd": 0.0020321
+  }
+}

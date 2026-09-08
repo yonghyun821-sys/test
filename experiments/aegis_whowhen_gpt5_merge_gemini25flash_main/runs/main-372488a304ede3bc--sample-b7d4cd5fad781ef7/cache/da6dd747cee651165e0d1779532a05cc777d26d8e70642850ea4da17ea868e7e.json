@@ -1,0 +1,46 @@
+{
+  "cache_key": "da6dd747cee651165e0d1779532a05cc777d26d8e70642850ea4da17ea868e7e",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The orchestrator hallucinated the journal title, stating it was 'Computational Linguistics' when the search results clearly indicated 'Artificial Intelligence'.\",\n  \"evidence\": \"The orchestrator's output states: 'The Association for Computational Linguistics (ACL) Biography Archive confirms that Charles Raymond Perrault served as co-editor-in-chief of \\\"Computational Linguistics\\\" from 2001 to 2010.' However, the WebSurfer's output from Wikipedia clearly states: 'Perrault was the co-editor in chief of the journal Artificial Intelligence from 2001 to 2010'.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The orchestrator hallucinated the journal title, stating it was 'Computational Linguistics' when the search results clearly indicated 'Artificial Intelligence'.",
+    "evidence": "The orchestrator's output states: 'The Association for Computational Linguistics (ACL) Biography Archive confirms that Charles Raymond Perrault served as co-editor-in-chief of \"Computational Linguistics\" from 2001 to 2010.' However, the WebSurfer's output from Wikipedia clearly states: 'Perrault was the co-editor in chief of the journal Artificial Intelligence from 2001 to 2010'.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853973-NIV2ZDXx62F5FaeDj3Ng",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 150,
+      "prompt_tokens": 4328,
+      "total_tokens": 4478,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0016734,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0016734,
+        "upstream_inference_prompt_cost": 0.0012984,
+        "upstream_inference_completions_cost": 0.000375
+      }
+    },
+    "cost_usd": 0.0016734
+  }
+}

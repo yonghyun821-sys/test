@@ -1,0 +1,46 @@
+{
+  "cache_key": "520d52e29467d519105011499aec828c9d43dc85487f4cc40fcbc4dadb64d861",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The agent hallucinates the answer 'Duke Nukem' despite the provided Wikipedia article clearly stating 'Lara Croft' as the video game character.\",\n  \"evidence\": \"The Wikipedia article states: 'Am Ende der ersten Strophe werden sie von der Videospiel-Heldin Lara Croft mit einer Pistole bedroht...' (At the end of the first verse, they are threatened by the video game heroine Lara Croft with a pistol...). However, the agent's final output is: 'FINAL ANSWER: Duke Nukem'.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The agent hallucinates the answer 'Duke Nukem' despite the provided Wikipedia article clearly stating 'Lara Croft' as the video game character.",
+    "evidence": "The Wikipedia article states: 'Am Ende der ersten Strophe werden sie von der Videospiel-Heldin Lara Croft mit einer Pistole bedroht...' (At the end of the first verse, they are threatened by the video game heroine Lara Croft with a pistol...). However, the agent's final output is: 'FINAL ANSWER: Duke Nukem'.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853747-oRT1Sq8sttWPVbGEv4C8",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 129,
+      "prompt_tokens": 8896,
+      "total_tokens": 9025,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0029913,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0029913,
+        "upstream_inference_prompt_cost": 0.0026688,
+        "upstream_inference_completions_cost": 0.0003225
+      }
+    },
+    "cost_usd": 0.0029913
+  }
+}

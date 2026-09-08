@@ -1,0 +1,46 @@
+{
+  "cache_key": "66fdc12608db919f5e2c871a7060c9bf0264983ec9aef77ec55df611cd01ab0b",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent's code fails to correctly handle the example 'Hello World!!!' because it sorts all characters within a 'word' including punctuation, which deviates from the task specification that implies only word characters should be sorted and punctuation should be preserved in its original position relative to the words.\",\n  \"evidence\": \"The problem statement example `anti_shuffle('Hello World!!!') returns 'Hello !!!Wdlor'` clearly shows that '!!!' should remain at the end, and 'World' becomes 'Wdlor'. The agent's code, however, would sort 'World!!!' as one unit, leading to an incorrect output like '!!!Wdlor'.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent's code fails to correctly handle the example 'Hello World!!!' because it sorts all characters within a 'word' including punctuation, which deviates from the task specification that implies only word characters should be sorted and punctuation should be preserved in its original position relative to the words.",
+    "evidence": "The problem statement example `anti_shuffle('Hello World!!!') returns 'Hello !!!Wdlor'` clearly shows that '!!!' should remain at the end, and 'World' becomes 'Wdlor'. The agent's code, however, would sort 'World!!!' as one unit, leading to an incorrect output like '!!!Wdlor'.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788849886-TvXmiuLxJR4LmCzpFPya",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 159,
+      "prompt_tokens": 11535,
+      "total_tokens": 11694,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.003858,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.003858,
+        "upstream_inference_prompt_cost": 0.0034605,
+        "upstream_inference_completions_cost": 0.0003975
+      }
+    },
+    "cost_usd": 0.003858
+  }
+}

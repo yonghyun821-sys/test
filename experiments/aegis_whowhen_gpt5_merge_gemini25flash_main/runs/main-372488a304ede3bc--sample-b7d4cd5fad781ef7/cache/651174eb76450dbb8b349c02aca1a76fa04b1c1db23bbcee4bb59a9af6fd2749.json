@@ -1,0 +1,46 @@
+{
+  "cache_key": "651174eb76450dbb8b349c02aca1a76fa04b1c1db23bbcee4bb59a9af6fd2749",
+  "raw_output_text": "{\n  \"failure_category\": \"R.2\",\n  \"explanation\": \"The agent incorrectly identified the column to analyze. It was asked for the 'most common level of studies achieved' but instead analyzed the 'civil status' column.\",\n  \"evidence\": \"The question is 'What is the most common level of studies achieved?'. The agent's reasoning states: 'I'll determine the most common civil status in the dataset as the representative level of studies achieved.' and then uses the column 'What is your civil status? 💍'.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.2",
+    "explanation": "The agent incorrectly identified the column to analyze. It was asked for the 'most common level of studies achieved' but instead analyzed the 'civil status' column.",
+    "evidence": "The question is 'What is the most common level of studies achieved?'. The agent's reasoning states: 'I'll determine the most common civil status in the dataset as the representative level of studies achieved.' and then uses the column 'What is your civil status? 💍'.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788851724-oZFaJS3haZrVKJBS15Wm",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 117,
+      "prompt_tokens": 3188,
+      "total_tokens": 3305,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 934,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.00099672,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.00099672,
+        "upstream_inference_prompt_cost": 0.00070422,
+        "upstream_inference_completions_cost": 0.0002925
+      }
+    },
+    "cost_usd": 0.00099672
+  }
+}

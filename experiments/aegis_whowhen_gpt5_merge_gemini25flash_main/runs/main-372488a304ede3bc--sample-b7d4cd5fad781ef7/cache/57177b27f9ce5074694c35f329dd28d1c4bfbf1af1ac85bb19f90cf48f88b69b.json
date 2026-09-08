@@ -1,0 +1,46 @@
+{
+  "cache_key": "57177b27f9ce5074694c35f329dd28d1c4bfbf1af1ac85bb19f90cf48f88b69b",
+  "raw_output_text": "{\n  \"failure_category\": \"V.2\",\n  \"explanation\": \"The agent incorrectly identified the poem's title. While the lines are often attributed to \\\"The Secret of Success,\\\" the actual poem by Edwin Markham containing these lines is titled \\\"A Creed.\\\"\",\n  \"evidence\": \"The agent states: \\\"While these lines are sometimes cited as being from his shorter poem 'The Secret of Success', others attribute them to the poem 'Epigrams' or as a stand-alone aphorism, but they are most commonly and widely recognized as coming from 'The Secret of Success' by Edwin Markham.\\\" This indicates a lack of thorough verification, as a quick search would reveal the correct title is 'A Creed'.\"\n}",
+  "parsed_response": {
+    "failure_category": "V.2",
+    "explanation": "The agent incorrectly identified the poem's title. While the lines are often attributed to \"The Secret of Success,\" the actual poem by Edwin Markham containing these lines is titled \"A Creed.\"",
+    "evidence": "The agent states: \"While these lines are sometimes cited as being from his shorter poem 'The Secret of Success', others attribute them to the poem 'Epigrams' or as a stand-alone aphorism, but they are most commonly and widely recognized as coming from 'The Secret of Success' by Edwin Markham.\" This indicates a lack of thorough verification, as a quick search would reveal the correct title is 'A Creed'.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788852126-YacLMpL1WzO80DMStcmD",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 152,
+      "prompt_tokens": 7985,
+      "total_tokens": 8137,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 986,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.00250928,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.00250928,
+        "upstream_inference_prompt_cost": 0.00212928,
+        "upstream_inference_completions_cost": 0.00038
+      }
+    },
+    "cost_usd": 0.00250928
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "cache_key": "7e6c83c9179a6cb8d6e17479aa1ed989cc2db9b725fcbc26993644f04e2d8b48",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The agent hallucinates the title of the poem. While the lines are by Edwin Markham, the poem is not titled \\\"The Secret of Success\\\". The agent makes an assumption about the title without verifying it.\",\n  \"evidence\": \"The agent states: 'While these lines are sometimes cited as being from his shorter poem \\\"The Secret of Success\\\", others attribute them to the poem \\\"Epigrams\\\" or as a stand-alone aphorism, but they are most commonly and widely recognized as coming from \\\"The Secret of Success\\\" by Edwin Markham.' This claim about the title is not supported by any prior observation.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The agent hallucinates the title of the poem. While the lines are by Edwin Markham, the poem is not titled \"The Secret of Success\". The agent makes an assumption about the title without verifying it.",
+    "evidence": "The agent states: 'While these lines are sometimes cited as being from his shorter poem \"The Secret of Success\", others attribute them to the poem \"Epigrams\" or as a stand-alone aphorism, but they are most commonly and widely recognized as coming from \"The Secret of Success\" by Edwin Markham.' This claim about the title is not supported by any prior observation.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788852130-cvjjzIhfipok6ApNuAZv",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 145,
+      "prompt_tokens": 8166,
+      "total_tokens": 8311,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0028123,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0028123,
+        "upstream_inference_prompt_cost": 0.0024498,
+        "upstream_inference_completions_cost": 0.0003625
+      }
+    },
+    "cost_usd": 0.0028123
+  }
+}

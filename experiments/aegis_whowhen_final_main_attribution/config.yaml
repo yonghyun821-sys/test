@@ -1,0 +1,40 @@
+experiment:
+  research_question: How does taxonomy guidance affect the accuracy of agent failure attribution when the native output label space is held constant?
+  prediction_implementation_id: main-95e2d9ee2ba7c1fd
+  main_sample_id: sample-b7d4cd5fad781ef7
+  run_namespace: main-95e2d9ee2ba7c1fd--sample-b7d4cd5fad781ef7
+  expected_aegis_n: 97
+  expected_whowhen_n: 500
+  expected_total_n: 597
+  expected_prediction_rows: 2388
+  conditions:
+    - label_only
+    - own_taxonomy
+    - foreign_taxonomy
+    - merged_taxonomy
+
+expected_hashes:
+  aegis_sample: 1790b0e154c3642916f3ce34d74d96368de900ff9b8cb2ede08388789a18c178
+  whowhen_sample: 2e21af9968a2aa88a4e3f9169d9fb08e463a24fc2cf234c6183c8276f6d333f4
+  combined_main_input: d4634851534e14034d3703ee2b9dc05b1c831061b20fe8d5a8be14d8905ab8b0
+  combined_gold: d19086a731525b10f47ab926e57b60e544401a9be031d34078a257ce7f3a062d
+
+execution:
+  api_key_envs:
+    - FINAL_MAIN_OPENROUTER_API_KEY
+    - AEGIS_WHOWHEN_MAIN_OPENROUTER_API_KEY
+    - OPENROUTER_API_KEY
+  hard_cost_cap_usd: 50.0
+  progress_every: 10
+  systematic_failure_consecutive_rows: 8
+
+analysis:
+  bootstrap_resamples: 20000
+  bootstrap_seed: 20260908
+  alpha: 0.05
+
+paths:
+  frozen_prediction_config: experiments/aegis_whowhen_main_fixed_guidance/experiment.yaml
+  frozen_implementation_root: experiments/aegis_whowhen_main_fixed_guidance/implementation_runs/proportional-stratified-v4/frozen
+  frozen_sample_root: experiments/aegis_whowhen_main_fixed_guidance/implementation_runs/proportional-stratified-v4/frozen/final_task_independent_sample
+  run_root: experiments/aegis_whowhen_main_fixed_guidance/implementation_runs/proportional-stratified-v4/main_runs/main-95e2d9ee2ba7c1fd--sample-b7d4cd5fad781ef7

@@ -1,0 +1,96 @@
+experiment:
+  name: aegis-whowhen-gpt5-merge-gemini25flash-main
+  research_question: How does taxonomy guidance affect the accuracy of agent failure attribution when the native output label space is held constant?
+  main_sample_id: sample-b7d4cd5fad781ef7
+  expected_aegis_n: 97
+  expected_whowhen_n: 500
+  expected_total_n: 597
+  expected_prediction_rows: 2388
+  main_seed: 20260907
+  merge_seed: 20260908
+  pilot_seed: 20260908
+  conditions:
+    - label_only
+    - own_taxonomy
+    - foreign_taxonomy
+    - merged_taxonomy
+
+models:
+  merge:
+    name: openai/gpt-5
+    temperature: null
+    reasoning_effort: medium
+    max_output_tokens: 16000
+    context_window: 400000
+    tokenizer_encoding: o200k_base
+    max_tokens_parameter: max_tokens
+    provider:
+      order:
+        - openai
+    pricing_usd_per_million:
+      input: 1.25
+      output: 10.00
+
+attribution_model:
+  name: google/gemini-2.5-flash
+  temperature: 0
+  max_output_tokens: 700
+  context_window: 1048576
+  tokenizer_encoding: o200k_base
+  pricing_usd_per_million:
+    input: 0.30
+    output: 2.50
+  provider:
+    order:
+      - google-vertex
+
+api:
+  api_key_env: AEGIS_WHOWHEN_GPT5_FLASH_MAIN_OPENROUTER_API_KEY
+  base_url: ${OPENROUTER_BASE_URL:https://openrouter.ai/api/v1}
+  app_title: aegis-whowhen-gpt5-merge-gemini25flash-main
+  http_referer_env: OPENROUTER_HTTP_REFERER
+  max_retries: 3
+  timeout_seconds: 180
+  provider_defaults:
+    allow_fallbacks: false
+    require_parameters: true
+    data_collection: deny
+
+cost_budget:
+  max_total_charge_usd: 50.00
+  max_inference_usd: 50.00
+  ledger_baseline_usd: 0.0
+  budget_epoch_name: aegis-whowhen-gpt5-merge-gemini25flash-main-v1
+  input_token_safety_multiplier: 1.50
+  ledger_path: experiments/aegis_whowhen_gpt5_merge_gemini25flash_main/runtime/merge_api_ledger.jsonl
+
+execution:
+  api_key_envs:
+    - AEGIS_WHOWHEN_GPT5_FLASH_MAIN_OPENROUTER_API_KEY
+  hard_cost_cap_usd: 50.0
+  progress_every: 10
+  systematic_failure_consecutive_rows: 8
+  merge_validation_retries: 2
+
+analysis:
+  bootstrap_resamples: 20000
+  bootstrap_seed: 20260908
+  alpha: 0.05
+
+expected_hashes:
+  aegis_sample: 1790b0e154c3642916f3ce34d74d96368de900ff9b8cb2ede08388789a18c178
+  whowhen_sample: 2e21af9968a2aa88a4e3f9169d9fb08e463a24fc2cf234c6183c8276f6d333f4
+  combined_main_input: d4634851534e14034d3703ee2b9dc05b1c831061b20fe8d5a8be14d8905ab8b0
+  combined_gold: d19086a731525b10f47ab926e57b60e544401a9be031d34078a257ce7f3a062d
+  aegis_taxonomy: 1525a68f7af9a2fee44f48f783f598d73637c6b920c243e3271e014ae5a762e9
+  whowhen_taxonomy: 51e32cb73ca31e6cf7fbee981cb470af9c6aef34009c80bba27ba53ec21f0e5a
+
+paths:
+  frozen_prediction_config: experiments/aegis_whowhen_main_fixed_guidance/experiment.yaml
+  frozen_implementation_root: experiments/aegis_whowhen_main_fixed_guidance/implementation_runs/proportional-stratified-v4/frozen
+  frozen_sample_root: experiments/aegis_whowhen_main_fixed_guidance/implementation_runs/proportional-stratified-v4/frozen/final_task_independent_sample
+  prior_final_status: experiments/aegis_whowhen_main_fixed_guidance/implementation_runs/proportional-stratified-v4/main_runs/main-95e2d9ee2ba7c1fd--sample-b7d4cd5fad781ef7/main_run_status.json
+  artifacts: experiments/aegis_whowhen_gpt5_merge_gemini25flash_main/artifacts/merge
+  cache: experiments/aegis_whowhen_gpt5_merge_gemini25flash_main/runtime/cache
+  _merge_ledger: experiments/aegis_whowhen_gpt5_merge_gemini25flash_main/runtime/merge_api_ledger.jsonl
+  run_parent: experiments/aegis_whowhen_gpt5_merge_gemini25flash_main/runs

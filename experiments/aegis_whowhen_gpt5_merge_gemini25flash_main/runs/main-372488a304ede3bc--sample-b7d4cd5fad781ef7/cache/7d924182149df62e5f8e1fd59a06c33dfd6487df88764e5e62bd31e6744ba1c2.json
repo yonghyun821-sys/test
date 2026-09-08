@@ -1,0 +1,46 @@
+{
+  "cache_key": "7d924182149df62e5f8e1fd59a06c33dfd6487df88764e5e62bd31e6744ba1c2",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The agent hallucinates the source of information, claiming it came from the 'Encyclopedia of Indian Media and Journalism' when the actual search results were from Wikipedia and Deccan Herald. It also hallucinates the father's name, stating 'Pran Nath Thapar' when the search results clearly indicate 'Daya Ram Thapar'.\",\n  \"evidence\": \"The agent's output states: 'Based on the information found in the Encyclopedia of Indian Media and Journalism, Romesh Thapar's father was Pran Nath Thapar.' However, the WebSurfer's output shows search results from Wikipedia and Deccan Herald, both identifying 'Daya Ram Thapar' as the father.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The agent hallucinates the source of information, claiming it came from the 'Encyclopedia of Indian Media and Journalism' when the actual search results were from Wikipedia and Deccan Herald. It also hallucinates the father's name, stating 'Pran Nath Thapar' when the search results clearly indicate 'Daya Ram Thapar'.",
+    "evidence": "The agent's output states: 'Based on the information found in the Encyclopedia of Indian Media and Journalism, Romesh Thapar's father was Pran Nath Thapar.' However, the WebSurfer's output shows search results from Wikipedia and Deccan Herald, both identifying 'Daya Ram Thapar' as the father.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853787-P73qZzB5Puqvce8blLHc",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 159,
+      "prompt_tokens": 4191,
+      "total_tokens": 4350,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 1908,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.00113964,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.00113964,
+        "upstream_inference_prompt_cost": 0.00074214,
+        "upstream_inference_completions_cost": 0.0003975
+      }
+    },
+    "cost_usd": 0.00113964
+  }
+}

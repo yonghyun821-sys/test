@@ -1,0 +1,46 @@
+{
+  "cache_key": "347a8872adfdb7fef1115f06ee9088430a462d70ae4d2e06c3c320efc5e9b9d5",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-2.1\",\n  \"explanation\": \"The agent repeatedly performed the same task of searching for themes and main ideas of Audre Lorde's poetry, instead of directly searching for the poem's text and its stanza structure as requested.\",\n  \"evidence\": \"Steps 4, 6, 8, and 10 show WebSurfer performing searches related to themes and general information about Audre Lorde's poetry, rather than directly locating the poem 'Father Son and Holy Ghost' and its stanza structure, despite repeated instructions to do so in steps 3, 5, 7, 9, 12, 15, 18, 22, 24, 26, 28, 29, and 30.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-2.1",
+    "explanation": "The agent repeatedly performed the same task of searching for themes and main ideas of Audre Lorde's poetry, instead of directly searching for the poem's text and its stanza structure as requested.",
+    "evidence": "Steps 4, 6, 8, and 10 show WebSurfer performing searches related to themes and general information about Audre Lorde's poetry, rather than directly locating the poem 'Father Son and Holy Ghost' and its stanza structure, despite repeated instructions to do so in steps 3, 5, 7, 9, 12, 15, 18, 22, 24, 26, 28, 29, and 30.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850311-Gy1qwVawscpsQlr95sxx",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 179,
+      "prompt_tokens": 30792,
+      "total_tokens": 30971,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0096851,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0096851,
+        "upstream_inference_prompt_cost": 0.0092376,
+        "upstream_inference_completions_cost": 0.0004475
+      }
+    },
+    "cost_usd": 0.0096851
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "cache_key": "013d3d344fb1a2a728ef78180d733e645997f049fbe91eb42388dbec6edb45fa",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The agent hallucinates the existence of an RPG book called \\\"The Keeper's Companion\\\" by Brazen Head Games and incorrectly identifies it as the longest, despite no evidence supporting its existence or attribution to the publisher in the search results.\",\n  \"evidence\": \"In step 6, the agent states: \\\"Among the results, 'The Keeper's Companion' appears in a review on RPG.net that refers to a product associated with the 'Brazen Head.'\\\" However, the provided web search results for step 6 do not contain any mention of \\\"The Keeper's Companion\\\" or a review on RPG.net referring to it. The agent then proceeds to provide this hallucinated book as the final answer.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The agent hallucinates the existence of an RPG book called \"The Keeper's Companion\" by Brazen Head Games and incorrectly identifies it as the longest, despite no evidence supporting its existence or attribution to the publisher in the search results.",
+    "evidence": "In step 6, the agent states: \"Among the results, 'The Keeper's Companion' appears in a review on RPG.net that refers to a product associated with the 'Brazen Head.'\" However, the provided web search results for step 6 do not contain any mention of \"The Keeper's Companion\" or a review on RPG.net referring to it. The agent then proceeds to provide this hallucinated book as the final answer.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788852324-Zb9qAkpqAf8vnXQAO5E1",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 167,
+      "prompt_tokens": 7001,
+      "total_tokens": 7168,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0025178,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0025178,
+        "upstream_inference_prompt_cost": 0.0021003,
+        "upstream_inference_completions_cost": 0.0004175
+      }
+    },
+    "cost_usd": 0.0025178
+  }
+}

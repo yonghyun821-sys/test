@@ -1,0 +1,46 @@
+{
+  "cache_key": "b438d804b2f18b0122d0c462856e62398ff7a2b559cbcded93329d94dc13dc28",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The orchestrator hallucinates the answer 'We Rollin' despite the search results clearly indicating 'Don't Look' as the single.\",\n  \"evidence\": \"WebSurfer output: \\\"The single by Shubh featuring Irman Thiara from 2021 is titled \\\"Don't Look.\\\"\\nOrchestrator output: \\\"Shubh and Irman Thiara made a mark in 2021 with their breakout single \\\"We Rollin\\\"... FINAL ANSWER: We Rollin\\\"\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The orchestrator hallucinates the answer 'We Rollin' despite the search results clearly indicating 'Don't Look' as the single.",
+    "evidence": "WebSurfer output: \"The single by Shubh featuring Irman Thiara from 2021 is titled \"Don't Look.\"\nOrchestrator output: \"Shubh and Irman Thiara made a mark in 2021 with their breakout single \"We Rollin\"... FINAL ANSWER: We Rollin\"",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853986-xXO7wNuD3nZCypYY5u7Z",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 128,
+      "prompt_tokens": 4064,
+      "total_tokens": 4192,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0015392,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0015392,
+        "upstream_inference_prompt_cost": 0.0012192,
+        "upstream_inference_completions_cost": 0.00032
+      }
+    },
+    "cost_usd": 0.0015392
+  }
+}

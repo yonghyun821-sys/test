@@ -1,0 +1,46 @@
+{
+  "cache_key": "662775b6275930ff93a9e9cf397fc168ac437f005019c9d35d82247bca45ca4a",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-2.1\",\n  \"explanation\": \"The orchestrator repeatedly asks WebSurfer to find the poem and identify indented stanzas, but WebSurfer consistently fails to provide the poem's text or the requested information. Instead, WebSurfer provides general thematic analyses of Audre Lorde's poetry, ignoring the specific instruction to find the poem and its indented lines.\",\n  \"evidence\": \"Steps 3, 5, 7, 9, 12, 15, 18, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 show the orchestrator repeatedly asking WebSurfer to find the poem and identify indented lines. Steps 4, 6, 8, 10, 13, 16, 19 show WebSurfer providing thematic analyses or search results that do not contain the poem's text or the specific stanza information.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-2.1",
+    "explanation": "The orchestrator repeatedly asks WebSurfer to find the poem and identify indented stanzas, but WebSurfer consistently fails to provide the poem's text or the requested information. Instead, WebSurfer provides general thematic analyses of Audre Lorde's poetry, ignoring the specific instruction to find the poem and its indented lines.",
+    "evidence": "Steps 3, 5, 7, 9, 12, 15, 18, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 show the orchestrator repeatedly asking WebSurfer to find the poem and identify indented lines. Steps 4, 6, 8, 10, 13, 16, 19 show WebSurfer providing thematic analyses or search results that do not contain the poem's text or the specific stanza information.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850308-Z6tjDuxGdeexmBTsF5lN",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 228,
+      "prompt_tokens": 32357,
+      "total_tokens": 32585,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0102771,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0102771,
+        "upstream_inference_prompt_cost": 0.0097071,
+        "upstream_inference_completions_cost": 0.00057
+      }
+    },
+    "cost_usd": 0.0102771
+  }
+}

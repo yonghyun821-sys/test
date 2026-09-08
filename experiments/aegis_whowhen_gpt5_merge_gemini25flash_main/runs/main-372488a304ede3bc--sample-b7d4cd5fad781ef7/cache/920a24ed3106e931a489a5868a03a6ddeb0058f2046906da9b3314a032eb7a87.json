@@ -1,0 +1,46 @@
+{
+  "cache_key": "920a24ed3106e931a489a5868a03a6ddeb0058f2046906da9b3314a032eb7a87",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The orchestrator hallucinated the name of the soldier, stating 'Hardial Singh' when the web search results clearly indicated 'Rajindar Singh Dhatt'.\",\n  \"evidence\": \"WebSurfer output: 'British Prime Minister Rishi Sunak recently honored 101-year-old Rajindar Singh Dhatt, a Sikh veteran of World War II, with the prestigious Points of Light award'. Orchestrator output: 'British Prime Minister Rishi Sunak awarded the Points of Light Honour to Hardial Singh... FINAL ANSWER: Hardial Singh'\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The orchestrator hallucinated the name of the soldier, stating 'Hardial Singh' when the web search results clearly indicated 'Rajindar Singh Dhatt'.",
+    "evidence": "WebSurfer output: 'British Prime Minister Rishi Sunak recently honored 101-year-old Rajindar Singh Dhatt, a Sikh veteran of World War II, with the prestigious Points of Light award'. Orchestrator output: 'British Prime Minister Rishi Sunak awarded the Points of Light Honour to Hardial Singh... FINAL ANSWER: Hardial Singh'",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788854005-oUZisdwk5A1gpaLq1joT",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 131,
+      "prompt_tokens": 4181,
+      "total_tokens": 4312,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0015818,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0015818,
+        "upstream_inference_prompt_cost": 0.0012543,
+        "upstream_inference_completions_cost": 0.0003275
+      }
+    },
+    "cost_usd": 0.0015818
+  }
+}

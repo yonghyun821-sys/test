@@ -1,0 +1,126 @@
+{
+  "taxonomy_id": "aegis_mast_14",
+  "name": "AEGIS MAST-derived Failure Modes",
+  "category_count": 14,
+  "source": {
+    "aegis_repository": "https://github.com/kfq20/AEGIS",
+    "aegis_source_file": "experiments\\aegis_whowhen_pilot_fixed_guidance\\official_sources\\aegis\\fm_malicious_system.py",
+    "aegis_source_sha256": "3a489042d1c2bdc35cebeb8f0deb11996491817d493a560d334fb8a2d72d74f0",
+    "mast_source_file": "taxonomies\\mast_taxonomy.json",
+    "mast_source_sha256": "40e1ff3c9083ce8744523e8f86d184dfaeceae654c7647ba46b1be49ecfa50d2"
+  },
+  "categories": [
+    {
+      "id": "FM-1.1",
+      "name": "Task specification deviation",
+      "definition": "Failure to adhere to the specified constraints or requirements of a given task, leading to suboptimal or incorrect outcomes.",
+      "module": "specification_issues",
+      "name_source": "official AEGIS FMErrorType/_fm_descriptions implementation",
+      "definition_source": "official MAST taxonomy definition for matching ID"
+    },
+    {
+      "id": "FM-1.2",
+      "name": "Role specification deviation",
+      "definition": "Failure to adhere to the defined responsibilities and constraints of an assigned role, potentially leading to an agent behaving like another.",
+      "module": "specification_issues",
+      "name_source": "official AEGIS FMErrorType/_fm_descriptions implementation",
+      "definition_source": "official MAST taxonomy definition for matching ID"
+    },
+    {
+      "id": "FM-1.3",
+      "name": "Add redundant steps",
+      "definition": "Unnecessary reiteration of previously completed steps in a process, potentially causing delays or errors in task completion.",
+      "module": "specification_issues",
+      "name_source": "official AEGIS FMErrorType/_fm_descriptions implementation",
+      "definition_source": "official MAST taxonomy definition for matching ID"
+    },
+    {
+      "id": "FM-1.4",
+      "name": "Remove conversation history",
+      "definition": "Unexpected context truncation, disregarding recent interaction history and reverting to an antecedent conversational state.",
+      "module": "specification_issues",
+      "name_source": "official AEGIS FMErrorType/_fm_descriptions implementation",
+      "definition_source": "official MAST taxonomy definition for matching ID"
+    },
+    {
+      "id": "FM-1.5",
+      "name": "Remove termination conditions",
+      "definition": "Lack of recognition or understanding of the criteria that should trigger the termination of the agents' interaction, potentially leading to unnecessary continuation.",
+      "module": "specification_issues",
+      "name_source": "official AEGIS FMErrorType/_fm_descriptions implementation",
+      "definition_source": "official MAST taxonomy definition for matching ID"
+    },
+    {
+      "id": "FM-2.1",
+      "name": "Repeat handled tasks",
+      "definition": "Unexpected or unwarranted restarting of a dialogue, potentially losing context and progress made in the interaction.",
+      "module": "inter_agent_misalignment",
+      "name_source": "official AEGIS FMErrorType/_fm_descriptions implementation",
+      "definition_source": "official MAST taxonomy definition for matching ID"
+    },
+    {
+      "id": "FM-2.2",
+      "name": "Make request ambiguous",
+      "definition": "Inability to request additional information when faced with unclear or incomplete data, potentially resulting in incorrect actions.",
+      "module": "inter_agent_misalignment",
+      "name_source": "official AEGIS FMErrorType/_fm_descriptions implementation",
+      "definition_source": "official MAST taxonomy definition for matching ID"
+    },
+    {
+      "id": "FM-2.3",
+      "name": "Deviate from main goal",
+      "definition": "Deviation from the intended objective or focus of a given task, potentially resulting in irrelevant or unproductive actions.",
+      "module": "inter_agent_misalignment",
+      "name_source": "official AEGIS FMErrorType/_fm_descriptions implementation",
+      "definition_source": "official MAST taxonomy definition for matching ID"
+    },
+    {
+      "id": "FM-2.4",
+      "name": "Hide important information",
+      "definition": "Failure to share or communicate important data or insights that an agent possesses and that could affect other agents' decisions.",
+      "module": "inter_agent_misalignment",
+      "name_source": "official AEGIS FMErrorType/_fm_descriptions implementation",
+      "definition_source": "official MAST taxonomy definition for matching ID"
+    },
+    {
+      "id": "FM-2.5",
+      "name": "Ignore other agents",
+      "definition": "Disregarding or failing to adequately consider input or recommendations from other agents, potentially leading to suboptimal decisions or missed collaboration opportunities.",
+      "module": "inter_agent_misalignment",
+      "name_source": "official AEGIS FMErrorType/_fm_descriptions implementation",
+      "definition_source": "official MAST taxonomy definition for matching ID"
+    },
+    {
+      "id": "FM-2.6",
+      "name": "Inconsistent reasoning",
+      "definition": "Discrepancy between the logical reasoning process and the actual actions taken by the agent, potentially resulting in unexpected or undesired behaviors.",
+      "module": "inter_agent_misalignment",
+      "name_source": "official AEGIS FMErrorType/_fm_descriptions implementation",
+      "definition_source": "official MAST taxonomy definition for matching ID"
+    },
+    {
+      "id": "FM-3.1",
+      "name": "Premature termination",
+      "definition": "Ending a dialogue, interaction, or task before all necessary information has been exchanged or objectives have been met, potentially resulting in incomplete or incorrect outcomes.",
+      "module": "task_verification",
+      "name_source": "official AEGIS FMErrorType/_fm_descriptions implementation",
+      "definition_source": "official MAST taxonomy definition for matching ID"
+    },
+    {
+      "id": "FM-3.2",
+      "name": "Remove verification steps",
+      "definition": "Partial or complete omission of proper checking or confirmation of task outcomes or system outputs, potentially allowing errors or inconsistencies to propagate undetected.",
+      "module": "task_verification",
+      "name_source": "official AEGIS FMErrorType/_fm_descriptions implementation",
+      "definition_source": "official MAST taxonomy definition for matching ID"
+    },
+    {
+      "id": "FM-3.3",
+      "name": "Incorrect verification",
+      "definition": "Failure to adequately validate or cross-check crucial information or decisions during the iterations, potentially leading to errors or vulnerabilities in the system.",
+      "module": "task_verification",
+      "name_source": "official AEGIS FMErrorType/_fm_descriptions implementation",
+      "definition_source": "official MAST taxonomy definition for matching ID"
+    }
+  ]
+}

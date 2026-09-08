@@ -1,0 +1,46 @@
+{
+  "cache_key": "175df91f3f94aae58fb91e2ecc8dc7e2dfcea4ed35b12117b207f97590e347c5",
+  "raw_output_text": "{\n  \"failure_category\": \"R.2\",\n  \"explanation\": \"The orchestrator made an incorrect assumption that the most prominently featured book in the search results was the slowest read, without actually performing the necessary calculations (word count / days read) for any of the books.\",\n  \"evidence\": \"The orchestrator states: \\\"Based on the search results, \\\"Fire and Blood\\\" by George R. R. Martin was the most prominently featured book and received the most detailed attention when searching for word counts and reading rates. Given this clear emphasis, I am confident that \\\"Fire and Blood\\\" is the book you read the slowest in 2022 by words per day. No further investigation is needed.\\\"\"\n}",
+  "parsed_response": {
+    "failure_category": "R.2",
+    "explanation": "The orchestrator made an incorrect assumption that the most prominently featured book in the search results was the slowest read, without actually performing the necessary calculations (word count / days read) for any of the books.",
+    "evidence": "The orchestrator states: \"Based on the search results, \"Fire and Blood\" by George R. R. Martin was the most prominently featured book and received the most detailed attention when searching for word counts and reading rates. Given this clear emphasis, I am confident that \"Fire and Blood\" is the book you read the slowest in 2022 by words per day. No further investigation is needed.\"",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788852406-nctheG4u5rGv30XadVI1",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 152,
+      "prompt_tokens": 5202,
+      "total_tokens": 5354,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0019406,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0019406,
+        "upstream_inference_prompt_cost": 0.0015606,
+        "upstream_inference_completions_cost": 0.00038
+      }
+    },
+    "cost_usd": 0.0019406
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "cache_key": "e28213ebe1b9c650468def28e8d023b107030f4ddba817bd61064866f656a31a",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent failed to extract information from the attached PDF, which was explicitly mentioned in the task query as the primary source of information. Despite repeated attempts and planning to use FileSurfer for PDF extraction, the agent never successfully read the PDF content.\",\n  \"evidence\": \"The task query states: 'The attached PDF lists accommodations in the resort community of Seahorse Island.' In step 6, FileSurfer reports 'FileNotFoundError' for the PDF. Subsequent steps (15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29) repeatedly include 'FileSurfer Tasks' to 'Extract structured data (e.g., accommodation types and their ratings) from the attached PDF' but no successful extraction is ever reported. The final output relies on web search results, not the PDF.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent failed to extract information from the attached PDF, which was explicitly mentioned in the task query as the primary source of information. Despite repeated attempts and planning to use FileSurfer for PDF extraction, the agent never successfully read the PDF content.",
+    "evidence": "The task query states: 'The attached PDF lists accommodations in the resort community of Seahorse Island.' In step 6, FileSurfer reports 'FileNotFoundError' for the PDF. Subsequent steps (15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29) repeatedly include 'FileSurfer Tasks' to 'Extract structured data (e.g., accommodation types and their ratings) from the attached PDF' but no successful extraction is ever reported. The final output relies on web search results, not the PDF.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850376-dblEZDF3sGiWPIaWTfEd",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 227,
+      "prompt_tokens": 35204,
+      "total_tokens": 35431,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0111287,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0111287,
+        "upstream_inference_prompt_cost": 0.0105612,
+        "upstream_inference_completions_cost": 0.0005675
+      }
+    },
+    "cost_usd": 0.0111287
+  }
+}

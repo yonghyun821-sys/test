@@ -1,0 +1,131 @@
+{
+  "research_question": "How does taxonomy guidance affect the accuracy of agent failure attribution when the native output label space is held constant?",
+  "prediction_implementation_id": "main-372488a304ede3bc",
+  "main_sample_id": "sample-b7d4cd5fad781ef7",
+  "run_namespace": "main-372488a304ede3bc--sample-b7d4cd5fad781ef7",
+  "base_prediction_implementation_id": "main-95e2d9ee2ba7c1fd",
+  "identity_payload": {
+    "pipeline_harness_hashes": {
+      "core.py": "398bf98d6fd4b2b2d3ee6a4800b803b3a28f1574ff7a5a673164847544dbf2e1",
+      "run.py": "91c556509f4dbffb42047d339a0251f6e8290e71f2fea47330dcb76187284bec",
+      "experiment.yaml": "3521177bed9f68843ac213b25b950193319208ea72b46ae02188803f892e3754"
+    },
+    "base_code_hash": "326131ffb1b714106ce368e25a8266c2e5f1c803e95642b914e0348caea18c4c",
+    "base_parser_hash": "fed436daa98e406131e02161a3830903f16f4f7270cb5a6c8dc3e6ab359c5cbb",
+    "base_serializer_hash": "40fb7abfb7702f4381f0af36f5acd85d9c7b4c37297f081daae3f880464a8e4a",
+    "base_prompt_hashes": {
+      "attribution_system.txt": "420b119d3613f887fe79dce594df3b8b28bc830f061e8ab9123cab2319142911",
+      "attribution_user.txt": "e34e629378902dd1f4b9b973ba6148d9ba5162dbafd1031738f7dc454be7ef1c",
+      "formatting_retry.txt": "b919a2461981e3c8df8329c41a723d509528a6135f1e85e385b410bff121b594",
+      "truncation_retry.txt": "89ae6d49924045579b04693d50bb8c75fd38f833c1ab06382bd6f67895b28642"
+    },
+    "base_schema_hashes": {
+      "aegis": "b4cec209f96d96a367f38a99ff9f6d296ea644f2100ef6c31bdb900c16b61d85",
+      "whowhen": "a82cadc8c84af52a94c08cd6416e1d1b918e9aed39dff9fa769b08e88d26157a"
+    },
+    "source_taxonomy_hashes": {
+      "aegis": "1525a68f7af9a2fee44f48f783f598d73637c6b920c243e3271e014ae5a762e9",
+      "whowhen": "51e32cb73ca31e6cf7fbee981cb470af9c6aef34009c80bba27ba53ec21f0e5a"
+    },
+    "merged_taxonomy_hash": "2dd04ae4dd1f54f99ce7339dc0785f914b77a474a0a05f2ebceec4615d1e16a5",
+    "merge_model": {
+      "name": "openai/gpt-5",
+      "temperature": null,
+      "reasoning_effort": "medium",
+      "max_output_tokens": 16000,
+      "context_window": 400000,
+      "tokenizer_encoding": "o200k_base",
+      "max_tokens_parameter": "max_tokens",
+      "provider": {
+        "order": [
+          "openai"
+        ]
+      },
+      "pricing_usd_per_million": {
+        "input": 1.25,
+        "output": 10.0
+      }
+    },
+    "attribution_model": {
+      "name": "google/gemini-2.5-flash",
+      "temperature": 0,
+      "max_output_tokens": 700,
+      "context_window": 1048576,
+      "tokenizer_encoding": "o200k_base",
+      "pricing_usd_per_million": {
+        "input": 0.3,
+        "output": 2.5
+      },
+      "provider": {
+        "order": [
+          "google-vertex"
+        ]
+      }
+    },
+    "conditions": [
+      "label_only",
+      "own_taxonomy",
+      "foreign_taxonomy",
+      "merged_taxonomy"
+    ],
+    "scoring": "exact_native_id_only_no_relabeler"
+  },
+  "merge_model": {
+    "name": "openai/gpt-5",
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 16000,
+    "context_window": 400000,
+    "tokenizer_encoding": "o200k_base",
+    "max_tokens_parameter": "max_tokens",
+    "provider": {
+      "order": [
+        "openai"
+      ]
+    },
+    "pricing_usd_per_million": {
+      "input": 1.25,
+      "output": 10.0
+    }
+  },
+  "attribution_model": {
+    "name": "google/gemini-2.5-flash",
+    "temperature": 0,
+    "max_output_tokens": 700,
+    "context_window": 1048576,
+    "tokenizer_encoding": "o200k_base",
+    "pricing_usd_per_million": {
+      "input": 0.3,
+      "output": 2.5
+    },
+    "provider": {
+      "order": [
+        "google-vertex"
+      ]
+    }
+  },
+  "merged_taxonomy_sha256": "2dd04ae4dd1f54f99ce7339dc0785f914b77a474a0a05f2ebceec4615d1e16a5",
+  "sample_hashes": {
+    "aegis_sample": "1790b0e154c3642916f3ce34d74d96368de900ff9b8cb2ede08388789a18c178",
+    "whowhen_sample": "2e21af9968a2aa88a4e3f9169d9fb08e463a24fc2cf234c6183c8276f6d333f4",
+    "combined_main_input": "d4634851534e14034d3703ee2b9dc05b1c831061b20fe8d5a8be14d8905ab8b0",
+    "combined_gold": "d19086a731525b10f47ab926e57b60e544401a9be031d34078a257ce7f3a062d"
+  },
+  "planned_trajectories": 597,
+  "planned_logical_rows": 2388,
+  "planned_key_hash": "e4b0a9d6122662db8bf9618f0b13d56bc909d3ef16f594500ea1346cbee6293a",
+  "attribution_cost_preflight": {
+    "logical_rows": 2388,
+    "total_prompt_tokens": 13671447,
+    "maximum_prompt_tokens": 47575,
+    "guarded_cost_reserve_usd": 10.331151149999998
+  },
+  "merge_cost_before_attribution": {
+    "actual_api_calls": 1,
+    "cost_usd": 0.06947875,
+    "prompt_tokens": 2935,
+    "response_tokens": 6581
+  },
+  "hard_cost_cap_usd": 50.0,
+  "previous_experiment_outputs_imported": false
+}

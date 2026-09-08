@@ -1,0 +1,46 @@
+{
+  "cache_key": "6f3be07d52d6ec61b3af41a299a8150954156399fc1a367774e34dceb6dc73e1",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The orchestrator hallucinated the answer, stating 'four-year scholarship' and attributing it to the 'Archives of American Art, Smithsonian Institution', despite the WebSurfer's output clearly showing multiple sources (Wikipedia, Columbia University) indicating a 'three-year scholarship'.\",\n  \"evidence\": \"WebSurfer output: 'Mary Fairchild MacMonnies Low received a three-year scholarship at the St. Louis School of Fine Arts.' and 'In summary, the duration of Mary Fairchild MacMonnies Low’s scholarship at the St. Louis School of Fine Arts was three years'. Orchestrator output: 'The Archives of American Art, Smithsonian Institution, confirms that Mary Fairchild MacMonnies Low won a four-year scholarship from the St. Louis School of Fine Arts. I am confident in this finding and no further investigation is necessary. FINAL ANSWER: four years'\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The orchestrator hallucinated the answer, stating 'four-year scholarship' and attributing it to the 'Archives of American Art, Smithsonian Institution', despite the WebSurfer's output clearly showing multiple sources (Wikipedia, Columbia University) indicating a 'three-year scholarship'.",
+    "evidence": "WebSurfer output: 'Mary Fairchild MacMonnies Low received a three-year scholarship at the St. Louis School of Fine Arts.' and 'In summary, the duration of Mary Fairchild MacMonnies Low’s scholarship at the St. Louis School of Fine Arts was three years'. Orchestrator output: 'The Archives of American Art, Smithsonian Institution, confirms that Mary Fairchild MacMonnies Low won a four-year scholarship from the St. Louis School of Fine Arts. I am confident in this finding and no further investigation is necessary. FINAL ANSWER: four years'",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853929-FEDWJkhsnxR5mNGXRtoR",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 199,
+      "prompt_tokens": 2596,
+      "total_tokens": 2795,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0012763,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0012763,
+        "upstream_inference_prompt_cost": 0.0007788,
+        "upstream_inference_completions_cost": 0.0004975
+      }
+    },
+    "cost_usd": 0.0012763
+  }
+}

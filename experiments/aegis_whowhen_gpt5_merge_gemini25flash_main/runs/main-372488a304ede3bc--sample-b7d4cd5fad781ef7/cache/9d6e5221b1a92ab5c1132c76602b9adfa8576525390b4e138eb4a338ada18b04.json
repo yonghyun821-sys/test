@@ -1,0 +1,46 @@
+{
+  "cache_key": "9d6e5221b1a92ab5c1132c76602b9adfa8576525390b4e138eb4a338ada18b04",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The orchestrator hallucinates the name of Romesh Thapar's father, stating it as 'Pran Nath Thapar' and claiming it was found in the 'Encyclopedia of Indian Media and Journalism', neither of which is supported by the provided web search results. The web search clearly indicates 'Daya Ram Thapar' as the father.\",\n  \"evidence\": \"Orchestrator output: \\\"Based on the information found in the Encyclopedia of Indian Media and Journalism, Romesh Thapar's father was Pran Nath Thapar. I am confident in this finding and further investigation is unnecessary.\\\\n\\\\nFINAL ANSWER: Pran Nath Thapar\\\". The WebSurfer's output clearly states: \\\"Daya Ram Thapar, an Indian Army medical officer, was the father of Romesh Thapar.\\\" and \\\"Romesh Thapar - WikipediaThapar was born in Lahore (now in Pakistan) to a Punjabi trading family of the Khatri caste. His father\\\\n Daya Ram Thapar CIE, OBE (1894–1965) was an Indian Army medical officer.\\\"\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The orchestrator hallucinates the name of Romesh Thapar's father, stating it as 'Pran Nath Thapar' and claiming it was found in the 'Encyclopedia of Indian Media and Journalism', neither of which is supported by the provided web search results. The web search clearly indicates 'Daya Ram Thapar' as the father.",
+    "evidence": "Orchestrator output: \"Based on the information found in the Encyclopedia of Indian Media and Journalism, Romesh Thapar's father was Pran Nath Thapar. I am confident in this finding and further investigation is unnecessary.\\n\\nFINAL ANSWER: Pran Nath Thapar\". The WebSurfer's output clearly states: \"Daya Ram Thapar, an Indian Army medical officer, was the father of Romesh Thapar.\" and \"Romesh Thapar - WikipediaThapar was born in Lahore (now in Pakistan) to a Punjabi trading family of the Khatri caste. His father\\n Daya Ram Thapar CIE, OBE (1894–1965) was an Indian Army medical officer.\"",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853791-ht5HtdPk2geoZ0wCkVbj",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 245,
+      "prompt_tokens": 4010,
+      "total_tokens": 4255,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0018155,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0018155,
+        "upstream_inference_prompt_cost": 0.001203,
+        "upstream_inference_completions_cost": 0.0006125
+      }
+    },
+    "cost_usd": 0.0018155
+  }
+}

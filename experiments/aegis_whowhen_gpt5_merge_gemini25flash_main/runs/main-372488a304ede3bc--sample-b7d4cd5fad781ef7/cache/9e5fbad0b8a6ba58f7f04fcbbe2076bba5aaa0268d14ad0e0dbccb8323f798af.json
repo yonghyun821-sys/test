@@ -1,0 +1,46 @@
+{
+  "cache_key": "9e5fbad0b8a6ba58f7f04fcbbe2076bba5aaa0268d14ad0e0dbccb8323f798af",
+  "raw_output_text": "{\n  \"failure_category\": \"A.4\",\n  \"explanation\": \"The agent repeatedly encountered a CAPTCHA challenge during web searches, which prevented it from gathering information and led to a repetitive cycle of attempting searches without success.\",\n  \"evidence\": \"In round 1, the WebSurfer encountered 'One last step Please solve the challenge below to continue' after searching for 'Smith Wigglesworth grandchildren'. In round 2, the WebSurfer again encountered 'One last step Please solve the challenge below to continue' after searching for 'list of presidents of Elim Pentecostal Church'. The orchestrator's ledger in round 3 explicitly states, 'We have repeated similar search queries and encountered the same CAPTCHA roadblock multiple times.'\"\n}",
+  "parsed_response": {
+    "failure_category": "A.4",
+    "explanation": "The agent repeatedly encountered a CAPTCHA challenge during web searches, which prevented it from gathering information and led to a repetitive cycle of attempting searches without success.",
+    "evidence": "In round 1, the WebSurfer encountered 'One last step Please solve the challenge below to continue' after searching for 'Smith Wigglesworth grandchildren'. In round 2, the WebSurfer again encountered 'One last step Please solve the challenge below to continue' after searching for 'list of presidents of Elim Pentecostal Church'. The orchestrator's ledger in round 3 explicitly states, 'We have repeated similar search queries and encountered the same CAPTCHA roadblock multiple times.'",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853837-aQGKnfMWJiz1XeDzipj6",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 157,
+      "prompt_tokens": 5499,
+      "total_tokens": 5656,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0020422,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0020422,
+        "upstream_inference_prompt_cost": 0.0016497,
+        "upstream_inference_completions_cost": 0.0003925
+      }
+    },
+    "cost_usd": 0.0020422
+  }
+}

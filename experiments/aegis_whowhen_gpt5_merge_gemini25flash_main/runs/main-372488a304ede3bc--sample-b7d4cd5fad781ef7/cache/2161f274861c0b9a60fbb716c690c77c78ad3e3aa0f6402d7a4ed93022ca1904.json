@@ -1,0 +1,46 @@
+{
+  "cache_key": "2161f274861c0b9a60fbb716c690c77c78ad3e3aa0f6402d7a4ed93022ca1904",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-2.6\",\n  \"explanation\": \"The agent exhibits inconsistent reasoning by providing different evaluations and scores for other agents' responses across multiple turns, even when the content of those responses remains the same or is only slightly rephrased. This indicates a lack of consistent judgment or a failure to maintain a stable internal model of evaluation.\",\n  \"evidence\": \"In step 5, Assistant1 scores Agent 2 as 2. In step 6, Assistant2 scores Agent 2 as 5. In step 8, Assistant4 scores Agent 2 as 3. In step 9, Assistant1 scores Agent 2 as 5. In step 10, Assistant4 scores Agent 2 as 3. This shows inconsistent scoring for the same agent's output.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-2.6",
+    "explanation": "The agent exhibits inconsistent reasoning by providing different evaluations and scores for other agents' responses across multiple turns, even when the content of those responses remains the same or is only slightly rephrased. This indicates a lack of consistent judgment or a failure to maintain a stable internal model of evaluation.",
+    "evidence": "In step 5, Assistant1 scores Agent 2 as 2. In step 6, Assistant2 scores Agent 2 as 5. In step 8, Assistant4 scores Agent 2 as 3. In step 9, Assistant1 scores Agent 2 as 5. In step 10, Assistant4 scores Agent 2 as 3. This shows inconsistent scoring for the same agent's output.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850137-WMkuutiz4QRYo9tuRyb6",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 175,
+      "prompt_tokens": 14393,
+      "total_tokens": 14568,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 1000,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0044854,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0044854,
+        "upstream_inference_prompt_cost": 0.0040479,
+        "upstream_inference_completions_cost": 0.0004375
+      }
+    },
+    "cost_usd": 0.0044854
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "cache_key": "71010ca214e656fa6bd100e1b8ef1182bf5232d4b431ed31ef43a5a056f22570",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The agent hallucinates the answer, stating that 125 Liberatrix is Paul Henry's first discovery, when the provided Wikipedia page clearly lists 126 Velleda as his first discovery.\",\n  \"evidence\": \"The Wikipedia page in the WebSurfer's output clearly states 'Discoveries by Paul Henry (P. P. Henry) [1]126 Velleda5 November 1872'. However, the orchestrator's final output states 'The asteroid he first identified is 125 Liberatrix. FINAL ANSWER: 125 Liberatrix'.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The agent hallucinates the answer, stating that 125 Liberatrix is Paul Henry's first discovery, when the provided Wikipedia page clearly lists 126 Velleda as his first discovery.",
+    "evidence": "The Wikipedia page in the WebSurfer's output clearly states 'Discoveries by Paul Henry (P. P. Henry) [1]126 Velleda5 November 1872'. However, the orchestrator's final output states 'The asteroid he first identified is 125 Liberatrix. FINAL ANSWER: 125 Liberatrix'.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853845-LTvVrCnUHCs1MEDUVVhR",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 146,
+      "prompt_tokens": 5652,
+      "total_tokens": 5798,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0020606,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0020606,
+        "upstream_inference_prompt_cost": 0.0016956,
+        "upstream_inference_completions_cost": 0.000365
+      }
+    },
+    "cost_usd": 0.0020606
+  }
+}

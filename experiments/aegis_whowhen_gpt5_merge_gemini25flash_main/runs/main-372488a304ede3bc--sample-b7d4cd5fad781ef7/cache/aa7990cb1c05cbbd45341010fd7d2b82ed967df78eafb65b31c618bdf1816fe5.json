@@ -1,0 +1,46 @@
+{
+  "cache_key": "aa7990cb1c05cbbd45341010fd7d2b82ed967df78eafb65b31c618bdf1816fe5",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The agent hallucinated the university from which Bill Brown received his B.A. The Wikipedia page clearly states 'Brown has a B.A. from Duke University', but the agent reported 'Yale University'.\",\n  \"evidence\": \"WebSurfer output: 'Brown has a B.A. from Duke University, an M.A. in creative writing (poetry) from Stanford University, and a Ph.D. from Stanford University's Modern Thought and Literature program.' Orchestrator output: 'Bill Brown received his B.A. from Yale University, graduating in the class of 1982, where he began to develop his interest in American literature. FINAL ANSWER: Yale University'\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The agent hallucinated the university from which Bill Brown received his B.A. The Wikipedia page clearly states 'Brown has a B.A. from Duke University', but the agent reported 'Yale University'.",
+    "evidence": "WebSurfer output: 'Brown has a B.A. from Duke University, an M.A. in creative writing (poetry) from Stanford University, and a Ph.D. from Stanford University's Modern Thought and Literature program.' Orchestrator output: 'Bill Brown received his B.A. from Yale University, graduating in the class of 1982, where he began to develop his interest in American literature. FINAL ANSWER: Yale University'",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853915-XN3EVzerqaPavQZpv4P4",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 164,
+      "prompt_tokens": 6034,
+      "total_tokens": 6198,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0022202,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0022202,
+        "upstream_inference_prompt_cost": 0.0018102,
+        "upstream_inference_completions_cost": 0.00041
+      }
+    },
+    "cost_usd": 0.0022202
+  }
+}

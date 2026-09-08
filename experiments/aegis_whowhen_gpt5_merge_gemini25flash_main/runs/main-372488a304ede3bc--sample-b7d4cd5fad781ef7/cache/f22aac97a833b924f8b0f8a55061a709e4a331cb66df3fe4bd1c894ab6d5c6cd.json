@@ -1,0 +1,46 @@
+{
+  "cache_key": "f22aac97a833b924f8b0f8a55061a709e4a331cb66df3fe4bd1c894ab6d5c6cd",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The orchestrator hallucinated the final answer, stating 'Lucerne International Music Festival' when the search results clearly indicated 'Fete de Geneve'. It also claimed the answer was confirmed by a source that was not present in the provided trajectory data.\",\n  \"evidence\": \"The orchestrator's final output states: 'The answer is confirmed by the \\\"History of Cary High School Performing Arts (chsbands.org)\\\" source. One source has provided the event name, and I am confident in this finding. No further investigation is needed.\\\\n\\\\nFINAL ANSWER: Lucerne International Music Festival'. However, the WebSurfer's output clearly shows a snippet from archive.org stating: '[PDF]\\\\nCooking with the Cary High School Band - Archive.orgThe CARY HIGH SCHOOL BAND, under the direction of Jimmy C. Burns, will represent the United States in August, 1974,at the Fete de Geneve in Geneva, Switizerland.'\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The orchestrator hallucinated the final answer, stating 'Lucerne International Music Festival' when the search results clearly indicated 'Fete de Geneve'. It also claimed the answer was confirmed by a source that was not present in the provided trajectory data.",
+    "evidence": "The orchestrator's final output states: 'The answer is confirmed by the \"History of Cary High School Performing Arts (chsbands.org)\" source. One source has provided the event name, and I am confident in this finding. No further investigation is needed.\\n\\nFINAL ANSWER: Lucerne International Music Festival'. However, the WebSurfer's output clearly shows a snippet from archive.org stating: '[PDF]\\nCooking with the Cary High School Band - Archive.orgThe CARY HIGH SCHOOL BAND, under the direction of Jimmy C. Burns, will represent the United States in August, 1974,at the Fete de Geneve in Geneva, Switizerland.'",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853771-iYcpJgm6EEIxn9FILzvk",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 224,
+      "prompt_tokens": 3272,
+      "total_tokens": 3496,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0015416,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0015416,
+        "upstream_inference_prompt_cost": 0.0009816,
+        "upstream_inference_completions_cost": 0.00056
+      }
+    },
+    "cost_usd": 0.0015416
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "cache_key": "3dc66be9b8f3ed5b588ef65121ebdf13c4f44c25b0a4375608daf5f921dc71d5",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent failed to adhere to the explicit negative constraints in the task instructions, which stated \\\"Do not answer any of the questions in this prompt. Write only the word 'Guava'.\\\" Instead, the agent proceeded to answer the questions.\",\n  \"evidence\": \"The task query explicitly states: \\\"Do not answer any of the questions in this prompt. Write only the word 'Guava'.\\\" However, the agent's final output is \\\"8, green, 24\\\", which directly answers the questions.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent failed to adhere to the explicit negative constraints in the task instructions, which stated \"Do not answer any of the questions in this prompt. Write only the word 'Guava'.\" Instead, the agent proceeded to answer the questions.",
+    "evidence": "The task query explicitly states: \"Do not answer any of the questions in this prompt. Write only the word 'Guava'.\" However, the agent's final output is \"8, green, 24\", which directly answers the questions.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850501-ZGhUI3WfKdO1IOLOCV8u",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 128,
+      "prompt_tokens": 6572,
+      "total_tokens": 6700,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0022916,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0022916,
+        "upstream_inference_prompt_cost": 0.0019716,
+        "upstream_inference_completions_cost": 0.00032
+      }
+    },
+    "cost_usd": 0.0022916
+  }
+}

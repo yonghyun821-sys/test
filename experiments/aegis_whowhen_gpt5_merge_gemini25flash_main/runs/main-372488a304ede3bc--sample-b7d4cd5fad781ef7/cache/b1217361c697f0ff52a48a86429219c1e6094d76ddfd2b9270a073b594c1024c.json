@@ -1,0 +1,46 @@
+{
+  "cache_key": "b1217361c697f0ff52a48a86429219c1e6094d76ddfd2b9270a073b594c1024c",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent failed to follow the explicit negative constraints in the instructions, specifically \\\"Do not answer any of the questions in this prompt. Write only the word 'Guava'.\\\" and \\\"If there is anything that doesn't make sense in the instructions, write the word 'Pineapple.'\\\". Instead, it proceeded to answer the questions.\",\n  \"evidence\": \"The task explicitly states: \\\"Do not answer any of the questions in this prompt. Write only the word 'Guava'.\\\" and \\\"If there is anything that doesn't make sense in the instructions, write the word 'Pineapple.'\\\". The agent's final output is \\\"8, green, 24\\\", which directly answers the questions, ignoring the negative constraints and the instruction to write 'Guava' or 'Pineapple'.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent failed to follow the explicit negative constraints in the instructions, specifically \"Do not answer any of the questions in this prompt. Write only the word 'Guava'.\" and \"If there is anything that doesn't make sense in the instructions, write the word 'Pineapple.'\". Instead, it proceeded to answer the questions.",
+    "evidence": "The task explicitly states: \"Do not answer any of the questions in this prompt. Write only the word 'Guava'.\" and \"If there is anything that doesn't make sense in the instructions, write the word 'Pineapple.'\". The agent's final output is \"8, green, 24\", which directly answers the questions, ignoring the negative constraints and the instruction to write 'Guava' or 'Pineapple'.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850499-v2CPg898ZQzsGBtiPus4",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 187,
+      "prompt_tokens": 7326,
+      "total_tokens": 7513,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 1958,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.00213664,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.00213664,
+        "upstream_inference_prompt_cost": 0.00166914,
+        "upstream_inference_completions_cost": 0.0004675
+      }
+    },
+    "cost_usd": 0.00213664
+  }
+}

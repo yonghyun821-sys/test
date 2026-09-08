@@ -1,0 +1,46 @@
+{
+  "cache_key": "9ce0ec742f04bf4871552cf7a2435f79bebbc773606bbf919c275314634926b1",
+  "raw_output_text": "{\n  \"failure_category\": \"A.2\",\n  \"explanation\": \"The agent failed to correctly format the plot title as specified in the docstring example. The docstring example shows 'Line Chart of (column)' without extra parentheses around the column name, but the agent's code includes them.\",\n  \"evidence\": \"Docstring example: `plt.title(f\\\"Line Chart of (column)\\\")` (where \\\"column\\\" is a placeholder). Agent's code: `ax.set_title(f\\\"Line Chart of ({column})\\\")`\"\n}",
+  "parsed_response": {
+    "failure_category": "A.2",
+    "explanation": "The agent failed to correctly format the plot title as specified in the docstring example. The docstring example shows 'Line Chart of (column)' without extra parentheses around the column name, but the agent's code includes them.",
+    "evidence": "Docstring example: `plt.title(f\"Line Chart of (column)\")` (where \"column\" is a placeholder). Agent's code: `ax.set_title(f\"Line Chart of ({column})\")`",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788851047-XjmsKyOvZzmofobZlKJJ",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 124,
+      "prompt_tokens": 7425,
+      "total_tokens": 7549,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0025375,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0025375,
+        "upstream_inference_prompt_cost": 0.0022275,
+        "upstream_inference_completions_cost": 0.00031
+      }
+    },
+    "cost_usd": 0.0025375
+  }
+}

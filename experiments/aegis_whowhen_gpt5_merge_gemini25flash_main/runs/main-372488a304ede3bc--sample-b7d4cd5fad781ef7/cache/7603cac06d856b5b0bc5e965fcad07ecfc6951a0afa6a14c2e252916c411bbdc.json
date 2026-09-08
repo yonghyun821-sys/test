@@ -1,0 +1,46 @@
+{
+  "cache_key": "7603cac06d856b5b0bc5e965fcad07ecfc6951a0afa6a14c2e252916c411bbdc",
+  "raw_output_text": "{\n  \"failure_category\": \"V.2\",\n  \"explanation\": \"The agent failed to adequately verify the historical terminology for the illness. While it found 'tuberculosis', it did not confirm if there was a more common or specific term used 'at that time' as requested by the prompt, such as 'consumption'.\",\n  \"evidence\": \"The prompt specifically asked for the illness 'as it was known at that time'. The agent found 'tuberculosis' but did not perform any further verification to see if 'consumption' was a more prevalent or alternative term during that historical period, despite being instructed to 'Confirm the terminology used for her illness in the context of the period.' in Orchestrator's round 1 output.\"\n}",
+  "parsed_response": {
+    "failure_category": "V.2",
+    "explanation": "The agent failed to adequately verify the historical terminology for the illness. While it found 'tuberculosis', it did not confirm if there was a more common or specific term used 'at that time' as requested by the prompt, such as 'consumption'.",
+    "evidence": "The prompt specifically asked for the illness 'as it was known at that time'. The agent found 'tuberculosis' but did not perform any further verification to see if 'consumption' was a more prevalent or alternative term during that historical period, despite being instructed to 'Confirm the terminology used for her illness in the context of the period.' in Orchestrator's round 1 output.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853939-0GPd33raWFx0OoT549rX",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 156,
+      "prompt_tokens": 8019,
+      "total_tokens": 8175,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0027957,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0027957,
+        "upstream_inference_prompt_cost": 0.0024057,
+        "upstream_inference_completions_cost": 0.00039
+      }
+    },
+    "cost_usd": 0.0027957
+  }
+}

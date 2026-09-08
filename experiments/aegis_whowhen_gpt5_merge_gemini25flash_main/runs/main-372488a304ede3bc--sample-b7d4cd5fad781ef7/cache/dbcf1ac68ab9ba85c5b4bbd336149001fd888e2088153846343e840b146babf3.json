@@ -1,0 +1,46 @@
+{
+  "cache_key": "dbcf1ac68ab9ba85c5b4bbd336149001fd888e2088153846343e840b146babf3",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The orchestrator agent hallucinates the source of information and the name of Romesh Thapar's father, despite the WebSurfer providing correct information from reliable sources.\",\n  \"evidence\": \"WebSurfer output clearly states: 'Daya Ram Thapar, an Indian Army medical officer, was the father of Romesh Thapar.' and 'Romesh Thapar - WikipediaThapar was born in Lahore (now in Pakistan) to a Punjabi trading family of the Khatri caste. His father Daya Ram Thapar CIE, OBE (1894–1965) was an Indian Army medical officer.' Yet, the orchestrator states: 'Based on the information found in the Encyclopedia of Indian Media and Journalism, Romesh Thapar's father was Pran Nath Thapar.'\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The orchestrator agent hallucinates the source of information and the name of Romesh Thapar's father, despite the WebSurfer providing correct information from reliable sources.",
+    "evidence": "WebSurfer output clearly states: 'Daya Ram Thapar, an Indian Army medical officer, was the father of Romesh Thapar.' and 'Romesh Thapar - WikipediaThapar was born in Lahore (now in Pakistan) to a Punjabi trading family of the Khatri caste. His father Daya Ram Thapar CIE, OBE (1894–1965) was an Indian Army medical officer.' Yet, the orchestrator states: 'Based on the information found in the Encyclopedia of Indian Media and Journalism, Romesh Thapar's father was Pran Nath Thapar.'",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853789-CyOGj01WENrbIU5kYuNc",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 182,
+      "prompt_tokens": 2445,
+      "total_tokens": 2627,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0011885,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0011885,
+        "upstream_inference_prompt_cost": 0.0007335,
+        "upstream_inference_completions_cost": 0.000455
+      }
+    },
+    "cost_usd": 0.0011885
+  }
+}

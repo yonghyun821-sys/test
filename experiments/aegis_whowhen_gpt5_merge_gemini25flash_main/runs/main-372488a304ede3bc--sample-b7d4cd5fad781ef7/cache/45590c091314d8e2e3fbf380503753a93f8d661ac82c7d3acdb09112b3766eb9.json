@@ -1,0 +1,46 @@
+{
+  "cache_key": "45590c091314d8e2e3fbf380503753a93f8d661ac82c7d3acdb09112b3766eb9",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The orchestrator hallucinates a name for Mukul Chandra Dey's younger brother (Sailen Dey) that is not supported by the WebSurfer's search results, which clearly identify Manishi Dey.\",\n  \"evidence\": \"WebSurfer output: \\\"The younger brother of Mukul Chandra Dey is Manishi Dey.\\\" Orchestrator output: \\\"Based on the information found in the National Gallery of Modern Art (NGMA) Biographical Archives, the younger brother of Mukul Chandra Dey... is Sailen Dey.\\\"\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The orchestrator hallucinates a name for Mukul Chandra Dey's younger brother (Sailen Dey) that is not supported by the WebSurfer's search results, which clearly identify Manishi Dey.",
+    "evidence": "WebSurfer output: \"The younger brother of Mukul Chandra Dey is Manishi Dey.\" Orchestrator output: \"Based on the information found in the National Gallery of Modern Art (NGMA) Biographical Archives, the younger brother of Mukul Chandra Dey... is Sailen Dey.\"",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788854042-viyCrkosWriTPJTT96nP",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 128,
+      "prompt_tokens": 3310,
+      "total_tokens": 3438,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.001313,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.001313,
+        "upstream_inference_prompt_cost": 0.000993,
+        "upstream_inference_completions_cost": 0.00032
+      }
+    },
+    "cost_usd": 0.001313
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "uses_api": false,
+  "uses_gold": false,
+  "checks": {
+    "two_formatting_retries_then_valid": true,
+    "terminal_invalid_retained_and_scored_zero": true,
+    "truncation_retry_once": true
+  }
+}

@@ -1,0 +1,9 @@
+﻿dataset,transition,n,incorrect_to_correct,correct_to_incorrect,correct_to_correct,incorrect_to_same_incorrect,incorrect_to_different_incorrect,prediction_changes,prediction_change_rate
+aegis,label_only_to_own_taxonomy,97,5,4,15,46,27,36,0.3711340206185567
+aegis,label_only_to_foreign_taxonomy,97,1,4,15,52,25,30,0.30927835051546393
+aegis,label_only_to_merged_taxonomy,97,5,2,17,58,15,22,0.2268041237113402
+aegis,foreign_taxonomy_to_merged_taxonomy,97,7,1,15,53,21,29,0.29896907216494845
+whowhen,label_only_to_own_taxonomy,500,32,28,83,264,93,153,0.306
+whowhen,label_only_to_foreign_taxonomy,500,13,23,88,302,74,110,0.22
+whowhen,label_only_to_merged_taxonomy,500,18,23,88,311,60,101,0.202
+whowhen,foreign_taxonomy_to_merged_taxonomy,500,21,16,85,300,78,115,0.23

@@ -1,0 +1,1 @@
+Return failure_category using exactly one of the permitted OUTPUT LABEL IDs. Do not change the substantive diagnosis.

@@ -1,0 +1,46 @@
+{
+  "cache_key": "679aacaf440f79e6f7795244f1f1035d595d4284d7918142e7db51f8c148e270",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The orchestrator hallucinates the answer 'We Rollin' despite the search results clearly indicating 'Don't Look' as the title of the single.\",\n  \"evidence\": \"The WebSurfer output clearly states: \\\"Don't Look The single by Shubh featuring Irman Thiara from 2021 is titled 'Don't Look.'\\\" However, the orchestrator's final output is: \\\"FINAL ANSWER: We Rollin\\\".\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The orchestrator hallucinates the answer 'We Rollin' despite the search results clearly indicating 'Don't Look' as the title of the single.",
+    "evidence": "The WebSurfer output clearly states: \"Don't Look The single by Shubh featuring Irman Thiara from 2021 is titled 'Don't Look.'\" However, the orchestrator's final output is: \"FINAL ANSWER: We Rollin\".",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853979-b9exTf1VzbDTkO7zf1xb",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 116,
+      "prompt_tokens": 2318,
+      "total_tokens": 2434,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0009854,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0009854,
+        "upstream_inference_prompt_cost": 0.0006954,
+        "upstream_inference_completions_cost": 0.00029
+      }
+    },
+    "cost_usd": 0.0009854
+  }
+}

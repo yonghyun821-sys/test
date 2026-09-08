@@ -1,0 +1,46 @@
+{
+  "cache_key": "0046d2bdd46dc8d69a27951abe0f367c4a29ddb637a239025cb697b5610937c8",
+  "raw_output_text": "{\n  \"failure_category\": \"R.2\",\n  \"explanation\": \"The agent correctly identified the relevant data sources but made a reasoning error when extracting the teen birth rate for Georgia from the CDC summary. It incorrectly stated Georgia's birth rate was 16.5, leading it to exclude Georgia from the list of states with a birth rate of 20 or higher, despite earlier acknowledging Georgia's rate was 20.3.\",\n  \"evidence\": \"In step 2, the agent states: 'Georgia is known to have had a teen birth rate of 20.3 per 1,000 females ages 15–19 in 2022'. However, in step 3, the `cdc_summary` output for Georgia is '16.5', and the agent's derived list of states with birth rates >= 20 does not include Georgia. This is a misapplication of the data it retrieved.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.2",
+    "explanation": "The agent correctly identified the relevant data sources but made a reasoning error when extracting the teen birth rate for Georgia from the CDC summary. It incorrectly stated Georgia's birth rate was 16.5, leading it to exclude Georgia from the list of states with a birth rate of 20 or higher, despite earlier acknowledging Georgia's rate was 20.3.",
+    "evidence": "In step 2, the agent states: 'Georgia is known to have had a teen birth rate of 20.3 per 1,000 females ages 15–19 in 2022'. However, in step 3, the `cdc_summary` output for Georgia is '16.5', and the agent's derived list of states with birth rates >= 20 does not include Georgia. This is a misapplication of the data it retrieved.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788852147-kIMXdhkhlwR2Cdkie5BV",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 206,
+      "prompt_tokens": 8410,
+      "total_tokens": 8616,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.003038,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.003038,
+        "upstream_inference_prompt_cost": 0.002523,
+        "upstream_inference_completions_cost": 0.000515
+      }
+    },
+    "cost_usd": 0.003038
+  }
+}

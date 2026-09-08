@@ -1,0 +1,46 @@
+{
+  "cache_key": "80504e6aa0c9086d4d527b6eead4e11fb8d35559fc45e0a229228d3f65dd3f6f",
+  "raw_output_text": "{\n  \"failure_category\": \"V.2\",\n  \"explanation\": \"The agent correctly identified the quoted lines and the author, Edwin Markham, from the speech. However, it incorrectly identified the title of the poem as 'The Secret of Success' without verifying if those specific lines belong to that poem or if Markham has another poem with those lines. A quick search reveals the lines are from Markham's poem 'The Anvil and the Hammer'.\",\n  \"evidence\": \"The agent states: 'While these lines are sometimes cited as being from his shorter poem \\\"The Secret of Success\\\", others attribute them to the poem \\\"Epigrams\\\" or as a stand-alone aphorism, but they are most commonly and widely recognized as coming from \\\"The Secret of Success\\\" by Edwin Markham.' This shows a lack of definitive verification for the poem's title.\"\n}",
+  "parsed_response": {
+    "failure_category": "V.2",
+    "explanation": "The agent correctly identified the quoted lines and the author, Edwin Markham, from the speech. However, it incorrectly identified the title of the poem as 'The Secret of Success' without verifying if those specific lines belong to that poem or if Markham has another poem with those lines. A quick search reveals the lines are from Markham's poem 'The Anvil and the Hammer'.",
+    "evidence": "The agent states: 'While these lines are sometimes cited as being from his shorter poem \"The Secret of Success\", others attribute them to the poem \"Epigrams\" or as a stand-alone aphorism, but they are most commonly and widely recognized as coming from \"The Secret of Success\" by Edwin Markham.' This shows a lack of definitive verification for the poem's title.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788852128-ziT2bXMbiI9sjA0R4cTJ",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 181,
+      "prompt_tokens": 6420,
+      "total_tokens": 6601,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0023785,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0023785,
+        "upstream_inference_prompt_cost": 0.001926,
+        "upstream_inference_completions_cost": 0.0004525
+      }
+    },
+    "cost_usd": 0.0023785
+  }
+}

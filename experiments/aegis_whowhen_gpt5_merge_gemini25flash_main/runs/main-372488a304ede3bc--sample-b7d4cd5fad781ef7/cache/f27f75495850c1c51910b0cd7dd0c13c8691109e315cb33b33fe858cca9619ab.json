@@ -1,0 +1,46 @@
+{
+  "cache_key": "f27f75495850c1c51910b0cd7dd0c13c8691109e315cb33b33fe858cca9619ab",
+  "raw_output_text": "{\n  \"failure_category\": \"V.2\",\n  \"explanation\": \"The orchestrator incorrectly verified the answer, stating that the National Park Service confirmed the answer, when the provided evidence from WebSurfer clearly indicated the information came from Wikipedia. This led to an incorrect final answer.\",\n  \"evidence\": \"WebSurfer output: 'Wikipedia https://en.wikipedia.org › wiki › The_Minute_ManThe Minute Man - Wikipedia...was originally intended to be made of stone.' Orchestrator output: 'Based on confirmation from the National Park Service (nps.gov) for Minute Man National Historical Park, we can be confident in the answer. No further investigation is needed. FINAL ANSWER: bronze'\"\n}",
+  "parsed_response": {
+    "failure_category": "V.2",
+    "explanation": "The orchestrator incorrectly verified the answer, stating that the National Park Service confirmed the answer, when the provided evidence from WebSurfer clearly indicated the information came from Wikipedia. This led to an incorrect final answer.",
+    "evidence": "WebSurfer output: 'Wikipedia https://en.wikipedia.org › wiki › The_Minute_ManThe Minute Man - Wikipedia...was originally intended to be made of stone.' Orchestrator output: 'Based on confirmation from the National Park Service (nps.gov) for Minute Man National Historical Park, we can be confident in the answer. No further investigation is needed. FINAL ANSWER: bronze'",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788854052-qkzZjzLBhSZ1MxUFHNMH",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 152,
+      "prompt_tokens": 4520,
+      "total_tokens": 4672,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.001736,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.001736,
+        "upstream_inference_prompt_cost": 0.001356,
+        "upstream_inference_completions_cost": 0.00038
+      }
+    },
+    "cost_usd": 0.001736
+  }
+}

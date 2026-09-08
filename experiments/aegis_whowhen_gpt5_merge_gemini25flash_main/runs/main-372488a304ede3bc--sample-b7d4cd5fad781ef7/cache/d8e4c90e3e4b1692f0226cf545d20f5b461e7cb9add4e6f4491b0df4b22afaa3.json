@@ -1,0 +1,46 @@
+{
+  "cache_key": "d8e4c90e3e4b1692f0226cf545d20f5b461e7cb9add4e6f4491b0df4b22afaa3",
+  "raw_output_text": "{\n  \"failure_category\": \"R.2\",\n  \"explanation\": \"The agent incorrectly inferred the answer based on the proportion of total employment in 2020, rather than calculating the percentage increase between 2005 and 2020 as requested by the question. It confused the largest share of employment with the largest percentage increase.\",\n  \"evidence\": \"The agent states: \\\"The FAO employment page (search result 3) states that in 2020, Asia had 84% of all fishers and fish farmers, followed by Africa at 10% and Latin America and the Caribbean at 4%. This ranking highlights Africa as the second most significant region after Asia. ... it is clear that Africa experienced the second largest percentage increase in aquaculture employment between 2005 and 2020.\\\" This shows a logical leap from current employment share to percentage increase over time.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.2",
+    "explanation": "The agent incorrectly inferred the answer based on the proportion of total employment in 2020, rather than calculating the percentage increase between 2005 and 2020 as requested by the question. It confused the largest share of employment with the largest percentage increase.",
+    "evidence": "The agent states: \"The FAO employment page (search result 3) states that in 2020, Asia had 84% of all fishers and fish farmers, followed by Africa at 10% and Latin America and the Caribbean at 4%. This ranking highlights Africa as the second most significant region after Asia. ... it is clear that Africa experienced the second largest percentage increase in aquaculture employment between 2005 and 2020.\" This shows a logical leap from current employment share to percentage increase over time.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788852331-UkAkUyKFVh4fQWm5iVVx",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 196,
+      "prompt_tokens": 4233,
+      "total_tokens": 4429,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 954,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.00150232,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.00150232,
+        "upstream_inference_prompt_cost": 0.00101232,
+        "upstream_inference_completions_cost": 0.00049
+      }
+    },
+    "cost_usd": 0.00150232
+  }
+}

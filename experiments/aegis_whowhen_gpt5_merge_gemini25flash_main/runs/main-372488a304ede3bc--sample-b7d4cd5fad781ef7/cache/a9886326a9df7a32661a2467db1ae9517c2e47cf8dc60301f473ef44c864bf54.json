@@ -1,0 +1,46 @@
+{
+  "cache_key": "a9886326a9df7a32661a2467db1ae9517c2e47cf8dc60301f473ef44c864bf54",
+  "raw_output_text": "{\n  \"failure_category\": \"PL.1\",\n  \"explanation\": \"The agent failed to plan effectively by not exploring all possible locations for the required items (soapbars) before concluding they were not present. It also made an incorrect assumption that soapbottles could substitute for soapbars, leading to irrelevant actions.\",\n  \"evidence\": \"The agent searched cabinets and a countertop, then incorrectly assumed no soapbars were present (step 10). It then picked up a soapbottle (step 11) and tried to use it as a substitute. It only found the actual soapbars on the toilet in step 24 after much aimless wandering.\"\n}",
+  "parsed_response": {
+    "failure_category": "PL.1",
+    "explanation": "The agent failed to plan effectively by not exploring all possible locations for the required items (soapbars) before concluding they were not present. It also made an incorrect assumption that soapbottles could substitute for soapbars, leading to irrelevant actions.",
+    "evidence": "The agent searched cabinets and a countertop, then incorrectly assumed no soapbars were present (step 10). It then picked up a soapbottle (step 11) and tried to use it as a substitute. It only found the actual soapbars on the toilet in step 24 after much aimless wandering.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850767-r9UeAoDSpI9rmZNQQVLh",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 140,
+      "prompt_tokens": 4141,
+      "total_tokens": 4281,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0015923,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0015923,
+        "upstream_inference_prompt_cost": 0.0012423,
+        "upstream_inference_completions_cost": 0.00035
+      }
+    },
+    "cost_usd": 0.0015923
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "status": "READY_FOR_COMBINED_PIPELINE",
+  "api_calls": 0,
+  "checks": {
+    "base_implementation_verified": true,
+    "sample_id": true,
+    "sample_hashes": true,
+    "dataset_counts": true,
+    "total_count": true,
+    "task_independence": true,
+    "cross_dataset_overlap_zero": true,
+    "all_14_classes": true,
+    "pilot_overlap_zero": true,
+    "smoke_overlap_zero": true,
+    "leakage_zero": true,
+    "aegis_taxonomy_hash": true,
+    "whowhen_taxonomy_hash": true,
+    "conditions": true,
+    "planned_rows": true,
+    "merge_model": true,
+    "attribution_model": true,
+    "attribution_temperature_zero": true,
+    "prior_final_complete_and_preserved": true
+  },
+  "sample_id": "sample-b7d4cd5fad781ef7",
+  "sample_hashes": {
+    "aegis_sample": "1790b0e154c3642916f3ce34d74d96368de900ff9b8cb2ede08388789a18c178",
+    "whowhen_sample": "2e21af9968a2aa88a4e3f9169d9fb08e463a24fc2cf234c6183c8276f6d333f4",
+    "combined_main_input": "d4634851534e14034d3703ee2b9dc05b1c831061b20fe8d5a8be14d8905ab8b0",
+    "combined_gold": "d19086a731525b10f47ab926e57b60e544401a9be031d34078a257ce7f3a062d"
+  },
+  "dataset_counts": {
+    "aegis": 97,
+    "whowhen": 500
+  },
+  "total_trajectories": 597,
+  "planned_logical_rows": 2388,
+  "models": {
+    "taxonomy_merge": "openai/gpt-5",
+    "attribution": "google/gemini-2.5-flash"
+  },
+  "cost_estimate": {
+    "gpt5_merge_one_call_reserve_usd": 0.16512875,
+    "gemini25flash_attribution_proxy_reserve_usd": 10.459028550000001,
+    "provisional_total_usd": 10.6241573,
+    "hard_cap_usd": 50.0,
+    "note": "Attribution proxy uses the old merge only to estimate prompt length; an exact gate is recomputed after the GPT-5 merge is frozen."
+  },
+  "prior_final_status_hash_before": "6650c34b9d7cb43231c756e0d241a0f71aec05ac3477d9bc53ff3892dfab83d9"
+}

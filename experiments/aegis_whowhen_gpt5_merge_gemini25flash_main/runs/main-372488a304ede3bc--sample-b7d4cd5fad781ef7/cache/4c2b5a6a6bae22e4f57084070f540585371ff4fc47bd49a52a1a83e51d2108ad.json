@@ -1,0 +1,46 @@
+{
+  "cache_key": "4c2b5a6a6bae22e4f57084070f540585371ff4fc47bd49a52a1a83e51d2108ad",
+  "raw_output_text": "{\n  \"failure_category\": \"R.2\",\n  \"explanation\": \"The agent made a reasoning error by misinterpreting the attendance data. It incorrectly identified Disney's Hollywood Studios as having the largest growth, when in fact, it experienced a decline. EPCOT had the largest growth.\",\n  \"evidence\": \"The attendance summary clearly shows:\\n- EPCOT: 2023 Attendance (Thousands) 11,980, 2022 Attendance (Thousands) 10,000, % Change +19.8%\\n- Disney's Hollywood Studios: 2023 Attendance (Thousands) 10,300, 2022 Attendance (Thousands) 10,900, % Change -5.5%\\n\\nThe agent's reasoning states: 'According to the TEA/AECOM Theme Index for 2023, Disney’s Hollywood Studios posted the biggest year-over-year attendance jump at Walt Disney World from 2022 to 2023, rising by roughly 1.6 million visitors—more than Magic Kingdom, EPCOT, or Animal Kingdom.' This is a direct contradiction of the provided data.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.2",
+    "explanation": "The agent made a reasoning error by misinterpreting the attendance data. It incorrectly identified Disney's Hollywood Studios as having the largest growth, when in fact, it experienced a decline. EPCOT had the largest growth.",
+    "evidence": "The attendance summary clearly shows:\n- EPCOT: 2023 Attendance (Thousands) 11,980, 2022 Attendance (Thousands) 10,000, % Change +19.8%\n- Disney's Hollywood Studios: 2023 Attendance (Thousands) 10,300, 2022 Attendance (Thousands) 10,900, % Change -5.5%\n\nThe agent's reasoning states: 'According to the TEA/AECOM Theme Index for 2023, Disney’s Hollywood Studios posted the biggest year-over-year attendance jump at Walt Disney World from 2022 to 2023, rising by roughly 1.6 million visitors—more than Magic Kingdom, EPCOT, or Animal Kingdom.' This is a direct contradiction of the provided data.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788852359-1QTCahmDIPNNS9q5zkd4",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 263,
+      "prompt_tokens": 4941,
+      "total_tokens": 5204,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0021398,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0021398,
+        "upstream_inference_prompt_cost": 0.0014823,
+        "upstream_inference_completions_cost": 0.0006575
+      }
+    },
+    "cost_usd": 0.0021398
+  }
+}

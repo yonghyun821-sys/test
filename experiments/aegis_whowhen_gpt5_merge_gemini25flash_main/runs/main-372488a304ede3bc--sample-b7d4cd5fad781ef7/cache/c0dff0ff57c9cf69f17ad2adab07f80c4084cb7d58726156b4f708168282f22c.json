@@ -1,0 +1,46 @@
+{
+  "cache_key": "c0dff0ff57c9cf69f17ad2adab07f80c4084cb7d58726156b4f708168282f22c",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent failed to adhere to the task specification of identifying which home sold for more, instead only providing the higher sale price.\",\n  \"evidence\": \"The task explicitly states: 'Find which of those homes sold for more in 2022, and tell me how much it sold for.' The final answer provided is '875000', which is only the price, not the home address.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent failed to adhere to the task specification of identifying which home sold for more, instead only providing the higher sale price.",
+    "evidence": "The task explicitly states: 'Find which of those homes sold for more in 2022, and tell me how much it sold for.' The final answer provided is '875000', which is only the price, not the home address.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850632-DqUcVm4YHQUSWIC3mrV1",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 108,
+      "prompt_tokens": 7778,
+      "total_tokens": 7886,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 981,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.00233853,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.00233853,
+        "upstream_inference_prompt_cost": 0.00206853,
+        "upstream_inference_completions_cost": 0.00027
+      }
+    },
+    "cost_usd": 0.00233853
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "cache_key": "1b48304bfd98bccb8f3d5e9a05fb45004e7e096606870fc416aee3b4ffd410c2",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent failed to adhere to the task specification, which explicitly asked for a list of *vegetables* only. Instead, it provided a list of fruits and vegetables combined, and then later only fruits.\",\n  \"evidence\": \"User request: 'Could you please create a list of just the vegetables from my list?'\\nAgent response (step 8): 'Here is the final alphabetical, comma-separated list of the fruits and vegetables: bell pepper, broccoli, celery, corn, fresh basil, green beans, lettuce, plums, sweet potatoes, zucchini'\\nAgent response (step 11): 'From the original list, the only item classified as a fruit (botanically) is plums. Here is the final result for the fruit list, presented in alphabetical order: plums'\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent failed to adhere to the task specification, which explicitly asked for a list of *vegetables* only. Instead, it provided a list of fruits and vegetables combined, and then later only fruits.",
+    "evidence": "User request: 'Could you please create a list of just the vegetables from my list?'\nAgent response (step 8): 'Here is the final alphabetical, comma-separated list of the fruits and vegetables: bell pepper, broccoli, celery, corn, fresh basil, green beans, lettuce, plums, sweet potatoes, zucchini'\nAgent response (step 11): 'From the original list, the only item classified as a fruit (botanically) is plums. Here is the final result for the fruit list, presented in alphabetical order: plums'",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850464-Xf3cYd7lmRko5nNuftmD",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 185,
+      "prompt_tokens": 6161,
+      "total_tokens": 6346,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0023108,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0023108,
+        "upstream_inference_prompt_cost": 0.0018483,
+        "upstream_inference_completions_cost": 0.0004625
+      }
+    },
+    "cost_usd": 0.0023108
+  }
+}

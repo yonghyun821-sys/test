@@ -1,0 +1,46 @@
+{
+  "cache_key": "4e6be7ab4ba066a47b134c9a919d9375c11c7643a1ec2cdf0322feef1d3b1d05",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-1.1\",\n  \"explanation\": \"The agent failed to correctly identify the mollusk species associated with the British Museum object before searching for the age of beads made from that specific species. Instead, it searched for general mollusk shell beads and found information about beads from a different context.\",\n  \"evidence\": \"The initial query includes 'The object in the British Museum's collection with a museum number of 2012,5015.17 is the shell of a particular mollusk species.' The agent's search query in step 4 was 'beads made from mollusk shells British Museum 2012,5015.17 age thousands of years', which did not attempt to identify the specific mollusk species first. The search results and subsequent page visit in step 6 are about 'Early Middle Stone Age personal ornaments from Bizmoune Cave, Essaouira, Morocco', which is not directly linked to the British Museum object's mollusk species.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-1.1",
+    "explanation": "The agent failed to correctly identify the mollusk species associated with the British Museum object before searching for the age of beads made from that specific species. Instead, it searched for general mollusk shell beads and found information about beads from a different context.",
+    "evidence": "The initial query includes 'The object in the British Museum's collection with a museum number of 2012,5015.17 is the shell of a particular mollusk species.' The agent's search query in step 4 was 'beads made from mollusk shells British Museum 2012,5015.17 age thousands of years', which did not attempt to identify the specific mollusk species first. The search results and subsequent page visit in step 6 are about 'Early Middle Stone Age personal ornaments from Bizmoune Cave, Essaouira, Morocco', which is not directly linked to the British Museum object's mollusk species.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850368-YR5buxHGPiOmP4E2w9iF",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 221,
+      "prompt_tokens": 4356,
+      "total_tokens": 4577,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0018593,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0018593,
+        "upstream_inference_prompt_cost": 0.0013068,
+        "upstream_inference_completions_cost": 0.0005525
+      }
+    },
+    "cost_usd": 0.0018593
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "cache_key": "95dfb4d13760dafa9f778760c1a40c6be518b63a11569b3cd03e56da3ca9eac6",
+  "raw_output_text": "{\n  \"failure_category\": \"FM-2.3\",\n  \"explanation\": \"The agent completely deviated from the original task of calculating potato bags needed for a family reunion and instead started planning a family Olympics event.\",\n  \"evidence\": \"The initial task was about calculating potato bags, but the agent's subsequent actions and final output are entirely focused on planning a 'Family Olympics' event, as seen in steps 3, 5, 8, and the final output.\"\n}",
+  "parsed_response": {
+    "failure_category": "FM-2.3",
+    "explanation": "The agent completely deviated from the original task of calculating potato bags needed for a family reunion and instead started planning a family Olympics event.",
+    "evidence": "The initial task was about calculating potato bags, but the agent's subsequent actions and final output are entirely focused on planning a 'Family Olympics' event, as seen in steps 3, 5, 8, and the final output.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850675-Qo55uGWOt5mWqriVC6Uj",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 104,
+      "prompt_tokens": 18651,
+      "total_tokens": 18755,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0058553,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0058553,
+        "upstream_inference_prompt_cost": 0.0055953,
+        "upstream_inference_completions_cost": 0.00026
+      }
+    },
+    "cost_usd": 0.0058553
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "cache_key": "49d4743c04b27934117c2b581735da842825bbd9ff579ce3ce239b9815ce0ee9",
+  "raw_output_text": "{\n  \"failure_category\": \"R.2\",\n  \"explanation\": \"The agent incorrectly assumes that the character 'Henrietta' must be in 'Bad Boys (1995)' without verifying this fact. It prematurely concludes the movie and provides an answer that does not address the original question about the actress's birth date.\",\n  \"evidence\": \"The agent states: \\\"Given the prominence of 'Bad Boys (1995)' in Michael Bay's filmography and the likelihood that the character Henrietta appears in this film, I can confidently conclude that 'Bad Boys (1995)' is the movie in question.\\\" It then provides \\\"Bad Boys (1995)\\\" as the final answer, which is not the birth date of an actress.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.2",
+    "explanation": "The agent incorrectly assumes that the character 'Henrietta' must be in 'Bad Boys (1995)' without verifying this fact. It prematurely concludes the movie and provides an answer that does not address the original question about the actress's birth date.",
+    "evidence": "The agent states: \"Given the prominence of 'Bad Boys (1995)' in Michael Bay's filmography and the likelihood that the character Henrietta appears in this film, I can confidently conclude that 'Bad Boys (1995)' is the movie in question.\" It then provides \"Bad Boys (1995)\" as the final answer, which is not the birth date of an actress.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788852241-hLMjnbUYESat5zQBnFbs",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 164,
+      "prompt_tokens": 2850,
+      "total_tokens": 3014,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.001265,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.001265,
+        "upstream_inference_prompt_cost": 0.000855,
+        "upstream_inference_completions_cost": 0.00041
+      }
+    },
+    "cost_usd": 0.001265
+  }
+}

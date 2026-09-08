@@ -1,0 +1,46 @@
+{
+  "cache_key": "f510d2c04a34ff3ec407ad10fc2838afe33906de1cb636d18ae3cf6f160d818d",
+  "raw_output_text": "{\n  \"failure_category\": \"R.2\",\n  \"explanation\": \"The agent incorrectly filtered for countries with a UN budget greater than 2.5% instead of 2%, as specified in the task query.\",\n  \"evidence\": \"The task query asks for 'UN budget greater than 2%', but in step 2, the agent's code filters for `df['un_budget_numeric'] > 2.5`.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.2",
+    "explanation": "The agent incorrectly filtered for countries with a UN budget greater than 2.5% instead of 2%, as specified in the task query.",
+    "evidence": "The task query asks for 'UN budget greater than 2%', but in step 2, the agent's code filters for `df['un_budget_numeric'] > 2.5`.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788854580-o6Ea6RgN9OxpVW2lUJP9",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 98,
+      "prompt_tokens": 3317,
+      "total_tokens": 3415,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0012401,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0012401,
+        "upstream_inference_prompt_cost": 0.0009951,
+        "upstream_inference_completions_cost": 0.000245
+      }
+    },
+    "cost_usd": 0.0012401
+  }
+}

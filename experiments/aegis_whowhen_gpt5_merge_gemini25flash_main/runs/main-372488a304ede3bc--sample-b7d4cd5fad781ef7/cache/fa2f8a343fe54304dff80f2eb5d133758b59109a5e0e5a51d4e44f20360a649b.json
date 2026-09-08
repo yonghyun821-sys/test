@@ -1,0 +1,46 @@
+{
+  "cache_key": "fa2f8a343fe54304dff80f2eb5d133758b59109a5e0e5a51d4e44f20360a649b",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The orchestrator agent hallucinates the year of approval, stating 1986, despite the web search results clearly indicating 1985.\",\n  \"evidence\": \"The WebSurfer's output states: \\\"About 108 results1985Year U.S. Congress approved Compact of Free Association Marshall Islands MicronesiaThe U.S. Congress approved the Compact of Free Association with the Republic of the Marshall Islands in 1985.\\\" However, the orchestrator's final output says: \\\"The U.S. Department of State - Office of the Historian confirms that the U.S. Congress approved the Compact of Free Association relating to the Marshall Islands and Micronesia in 1986. I am confident in this finding and further investigation is unnecessary.\\\\n\\\\nFINAL ANSWER: 1986\\\"\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The orchestrator agent hallucinates the year of approval, stating 1986, despite the web search results clearly indicating 1985.",
+    "evidence": "The WebSurfer's output states: \"About 108 results1985Year U.S. Congress approved Compact of Free Association Marshall Islands MicronesiaThe U.S. Congress approved the Compact of Free Association with the Republic of the Marshall Islands in 1985.\" However, the orchestrator's final output says: \"The U.S. Department of State - Office of the Historian confirms that the U.S. Congress approved the Compact of Free Association relating to the Marshall Islands and Micronesia in 1986. I am confident in this finding and further investigation is unnecessary.\\n\\nFINAL ANSWER: 1986\"",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853823-ZFJ90hEZYuZJQHcfMEcp",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 201,
+      "prompt_tokens": 2488,
+      "total_tokens": 2689,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0012489,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0012489,
+        "upstream_inference_prompt_cost": 0.0007464,
+        "upstream_inference_completions_cost": 0.0005025
+      }
+    },
+    "cost_usd": 0.0012489
+  }
+}

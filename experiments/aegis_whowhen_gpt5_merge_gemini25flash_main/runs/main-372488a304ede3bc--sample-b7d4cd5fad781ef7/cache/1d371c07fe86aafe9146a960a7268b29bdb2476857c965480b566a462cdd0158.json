@@ -1,0 +1,46 @@
+{
+  "cache_key": "1d371c07fe86aafe9146a960a7268b29bdb2476857c965480b566a462cdd0158",
+  "raw_output_text": "{\n  \"failure_category\": \"V.2\",\n  \"explanation\": \"The agent made an assumption about the number of missed votes for a new representative without verifying the information on govtrack.us, leading to an incorrect answer.\",\n  \"evidence\": \"The agent states: 'As he began serving in 2013 (the district was created at that time), and as a new member, it is reasonable to conclude that he likely missed zero roll call votes in his first year, as is common for new representatives. Since no missed votes are typically recorded for new members unless otherwise noted, I am confident that the answer is 0.' This is an assumption not verified by visiting the govtrack.us page.\"\n}",
+  "parsed_response": {
+    "failure_category": "V.2",
+    "explanation": "The agent made an assumption about the number of missed votes for a new representative without verifying the information on govtrack.us, leading to an incorrect answer.",
+    "evidence": "The agent states: 'As he began serving in 2013 (the district was created at that time), and as a new member, it is reasonable to conclude that he likely missed zero roll call votes in his first year, as is common for new representatives. Since no missed votes are typically recorded for new members unless otherwise noted, I am confident that the answer is 0.' This is an assumption not verified by visiting the govtrack.us page.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788852003-p7t7wpQq02V3AHnoTN57",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 152,
+      "prompt_tokens": 6092,
+      "total_tokens": 6244,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0022076,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0022076,
+        "upstream_inference_prompt_cost": 0.0018276,
+        "upstream_inference_completions_cost": 0.00038
+      }
+    },
+    "cost_usd": 0.0022076
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "cache_key": "0ef7c7d7a8650e887fab7c4513a2eba865d647b2e78a97c4c15970aadf3f0f6f",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The agent hallucinated the month and year of Christian Gyrling's departure and Travis McIntosh's replacement, providing an incorrect date that was not found through any search or provided in the initial query.\",\n  \"evidence\": \"The Coder agent provided 'FINAL ANSWER: April 2024' in round 2, position 1, which is an incorrect date for the event. The orchestrator then adopted this incorrect answer.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The agent hallucinated the month and year of Christian Gyrling's departure and Travis McIntosh's replacement, providing an incorrect date that was not found through any search or provided in the initial query.",
+    "evidence": "The Coder agent provided 'FINAL ANSWER: April 2024' in round 2, position 1, which is an incorrect date for the event. The orchestrator then adopted this incorrect answer.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853858-3gZtF7d0uU5GLWhXedEt",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 110,
+      "prompt_tokens": 3635,
+      "total_tokens": 3745,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0013655,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0013655,
+        "upstream_inference_prompt_cost": 0.0010905,
+        "upstream_inference_completions_cost": 0.000275
+      }
+    },
+    "cost_usd": 0.0013655
+  }
+}

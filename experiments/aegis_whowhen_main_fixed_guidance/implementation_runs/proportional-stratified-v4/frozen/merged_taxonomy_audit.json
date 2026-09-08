@@ -1,0 +1,346 @@
+{
+  "status": "generated_and_frozen_validated_merge_with_llm_provenance_adjudication",
+  "human_semantic_edits": false,
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "invalid_provenance_or_schema",
+      "error": "Merged provenance invalid; missing=[('whowhen_pro_text_observed_14', 'A.4')], unknown=[], duplicates=[]",
+      "cache_key": "6d328b4c2bf6f740562ad8209f0a2cbfa1d3bb046889c601c84c53421811798f",
+      "cache_hit": false,
+      "response_metadata": {
+        "id": "gen-1788773625-wmUeDfJa58G61L5WwbW2",
+        "model": "openai/gpt-4o-mini",
+        "provider": "OpenAI",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 2811,
+          "prompt_tokens": 2942,
+          "total_tokens": 5753,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "compute_units": null,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.0021279,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.0021279,
+            "upstream_inference_prompt_cost": 0.0004413,
+            "upstream_inference_completions_cost": 0.0016866
+          }
+        },
+        "cost_usd": 0.0021279,
+        "created": 1788773625,
+        "system_fingerprint": "fp_8156e398b1"
+      }
+    },
+    {
+      "attempt": 2,
+      "status": "invalid_provenance_or_schema",
+      "error": "Merged provenance invalid; missing=[('whowhen_pro_text_observed_14', 'A.4')], unknown=[], duplicates=[]",
+      "cache_key": "b6e4504a33a439e28cdc0c67e20a5151ef00d5eb52ab38bb12c187bb2ae3e1d7",
+      "cache_hit": false,
+      "response_metadata": {
+        "id": "gen-1788773645-XzrMIUluXO66ROwXU5sy",
+        "model": "openai/gpt-4o-mini",
+        "provider": "OpenAI",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 2104,
+          "prompt_tokens": 5810,
+          "total_tokens": 7914,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "compute_units": null,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 2816,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.0019227,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.0019227,
+            "upstream_inference_prompt_cost": 0.0006603,
+            "upstream_inference_completions_cost": 0.0012624
+          }
+        },
+        "cost_usd": 0.0019227,
+        "created": 1788773645,
+        "system_fingerprint": "fp_8156e398b1"
+      }
+    },
+    {
+      "attempt": 3,
+      "status": "invalid_provenance_or_schema",
+      "error": "Merged provenance invalid; missing=[('whowhen_pro_text_observed_14', 'A.4')], unknown=[], duplicates=[]",
+      "cache_key": "b6e4504a33a439e28cdc0c67e20a5151ef00d5eb52ab38bb12c187bb2ae3e1d7",
+      "cache_hit": true,
+      "response_metadata": {
+        "id": "gen-1788773645-XzrMIUluXO66ROwXU5sy",
+        "model": "openai/gpt-4o-mini",
+        "provider": "OpenAI",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 2104,
+          "prompt_tokens": 5810,
+          "total_tokens": 7914,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "compute_units": null,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 2816,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.0019227,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.0019227,
+            "upstream_inference_prompt_cost": 0.0006603,
+            "upstream_inference_completions_cost": 0.0012624
+          }
+        },
+        "cost_usd": 0.0019227,
+        "created": 1788773645,
+        "system_fingerprint": "fp_8156e398b1"
+      }
+    },
+    {
+      "attempt": 4,
+      "status": "invalid_provenance_or_schema",
+      "error": "Merged provenance invalid; missing=[('whowhen_pro_text_observed_14', 'A.4')], unknown=[], duplicates=[]",
+      "cache_key": "af985c0b05542a297a55d0cf65545af66cd0e38ea840e357358b48b344df4ecd",
+      "cache_hit": false,
+      "response_metadata": {
+        "id": "gen-1788774345-wXr7yHsePQx5cdrTK1i9",
+        "model": "openai/gpt-4o-mini",
+        "provider": "OpenAI",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 2811,
+          "prompt_tokens": 7155,
+          "total_tokens": 9966,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "compute_units": null,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 2176,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.00259665,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.00259665,
+            "upstream_inference_prompt_cost": 0.00091005,
+            "upstream_inference_completions_cost": 0.0016866
+          }
+        },
+        "cost_usd": 0.00259665,
+        "created": 1788774345,
+        "system_fingerprint": "fp_8156e398b1"
+      }
+    },
+    {
+      "attempt": 5,
+      "status": "invalid_provenance_or_schema",
+      "error": "Merged provenance invalid; missing=[], unknown=[], duplicates=[('whowhen_pro_text_observed_14', 'C.2')]",
+      "cache_key": "6ee0e61dfc6d1b906488def72da4dccf138e8c48397c509313845a00732887a7",
+      "cache_hit": false,
+      "response_metadata": {
+        "id": "gen-1788774364-caRtDfF5DDkoxJG2VHZL",
+        "model": "openai/gpt-4o-mini",
+        "provider": "OpenAI",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 3031,
+          "prompt_tokens": 7155,
+          "total_tokens": 10186,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "compute_units": null,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 2176,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.00272865,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.00272865,
+            "upstream_inference_prompt_cost": 0.00091005,
+            "upstream_inference_completions_cost": 0.0018186
+          }
+        },
+        "cost_usd": 0.00272865,
+        "created": 1788774364,
+        "system_fingerprint": "fp_8156e398b1"
+      }
+    },
+    {
+      "attempt": 6,
+      "status": "invalid_provenance_or_schema",
+      "error": "Merged provenance invalid; missing=[], unknown=[], duplicates=[('whowhen_pro_text_observed_14', 'C.2')]",
+      "cache_key": "3a02e3c6d5c094c6dfcf51747f432fa8e0afdf4fbd57104ba17ba48239115eb5",
+      "cache_hit": false,
+      "response_metadata": {
+        "id": "gen-1788774386-dfDxxtb9IRBffdADfGU1",
+        "model": "openai/gpt-4o-mini",
+        "provider": "OpenAI",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 3031,
+          "prompt_tokens": 7374,
+          "total_tokens": 10405,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "compute_units": null,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 2176,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 0.0027615,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.0027615,
+            "upstream_inference_prompt_cost": 0.0009429,
+            "upstream_inference_completions_cost": 0.0018186
+          }
+        },
+        "cost_usd": 0.0027615,
+        "created": 1788774386,
+        "system_fingerprint": "fp_8156e398b1"
+      }
+    }
+  ],
+  "provenance_adjudications": [
+    {
+      "source_reference": [
+        "whowhen_pro_text_observed_14",
+        "C.2"
+      ],
+      "source_category": {
+        "source_taxonomy_id": "whowhen_pro_text_observed_14",
+        "source_category_id": "C.2",
+        "name": "Communication failure",
+        "definition": "Withholding critical information from other agents, ignoring other agents' input or recommendations, failing to ask for clarification when instructions are ambiguous, and losing shared context across agent boundaries.",
+        "module": "coordination"
+      },
+      "candidate_ids": [
+        "MT-10",
+        "MT-23"
+      ],
+      "selected_merged_category_id": "MT-23",
+      "reason": "The definition of 'Communication failure' in the merged category MT-23 matches exactly with the source category's definition, making it the most appropriate destination.",
+      "status": "applied",
+      "cache_key": "1058edff1a9c36676452d99bf0c5ef4c35a263c4db987f5e7495e6ab6910517b",
+      "cache_hit": false,
+      "response_metadata": {
+        "id": "gen-1788775135-D47SPx4h1Guypy5zvFKI",
+        "model": "openai/gpt-4o-mini",
+        "provider": "OpenAI",
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 44,
+          "prompt_tokens": 475,
+          "total_tokens": 519,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": null,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": null,
+            "text_tokens": null,
+            "image_tokens": 0
+          },
+          "compute_units": null,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null,
+            "video_tokens": 0
+          },
+          "cost": 9.765e-05,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 9.765e-05,
+            "upstream_inference_prompt_cost": 7.125e-05,
+            "upstream_inference_completions_cost": 2.64e-05
+          }
+        },
+        "cost_usd": 9.765e-05,
+        "created": 1788775135,
+        "system_fingerprint": "fp_1d2403c701"
+      },
+      "raw_output_text": "{\"selected_merged_category_id\":\"MT-23\",\"reason\":\"The definition of 'Communication failure' in the merged category MT-23 matches exactly with the source category's definition, making it the most appropriate destination.\"}"
+    }
+  ],
+  "source_category_count": 28,
+  "provenance_reference_count": 28,
+  "merged_category_count": 26,
+  "all_source_categories_exactly_once": true,
+  "unknown_provenance": false,
+  "source_omissions": false,
+  "merged_sha256": "7871535006bafa29d3ead6258d7df532c880be9a8586c837d3525df77e97ad6c"
+}

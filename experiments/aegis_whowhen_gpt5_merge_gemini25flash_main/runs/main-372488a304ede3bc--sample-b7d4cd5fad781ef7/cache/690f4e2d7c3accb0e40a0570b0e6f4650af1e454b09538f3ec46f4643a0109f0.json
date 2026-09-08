@@ -1,0 +1,46 @@
+{
+  "cache_key": "690f4e2d7c3accb0e40a0570b0e6f4650af1e454b09538f3ec46f4643a0109f0",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The orchestrator hallucinated the answer, stating 'Duke Nukem' as the character when the Wikipedia article clearly identified 'Lara Croft'.\",\n  \"evidence\": \"In round 3, position 1, the WebSurfer's output from the Wikipedia article states: 'Am Ende der ersten Strophe werden sie von der Videospiel-Heldin Lara Croft mit einer Pistole bedroht'. However, in round 4, position 0, the orchestrator's output states: 'The music video for Die Ärzte's \\\"Men Are Pigs\\\" is well known for featuring a custom 3D animation sequence inside a dark factory, where the famous video game character Duke Nukem confronts the band members. ... FINAL ANSWER: Duke Nukem'.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The orchestrator hallucinated the answer, stating 'Duke Nukem' as the character when the Wikipedia article clearly identified 'Lara Croft'.",
+    "evidence": "In round 3, position 1, the WebSurfer's output from the Wikipedia article states: 'Am Ende der ersten Strophe werden sie von der Videospiel-Heldin Lara Croft mit einer Pistole bedroht'. However, in round 4, position 0, the orchestrator's output states: 'The music video for Die Ärzte's \"Men Are Pigs\" is well known for featuring a custom 3D animation sequence inside a dark factory, where the famous video game character Duke Nukem confronts the band members. ... FINAL ANSWER: Duke Nukem'.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788853743-I3Gl6WwrhrVWYs1DPr45",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 177,
+      "prompt_tokens": 8142,
+      "total_tokens": 8319,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0028851,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0028851,
+        "upstream_inference_prompt_cost": 0.0024426,
+        "upstream_inference_completions_cost": 0.0004425
+      }
+    },
+    "cost_usd": 0.0028851
+  }
+}

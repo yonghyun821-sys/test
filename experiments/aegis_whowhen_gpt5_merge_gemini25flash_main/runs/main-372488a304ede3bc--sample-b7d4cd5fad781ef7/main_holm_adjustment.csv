@@ -1,0 +1,9 @@
+﻿dataset,contrast,raw_p,holm_adjusted_p,alpha,reject
+aegis,own_taxonomy_minus_label_only,1.0,1.0,0.05,False
+aegis,foreign_taxonomy_minus_label_only,0.375,1.0,0.05,False
+aegis,merged_taxonomy_minus_label_only,0.453125,1.0,0.05,False
+aegis,merged_taxonomy_minus_foreign_taxonomy,0.0703125,0.5625,0.05,False
+whowhen,own_taxonomy_minus_label_only,0.6988834276200057,1.0,0.05,False
+whowhen,foreign_taxonomy_minus_label_only,0.13249816396273673,0.9274871477391571,0.05,False
+whowhen,merged_taxonomy_minus_label_only,0.5327092552361137,1.0,0.05,False
+whowhen,merged_taxonomy_minus_foreign_taxonomy,0.5113757815852296,1.0,0.05,False

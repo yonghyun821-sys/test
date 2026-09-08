@@ -1,0 +1,9 @@
+﻿dataset,condition,n,formatting_retries,truncation_retries,provider_transport_retries,schema_parser_retries,rows_with_any_retry
+aegis,label_only,97,0,1,0,0,1
+aegis,own_taxonomy,97,0,0,0,0,0
+aegis,foreign_taxonomy,97,0,0,0,0,0
+aegis,merged_taxonomy,97,0,0,0,0,0
+whowhen,label_only,500,0,0,0,4,4
+whowhen,own_taxonomy,500,0,3,0,1,4
+whowhen,foreign_taxonomy,500,0,1,0,1,2
+whowhen,merged_taxonomy,500,0,0,0,1,1

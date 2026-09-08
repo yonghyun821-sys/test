@@ -1,0 +1,46 @@
+{
+  "cache_key": "c39054a787710a89047cf8d3b136f202afbee0de33e28a0e1e6cd7624ba9d8e1",
+  "raw_output_text": "{\n  \"failure_category\": \"R.2\",\n  \"explanation\": \"The agent made a reasoning error by incorrectly interpreting the teen birthrate for Georgia from the CDC data. The CDC summary clearly states Georgia's teen birthrate as 16.5, which is below the threshold of 20, yet the agent's previous step incorrectly stated it was over 20.\",\n  \"evidence\": \"In step 3, the CDC summary shows 'Georgia | 16.5 | No' for the 'Highlight (≥ 20)' column. However, in step 2, the agent's reasoning states, 'Georgia is known to have had a teen birth rate of 20.3 per 1,000 females ages 15–19 in 2022'.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.2",
+    "explanation": "The agent made a reasoning error by incorrectly interpreting the teen birthrate for Georgia from the CDC data. The CDC summary clearly states Georgia's teen birthrate as 16.5, which is below the threshold of 20, yet the agent's previous step incorrectly stated it was over 20.",
+    "evidence": "In step 3, the CDC summary shows 'Georgia | 16.5 | No' for the 'Highlight (≥ 20)' column. However, in step 2, the agent's reasoning states, 'Georgia is known to have had a teen birth rate of 20.3 per 1,000 females ages 15–19 in 2022'.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788852145-cRtdEs615TwPy7wlOkHY",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 176,
+      "prompt_tokens": 6664,
+      "total_tokens": 6840,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0024392,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0024392,
+        "upstream_inference_prompt_cost": 0.0019992,
+        "upstream_inference_completions_cost": 0.00044
+      }
+    },
+    "cost_usd": 0.0024392
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "cache_key": "1c2b5f8382bd4ff1f1819235c966f06e507534142cf81a8a3c783f8e83f6667a",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The agent hallucinated the opening date of the Runaway Tram, providing 'July 25, 2019' when the search results clearly stated 'August 9, 2019'.\",\n  \"evidence\": \"The WebSurfer output states: 'The Runaway Tram officially opened to the public on August 9, 2019.' However, the Orchestrator's final answer is: 'The Runaway Tram at Morey's Piers opened to the public on July 25, 2019, following a ribbon-cutting ceremony hosted by the Wildwood Historical Society. FINAL ANSWER: July 25, 2019'\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The agent hallucinated the opening date of the Runaway Tram, providing 'July 25, 2019' when the search results clearly stated 'August 9, 2019'.",
+    "evidence": "The WebSurfer output states: 'The Runaway Tram officially opened to the public on August 9, 2019.' However, the Orchestrator's final answer is: 'The Runaway Tram at Morey's Piers opened to the public on July 25, 2019, following a ribbon-cutting ceremony hosted by the Wildwood Historical Society. FINAL ANSWER: July 25, 2019'",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788854044-moxcqxvTSjOc52ilm0PR",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 166,
+      "prompt_tokens": 2606,
+      "total_tokens": 2772,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0011968,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0011968,
+        "upstream_inference_prompt_cost": 0.0007818,
+        "upstream_inference_completions_cost": 0.000415
+      }
+    },
+    "cost_usd": 0.0011968
+  }
+}

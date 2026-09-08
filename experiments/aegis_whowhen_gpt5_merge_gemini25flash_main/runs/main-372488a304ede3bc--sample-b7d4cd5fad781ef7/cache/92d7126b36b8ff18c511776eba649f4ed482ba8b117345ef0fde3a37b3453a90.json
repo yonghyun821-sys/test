@@ -1,0 +1,46 @@
+{
+  "cache_key": "92d7126b36b8ff18c511776eba649f4ed482ba8b117345ef0fde3a37b3453a90",
+  "raw_output_text": "{\n  \"failure_category\": \"R.4\",\n  \"explanation\": \"The agent misunderstood the core question. The question asks about 'points scored per year' but the agent calculated and predicted 'tries per year'. This indicates a fundamental misunderstanding of the task's objective.\",\n  \"evidence\": \"The question is: 'How will the Castleford Tigers' points scored per year trend in the next 5 years?'. The agent's final answer is: 'Based on the historical average, Castleford Tigers are expected to score about 23.2 tries per year over the next 5 years.'\"\n}",
+  "parsed_response": {
+    "failure_category": "R.4",
+    "explanation": "The agent misunderstood the core question. The question asks about 'points scored per year' but the agent calculated and predicted 'tries per year'. This indicates a fundamental misunderstanding of the task's objective.",
+    "evidence": "The question is: 'How will the Castleford Tigers' points scored per year trend in the next 5 years?'. The agent's final answer is: 'Based on the historical average, Castleford Tigers are expected to score about 23.2 tries per year over the next 5 years.'",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788854235-6FihrLSP3AWoVWnQ1A5F",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 131,
+      "prompt_tokens": 2307,
+      "total_tokens": 2438,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0010196,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0010196,
+        "upstream_inference_prompt_cost": 0.0006921,
+        "upstream_inference_completions_cost": 0.0003275
+      }
+    },
+    "cost_usd": 0.0010196
+  }
+}

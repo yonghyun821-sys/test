@@ -1,0 +1,9 @@
+﻿dataset,contrast,n,incorrect_to_correct,correct_to_incorrect,both_correct,both_incorrect,mcnemar_exact_two_sided_p
+aegis,own_taxonomy_minus_label_only,97,5,4,15,73,1.0
+aegis,foreign_taxonomy_minus_label_only,97,1,4,15,77,0.375
+aegis,merged_taxonomy_minus_label_only,97,5,2,17,73,0.453125
+aegis,merged_taxonomy_minus_foreign_taxonomy,97,7,1,15,74,0.0703125
+whowhen,own_taxonomy_minus_label_only,500,32,28,83,357,0.6988834276200057
+whowhen,foreign_taxonomy_minus_label_only,500,13,23,88,376,0.13249816396273673
+whowhen,merged_taxonomy_minus_label_only,500,18,23,88,371,0.5327092552361137
+whowhen,merged_taxonomy_minus_foreign_taxonomy,500,21,16,85,378,0.5113757815852296

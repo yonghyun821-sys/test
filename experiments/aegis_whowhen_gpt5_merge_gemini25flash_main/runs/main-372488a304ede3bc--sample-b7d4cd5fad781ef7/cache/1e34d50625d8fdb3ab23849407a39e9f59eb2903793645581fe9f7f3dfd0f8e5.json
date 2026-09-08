@@ -1,0 +1,46 @@
+{
+  "cache_key": "1e34d50625d8fdb3ab23849407a39e9f59eb2903793645581fe9f7f3dfd0f8e5",
+  "raw_output_text": "{\n  \"failure_category\": \"R.2\",\n  \"explanation\": \"The agent failed to correctly implement the docstring's instruction to 'reverse the dictionary to map vegetables to people'. Instead, it extracted unique vegetables and assigned random counts, which is a different operation than what was described.\",\n  \"evidence\": \"The docstring states: 'The function reverses the dictionary to map vegetables to people and assigns random counts to these vegetables.' The code implements `unique_vegetables = sorted(set(vegetable_dict.values()))` which extracts unique vegetables, but does not reverse the dictionary to map vegetables to people.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.2",
+    "explanation": "The agent failed to correctly implement the docstring's instruction to 'reverse the dictionary to map vegetables to people'. Instead, it extracted unique vegetables and assigned random counts, which is a different operation than what was described.",
+    "evidence": "The docstring states: 'The function reverses the dictionary to map vegetables to people and assigns random counts to these vegetables.' The code implements `unique_vegetables = sorted(set(vegetable_dict.values()))` which extracts unique vegetables, but does not reverse the dictionary to map vegetables to people.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788850996-rJ8neS110NhjsLaLCxXu",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 133,
+      "prompt_tokens": 6493,
+      "total_tokens": 6626,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0022804,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0022804,
+        "upstream_inference_prompt_cost": 0.0019479,
+        "upstream_inference_completions_cost": 0.0003325
+      }
+    },
+    "cost_usd": 0.0022804
+  }
+}

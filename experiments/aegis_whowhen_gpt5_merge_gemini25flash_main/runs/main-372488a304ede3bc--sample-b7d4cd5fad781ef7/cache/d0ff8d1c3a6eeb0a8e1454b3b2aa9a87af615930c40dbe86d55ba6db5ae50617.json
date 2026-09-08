@@ -1,0 +1,46 @@
+{
+  "cache_key": "d0ff8d1c3a6eeb0a8e1454b3b2aa9a87af615930c40dbe86d55ba6db5ae50617",
+  "raw_output_text": "{\n  \"failure_category\": \"R.1\",\n  \"explanation\": \"The agent hallucinates the title of the poem. While the lines are by Edwin Markham, the poem is not titled 'The Secret of Success'. The agent incorrectly assumes this title based on common association rather than verifying the actual title of the poem containing those lines.\",\n  \"evidence\": \"The summary of the speech correctly identifies Edwin Markham as the author and quotes the lines. However, in step 5, the agent states: 'While these lines are sometimes cited as being from his shorter poem \\\"The Secret of Success\\\", others attribute them to the poem \\\"Epigrams\\\" or as a stand-alone aphorism, but they are most commonly and widely recognized as coming from \\\"The Secret of Success\\\" by Edwin Markham.' This leads to the final answer: 'The Secret of Success, by Edwin Markham', which is an incorrect title for the poem containing those lines.\"\n}",
+  "parsed_response": {
+    "failure_category": "R.1",
+    "explanation": "The agent hallucinates the title of the poem. While the lines are by Edwin Markham, the poem is not titled 'The Secret of Success'. The agent incorrectly assumes this title based on common association rather than verifying the actual title of the poem containing those lines.",
+    "evidence": "The summary of the speech correctly identifies Edwin Markham as the author and quotes the lines. However, in step 5, the agent states: 'While these lines are sometimes cited as being from his shorter poem \"The Secret of Success\", others attribute them to the poem \"Epigrams\" or as a stand-alone aphorism, but they are most commonly and widely recognized as coming from \"The Secret of Success\" by Edwin Markham.' This leads to the final answer: 'The Secret of Success, by Edwin Markham', which is an incorrect title for the poem containing those lines.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788852132-rS1ARVWEsVgOFHZsfxUQ",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 196,
+      "prompt_tokens": 7412,
+      "total_tokens": 7608,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0027136,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0027136,
+        "upstream_inference_prompt_cost": 0.0022236,
+        "upstream_inference_completions_cost": 0.00049
+      }
+    },
+    "cost_usd": 0.0027136
+  }
+}

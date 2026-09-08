@@ -1,0 +1,46 @@
+{
+  "cache_key": "1561637009fcc7c4f1142e5ddd5110420c62f90dc45aec28c086fcb3fd8c78e0",
+  "raw_output_text": "{\n  \"failure_category\": \"A.4\",\n  \"explanation\": \"The agent repeatedly encountered a CAPTCHA during web searches, preventing it from accessing search results and making progress. This led to a loop of attempting searches that were blocked.\",\n  \"evidence\": \"WebSurfer output in round 0 and round 2 both show 'One last step Please solve the challenge below to continue', indicating a CAPTCHA. The orchestrator's ledger in round 1 states 'We attempted a targeted search but were blocked by a CAPTCHA; no new information has been retrieved yet.' and in round 3 'We have attempted multiple searches but are encountering repeated access issues with Bing search results'.\"\n}",
+  "parsed_response": {
+    "failure_category": "A.4",
+    "explanation": "The agent repeatedly encountered a CAPTCHA during web searches, preventing it from accessing search results and making progress. This led to a loop of attempting searches that were blocked.",
+    "evidence": "WebSurfer output in round 0 and round 2 both show 'One last step Please solve the challenge below to continue', indicating a CAPTCHA. The orchestrator's ledger in round 1 states 'We attempted a targeted search but were blocked by a CAPTCHA; no new information has been retrieved yet.' and in round 3 'We have attempted multiple searches but are encountering repeated access issues with Bing search results'.",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788854059-paURQz9dv9wLmywcM9d5",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 149,
+      "prompt_tokens": 6143,
+      "total_tokens": 6292,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0022154,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0022154,
+        "upstream_inference_prompt_cost": 0.0018429,
+        "upstream_inference_completions_cost": 0.0003725
+      }
+    },
+    "cost_usd": 0.0022154
+  }
+}

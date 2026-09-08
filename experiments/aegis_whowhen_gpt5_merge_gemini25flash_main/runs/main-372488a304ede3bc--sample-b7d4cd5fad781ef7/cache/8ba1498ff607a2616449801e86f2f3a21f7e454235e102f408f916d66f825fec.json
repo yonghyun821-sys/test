@@ -1,0 +1,46 @@
+{
+  "cache_key": "8ba1498ff607a2616449801e86f2f3a21f7e454235e102f408f916d66f825fec",
+  "raw_output_text": "{\n  \"failure_category\": \"R.2\",\n  \"explanation\": \"The agent incorrectly filtered for 'selfMade' == True when the task explicitly asked for billionaires who are *not* self-made. This indicates a logical error in processing the task's negative condition.\",\n  \"evidence\": \"The task query was: 'List the top 5 ranks of billionaires who are not self-made.' The agent's code in step 3 was: `top_5_ranks = df[df['selfMade'] == True]['rank'].head(5).tolist()`\"\n}",
+  "parsed_response": {
+    "failure_category": "R.2",
+    "explanation": "The agent incorrectly filtered for 'selfMade' == True when the task explicitly asked for billionaires who are *not* self-made. This indicates a logical error in processing the task's negative condition.",
+    "evidence": "The task query was: 'List the top 5 ranks of billionaires who are not self-made.' The agent's code in step 3 was: `top_5_ranks = df[df['selfMade'] == True]['rank'].head(5).tolist()`",
+    "exact_native_id_valid": true
+  },
+  "response_metadata": {
+    "id": "gen-1788851526-ycVX4BHBWoyFQd185aoB",
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google",
+    "finish_reason": "stop",
+    "usage": {
+      "completion_tokens": 126,
+      "prompt_tokens": 1367,
+      "total_tokens": 1493,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null,
+        "image_tokens": 0
+      },
+      "compute_units": null,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null,
+        "video_tokens": 0
+      },
+      "cost": 0.0007251,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0007251,
+        "upstream_inference_prompt_cost": 0.0004101,
+        "upstream_inference_completions_cost": 0.000315
+      }
+    },
+    "cost_usd": 0.0007251
+  }
+}
